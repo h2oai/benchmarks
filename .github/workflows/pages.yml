@@ -1,0 +1,74 @@
+# Deploys site/ to GitHub Pages (https://h2oai.github.io/benchmarks/) from main only.
+# The deploy job uses the github-pages environment, which requires the owner's approval and accepts only main,
+# so nothing reaches the site until the owner approves the run. site/ is the page as built; it is not edited here.
+name: Pages
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "site/**"
+      - ".github/workflows/pages.yml"
+  workflow_dispatch:
+
+permissions: {}
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+defaults:
+  run:
+    shell: bash
+
+jobs:
+  build:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    permissions:
+      contents: read
+    outputs:
+      index-sha256: ${{ steps.hash.outputs.index-sha256 }}
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+
+      - name: Hash the index.html this run deploys
+        id: hash
+        run: echo "index-sha256=$(sha256sum site/index.html | cut -d' ' -f1)" >> "$GITHUB_OUTPUT"
+
+      - uses: actions/upload-pages-artifact@fc324d3547104276b827a68afc52ff2a11cc49c9 # v5.0.0
+        with:
+          path: site
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@368f82528645a54fb793d4d04e342629a3f51346 # v5.0.1
+
+      - name: Smoke test the public site
+        env:
+          PAGE_URL: ${{ steps.deployment.outputs.page_url }}
+          WANT: ${{ needs.build.outputs.index-sha256 }}
+        run: |
+          # A query string per attempt gets past the CDN's 10-minute cache.
+          for i in $(seq 10); do
+            got=$(curl -fsS "${PAGE_URL}index.html?run=${GITHUB_RUN_ID}-${i}" | sha256sum | cut -d' ' -f1) || true
+            if [ "$got" = "$WANT" ]; then
+              echo "${PAGE_URL} serves the index.html this run deployed."
+              exit 0
+            fi
+            sleep 30
+          done
+          echo "::error::${PAGE_URL}index.html still differs from the deployed index.html after 5 minutes"
+          exit 1
