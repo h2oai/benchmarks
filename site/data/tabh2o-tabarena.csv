@@ -1,0 +1,40 @@
+rank,model,organization,avg_rank,datasets,h2o
+1,TabFM ensemble (official results),Google,1.7647,51,No
+2,TabFM (official results),Google,3.3137,51,No
+3,EXAONE-Tabular,LG AI Research,4.9583,48,No
+4,TabPFN v3.0,,6.3725,51,No
+5,TabICL v2 (fine-tuned),,7.1837,49,No
+6,TabPFN v2.6,,7.5098,51,No
+7,TabH2O v1.1,H2O.ai,8.3922,51,Yes
+8,TabICL v2,,8.7647,51,No
+9,TabPFN v2.5,,9.7647,51,No
+10,CatBoost (tuned),,14.5,50,No
+11,DAI 10-7-1,,14.9,50,No
+12,LightGBM (tuned),,14.94,50,No
+13,CatBoost,,16.0,50,No
+14,TabM (tuned),,16.2,50,No
+15,XGBoost (tuned),,16.34,50,No
+16,TabPFN v2.0,,17.1373,51,No
+17,ModernNCA (tuned),,17.78,50,No
+18,RealMLP (tuned),,18.98,50,No
+19,TabM,,19.46,50,No
+20,ModernNCA,,20.34,50,No
+21,TabDPT,,21.28,50,No
+22,RealMLP,,22.84,50,No
+23,H2O AutoML,H2O.ai,22.9608,51,No
+24,EBM (tuned),,23.32,50,No
+25,XGBoost,,23.46,50,No
+26,PyTorch MLP (tuned),,24.12,50,No
+27,EBM,,24.34,50,No
+28,LightGBM,,24.82,50,No
+29,Extra trees (tuned),,25.56,50,No
+30,FastAI MLP (tuned),,25.96,50,No
+31,Random forest (tuned),,26.76,50,No
+32,PyTorch MLP,,29.08,50,No
+33,Random forest,,30.82,50,No
+34,FastAI MLP,,30.84,50,No
+35,Extra trees,,31.54,50,No
+36,Linear model (tuned),,33.1,50,No
+37,Linear model,,33.6,50,No
+38,KNN (tuned),,36.74,50,No
+39,KNN,,37.94,50,No

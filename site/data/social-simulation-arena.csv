@@ -1,0 +1,26 @@
+rank,entrant,organization,type,arena_score,mean_crps,questions,h2o
+1,Vac-SentimentExpectations,Astraculum,participant,70.808,0.2571,5,No
+2,YuLan-OneSim,Renmin University of China,participant,40.7933,0.38745,6,No
+3,Apodex-FutureFlow,Apodex,participant,29.1079,0.560893,28,No
+4,H2O.ai SuperAgent,H2O.ai,participant,15.2725,0.6606,20,Yes
+5,H2O.ai Marina,H2O.ai,participant,8.3344,0.561639,18,Yes
+6,worldVac,Astraculum,participant,3.6497,1.111148,29,No
+7,Vac-PublicOpinion,Astraculum,participant,1.885,0.972083,6,No
+8,Persistence,,baseline,0.0,2.986793,70,No
+9,Gemini 3.1 Pro · web,,llm,-0.6006,2.487617,63,No
+10,Claude Sonnet 5 · web,,llm,-0.9067,2.590406,63,No
+11,Claude Sonnet 5 · web+sfc,,llm,-2.8316,2.610603,63,No
+12,Grok 4.5 · web,,llm,-13.8438,2.394275,64,No
+13,DeepSeek V4 Pro · web,,llm,-14.3162,2.16451,63,No
+14,GPT-5.6 Luna · web+sfc,,llm,-19.0115,1.34563,60,No
+15,DeepSeek V4 Pro · web+sfc,,llm,-19.5641,2.25637,63,No
+16,Gemini 3.1 Pro · web+sfc,,llm,-19.7078,2.329102,63,No
+17,GLM-5.2 · web,,llm,-22.0546,2.580725,61,No
+18,GLM-5.2 · web+sfc,,llm,-25.4437,2.797974,62,No
+19,Crowd,,baseline,-28.5251,2.398981,69,No
+20,Grok 4.5 · web+sfc,,llm,-35.4875,2.401902,64,No
+21,GPT-5.6 Luna · web,,llm,-41.1874,1.679075,61,No
+22,EWMA,,baseline,-81.3636,2.952234,70,No
+23,Linear trend,,baseline,-216.3279,4.839199,70,No
+24,Climatology,,baseline,-279.3699,4.096326,70,No
+25,ZhengZheng Forecaster,xuanzhengwenhua,participant,-1540.395,11.655754,28,No

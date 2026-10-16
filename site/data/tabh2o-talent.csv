@@ -1,0 +1,14 @@
+rank,model,organization,avg_rank,datasets,h2o
+1,TabICL v2 (fine-tuned),,3.476,292,No
+2,EXAONE-Tabular,LG AI Research,3.8475,295,No
+3,TabPFN v3.0,,4.2341,299,No
+4,TabICL v2,,4.4033,300,No
+5,TabH2O v1.1,H2O.ai,5.2833,300,Yes
+6,TabPFN v2.6,,5.885,287,No
+7,TabPFN v2.5,,6.2334,287,No
+8,AutoGluon,,8.0733,300,No
+9,CatBoost (tuned),,8.266,297,No
+10,AutoGluon (quick preset),,8.46,300,No
+11,H2O AutoML (10 min),H2O.ai,9.0,300,No
+12,LightGBM,,10.1077,297,No
+13,LightGBM (quick),,11.2667,300,No
