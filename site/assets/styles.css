@@ -168,12 +168,16 @@ a:hover { color: var(--a-hover); }
 [role="radio"]:hover { border-color: var(--text); }
 [role="radio"][aria-checked="true"] { background: var(--pill-bg); border-color: var(--pill-bg); color: var(--pill-text); }
 
-/* ---- header: the logo left, the theme toggle right -------------------------------------------------------- */
+/* ---- header: the logo left, the GitHub mark and the theme toggle right -------------------------------------------------------- */
 .site-header { padding: 0 var(--gutter); background: var(--bg); border-bottom: 1px solid var(--line); }
 .header-bar { min-height: 64px; display: flex; flex-wrap: wrap; align-items: center; gap: 8px 24px; padding: 12px 0; }
 .brand { display: flex; align-items: center; gap: 12px; font: 600 20px/1 var(--font-display); letter-spacing: -.01em; white-space: nowrap; }
 .brand a { display: flex; flex: none; } /* the logo's link, exactly its size, so the header keeps its own */
 .brand svg { flex: none; width: 40px; height: 40px; }
+.repo-link { margin-left: auto; display: flex; align-items: center; justify-content: center; flex: none; width: 36px; height: 36px; border-radius: 999px; color: var(--text); }
+.repo-link:hover { color: var(--text); background: var(--line); }
+.repo-link svg { width: 22px; height: 22px; }
+.repo-link + .theme-toggle { margin-left: -16px; } /* 8 px apart: the mark belongs with the toggle */
 .theme-toggle { margin-left: auto; min-height: 36px; padding: 0 12px; border: 1px solid var(--control); border-radius: 999px; background: transparent; font: 500 11px/1 var(--font-mono); letter-spacing: .1em; text-transform: uppercase; }
 .theme-toggle:hover { border-color: var(--text); }
 .when-light { display: var(--when-light); }
@@ -362,6 +366,12 @@ h2 { font: 600 clamp(24px, 3.2vw, 30px)/1.15 var(--font-display); letter-spacing
   :root { --gutter: 16px; --bar-height: 104px; }
   .brand { gap: 10px; font-size: 16px; }
   .brand svg { width: 36px; height: 36px; }
+  /* the GitHub mark and the toggle draw in so the dark theme's "Light mode" still fits the logo's row at 360 px */
+  .header-bar { column-gap: 8px; }
+  .repo-link { width: 28px; height: 28px; }
+  .repo-link svg { width: 20px; height: 20px; }
+  .repo-link + .theme-toggle { margin-left: -4px; }
+  .theme-toggle { padding: 0 8px; }
   .hero { padding-top: 48px; padding-bottom: 56px; }
   .bench { padding-top: 56px; padding-bottom: 56px; }
   .hero-body { font-size: 17px; }
