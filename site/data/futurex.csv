@@ -1,0 +1,23 @@
+rank,framework,model,organization,events,level1,level2,level3,level4,score,h2o
+1,SWM-c,Deepseek V4 Pro,Individual AI Researcher,75,80.0,62.5,57.33,43.41,55.06,No
+2,SWM-d,Deepseek V4 Pro,Individual AI Researcher,75,80.0,62.5,52.02,46.95,54.89,No
+3,SWM-a,Deepseek V4 Pro,Individual AI Researcher,75,80.0,62.5,58.6,41.5,54.68,No
+4,SWM-b,Deepseek V4 Pro,Individual AI Researcher,75,80.0,62.5,55.63,41.5,53.79,No
+5,blue-fish,blue-fish,Individual AI Researcher,75,80.0,75.0,45.63,41.23,53.18,No
+6,H2O AI Super Agent v1.82,sonnet-5-5,h2o.ai,75,80.0,54.17,54.03,35.93,49.41,Yes
+7,H2O AI Super Agent v1.82,gpt-6-sol,h2o.ai,75,75.0,58.33,46.17,37.24,47.91,Yes
+8,H2O AI Super Agent v1.82,grok-4.7 + sonnet-5.5 + gpt-6-sol,h2o.ai,75,70.0,41.67,54.03,37.24,46.44,Yes
+9,H2O AI Super Agent v1.82,grok-4.7 + sonnet-5.5 - v1,h2o.ai,75,70.0,41.67,54.03,35.93,45.91,Yes
+10,hermes,Hadrian_v1,Individual AI Researcher,75,80.0,58.33,49.45,24.47,44.29,No
+11,H2O AI Super Agent v1.82,grok-4.7 + gpt-6-sol,h2o.ai,75,70.0,41.67,46.17,37.24,44.08,Yes
+12,SenseFlow,deepseek-v4-pro-v1,Individual AI Researcher,75,80.0,54.17,42.26,28.75,43.01,No
+13,H2O AI Super Agent v1.82,grok-4.7 + sonnet-5.5 - v2,h2o.ai,75,70.0,41.67,54.03,28.3,42.86,Yes
+14,SenseFlux,S-Forecaster,Individual AI Researcher,75,80.0,62.5,40.59,23.75,42.18,No
+15,SenseFlow,deepseek-v4-pro-v2,Individual AI Researcher,75,75.0,58.33,39.24,16.5,37.54,No
+16,SenseFlow-MultiAgent,DeepSeek V4.1 Flash,Individual AI Researcher,75,75.0,62.5,30.05,20.45,37.19,No
+17,SenseFlow,DeepSeek-V4-Pro,Individual AI Researcher,75,75.0,50.0,35.59,22.5,37.18,No
+18,H2O AI Super Agent v1.82,grok-4-7,h2o.ai,75,70.0,37.5,17.8,28.3,31.16,Yes
+19,hermes,Maxmilia_v3,Individual AI Researcher,75,70.0,54.17,21.46,16.45,30.85,No
+20,TTT-v0.3.1,DeepSeek V4.1 Flash,Individual AI Researcher,75,70.0,33.33,26.72,15.75,27.98,No
+21,H2O AI Super Agent v1.82,grok-4.7 - m,h2o.ai,75,60.0,41.67,24.47,14.61,27.52,Yes
+22,hermes,Charles_V_v1,Individual AI Researcher,75,70.0,50.0,21.86,9.0,27.16,No

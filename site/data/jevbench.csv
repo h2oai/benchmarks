@@ -1,0 +1,194 @@
+rank,model,author,open_weights,listing,composite,capability,intelligence,calibration,speed,cost,ci95_low,ci95_high,h2o
+1,"H2O-Lightning-4B v1.1 (H2O.ai, Qwen3.5-4B fine-tune, stock vLLM + open shim)",H2O.ai,Yes,ranked,72.523227,74.996196,60.038399,89.953994,92.610845,60.298824,69.794999,73.78892,Yes
+2,"decisio v0.8.0 on gemma-4-31B-it (frozen, FP8 on load, one prefill per state, self-hosted)",Amin Roudaki (@aminry),Yes,ranked,71.692658,79.569742,70.423211,88.716273,91.185808,51.665309,69.857542,72.808746,No
+3,"Quyet-1.0-Large (Chinh Nguyen, Gemma-4-31B decoder, option-letter logits)",Chinh Nguyen (ncchinh),Yes,ranked,71.387063,81.688805,73.401359,89.97625,86.874404,50.546097,69.837283,72.206219,No
+4,decider-12b v2 (Mapika),Mark Marosi (Mapika),Yes,ranked,70.879552,72.500476,63.012501,81.988451,90.475831,57.755449,68.541387,72.207536,No
+5,"decider-12b v1, stock Gemma-4-12B-it (Mapika)",Mark Marosi (Mapika),Yes,ranked,70.423526,72.195936,60.628936,83.762937,90.476543,57.755449,68.087793,71.632008,No
+6,"torchcast-decision-12b (Torchcast AI, Gemma-4-12B fine-tune, option-letter logprob readout)",Torchcast AI,Yes,ranked,69.908714,71.738946,60.543201,82.934691,91.745737,56.360342,67.223887,71.474522,No
+7,Torchcast Decision 4B (v1.1),Torchcast AI,Yes,ranked,69.564409,68.662605,54.208418,83.116792,93.627656,61.193966,65.322868,71.225477,No
+8,Winnow-12B Q8,Eldan Ring,Yes,ranked,68.885422,71.245862,59.533662,82.958061,86.697538,56.556023,66.451962,70.461831,No
+9,"deck-31B (krishna765, frozen Gemma-4-31B-it, TorchAO FP8 dynamic)",krishna765,Yes,ranked,68.682001,77.590743,73.025126,82.15636,86.699705,49.691903,67.071033,69.737581,No
+10,Jeff-1.0-Large,,Yes,ranked,68.593295,81.503217,71.898864,91.107571,88.824119,49.201578,67.074826,69.374604,No
+11,"Cygnet (blockbrain, frozen Gemma-4-12B-it)",blockbrain,Yes,ranked,68.550124,70.903411,54.839281,86.96754,91.772837,56.429126,64.422155,69.939476,No
+12,"decisio v0.8.0 on gemma-4-12B-it (frozen, one forward pass, self-hosted)",Amin Roudaki (@aminry),Yes,ranked,68.173461,70.741466,52.324989,89.157944,86.986043,59.345831,57.374889,69.649603,No
+13,"decisio v0.9.0 on gemma-4-12B-it (frozen, one prefill per question, self-hosted)",Amin Roudaky / @aminry,Yes,ranked,67.760723,69.95438,52.299106,87.609654,85.867785,59.345831,54.379224,69.563586,No
+14,"Jev-Omni (akhilaaa3, Gemma-4-12B merged)",akhilaaa3,Yes,ranked,67.747589,71.287366,55.530226,87.044507,85.431732,56.051132,65.251702,68.964557,No
+15,metask-jev-rain-12B-trained,"MeTask (Hangzhou MeTask Technology Co., Ltd.)",Yes,ranked,67.603928,77.871785,67.825519,87.91805,73.375796,51.488679,65.860018,68.531316,No
+16,"Xor 26B-A4B (Juspay, Gemma-4-26B-A4B, bf16)",Juspay,Yes,ranked,67.381894,72.40652,58.673824,86.139216,91.031792,50.695888,64.635658,68.719703,No
+17,"Bobcat Flash 1.2 (Gemma-4-26B-A4B-it + two merged rank-64 LoRA adapters, typed-decision readout at the first answer position, FP8, self-hosted)",Foxl AI / The Bobcat Authors,Yes,ranked,67.340328,73.493672,65.814646,81.172699,90.781727,49.685774,65.417067,68.667473,No
+18,metask-jev-rain-31B-trained,"MeTask (Hangzhou MeTask Technology Co., Ltd.)",Yes,ranked,66.933145,78.906883,70.719055,87.094712,83.178847,49.238193,65.335248,67.822498,No
+19,"decider chat on Gemma-4-31B-it (Mapika, frozen base, inference technique)",Mapika,Yes,ranked,66.079562,70.582677,58.542904,82.62245,85.78164,50.785022,63.831275,67.005637,No
+20,"Hopper 12B trained (gemma-4-12B-it frozen + LoRA r32 unmerged, one forward pass, self-hosted)",HopitAI (@ArchieIndian),Yes,ranked,65.784194,68.146101,51.657681,84.634521,84.573018,56.157492,54.673843,67.431666,No
+21,Surogate Rune 26B-A4B v3 (v1.6 pool),Surogate,Yes,ranked,65.049074,73.46808,56.055736,90.880424,86.953931,49.597327,62.827788,66.19024,No
+22,"GEV-26B-Decide (AutoTrust, Gemma-4-26B-A4B + LoRA + head)",AutoTrust AI Lab,Yes,ranked,64.220141,70.076131,49.817429,90.334834,89.873105,51.120303,48.122004,66.289493,No
+23,metask-jev-rain-31B-trained service v3,"MeTask (Hangzhou MeTask Technology Co., Ltd.)",Yes,ranked,63.422593,79.597231,72.592438,86.602023,84.66562,47.94491,61.973234,64.389731,No
+24,"SPX-CD-Omni (SurdAI, google/gemma-4-12B-it + LoRA r32, one forward pass, self-hosted)",SPX AI team (SurdAI),Yes,ranked,63.164061,68.128662,48.779309,87.478016,89.448913,58.270728,49.009942,68.575448,No
+25,Metask rain 4B,,Yes,ranked,62.697172,65.986401,51.082403,80.8904,79.597904,51.821616,47.268436,64.168176,No
+26,Blink v0.3 26B-A4B,Pixilab,Yes,ranked,61.160592,69.9454,49.215816,90.674984,91.48151,49.628458,45.231037,64.782279,No
+27,"Diffusion Jev (DiffusionGemma 26B-A4B on patched SGLang, 48-step diffusion readout, self-hosted)",Hangzhi Zhou (@Hangzhi),Yes,ranked,59.330428,58.087508,54.860122,61.314895,86.791939,49.559714,52.773263,61.260192,No
+28,"René-1 31B FP8 (salfatigroup, Gemma 4 31B full fine-tune, one-pass option readout)",Elon Salfati / salfatigroup,Yes,ranked,55.848767,75.954083,61.721396,90.186771,87.117209,45.963638,54.250354,56.621792,No
+29,"Aplomb 1 (5.3B decision model on Qwen3.5-4B, trained readout head, self-hosted)",EmpirioLabs (@Adam-Dalloul),Yes,ranked,54.558384,67.518283,45.818549,89.218016,88.88311,57.865085,40.003678,66.592065,No
+30,Wald 4B v2.1,org2ai,Yes,ranked,54.287133,69.270932,51.951877,86.589986,93.077463,46.287007,45.352897,55.45727,No
+31,Bespoke Nimble 9B v3 (Qwen3.5-9B LoRA),Bespoke Labs,Yes,ranked,53.47657,66.792909,56.540118,77.0457,89.195025,46.094952,51.086236,54.820859,No
+32,Respan Span-02,Respan (lihe07),Yes,ranked,51.803527,69.339058,60.897967,77.780149,85.323223,45.206249,50.18942,52.936591,No
+33,"APUS-OpenJev-v1-9B (merged bf16 checkpoint-3000 on Qwen3.5-9B, their own native runtime, full depth, self-hosted)",APUS AI-LAB (@cryptoSUN2049),Yes,ranked,49.179769,56.907845,47.205144,66.610546,82.182455,48.738124,33.003316,56.572404,No
+34,"Plumb-4B (crh225, JevK5 v0.2 + LoRA)",unknown,Yes,ranked,48.282241,65.421844,42.96267,87.881019,93.833565,63.073594,34.218233,62.094304,No
+35,"Messier One v0.2 (Qwen3.5-4B fine-tune, one prefill, self-hosted)",Messier AI (@agentmessier-ai),Yes,ranked,45.290595,58.130562,42.351398,73.909727,92.709094,64.782401,29.542188,57.668434,No
+36,"spark-s1-4b-v6 (Open Spark Jev, abhishek085)",Abhishek Rai (abhishek085),Yes,ranked,44.902176,54.016043,43.23646,64.795626,86.956186,60.422063,29.776292,55.390586,No
+37,"swanOne (blockbrain, Qwen3.8-Flash-Next NVFP4)",blockbrain,Yes,ranked,43.786402,72.366277,56.151043,88.58151,82.648785,42.150747,42.0,44.674229,No
+38,"Quyet-1.0-Medium (Chinh Nguyen, Qwen3.5-4B decoder, option-letter logits)",Chinh Nguyen (ncchinh),Yes,ranked,43.589252,59.246792,41.733506,76.760078,89.466385,63.434572,30.848489,57.233473,No
+39,"lev (Interfaze AI, Qwen3.5-4B + LoRA r32, label-token readout + candidate-path head, per-bucket temperatures)",Interfaze,Yes,ranked,42.177761,61.704209,41.084702,82.323717,88.002515,61.798914,28.718912,50.737745,No
+40,NInfer Qwen3.8-Flash-Next mixed,Igor L. / NInfer contributors,Yes,ranked,41.967851,69.676313,48.980301,90.372325,89.331735,42.533629,30.27504,44.819855,No
+41,jev-local (Qwen3.5-9B),us (GitHub),Yes,ranked,41.328564,57.458382,41.850414,73.06635,75.559558,58.855543,29.13654,52.90885,No
+42,decider-4b v2 (Mapika),Mapika,Yes,ranked,41.240894,64.881665,40.125973,89.637356,91.785493,64.543769,28.727002,49.92425,No
+43,Wald 4B,,Yes,ranked,39.969095,59.755584,41.11159,78.399579,82.205779,54.303615,27.711939,52.55504,No
+44,"ClassOne Qwen 3.5 9B (Qwen3.5-9B backbone with ClassOne decision heads, schema-constrained single forward pass, self-hosted)",Thiago Silva / @devops_thiago,Yes,ranked,38.541858,50.471174,42.225672,58.716675,90.245093,49.3353,24.985716,50.94397,No
+45,JevK5 v0.3 (4B),unknown,Yes,ranked,37.364935,64.20716,38.532013,89.882308,93.947292,63.073594,24.243704,49.594951,No
+46,metask-jev-4b,Wayfind (metask-ai),Yes,ranked,37.349311,61.791104,39.166455,84.415754,90.78239,57.731133,24.357826,47.921985,No
+47,"deck-4B v1.0 (krishna765, JevK5 + LoRA, FP8 weight-only)",krishna765,Yes,ranked,37.264985,63.607913,38.62466,88.591167,89.938484,63.461456,23.964978,50.38055,No
+48,"Clef-Flash (Cloudflare, Qwen3.5-9B post-train with a joint schema head, multimodal, measured on text)",Cloudflare,Yes,ranked,36.63505,63.824241,42.183689,85.464794,88.40442,46.799636,26.640038,45.222805,No
+49,Decision-4B (Eval Engine / Chromia),Eval Engine / Chromia,Yes,ranked,35.432431,59.09507,37.934891,80.25525,91.060438,65.877769,21.755064,47.346177,No
+50,decisor-4b,,Yes,ranked,35.341566,45.737667,39.606418,51.868917,91.945567,64.04636,24.745581,45.875966,No
+51,"janus 4B (Icarus AI / cmxu, Qwen3.5-4B + LoRA r64 and pointer decision head)",Icarus AI / cmxu,Yes,ranked,35.18352,62.852566,37.577701,88.12743,93.174718,64.414611,21.844532,45.558507,No
+52,Qwen3.5-9B Jev-like data-mix v2,jsaurabh,Yes,ranked,33.589667,60.8654,41.941846,79.788954,85.407938,45.690218,22.862451,41.744912,No
+53,JevK5 v0.2.0,allebee,Yes,ranked,32.099016,62.824112,36.261124,89.387101,91.565706,63.073594,21.332486,41.483621,No
+54,JevOne,Juspay,Yes,ranked,31.145103,68.860448,45.955077,91.765818,89.838851,39.842127,23.186488,37.838877,No
+55,"Kahn1 4B (Okura66, Qwen3.5-4B LoRA merge, author's sysone engine)",Axel Montzamir (Okura66),Yes,ranked,31.117575,61.743594,39.719718,83.767471,89.975318,46.37729,20.658299,39.314278,No
+56,"TypeCastLM 1.4.0 (Mikhail Gribov, Qwen3.5-4B computed head)",Mikhail Gribov / @MihailGGribov,Yes,ranked,29.827386,56.394148,35.431372,77.356924,92.950775,64.79986,19.068538,39.615767,No
+57,"jiwo 4b (Qwen3.5-4B backbone with a trained decision head, one forward pass, native probabilities, self-hosted)",eljiwo / jiwidi,Yes,ranked,28.962932,60.227052,34.784392,85.669711,92.445476,64.089974,18.629373,39.087067,No
+58,Hopper,HopitAI,Yes,ranked,28.852652,62.409368,34.739709,90.079028,91.114349,62.256277,19.749753,34.235138,No
+59,Imajev-4B (RTX 5090),unknown,Yes,ranked,28.655751,61.894948,34.62714,89.162757,90.51878,63.264582,21.332167,38.390231,No
+60,Uniphore-4B-Decider,Uniphore,Yes,ranked,27.183888,57.065336,34.151612,79.97906,87.709904,64.671447,16.563747,37.26036,No
+61,"Malkuth-4B (newfull5, Kev post-train)",newfull5 (dhtocks),Yes,ranked,26.197476,61.13906,33.840704,88.437416,89.515712,55.824334,17.563736,34.579079,No
+62,jqv (Qwen3-32B zero-shot),hjmurmur (Octalab),Yes,ranked,25.391439,61.86477,33.858156,89.871383,83.103242,51.172593,15.505551,35.884953,No
+63,JPT-35B-A3B (Qwen3.5-35B-A3B fine-tune),kirp,Yes,ranked,25.357657,70.676733,51.422084,89.931381,90.519506,33.627579,20.229093,25.862385,No
+64,decider-35b-a3b (Mapika),Mapika,Yes,ranked,24.772887,66.171512,48.72472,83.618304,91.273575,34.385799,18.698892,26.59405,No
+65,"CoCo-Decision-4B (corners-ai, LoRA on Qwen3.5-4B, option-label logits of one pass, served by oh-my-jev)",iamupd / corners-ai,Yes,ranked,24.647915,56.920054,32.656828,81.18328,91.361536,65.171401,19.632668,33.508102,No
+66,Manchego v2.1,oraculumai,Yes,ranked,24.487333,58.275419,32.543039,84.0078,90.734751,64.329965,17.546263,31.019351,No
+67,"Decision 4B v1.2 (FlyMyJev, Qwen3.5-4B + LoRA)",unknown,Yes,ranked,24.463557,60.413997,32.40311,88.424885,93.929363,63.073594,15.392618,34.349556,No
+68,Raw Qwen3 4B Instruct 2507 direct logits,Alibaba Qwen / neutral reproduction,Yes,ranked,21.792436,34.566465,33.951177,35.181752,91.162967,63.360681,13.836901,28.950165,No
+69,Standard One 3B SH (Standard Thinking),Standard Thinking,Yes,ranked,21.728093,55.570713,32.78619,78.355235,86.562419,48.773133,13.006889,27.968824,No
+70,RSI-Jev v6.1-VL 27B,Shanghua Gao (@GaoShanghua),Yes,ranked,21.588507,73.456975,61.564156,85.349793,84.713977,31.141653,21.06286,21.885685,No
+71,"JEV-27B (AutoTrust, Qwen3.8-27B)",AutoTrust AI Lab,Yes,ranked,21.291231,73.86417,56.828665,90.899676,86.895033,31.02571,20.660745,21.63961,No
+72,"torchcast-decision-27b (Torchcast AI, Qwen3.8-27B fine-tune)",Torchcast AI,Yes,ranked,21.273291,81.565658,71.751876,91.379441,87.724362,30.341045,20.879952,21.459725,No
+73,Bespoke Nimble 9B (Bespoke Labs),Bespoke Labs,Yes,ranked,21.082617,56.514999,43.14237,69.887627,86.11327,36.750374,15.043067,26.052957,No
+74,reflex 4B (kshetrajna12),kshetrajna12,Yes,ranked,20.637311,58.957407,30.935558,86.979256,68.790002,63.142713,14.765436,29.209404,No
+75,"Perplexity Decider v1.1 27B (Qwen3.8-27B, noncausal decision readout)",Perplexity,Yes,ranked,20.617643,82.791868,75.716779,89.866957,86.792793,29.886617,20.265432,20.803745,No
+76,JADE (Qwen3.8-27B LoRA),theunnecessarythings,Yes,ranked,20.19446,49.24947,47.934399,50.56454,85.532222,33.579695,16.722432,22.540481,No
+77,"typecastlm (Mikhail Gribov, Qwen3.5-4B computed head)",Mikhail Gribov,Yes,ranked,19.722564,56.544259,29.789007,83.299511,92.763541,63.95901,12.880577,26.104439,No
+78,"Jebadiah 27B (Frontier Infra, Qwen3.8-27B LoRA)",Frontier Infra,Yes,ranked,19.255308,70.311979,57.585516,83.038441,85.837005,29.935482,18.744466,19.529462,No
+79,"Decision 2.0 Vega 27B (vLLM-SR, Qwen3.8-27B)",vLLM Semantic Router,Yes,ranked,18.883756,71.305342,60.409316,82.201367,83.806106,29.632311,18.452137,19.074993,No
+80,Standard One 8B SH (Standard Thinking),Standard Thinking,Yes,ranked,18.746776,59.981612,34.464905,85.498319,84.28099,43.211247,12.633047,23.788182,No
+81,"Decision 4B v1.1 (FlyMyJev, Qwen3.5-4B + LoRA)",unknown,Yes,ranked,18.718356,57.186755,29.134168,85.239342,93.956419,63.073594,12.444491,27.254303,No
+82,"AutoJev-27B (denis-pplx, Qwen3.8-27B)",unknown,Yes,ranked,18.463428,71.619835,55.624227,87.615443,88.607574,29.365937,17.951324,18.715306,No
+83,"Eikos-27B (caiovicentino1, Qwen3.8-27B)",unknown,Yes,ranked,18.077889,77.189926,64.402708,89.977144,88.086308,28.689753,17.7209,18.261474,No
+84,NInfer Qwen3.8-27B NVFP4,Igor L. / NInfer contributors,Yes,ranked,17.716005,67.99285,51.800127,84.185573,90.477342,29.118888,14.65722,18.09581,No
+85,"OpenJev (thinking, BF16)",razorback16,Yes,ranked,17.265219,75.879834,70.346214,81.413455,72.552708,28.514809,16.909475,17.502684,No
+86,Open-Jev 9B (Zefan Cai),Zefan Cai (@Zefan_Cai),Yes,ranked,17.045612,61.845495,43.885918,79.805071,74.394863,33.054905,12.01117,21.476729,No
+87,Standard One 8B (Standard Thinking),Standard Thinking (myeongho12),Yes,ranked,16.917108,58.409673,32.804266,84.015081,92.764428,43.28325,11.01827,24.245468,No
+88,"Clef (Cloudflare, Qwen3.8-27B post-train with a joint schema head, multimodal, measured on text)",Cloudflare,Yes,ranked,16.753693,75.329345,59.081655,91.577035,83.399821,28.102157,16.278743,17.013953,No
+89,RYOTIDE-Qwen9,Csaba Garay,Yes,ranked,16.134769,53.473264,28.676599,78.269929,86.7126,49.350641,10.301952,20.493325,No
+90,JEV Qwen3.5-9B Base NVFP4,WilfLin,Yes,ranked,15.975556,57.142007,29.251132,85.032882,93.627795,47.592235,10.554101,22.576213,No
+91,"pjev-2b (Kailune AI, frozen MiniCPM5-2B + merged LoRA r64, letter-logit readout, T=1 stub)",Kailune AI / @chi2liu (GitHub issue fstandhartinger/jevbench#145),Yes,ranked,15.765893,57.717549,28.968518,86.46658,49.109639,63.655555,9.768779,23.74874,No
+92,"ClassOne Gemma 4 E4B (Gemma-4-E4B backbone with ClassOne decision heads, schema-constrained single forward pass, self-hosted)",Thiago Silva / @devops_thiago,Yes,ranked,15.607102,38.351444,28.182425,48.520464,91.766496,69.279986,8.91227,24.387188,No
+93,"SemIf, formerly OpenJev (Qwen3.5-4B, TheoLeeCJ)",Theodore Lee (TheoLeeCJ),Yes,ranked,15.517179,55.350369,27.101137,83.599602,90.765601,63.073594,9.244572,23.184138,No
+94,"ClassOne Qwen 3.5 4B (Qwen3.5-4B backbone with ClassOne decision heads, schema-constrained single forward pass, self-hosted)",Thiago Silva / @devops_thiago,Yes,ranked,14.342132,38.092177,27.338168,48.846187,91.466189,64.966926,7.89111,20.334524,No
+95,Bev / Bonsai 27B,Reza Sayar,Yes,ranked,11.73937,66.138733,43.775136,88.502329,72.982225,28.231835,8.550655,14.587292,No
+96,LitJev (Qwen3.8-27B),Zhengxu Yu,Yes,ranked,11.458886,66.603293,43.285494,89.921093,68.176712,28.358099,8.746774,14.766758,No
+97,local-jev Qwen3.5-4B,Amith Chandrappa (amithgc),Yes,ranked,11.438161,54.994113,24.145363,85.842864,86.100688,59.269628,6.925386,15.241489,No
+98,"system-one (Qwen3-8B, Sean Goedecke)",Sean Goedecke,Yes,ranked,11.027723,29.718121,29.271509,30.164733,90.886769,44.968558,5.879902,15.685321,No
+99,kev 8B (research preview),Jared Palmer,Yes,ranked,10.622839,50.009176,29.262179,70.756173,88.971435,40.420544,6.289031,16.488979,No
+100,"Decision 2B (FlyMy.AI, v59)",FlyMy.AI (@denti),Yes,ranked,10.289708,54.822903,22.875473,86.770333,90.394628,66.372758,6.070785,14.301728,No
+101,"OpenSourceJev (Qwen3.5-4B Q4_K_M, native llama.cpp)",sabeel111,Yes,ranked,10.263494,48.571422,23.217995,73.924849,77.063624,69.136576,6.483329,14.579365,No
+102,"open-alternative-jev (Qwen3.5-4B, IkerMoel)",IkerMoel,Yes,ranked,9.435693,49.144972,22.346102,75.943842,91.30217,63.278598,6.323116,15.81961,No
+103,Raw Qwen3 8B direct logits,Alibaba Qwen / neutral reproduction,Yes,ranked,9.30126,30.135339,26.549129,33.721548,88.65283,45.535156,5.526896,13.605698,No
+104,Liquid AI d1-3B,Liquid AI,Yes,ranked,8.855713,49.506656,22.139195,76.874118,94.327732,50.561086,5.218755,12.205082,No
+105,Krino-2B,guru0381,Yes,ranked,8.54428,42.413154,21.998892,62.827415,91.854852,54.453139,4.159038,14.506576,No
+106,decider-2b (Mapika),Mapika,Yes,ranked,7.670433,44.589479,20.654576,68.524382,94.559457,64.917662,4.470554,13.010288,No
+107,"Nemotron Diffusion 8B (pst2154, optimized vLLM)",pst2154,Yes,ranked,7.297485,47.462945,20.388483,74.537407,93.830572,55.491709,4.167691,10.204491,No
+108,kev 4B (research preview),Jared Palmer,Yes,ranked,6.611792,43.981784,19.510708,68.452859,90.465852,65.780365,4.075524,12.027257,No
+109,Clef-omni,Cloudflare,Yes,ranked,6.066403,58.315927,34.47716,82.154693,86.788066,26.7929,3.882361,8.586119,No
+110,"Kev 27B (Kev 1.0, Qwen3.8-27B)",Jared Palmer,Yes,ranked,5.772236,78.938961,64.160719,93.717204,83.656848,18.302045,5.665703,5.813399,No
+111,vLLM-SR d3,vLLM Semantic Router Team (vllm-sr),Yes,ranked,5.569948,82.965928,73.731573,92.200283,87.368934,17.876172,5.497115,5.599652,No
+112,"jiwo 0.8b (Qwen3.5-0.8B backbone with a trained decision head, one forward pass, native probabilities, self-hosted)",eljiwo / jiwidi,Yes,ranked,4.067768,47.207103,15.872105,78.542101,94.334793,78.403612,2.071814,6.329338,No
+113,"Malkuth-2B (newfull5, Kev post-train)",newfull5 (dhtocks),Yes,ranked,3.992169,47.633125,15.917395,79.348855,92.034629,65.566119,2.189653,6.224019,No
+114,Qwen3-Reranker-4B,Qwen,Yes,ranked,3.715007,44.745725,16.337944,73.153507,82.149712,48.397701,2.227719,5.423745,No
+115,Vega 4B,Nandakishor M,Yes,ranked,3.603902,37.687053,16.689214,58.684891,84.393866,47.16082,1.567822,6.59403,No
+116,"SimpleJev Qwen3.8-27B (self-hosted, v1.6 pool)",Featherless,Yes,ranked,3.394849,74.892709,57.92931,91.856107,76.199645,15.101932,3.324668,3.429243,No
+117,ZeroEntropy zerank-2,ZeroEntropy,Yes,ranked,3.349795,49.398509,15.596612,83.200407,82.897839,48.397701,1.97529,4.844202,No
+118,"EXAONE-4.0-1.2B-JEV v0.3 (unofficial fine-tune of LGAI-EXAONE/EXAONE-4.0-1.2B, native option-label softmax, two reads averaged, self-hosted)",Dongmin Kim / @carrtesy - unofficial personal project,Yes,ranked,3.266776,47.679952,14.831288,80.528615,94.099403,57.91948,1.695912,5.270428,No
+119,Open-Jev 2B (Zefan Cai),Zefan Cai (@Zefan_Cai),Yes,ranked,3.238399,47.711371,21.804441,73.618302,77.137312,33.054905,1.644437,4.563766,No
+120,"Open-Jev 27B v1.1 (Zefan Cai, LoRA + decision head on Qwen3.8-27B)",Zefan Cai,Yes,ranked,2.880867,67.963069,52.457774,83.468363,72.508714,14.357426,2.556384,2.913207,No
+121,Raw Phi-4 mini direct logits,Microsoft / neutral reproduction,Yes,ranked,2.479427,35.337852,13.660238,57.015466,91.892554,53.220512,0.968758,4.127454,No
+122,"SimpleJev (Qwen3.5-0.8B, CPU)",sabeel111 / Featherless AI,Yes,ranked,2.112084,31.599154,13.000426,50.197882,58.929227,70.311755,0.709004,4.446455,No
+123,smalljev semantic-v9,Aditya (isHeSatoshi),Yes,ranked,0.771946,42.95073,8.670534,77.230926,90.211317,60.774692,0.246577,1.643353,No
+124,Gutsy 0.8B v0.3,Omar / @kouhxp,Yes,ranked,0.760437,43.05069,8.600979,77.5004,72.88775,78.354255,0.357181,1.875013,No
+125,PurpleMIST-Mini-1.0 (Olaverse),Olaverse,Yes,ranked,0.687858,43.033098,8.379741,77.686455,58.747353,70.889743,0.242983,1.428968,No
+126,kev 0.6B (research preview),Jared Palmer,Yes,ranked,0.543121,36.932672,7.598789,66.266556,91.514974,80.094003,0.138503,1.459106,No
+127,"jul fast (usejul/jul-decision-minicpm5-2b: MiniCPM5-2B fine-tune with a pointer head, option probabilities from one pass, self-hosted via `jul serve`)",Julien Lestel / @jlestel (JuL),Yes,ranked,0.517417,42.764193,7.464512,78.063873,90.694039,68.987098,0.239916,1.119063,No
+128,OpenDecision (ModernBERT-large zero-shot),Deepan Wadhwa,Yes,ranked,0.508795,37.995645,7.425225,68.566064,87.128564,79.107049,0.209249,1.114874,No
+129,"ClassOne Gemma 4 E2B (Gemma-4-E2B backbone with ClassOne decision heads, schema-constrained single forward pass, self-hosted)",Thiago Silva / @devops_thiago,Yes,ranked,0.493518,15.208879,7.802105,22.615653,93.287889,70.203139,0.2407,1.315208,No
+130,Qwen3.5-0.8B Decision Model (Mourad Ghafiri),Mourad Ghafiri,Yes,ranked,0.472475,42.626924,7.297271,77.956577,55.907474,79.518063,0.180254,1.217844,No
+131,Deem 0.8B v1,LibertAI,Yes,ranked,0.323429,18.079517,6.531204,29.62783,85.445055,80.287847,0.127462,0.772502,No
+132,"Decision Fast (FlyMy.AI, v53a)",FlyMy.AI (@denti),Yes,ranked,0.298149,40.594032,6.110691,75.077372,91.472186,80.086519,0.117057,0.823536,No
+133,"Quyet-1.0-Small-EN (Chinh Nguyen, ModernBERT-base encoder with fixed heads)",Chinh Nguyen (ncchinh),Yes,ranked,0.292393,39.538077,6.054813,73.021341,94.908934,89.112965,0.055076,0.857078,No
+134,"ClassOne Qwen 3.5 2B (Qwen3.5-2B backbone with ClassOne decision heads, schema-constrained single forward pass, self-hosted)",Thiago Silva / @devops_thiago,Yes,ranked,0.23766,19.218889,5.814528,32.62325,93.112794,70.249664,0.074213,1.554261,No
+135,Laya typed-decisions,Convai Innovations,Yes,ranked,0.216661,44.220618,5.471271,82.969965,70.819657,82.529428,0.03846,0.589865,No
+136,"WaterSheep (Samrat Dutta, ModernBERT-base encoder with calibrated heads, served by the author's own `watersheep --serve`)",Samrat Dutta,Yes,ranked,0.194838,35.573802,5.30524,65.842365,77.593374,68.671365,0.067795,0.594901,No
+137,openJev Verdict 1.4,Hemant (heman10x),Yes,ranked,0.172226,40.367404,5.035901,75.698907,81.49275,86.623135,0.03739,0.467254,No
+138,Raw Qwen3 0.6B direct logits,Alibaba Qwen / neutral reproduction,Yes,ranked,0.167354,8.247747,5.554865,10.940629,93.527032,77.580732,0.046487,0.370424,No
+139,"lev-350m (Franck Verrot, LFM2.5-350M)",Franck Verrot (franckverrot),Yes,ranked,0.153771,43.345904,4.827562,81.864245,93.982304,80.037978,0.036597,0.391205,No
+140,Raw Qwen3 1.7B direct logits,Alibaba Qwen / neutral reproduction,Yes,ranked,0.136719,8.320307,5.124287,11.516327,93.235307,68.549832,0.040683,0.322499,No
+141,kev 0.5B,Jared Palmer,Yes,ranked,0.131589,32.90231,4.598434,61.206185,92.399042,80.093985,0.024058,0.358085,No
+142,"openJev Verdict (heman10x, ModernBERT-base 151M)",Hemant (heman10x),Yes,ranked,0.096507,26.632203,4.14964,49.114766,79.400468,86.623135,0.016681,0.274734,No
+143,"Quyet-1.0-Small (Chinh Nguyen, SEA-LION-ModernBERT-300M encoder with fixed heads)",Chinh Nguyen (ncchinh),Yes,ranked,0.089637,32.492364,4.019046,60.965681,94.918465,79.562612,0.02096,0.303212,No
+144,"watt-flash-0.1 (Zaitgeist Labs, 140M mmBERT-small encoder with an option-marker scorer, one forward pass per request, self-hosted)",Zaitgeist Labs / Christian Oezbek (GitHub @coezbek / @zaitgeist-charly),Yes,ranked,0.074618,41.569073,3.759263,79.378882,75.848324,89.002532,0.004017,0.379013,No
+145,"Quyet-1.0-Tiny (Chinh Nguyen, mmBERT-small encoder (16 layers kept) with fixed heads)",Chinh Nguyen (ncchinh),Yes,ranked,0.070648,31.080529,3.696477,58.46458,95.096109,88.435906,0.019766,0.273403,No
+146,Phocinae-Largha-150M-v1,Phocinae / NovelNexus AI,Yes,ranked,0.065546,30.240174,3.609767,56.870581,77.11764,95.250965,0.009001,0.224958,No
+147,Liquid AI d1-omni-600M,Liquid AI,Yes,ranked,0.049057,32.791105,3.261585,62.320625,94.074455,73.103916,0.007929,0.338982,No
+148,Vega 0.8B,Nandakishor M,Yes,ranked,0.040222,32.994691,3.053296,62.936086,89.455989,61.474457,0.003594,0.235345,No
+149,open-jev-deberta-v3-large (local CPU),Kotoba Labs,Yes,ranked,0.032358,35.397661,2.829341,67.96598,67.621382,77.592235,0.001609,0.16454,No
+150,modernbert-jev v2,ksonny4 / @kubelpe,Yes,ranked,0.025389,34.646633,2.610747,66.682519,57.799247,70.369927,0.000897,0.129844,No
+151,Julia-1 (Supersonic Labs),Supersonic Labs / @supersonicai (Hugging Face SupersonicLabs),Yes,ranked,0.019411,9.854655,2.441273,17.268036,79.421192,89.879537,0.000799,0.135072,No
+152,"verdict-small (Manavarya09, multilingual-e5-small 118M)",Manavarya09 (Manav),Yes,ranked,0.018994,37.630857,2.34171,72.920004,89.487316,100.0,0.000348,0.128573,No
+153,"Tacet Sonata (CodePawl, 144M packed encoder on mmBERT-small, option-marker softmax in one pass, in-process via the author's tacet package)",CodePawl / @anxuanng,Yes,ranked,0.016405,24.311,2.243627,46.378373,80.282111,89.014674,0.001237,0.111781,No
+154,"Laya (Convai Innovations, ModernBERT-large 421M)",Convai Innovations,Yes,ranked,0.00856,32.50715,1.791034,63.223266,73.263029,84.894028,0.000202,0.067125,No
+155,Mixedbread mxbai-rerank-base-v2,Mixedbread,Yes,ranked,0.002274,43.874216,1.140707,86.607725,92.587582,60.335893,4e-06,0.032184,No
+156,Laya multilingual,Convai Innovations,Yes,ranked,3.8e-05,16.971883,0.287918,33.655847,77.82045,82.155165,0.0,0.0161,No
+157,Certo v1 (AltSlate Labs),AltSlate Labs,Yes,ranked,1.3e-05,43.174372,0.202787,86.145957,92.534935,96.91308,0.0,0.004428,No
+158,"CLM-8B (Contrastive-LM, clm-latest)","Contrastive-LM (Kwok, Kang, Suresh, Saad-Falcon, Pavone, Ré, Mirhoseini)",Yes,ranked,4e-06,20.086328,0.130756,40.041901,92.635484,50.501662,0.0,0.010709,No
+159,BAAI bge-reranker-v2-m3,BAAI,Yes,ranked,0.0,44.082796,0.065122,88.100469,93.869762,59.325605,0.0,0.008574,No
+160,Alibaba GTE Reranker ModernBERT-base,Alibaba-NLP,Yes,ranked,0.0,41.727812,0.0,83.455623,93.761208,69.269654,0.0,0.003663,No
+161,Mirror,Bluusun,Yes,ranked,0.0,25.806386,0.0,51.612772,73.472115,89.273008,0.0,0.0,No
+162,Open Jev JSON Canvas (JoshuaSP),JoshuaSP,Yes,ranked,0.0,30.596109,61.192218,0.0,85.533329,49.29522,0.0,0.0,No
+,Sage 1.3.0 (Levanto Labs),Levanto Labs,No,api_offering,74.049922,78.595543,65.592909,91.598176,93.616382,58.231204,71.705146,75.174127,No
+,d1 (Liquid AI),Liquid AI,No,api_offering,73.049126,74.421692,62.057389,86.785995,89.224971,62.840386,70.614983,74.295093,No
+,"Mercury Decide (Inception; System One decisions API, served free on OpenRouter as inception/mercury-decide:free)","Inception (API, free on OpenRouter) - Florian work order, 6 Oct 2026",Yes,api_offering,72.36824,73.625215,65.907013,81.343417,85.477524,62.083137,69.939543,73.873164,No
+,Jev 1.13.0 (TypeSafe AI),TypeSafe AI,No,reference,71.491186,77.12648,63.620758,90.632202,91.499893,54.733842,69.139488,72.395701,No
+,Microsoft-Decision-1 (Azure Foundry) — A2 re-run,Microsoft,Yes,preliminary,71.454928,72.190882,59.226099,85.155666,88.69805,62.19876,60.335916,74.537426,No
+,"wity-1 (Wity, reasoning auto)",Wity (alphanimble),No,api_offering,70.76534,79.115595,70.281435,87.949755,71.790003,58.834972,68.865778,71.942014,No
+,Microsoft-Decision-1 (Azure Foundry),Microsoft,Yes,api_offering,69.112892,70.784158,57.169585,84.398731,81.545175,61.452076,66.024361,70.409578,No
+,attest-31B-v1.0,attest,Yes,api_offering,67.993675,69.543213,65.238495,73.847931,97.109934,50.860355,65.730711,69.69523,No
+,"SPX-CD Flash (SurdAI, hosted /v1/systemone, Oct-4 checkpoint)","SPX AI team (SurdAI, formerly Simplex AI)",Yes,api_offering,66.680172,74.315441,58.430518,90.200363,79.391171,52.107175,64.361871,67.931224,No
+,OpenAI Decisions (gpt-6-luna),OpenAI,No,api_offering,62.5,73.5,56.9,90.1,89.25,48.6,51.61,64.57,No
+,"Instinct (ZooWork, Qwen3.8-27B)",rayrain-srp (ZooWork),No,api_offering,62.24,70.47,47.77,93.17,87.2,64.41,39.54,72.12,No
+,"SPX-CD Pro (SurdAI, hosted /v1/systemone, Oct-4 checkpoint)","SPX AI team (SurdAI, formerly Simplex AI)",Yes,api_offering,47.669708,78.635143,64.856938,92.413349,77.962927,43.076275,46.405786,48.210894,No
+,"Vansa-3.4 (Vansa, hosted System One API)",Vansa,No,api_offering,42.6,63.68,40.85,86.52,95.49,61.92,25.32,69.03,No
+,GPT-6 Luna (low reasoning effort),OpenAI,No,api_offering,40.48,97.82,96.62,99.02,71.66,38.98,39.96,40.78,No
+,Autoloops – Gemma 4 31B IT,Autoloops,No,api_offering,40.18,72.7,58.1,87.31,84.51,40.47,38.21,41.78,No
+,GPT-6 Luna (default medium reasoning effort),OpenAI,No,api_offering,39.16,98.44,96.88,100.0,71.77,38.41,38.68,39.37,No
+,Fastino GLiDE,Fastino,No,api_offering,30.59,77.02,66.1,87.95,77.48,35.86,29.48,31.58,No
+,SimpleJev Qwen3.6-35B-A3B,Featherless AI,Yes,api_offering,27.57,68.29,56.29,80.3,76.7,35.15,22.78,28.87,No
+,GPT-5.6 Luna (low reasoning effort),OpenAI,No,api_offering,21.41,94.49,94.07,94.91,73.12,30.16,21.08,21.77,No
+,Instinct Dual 4B,ZooWork / pierre-srp,No,api_offering,17.97,57.21,28.34,86.08,88.6,75.03,10.92,37.04,No
+,Gemini 3.1 Flash-Lite,Google,No,api_offering,16.94,59.75,58.57,60.93,79.03,29.17,15.19,17.77,No
+,Amos 1 medium (Scira),Scira,Yes,api_offering,16.594331,63.175112,38.363627,87.986596,86.482706,36.657245,11.456107,21.760642,No
+,system-one-open (Gemma 4 E2B LoRA on an L4),mithalouni,Yes,api_offering,16.39,51.94,27.94,75.94,79.32,68.33,7.72,36.09,No
+,openjev-sglang (Qwen3.6-35B-A3B on SGLang),ekzhang,Yes,api_offering,15.38,58.67,38.77,78.57,77.71,35.63,8.74,26.17,No
+,DeepSeek V4.1 Flash (thinking default),DeepSeek,Yes,api_offering,7.09,97.35,94.71,100.0,68.07,19.56,7.02,7.13,No
+,Amos 1 large (Scira),Scira,Yes,api_offering,5.536303,79.359137,69.723413,88.994861,83.616443,17.959766,5.453113,5.571531,No
+,SimpleJev Qwen3.8-27B,Featherless AI,Yes,api_offering,3.22,71.6,52.88,90.33,76.93,14.9,2.11,3.31,No
+,decision-machine-1 (milliseconds.ai),milliseconds.ai (Baptiste Laget),No,api_offering,2.35,46.13,13.11,79.15,92.97,58.33,0.89,8.58,No
+,"JevAct (einptein, jev1-2b-v2)",einptein,No,api_offering,1.11,28.77,10.1,47.44,76.45,68.56,0.3,5.7,No
+,Fastino GLiNER-2.5-Decide (hosted API),Fastino,No,api_offering,0.34333,34.572116,7.011351,62.132881,84.705261,45.815586,0.10777,1.039383,No
+,Qwen3.8 27B (Chutes TEE),Qwen / Chutes,Yes,api_offering,0.0,98.19,96.38,100.0,57.43,0.0,0.0,0.0,No
