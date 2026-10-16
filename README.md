@@ -11,6 +11,7 @@ Models and agents you can run in your own environment, measured on the public le
 | Generative | JevBench | H2O-Lightning-4B | **#1** of 162 | [Model card ↗](https://huggingface.co/h2oai/h2o-lightning-4b) |
 | Predictive | fev-bench | TimeH2O-v1-tiny | **#4** of 31 | [Model card ↗](https://huggingface.co/h2oai/timeh2o-v1-tiny) |
 | Agentic | Social Simulation Arena | h2oGPTe Super Agent | **#4** of 25 | [h2oGPTe ↗](https://h2o.ai/products/h2ogpte) |
+| Agentic | Social Simulation Arena | H2O.ai Marina | **#5** of 25 | [Marina ↗](https://h2oai.github.io/marina/) |
 | Predictive | TALENT | TabH2O | **#5** of 13 | [Try it live ↗](https://tabh2o.h2oai.com/) |
 | Agentic | FutureX | h2oGPTe Super Agent | **#6** of 22 | [h2oGPTe ↗](https://h2o.ai/products/h2ogpte) |
 | Predictive | TabArena | TabH2O | **#7** of 39 | [Try it live ↗](https://tabh2o.h2oai.com/) |
@@ -112,11 +113,11 @@ Default leaderboard view. By skill score TimeH2O-v1-tiny is #6 of 31; with the c
 
 Entrants forecast the next public release of poll, sentiment and attention series. Forecasts are locked before the answer exists and scored against the published number.
 
-| arena score | questions answered | two H2O entrants |
-|---|---|---|
-| **+15** | **20** | **#4, #5** |
+| arena score | questions answered | h2oGPTe Super Agent | H2O.ai Marina |
+|---|---|---|---|
+| **+15** | **20** | **#4** | **#5** |
 
-[Leaderboard ↗](https://social-simulation-arena.com/#leaderboard) · [How scoring works ↗](https://social-simulation-arena.com/docs.html) · [h2oGPTe ↗](https://h2o.ai/products/h2ogpte)
+[Leaderboard ↗](https://social-simulation-arena.com/#leaderboard) · [How scoring works ↗](https://social-simulation-arena.com/docs.html) · [h2oGPTe ↗](https://h2o.ai/products/h2ogpte) · [Marina ↗](https://h2oai.github.io/marina/)
 
 **Arena score · top 8 of 25** · higher is better · 0 = copying the last release
 
@@ -133,7 +134,7 @@ Entrants forecast the next public release of poll, sentiment and attention serie
 | #1 | Vac-SentimentExpectations | +71 |
 | #2 | YuLan-OneSim | +41 |
 | #3 | Apodex-FutureFlow | +29 |
-| **#4** | **H2O.ai SuperAgent** | **+15** |
+| **#4** | **h2oGPTe Super Agent** | **+15** |
 | **#5** | **H2O.ai Marina** | **+8** |
 | #6 | worldVac | +4 |
 | #7 | Vac-PublicOpinion | +2 |
