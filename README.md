@@ -4,14 +4,14 @@
 
 Models and agents you can run in your own environment, measured on the public leaderboards where the field competes.
 
-## Top leaderboard ranks · read 15 Oct 2026
+## Top leaderboard ranks · read 17 Oct 2026
 
 | Kind | Benchmark | H2O entry | Rank | Link |
 |---|---|---|---|---|
-| Generative | JevBench | H2O-Lightning-4B | **#1** of 162 | [Model card ↗](https://huggingface.co/h2oai/h2o-lightning-4b) |
-| Predictive | fev-bench | TimeH2O-v1-tiny | **#4** of 31 | [Model card ↗](https://huggingface.co/h2oai/timeh2o-v1-tiny) |
-| Agentic | Social Simulation Arena | h2oGPTe Super Agent | **#4** of 25 | [h2oGPTe ↗](https://h2o.ai/products/h2ogpte) |
-| Agentic | Social Simulation Arena | H2O.ai Marina | **#5** of 25 | [Marina ↗](https://h2oai.github.io/marina/) |
+| Generative | JevBench | H2O-Lightning-4B | **#1** of 180 | [Model card ↗](https://huggingface.co/h2oai/h2o-lightning-4b) |
+| Agentic | Social Simulation Arena | h2oGPTe Super Agent | **#3** of 25 | [h2oGPTe ↗](https://h2o.ai/products/h2ogpte) |
+| Agentic | Social Simulation Arena | H2O.ai Marina | **#4** of 25 | [Marina ↗](https://h2oai.github.io/marina/) |
+| Predictive | fev-bench | TimeH2O-v1-tiny | **#5** of 32 | [Model card ↗](https://huggingface.co/h2oai/timeh2o-v1-tiny) |
 | Predictive | TALENT | TabH2O | **#5** of 13 | [Try it live ↗](https://tabh2o.h2oai.com/) |
 | Agentic | FutureX | h2oGPTe Super Agent | **#6** of 22 | [h2oGPTe ↗](https://h2o.ai/products/h2ogpte) |
 | Predictive | TabArena | TabH2O | **#7** of 39 | [Try it live ↗](https://tabh2o.h2oai.com/) |
@@ -22,9 +22,9 @@ Models and agents you can run in your own environment, measured on the public le
 
 *Generative AI · Decision models*
 
-### #1 of 162 on JevBench
+### #1 of 180 on JevBench
 
-**H2O-Lightning-4B ranks #1 of 162 on the JevBench Composite score for open-weights systems**
+**H2O-Lightning-4B ranks #1 of 180 on the JevBench Composite score for open-weights systems**
 
 Decision models get a situation and typed questions and must return calibrated answers, scored on intelligence, calibration, speed and cost. A 4B model with open weights.
 
@@ -46,76 +46,76 @@ Decision models get a situation and typed questions and must return calibrated a
 
 | Composite · higher is better | Model | Latency · lower is better | Cost · lower is better |
 |---:|:---:|---|---:|
-| **72.5** | **H2O-Lightning-4B v1.1**<br>#1 of 162 · Capability #9 of 117 | **210 ms** | **\$0.021** |
-| 71.7 | decisio v0.8.0 on gemma-4-31B-it<br>#2 of 162 · Capability #4 of 117 | 240 ms | \$0.041 |
+| **72.5** | **H2O-Lightning-4B v1.1**<br>#1 of 180 · Capability #9 of 129 | **210 ms** | **\$0.021** |
+| 71.7 | decisio v0.8.0 on gemma-4-31B-it<br>#2 of 180 · Capability #4 of 129 | 240 ms | \$0.041 |
 | 71.5 | Jev 1.13.0<br>reference · closed API · not ranked | 240 ms | \$0.032 |
-| 71.4 | Quyet-1.0-Large<br>#3 of 162 · Capability #1 of 117 | 380 ms | \$0.045 |
-| 70.9 | decider-12b v2<br>#4 of 162 · Capability #12 of 117 | 260 ms | \$0.026 |
-| 70.4 | decider-12b v1, stock Gemma-4-12B-it<br>#5 of 162 · Capability #14 of 117 | 260 ms | \$0.026 |
-| 69.9 | torchcast-decision-12b<br>#6 of 162 · Capability #15 of 117 | 220 ms | \$0.028 |
-| 69.6 | Torchcast Decision 4B (v1.1)<br>#7 of 162 · Capability #25 of 117 | 190 ms | \$0.020 |
-| 68.9 | Winnow-12B Q8<br>#8 of 162 · Capability #17 of 117 | 380 ms | \$0.028 |
-| 68.7 | deck-31B<br>#9 of 162 · Capability #7 of 117 | 400 ms | \$0.048 |
-| 68.6 | Jeff-1.0-Large<br>#10 of 162 · Capability #2 of 117 | 310 ms | \$0.049 |
+| 71.4 | Quyet-1.0-Large<br>#3 of 180 · Capability #1 of 129 | 380 ms | \$0.045 |
+| 70.9 | decider-12b v2<br>#4 of 180 · Capability #12 of 129 | 260 ms | \$0.026 |
+| 70.4 | decider-12b v1, stock Gemma-4-12B-it<br>#5 of 180 · Capability #14 of 129 | 260 ms | \$0.026 |
+| 69.9 | torchcast-decision-12b<br>#6 of 180 · Capability #15 of 129 | 220 ms | \$0.028 |
+| 69.6 | Torchcast Decision 4B (v1.1)<br>#7 of 180 · Capability #25 of 129 | 190 ms | \$0.020 |
+| 68.9 | Winnow-12B Q8<br>#8 of 180 · Capability #17 of 129 | 380 ms | \$0.028 |
+| 68.7 | deck-31B<br>#9 of 180 · Capability #7 of 129 | 400 ms | \$0.048 |
+| 68.6 | Jeff-1.0-Large<br>#10 of 180 · Capability #2 of 129 | 310 ms | \$0.049 |
 
 </details>
 
-Hatched: the board's Jev reference, a closed API listed but not ranked. Composite ranks 162 open-weights systems; Capability, the board's headline score, ranks the 117 inside its cost and latency caps. Latency includes network: for self-hosted models the board estimates it as 2 × its measured GPU time + 150 ms. Cost is the board's estimate. Benchmark Heaven, board v1.7.46.
+Hatched: the board's Jev reference, a closed API listed but not ranked. Composite ranks 180 open-weights systems; Capability, the board's headline score, ranks the 129 inside its cost and latency caps. Latency includes network: for self-hosted models the board estimates it as 2 × its measured GPU time + 150 ms. Cost is the board's estimate. Benchmark Heaven, board v1.7.46.
 
 ## fev-bench
 
 *Predictive AI · Time-series forecasting*
 
-### #4 of 31 on fev-bench
+### #5 of 32 on fev-bench
 
-**TimeH2O-v1-tiny ranks #4 of 31 on the fev-bench leaderboard, by win rate**
+**TimeH2O-v1-tiny ranks #5 of 32 on the fev-bench leaderboard, by win rate**
 
 Zero-shot forecasting on real time series across many domains and frequencies, scored by probabilistic accuracy against a seasonal-naive baseline. 5.8M parameters.
 
 | win rate | skill score | parameters |
 |---|---|---|
-| **79.4%** | **45.5%** | **5.8M** |
+| **77.3%** | **45.5%** | **5.8M** |
 
 [Leaderboard ↗](https://huggingface.co/spaces/autogluon/fev-bench) · [fev-bench paper ↗](https://arxiv.org/abs/2509.26468) · [Model card ↗](https://huggingface.co/h2oai/timeh2o-v1-tiny)
 
-**Win rate · top 8 of 31** · higher is better
+**Win rate · top 8 of 32** · higher is better
 
 <picture>
 <source media="(prefers-color-scheme: dark)" srcset="readme/fev-bench-dark.svg">
-<img alt="Win rate · top 8 of 31 · higher is better" src="readme/fev-bench-light.svg">
+<img alt="Win rate · top 8 of 32 · higher is better" src="readme/fev-bench-light.svg">
 </picture>
 
 <details>
-<summary>Win rate · top 8 of 31</summary>
+<summary>Win rate · top 8 of 32</summary>
 
 | Rank | Entry | Win rate |
 |---:|---|---:|
-| #1 | t0-gamma | 91.2% |
-| #2 | TimesFM-3 | 86.3% |
-| #3 | Chronos-2 | 80.0% |
-| **#4** | **TimeH2O-v1-tiny** | **79.4%** |
-| #5 | t0-beta | 77.7% |
-| #6 | TiRex-2 | 76.4% |
-| #7 | Toto-2.0-2.5B | 75.4% |
-| #8 | TiRex | 68.8% |
+| #1 | Timestral-209M | 90.8% |
+| #2 | t0-gamma | 89.6% |
+| #3 | TimesFM-3 | 84.4% |
+| #4 | Chronos-2 | 78.1% |
+| **#5** | **TimeH2O-v1-tiny** | **77.3%** |
+| #6 | t0-beta | 75.6% |
+| #7 | TiRex-2 | 74.5% |
+| #8 | Toto-2.0-2.5B | 73.7% |
 
 </details>
 
-Default leaderboard view. By skill score TimeH2O-v1-tiny is #6 of 31; with the closed-API models included it is #6 of 33. TimeH2O-v1-tiny has a non-commercial licence.
+Default leaderboard view. By skill score TimeH2O-v1-tiny is #7 of 32; with the closed-API models included it is #8 of 35. TimeH2O-v1-tiny has a non-commercial licence.
 
 ## Social Simulation Arena
 
 *Agentic AI · Social forecasting*
 
-### #4 of 25 on Social Simulation Arena
+### #3 of 25 on Social Simulation Arena
 
-**h2oGPTe Super Agent ranks #4 of 25 on Social Simulation Arena's overall standings**
+**h2oGPTe Super Agent ranks #3 of 25 on Social Simulation Arena's overall standings**
 
 Entrants forecast the next public release of poll, sentiment and attention series. Forecasts are locked before the answer exists and scored against the published number.
 
 | arena score | questions answered | h2oGPTe Super Agent | H2O.ai Marina |
 |---|---|---|---|
-| **+15** | **20** | **#4** | **#5** |
+| **+23** | **26** | **#3** | **#4** |
 
 [Leaderboard ↗](https://social-simulation-arena.com/#leaderboard) · [How scoring works ↗](https://social-simulation-arena.com/docs.html) · [h2oGPTe ↗](https://h2o.ai/products/h2ogpte) · [Marina ↗](https://h2oai.github.io/marina/)
 
@@ -131,18 +131,18 @@ Entrants forecast the next public release of poll, sentiment and attention serie
 
 | Rank | Entry | Arena score |
 |---:|---|---:|
-| #1 | Vac-SentimentExpectations | +71 |
-| #2 | YuLan-OneSim | +41 |
-| #3 | Apodex-FutureFlow | +29 |
-| **#4** | **h2oGPTe Super Agent** | **+15** |
-| **#5** | **H2O.ai Marina** | **+8** |
-| #6 | worldVac | +4 |
-| #7 | Vac-PublicOpinion | +2 |
+| #1 | Vac-SentimentExpectations | +66 |
+| #2 | Apodex-FutureFlow | +27 |
+| **#3** | **h2oGPTe Super Agent** | **+23** |
+| **#4** | **H2O.ai Marina** | **+12** |
+| #5 | YuLan-OneSim | +10 |
+| #6 | Vac-PublicOpinion | +6 |
+| #7 | worldVac | +5 |
 | #8 | Persistence (baseline) | 0 |
 
 </details>
 
-Entrants answer different numbers of questions. On the Season 0 main board h2oGPTe Super Agent is #7 of 26 and H2O.ai Marina #8.
+Entrants answer different numbers of questions. On the Season 0 main board h2oGPTe Super Agent is #4 of 26 and H2O.ai Marina #7.
 
 ## FutureX
 
@@ -255,6 +255,6 @@ Two public benchmark suites of tabular classification and regression datasets, c
 
 ---
 
-Leaderboards read 15 Oct 2026. Each board ranks its own field.
+Leaderboards read 17 Oct 2026. Each board ranks its own field.
 
 [Download all data (CSV)](site/data/h2o-benchmarks.csv)
