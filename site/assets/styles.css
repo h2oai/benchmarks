@@ -204,7 +204,7 @@ h1 .mark { color: var(--rank); box-shadow: var(--headline-mark); }
 .ranks { min-width: 0; display: flex; flex-direction: column; gap: 12px; }
 .ranks-label { font: 500 11px/1.4 var(--font-mono); letter-spacing: .14em; text-transform: uppercase; color: var(--text-2); }
 .ranks-label time { white-space: nowrap; } /* where the label wraps, as on phones, the date stays whole */
-.tiles { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; }
+.tiles { display: grid; grid-template-columns: repeat(6, minmax(0, 1fr)); gap: 12px; }
 .tile { --tile-from: translateY(10px); display: flex; animation: fade-in 320ms ease backwards, tile-in 420ms var(--ease) backwards; animation-delay: calc(var(--i) * 70ms); }
 /* the whole tile is one link to its section (page.js shows the section first if the filter hides it) */
 .tile > a { flex: 1; min-width: 0; display: flex; flex-direction: column; gap: 8px; padding: 18px; background: var(--tile-bg); border: 1px solid var(--tile-border); border-top: var(--tile-top); border-radius: 12px; box-shadow: var(--tile-shadow); color: var(--text); text-decoration: none; transition: border-color 160ms ease, box-shadow 200ms ease, transform 200ms ease; }
@@ -220,15 +220,22 @@ h1 .mark { color: var(--rank); box-shadow: var(--headline-mark); }
 @keyframes tile-in { from { transform: var(--tile-from); } } /* the tiles rise; the board's rows slide in */
 @keyframes statement-rise { from { transform: translateY(12px); } }
 
-/* Six tiles in one of four shapes, best rank first and never a lone tile: 3 + 3 (.tiles above), 4 + 2 with the last
-   two centred from 804 px and 6 x 1 from 1188 px, where four and six 180 px tiles fit (756 and 1140 px of content) */
+/* Seven tiles in one of four shapes, best rank first and never a lone tile (#85). 3 + 2 + 2 below 804 px: six
+   columns, each tile two wide, so the rows of two start at column 2, centred. 4 + 3 from 804 px, where four 180 px
+   tiles fit (756 px of content): eight columns, the fifth tile starting at column 2 centres the last three. 7 x 1 from
+   1280 px, where the wrap leaves seven tiles 166 px; their sides go to 14 px so that "H2O-Lightning-4B", which breaks
+   only at its hyphens, keeps one line. */
+.tile { grid-column: span 2; }
+.tile:nth-child(4), .tile:nth-child(6) { grid-column: 2 / span 2; }
 @media (min-width: 804px) {
-  .tiles { grid-template-columns: repeat(4, minmax(0, 1fr)); }
-  .tile:nth-child(5) { grid-column-start: 2; }
+  .tiles { grid-template-columns: repeat(8, minmax(0, 1fr)); }
+  .tile:nth-child(4), .tile:nth-child(6) { grid-column: span 2; }
+  .tile:nth-child(5) { grid-column: 2 / span 2; }
 }
-@media (min-width: 1188px) {
-  .tiles { grid-template-columns: repeat(6, minmax(0, 1fr)); }
-  .tile:nth-child(5) { grid-column-start: auto; }
+@media (min-width: 1280px) {
+  .tiles { grid-template-columns: repeat(7, minmax(0, 1fr)); }
+  .tile, .tile:nth-child(n) { grid-column: auto; } /* one column each; :nth-child(n) outranks the rules above */
+  .tile > a { padding-inline: 14px; }
 }
 /* At 720 px and below the same list is Round 3 Split C's board: black in both themes (with a border in dark, on the
    black page), one row per rank, each row the link to its section. The kind sits above the benchmark: in a column of
