@@ -4,16 +4,16 @@
 
 Models and agents you can run in your own environment, measured on the public leaderboards where the field competes.
 
-## Top leaderboard ranks · read 17 Oct 2026
+## Top leaderboard ranks · read 19 Oct 2026
 
 | Kind | Benchmark | H2O entry | Rank | Link |
 |---|---|---|---|---|
-| Generative | JevBench | H2O-Lightning-4B | **#1** of 180 | [Model card ↗](https://huggingface.co/h2oai/h2o-lightning-4b) |
+| Generative | JevBench | H2O-Lightning-4B | **#1** of 184 | [Model card ↗](https://huggingface.co/h2oai/h2o-lightning-4b) |
+| Agentic | FutureX | h2oGPTe Super Agent | **#1** of 24 | [h2oGPTe ↗](https://h2o.ai/products/h2ogpte) |
 | Agentic | Social Simulation Arena | h2oGPTe Super Agent | **#3** of 25 | [h2oGPTe ↗](https://h2o.ai/products/h2ogpte) |
 | Agentic | Social Simulation Arena | H2O.ai Marina | **#4** of 25 | [Marina ↗](https://h2oai.github.io/marina/) |
 | Predictive | fev-bench | TimeH2O-v1-tiny | **#5** of 32 | [Model card ↗](https://huggingface.co/h2oai/timeh2o-v1-tiny) |
 | Predictive | TALENT | TabH2O | **#5** of 13 | [Try it live ↗](https://tabh2o.h2oai.com/) |
-| Agentic | FutureX | h2oGPTe Super Agent | **#6** of 22 | [h2oGPTe ↗](https://h2o.ai/products/h2ogpte) |
 | Predictive | TabArena | TabH2O | **#7** of 39 | [Try it live ↗](https://tabh2o.h2oai.com/) |
 
 [JevBench](#jevbench) · [fev-bench](#fev-bench) · [Social Simulation Arena](#social-simulation-arena) · [FutureX](#futurex) · [TabH2O](#tabh2o)
@@ -22,9 +22,9 @@ Models and agents you can run in your own environment, measured on the public le
 
 *Generative AI · Decision models*
 
-### #1 of 180 on JevBench
+### #1 of 184 on JevBench
 
-**H2O-Lightning-4B ranks #1 of 180 on the JevBench Composite score for open-weights systems**
+**H2O-Lightning-4B ranks #1 of 184 on the JevBench Composite score for open-weights systems**
 
 Decision models get a situation and typed questions and must return calibrated answers, scored on intelligence, calibration, speed and cost. A 4B model with open weights.
 
@@ -46,21 +46,21 @@ Decision models get a situation and typed questions and must return calibrated a
 
 | Composite · higher is better | Model | Latency · lower is better | Cost · lower is better |
 |---:|:---:|---|---:|
-| **72.5** | **H2O-Lightning-4B v1.1**<br>#1 of 180 · Capability #9 of 129 | **210 ms** | **\$0.021** |
-| 71.7 | decisio v0.8.0 on gemma-4-31B-it<br>#2 of 180 · Capability #4 of 129 | 240 ms | \$0.041 |
+| **72.5** | **H2O-Lightning-4B v1.1**<br>#1 of 184 · Capability #10 of 131 | **210 ms** | **\$0.021** |
+| 71.8 | Torchcast Decision 4B (v1.2)<br>#2 of 184 · Capability #13 of 131 | 270 ms | \$0.020 |
+| 71.8 | basal-omni-1.0-ultra<br>#3 of 184 · Capability #1 of 131 | 350 ms | \$0.045 |
+| 71.7 | decisio v0.8.0 on gemma-4-31B-it<br>#4 of 184 · Capability #5 of 131 | 240 ms | \$0.041 |
 | 71.5 | Jev 1.13.0<br>reference · closed API · not ranked | 240 ms | \$0.032 |
-| 71.4 | Quyet-1.0-Large<br>#3 of 180 · Capability #1 of 129 | 380 ms | \$0.045 |
-| 70.9 | decider-12b v2<br>#4 of 180 · Capability #12 of 129 | 260 ms | \$0.026 |
-| 70.4 | decider-12b v1, stock Gemma-4-12B-it<br>#5 of 180 · Capability #14 of 129 | 260 ms | \$0.026 |
-| 69.9 | torchcast-decision-12b<br>#6 of 180 · Capability #15 of 129 | 220 ms | \$0.028 |
-| 69.6 | Torchcast Decision 4B (v1.1)<br>#7 of 180 · Capability #25 of 129 | 190 ms | \$0.020 |
-| 68.9 | Winnow-12B Q8<br>#8 of 180 · Capability #17 of 129 | 380 ms | \$0.028 |
-| 68.7 | deck-31B<br>#9 of 180 · Capability #7 of 129 | 400 ms | \$0.048 |
-| 68.6 | Jeff-1.0-Large<br>#10 of 180 · Capability #2 of 129 | 310 ms | \$0.049 |
+| 71.4 | Quyet-1.0-Large<br>#5 of 184 · Capability #2 of 131 | 380 ms | \$0.045 |
+| 70.9 | decider-12b v2<br>#6 of 184 · Capability #14 of 131 | 260 ms | \$0.026 |
+| 70.4 | decider-12b v1, stock Gemma-4-12B-it<br>#7 of 184 · Capability #16 of 131 | 260 ms | \$0.026 |
+| 69.9 | torchcast-decision-12b<br>#8 of 184 · Capability #17 of 131 | 220 ms | \$0.028 |
+| 69.6 | Torchcast Decision 4B (v1.1)<br>#9 of 184 · Capability #27 of 131 | 190 ms | \$0.020 |
+| 68.9 | Winnow-12B Q8<br>#10 of 184 · Capability #19 of 131 | 380 ms | \$0.028 |
 
 </details>
 
-Hatched: the board's Jev reference, a closed API listed but not ranked. Composite ranks 180 open-weights systems; Capability, the board's headline score, ranks the 129 inside its cost and latency caps. Latency includes network: for self-hosted models the board estimates it as 2 × its measured GPU time + 150 ms. Cost is the board's estimate. Benchmark Heaven, board v1.7.46.
+Hatched: the board's Jev reference, a closed API listed but not ranked. Composite ranks 184 open-weights systems; Capability, the board's headline score, ranks the 131 inside its cost and latency caps. Latency includes network: for self-hosted models the board estimates it as 2 × its measured GPU time + 150 ms. Cost is the board's estimate. Benchmark Heaven, board v1.7.46.
 
 ## fev-bench
 
@@ -142,48 +142,48 @@ Entrants forecast the next public release of poll, sentiment and attention serie
 
 </details>
 
-Entrants answer different numbers of questions. On the Season 0 main board h2oGPTe Super Agent is #4 of 26 and H2O.ai Marina #7.
+Entrants answer different numbers of questions. On the Season 0 main board h2oGPTe Super Agent is #4 of 26 and H2O.ai Marina #6.
 
 ## FutureX
 
 *Agentic AI · Future prediction*
 
-### 23 FutureX medals, 7 of them first places
+### 25 FutureX medals, 8 of them first places
 
-**h2oGPTe Super Agent ranks #6 of 22 on FutureX's weekly board for 2026 Oct. Week 1**
+**h2oGPTe Super Agent ranks #1 of 24 on FutureX's weekly board for 2026 Oct. Week 2**
 
 Agents predict real-world events before they resolve, with a new board every week, scored once the answers are known.
 
-| latest weekly board | first places | weekly boards with a medal, of 42 entered |
+| latest weekly board | first places | weekly boards with a medal, of 43 entered |
 |---|---|---|
-| **#6 of 22** | **7** | **17** |
+| **#1 of 24** | **8** | **18** |
 
 [Leaderboard ↗](https://futurex.live/) · [FutureX paper ↗](https://arxiv.org/abs/2508.11987) · [h2oGPTe ↗](https://h2o.ai/products/h2ogpte)
 
-**Overall score, weekly board · top 8 of 22** · higher is better
+**Overall score, weekly board · top 8 of 24** · higher is better
 
 <picture>
 <source media="(prefers-color-scheme: dark)" srcset="readme/futurex-dark.svg">
-<img alt="Overall score, weekly board · top 8 of 22 · higher is better" src="readme/futurex-light.svg">
+<img alt="Overall score, weekly board · top 8 of 24 · higher is better" src="readme/futurex-light.svg">
 </picture>
 
 <details>
-<summary>Overall score, weekly board · top 8 of 22</summary>
+<summary>Overall score, weekly board · top 8 of 24</summary>
 
 | Rank | Entry | Overall score |
 |---:|---|---:|
-| #1 | SWM-c | 55.06 |
-| #2 | SWM-d | 54.89 |
-| #3 | SWM-a | 54.68 |
-| #4 | SWM-b | 53.79 |
-| #5 | blue-fish | 53.18 |
-| **#6** | **H2O AI Super Agent v1.82 · sonnet-5-5** | **49.41** |
-| **#7** | **H2O AI Super Agent v1.82 · gpt-6-sol** | **47.91** |
-| **#8** | **H2O AI Super Agent v1.82 · grok-4.7 + sonnet-5.5 + gpt-6-sol** | **46.44** |
+| **#1** | **H2O AI Super Agent v1.82 · sonnet-5.5 - v2** | **52.16** |
+| **#2** | **H2O AI Super Agent v1.82 · sonnet-5.5 - 3x** | **46.60** |
+| #3 | arce #1 | 46.05 |
+| **#4** | **H2O AI Super Agent v1.82 · grok-4.7+sonnet-5.5 - v4** | **45.56** |
+| **#5** | **H2O AI Super Agent v1.82 · sonnet-5-5** | **45.49** |
+| **#6** | **H2O AI Super Agent v1.82 · grok-4.7+sonnet-5.5 - v1** | **45.49** |
+| #7 | arce #2 | 45.00 |
+| #8 | blue-fish | 43.88 |
 
 </details>
 
-Best of 8 H2O submissions. The agent runs on third-party base LLMs; medals count every H2O entry. On the overall Bradley–Terry leaderboard h2oGPTe Super Agent is #13 of 19.
+Best of 8 H2O submissions. The agent runs on third-party base LLMs; medals count every H2O entry.
 
 ## TabH2O
 
@@ -255,6 +255,6 @@ Two public benchmark suites of tabular classification and regression datasets, c
 
 ---
 
-Leaderboards read 17 Oct 2026. Each board ranks its own field.
+Leaderboards read 19 Oct 2026. Each board ranks its own field.
 
 [Download all data (CSV)](site/data/h2o-benchmarks.csv)
