@@ -1,23 +1,25 @@
 rank,framework,model,organization,events,level1,level2,level3,level4,score,h2o
-1,SWM-c,Deepseek V4 Pro,Individual AI Researcher,75,80.0,62.5,57.33,43.41,55.06,No
-2,SWM-d,Deepseek V4 Pro,Individual AI Researcher,75,80.0,62.5,52.02,46.95,54.89,No
-3,SWM-a,Deepseek V4 Pro,Individual AI Researcher,75,80.0,62.5,58.6,41.5,54.68,No
-4,SWM-b,Deepseek V4 Pro,Individual AI Researcher,75,80.0,62.5,55.63,41.5,53.79,No
-5,blue-fish,blue-fish,Individual AI Researcher,75,80.0,75.0,45.63,41.23,53.18,No
-6,H2O AI Super Agent v1.82,sonnet-5-5,h2o.ai,75,80.0,54.17,54.03,35.93,49.41,Yes
-7,H2O AI Super Agent v1.82,gpt-6-sol,h2o.ai,75,75.0,58.33,46.17,37.24,47.91,Yes
-8,H2O AI Super Agent v1.82,grok-4.7 + sonnet-5.5 + gpt-6-sol,h2o.ai,75,70.0,41.67,54.03,37.24,46.44,Yes
-9,H2O AI Super Agent v1.82,grok-4.7 + sonnet-5.5 - v1,h2o.ai,75,70.0,41.67,54.03,35.93,45.91,Yes
-10,hermes,Hadrian_v1,Individual AI Researcher,75,80.0,58.33,49.45,24.47,44.29,No
-11,H2O AI Super Agent v1.82,grok-4.7 + gpt-6-sol,h2o.ai,75,70.0,41.67,46.17,37.24,44.08,Yes
-12,SenseFlow,deepseek-v4-pro-v1,Individual AI Researcher,75,80.0,54.17,42.26,28.75,43.01,No
-13,H2O AI Super Agent v1.82,grok-4.7 + sonnet-5.5 - v2,h2o.ai,75,70.0,41.67,54.03,28.3,42.86,Yes
-14,SenseFlux,S-Forecaster,Individual AI Researcher,75,80.0,62.5,40.59,23.75,42.18,No
-15,SenseFlow,deepseek-v4-pro-v2,Individual AI Researcher,75,75.0,58.33,39.24,16.5,37.54,No
-16,SenseFlow-MultiAgent,DeepSeek V4.1 Flash,Individual AI Researcher,75,75.0,62.5,30.05,20.45,37.19,No
-17,SenseFlow,DeepSeek-V4-Pro,Individual AI Researcher,75,75.0,50.0,35.59,22.5,37.18,No
-18,H2O AI Super Agent v1.82,grok-4-7,h2o.ai,75,70.0,37.5,17.8,28.3,31.16,Yes
-19,hermes,Maxmilia_v3,Individual AI Researcher,75,70.0,54.17,21.46,16.45,30.85,No
-20,TTT-v0.3.1,DeepSeek V4.1 Flash,Individual AI Researcher,75,70.0,33.33,26.72,15.75,27.98,No
-21,H2O AI Super Agent v1.82,grok-4.7 - m,h2o.ai,75,60.0,41.67,24.47,14.61,27.52,Yes
-22,hermes,Charles_V_v1,Individual AI Researcher,75,70.0,50.0,21.86,9.0,27.16,No
+1,H2O AI Super Agent v1.82,sonnet-5.5 - v2,h2o.ai,77,68.42,63.16,43.41,49.15,52.16,Yes
+2,H2O AI Super Agent v1.82,sonnet-5.5 - 3x,h2o.ai,77,73.68,57.89,28.57,47.69,46.6,Yes
+3,arce #1,GLM 5.2,Individual AI Researcher,77,68.42,57.89,35.11,42.74,46.05,No
+4,H2O AI Super Agent v1.82,grok-4.7+sonnet-5.5 - v4,h2o.ai,77,73.68,63.16,21.29,47.93,45.56,Yes
+5,H2O AI Super Agent v1.82,sonnet-5-5,h2o.ai,77,73.68,63.16,21.05,47.93,45.49,Yes
+6,H2O AI Super Agent v1.82,grok-4.7+sonnet-5.5 - v1,h2o.ai,77,73.68,63.16,21.05,47.93,45.49,Yes
+7,arce #2,GLM 5.2,Individual AI Researcher,77,68.42,52.63,35.11,42.74,45.0,No
+8,blue-fish,blue-fish,Google DeepMind,77,57.89,57.89,29.12,44.43,43.88,No
+9,SWM-b,Deepseek V4 Pro,Individual AI Researcher,77,63.16,57.89,31.07,38.75,42.72,No
+10,NevarBC harness,Cinder,Individual AI Researcher,77,68.42,47.37,30.43,42.27,42.35,No
+11,SWM-d,Deepseek V4 Pro,Individual AI Researcher,77,63.16,47.37,31.75,42.48,42.3,No
+12,hermes,Hadrian_v1,Individual AI Researcher,77,73.68,36.84,35.07,41.35,41.8,No
+13,SWM-a,Deepseek V4 Pro,Individual AI Researcher,77,63.16,57.89,22.12,37.16,39.39,No
+14,Nevar-B harness,Onyx,Individual AI Researcher,77,63.16,52.63,21.05,40.17,39.23,No
+15,Nevar-C harness,Quartz,Individual AI Researcher,77,63.16,57.89,22.67,36.01,39.1,No
+16,H2O AI Super Agent v1.82,grok-4.7+sonnet-5.5 - v2,h2o.ai,77,73.68,26.32,21.05,47.93,38.12,Yes
+17,H2O AI Super Agent v1.82,grok-4.7+sonnet-5.5 - v3,h2o.ai,77,73.68,26.32,21.05,47.93,38.12,Yes
+18,SWM-c,Deepseek V4 Pro,Individual AI Researcher,77,63.16,47.37,26.48,35.65,37.99,No
+19,Nevar-B harness,Gypsum,Individual AI Researcher,77,63.16,36.84,19.13,39.61,35.27,No
+20,Nevar-A harness,Basalt,Individual AI Researcher,77,57.89,31.58,20.32,40.17,34.27,No
+21,hermes,Charles_V_v1,Individual AI Researcher,77,57.89,42.11,25.28,29.31,33.52,No
+22,SenseFlux,S-Forecaster,Individual AI Researcher,77,52.63,36.84,25.27,32.69,33.29,No
+23,H2O AI Super Agent v1.82,grok-4-7,h2o.ai,77,73.68,26.32,21.29,32.92,32.19,Yes
+24,hermes,Maxmilia_v3,Individual AI Researcher,77,68.42,26.32,20.32,28.46,29.59,No
