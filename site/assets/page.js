@@ -154,23 +154,55 @@
       var reorder = null;
       radiogroup(group, function (radio) {
         var sort = radio.getAttribute("data-sort");
+        var column = radio.getAttribute("data-column") || sort;
         var rows = Array.prototype.slice.call(list.children);
+        // A row has a place in the order of each sort whose set of rows it is in (Capability has its own set, the
+        // other sorts share one): where it has none, the sort leaves the row out.
+        function place(row) {
+          var pos = row.getAttribute("data-pos-" + sort);
+          return pos === null ? null : Number(pos);
+        }
+        // Rows that join stand where they will be, transparent, before anything moves; they fade in below.
+        rows.forEach(function (row) {
+          if (row.hidden && place(row) !== null) {
+            row.classList.add("is-out");
+            row.style.setProperty("--pos", place(row));
+            row.hidden = false;
+          }
+        });
+        void list.offsetWidth; // commit that state before the rows move, fade and resize
         chart.setAttribute("data-sort", sort);
         chart.classList.add("is-sorting");
+        // Each row carries its place and its number for every sort whose set it is in; the reference row has no number
+        // and no cell text.
         rows.forEach(function (row) {
-          row.style.setProperty("--pos", row.getAttribute("data-pos-" + sort));
+          if (place(row) !== null) {
+            row.style.setProperty("--pos", place(row));
+          }
+          row.classList.toggle("is-out", place(row) === null);
+          // The number of this sort, where the row has one: a row that leaves the set has none for it, and keeps
+          // its own while it fades out.
+          var number = row.querySelector(".rank .num");
+          if (number && row.hasAttribute("data-rank-" + sort)) {
+            number.textContent = row.getAttribute("data-rank-" + sort);
+          }
         });
         chart.querySelector(".sort-measure").textContent = radio.getAttribute("data-label");
         chart.querySelector(".sort-direction").textContent = radio.getAttribute("data-direction");
         each(chart.querySelectorAll(".jev-cols .col"), function (col) {
-          col.classList.toggle("on", col.classList.contains("col-" + sort));
+          col.classList.toggle("on", col.classList.contains("col-" + column));
         });
-        // Rows slide to their new place; once there, the list itself takes the new order, so a screen reader
-        // reads it as sorted too.
+        // Rows slide to their new place and the ones leaving fade out; once that is done the leavers are hidden
+        // and the list itself takes the new order, so a screen reader reads it as sorted too.
         window.clearTimeout(reorder);
         reorder = window.setTimeout(function () {
+          rows.forEach(function (row) {
+            row.hidden = place(row) === null;
+          });
           rows.sort(function (a, b) {
-            return a.getAttribute("data-pos-" + sort) - b.getAttribute("data-pos-" + sort);
+            var pa = place(a);
+            var pb = place(b);
+            return pa === null || pb === null ? (pa === null) - (pb === null) : pa - pb;
           }).forEach(function (row) {
             list.appendChild(row);
           });

@@ -44,19 +44,19 @@ Decision models get a situation and typed questions and must return calibrated a
 <details>
 <summary>Composite, latency and cost, side by side</summary>
 
-| Composite · higher is better | Model | Latency · lower is better | Cost · lower is better |
-|---:|:---:|---|---:|
-| **72.5** | **H2O-Lightning-4B v1.1**<br>#1 of 184 · Capability #10 of 131 | **210 ms** | **\$0.021** |
-| 71.8 | Torchcast Decision 4B (v1.2)<br>#2 of 184 · Capability #13 of 131 | 270 ms | \$0.020 |
-| 71.8 | basal-omni-1.0-ultra<br>#3 of 184 · Capability #1 of 131 | 350 ms | \$0.045 |
-| 71.7 | decisio v0.8.0 on gemma-4-31B-it<br>#4 of 184 · Capability #5 of 131 | 240 ms | \$0.041 |
-| 71.5 | Jev 1.13.0<br>reference · closed API · not ranked | 240 ms | \$0.032 |
-| 71.4 | Quyet-1.0-Large<br>#5 of 184 · Capability #2 of 131 | 380 ms | \$0.045 |
-| 70.9 | decider-12b v2<br>#6 of 184 · Capability #14 of 131 | 260 ms | \$0.026 |
-| 70.4 | decider-12b v1, stock Gemma-4-12B-it<br>#7 of 184 · Capability #16 of 131 | 260 ms | \$0.026 |
-| 69.9 | torchcast-decision-12b<br>#8 of 184 · Capability #17 of 131 | 220 ms | \$0.028 |
-| 69.6 | Torchcast Decision 4B (v1.1)<br>#9 of 184 · Capability #27 of 131 | 190 ms | \$0.020 |
-| 68.9 | Winnow-12B Q8<br>#10 of 184 · Capability #19 of 131 | 380 ms | \$0.028 |
+| # | Composite · higher is better | Model | Latency · lower is better | Cost · lower is better |
+|:---|---:|:---:|---|---:|
+| **1** | **72.5** | **H2O-Lightning-4B v1.1** | **210 ms** | **\$0.021** |
+| 2 | 71.8 | Torchcast Decision 4B (v1.2) | 270 ms | \$0.020 |
+| 3 | 71.8 | basal-omni-1.0-ultra | 350 ms | \$0.045 |
+| 4 | 71.7 | decisio v0.8.0 on gemma-4-31B-it | 240 ms | \$0.041 |
+|  | 71.5 | Jev 1.13.0<br>reference · closed API · not ranked | 240 ms | \$0.032 |
+| 5 | 71.4 | Quyet-1.0-Large | 380 ms | \$0.045 |
+| 6 | 70.9 | decider-12b v2 | 260 ms | \$0.026 |
+| 7 | 70.4 | decider-12b v1, stock Gemma-4-12B-it | 260 ms | \$0.026 |
+| 8 | 69.9 | torchcast-decision-12b | 220 ms | \$0.028 |
+| 9 | 69.6 | Torchcast Decision 4B (v1.1) | 190 ms | \$0.020 |
+| 10 | 68.9 | Winnow-12B Q8 | 380 ms | \$0.028 |
 
 </details>
 
