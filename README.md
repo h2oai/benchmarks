@@ -4,7 +4,7 @@
 
 Models and agents you can run in your own environment, measured on the public leaderboards where the field competes.
 
-## Top leaderboard ranks · read 19 Oct 2026
+## Top leaderboard ranks · read 20 Oct 2026
 
 | Kind | Benchmark | H2O entry | Rank | Link |
 |---|---|---|---|---|
@@ -170,16 +170,16 @@ Agents predict real-world events before they resolve, with a new board every wee
 <details>
 <summary>Overall score, weekly board · top 8 of 24</summary>
 
-| Rank | Entry | Overall score |
-|---:|---|---:|
-| **#1** | **H2O AI Super Agent v1.82 · sonnet-5.5 - v2** | **52.16** |
-| **#2** | **H2O AI Super Agent v1.82 · sonnet-5.5 - 3x** | **46.60** |
-| #3 | arce #1 | 46.05 |
-| **#4** | **H2O AI Super Agent v1.82 · grok-4.7+sonnet-5.5 - v4** | **45.56** |
-| **#5** | **H2O AI Super Agent v1.82 · sonnet-5-5** | **45.49** |
-| **#6** | **H2O AI Super Agent v1.82 · grok-4.7+sonnet-5.5 - v1** | **45.49** |
-| #7 | arce #2 | 45.00 |
-| #8 | blue-fish | 43.88 |
+| # | Model | Framework | Organization | Score |
+|---:|---|---|---|---:|
+| **1** | **sonnet-5.5 - v2** | **H2O AI Super Agent v1.82** | **h2o.ai** | **52.16** |
+| **2** | **sonnet-5.5 - 3x** | **H2O AI Super Agent v1.82** | **h2o.ai** | **46.60** |
+| 3 | GLM 5.2 | arce #1 | Indiv. AI Researcher | 46.05 |
+| **4** | **grok-4.7+sonnet-5.5 - v4** | **H2O AI Super Agent v1.82** | **h2o.ai** | **45.56** |
+| **5** | **sonnet-5-5** | **H2O AI Super Agent v1.82** | **h2o.ai** | **45.49** |
+| **6** | **grok-4.7+sonnet-5.5 - v1** | **H2O AI Super Agent v1.82** | **h2o.ai** | **45.49** |
+| 7 | GLM 5.2 | arce #2 | Indiv. AI Researcher | 45.00 |
+| 8 | blue-fish | blue-fish | Google DeepMind | 43.88 |
 
 </details>
 
@@ -255,6 +255,6 @@ Two public benchmark suites of tabular classification and regression datasets, c
 
 ---
 
-Leaderboards read 19 Oct 2026. Each board ranks its own field.
+Leaderboards read 20 Oct 2026. Each board ranks its own field.
 
 [Download all data (CSV)](site/data/h2o-benchmarks.csv)
