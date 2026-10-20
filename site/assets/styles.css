@@ -194,7 +194,6 @@ h1 { display: flex; flex-direction: column; align-items: center; gap: 6px; font:
 h1 .mark-line { font-size: calc(44em / 72); line-height: 1.15; letter-spacing: -.02em; }
 h1 .mark { color: var(--rank); box-shadow: var(--headline-mark); }
 .headline-bar { width: 64px; height: 6px; background: var(--yellow); }
-.hero-body { max-width: 620px; font-size: 20px; line-height: 1.5; color: var(--text-2); }
 .actions { display: flex; flex-wrap: wrap; justify-content: center; gap: 12px; }
 .btn { display: inline-flex; align-items: center; gap: 6px; min-height: 48px; padding: 0 22px; border-radius: 4px; font: 600 14px/1 var(--font-display); letter-spacing: .04em; text-transform: uppercase; text-decoration: none; }
 .btn-yellow, .btn-yellow:hover { background: var(--yellow); color: #000000; }
@@ -323,22 +322,23 @@ h2 { font: 600 clamp(24px, 3.2vw, 30px)/1.15 var(--font-display); letter-spacing
 .pills [role="radio"] { min-height: 30px; padding: 0 12px; font-size: 12px; font-weight: 500; }
 .jev-scroll { overflow-x: auto; }
 .jev-inner { min-width: 680px; }
-.jev-cols, .jev-row { display: grid; grid-template-columns: minmax(0, 1fr) 200px minmax(0, 1fr) 150px; gap: 14px; }
+.jev-cols, .jev-row { display: grid; grid-template-columns: 26px minmax(0, 1fr) 200px minmax(0, 1fr) 150px; gap: 14px; }
 .jev-cols { align-items: end; padding-bottom: 8px; border-bottom: 1px solid var(--strong); font: 400 10px/1.3 var(--font-mono); letter-spacing: .1em; text-transform: uppercase; color: var(--text-2); }
 .jev-cols .col { transition: color 160ms ease; }
 .jev-cols .on { color: var(--text); }
 .col-composite { text-align: right; }
 .col-model { text-align: center; }
 .col-cost { justify-self: end; white-space: nowrap; } /* a few px wider than its 150 px column: spills into the gap */
+.col-rank, .cell.rank { padding-left: 6px; } /* a rank sits 6 px inside its chart's edge, as .bars .pos does */
 .jev-rows { position: relative; height: calc(var(--rows) * 52px); }
-.jev-row { position: absolute; top: calc(var(--pos) * 52px); left: 0; right: 0; height: 52px; align-items: center; border-bottom: 1px solid var(--line); transition: top 600ms var(--ease), background-color 160ms ease; }
+.jev-row { position: absolute; top: calc(var(--pos) * 52px); left: 0; right: 0; height: 52px; align-items: center; border-bottom: 1px solid var(--line); transition: top 600ms var(--ease), opacity 350ms ease 250ms, background-color 160ms ease; }
 .jev-row:hover { background: var(--row-hover); }
 .jev-row.h2o { background: var(--h2o-bg); }
 .cell { display: flex; align-items: center; gap: 8px; min-width: 0; }
 .comp { justify-content: flex-end; }
 .cell .bar { flex: none; height: 18px; background: var(--grey); }
-.comp .bar { width: calc((100% - 56px) * var(--w)); }
-.lat .bar { width: calc((100% - 72px) * var(--w)); }
+.comp .bar { width: calc((100% - 56px) * var(--f)); }
+.lat .bar { width: calc((100% - 72px) * var(--f)); }
 .jev-row.h2o .bar { background: var(--yellow); box-shadow: var(--h2o-ring); }
 .jev-row.ref .bar { background: repeating-linear-gradient(135deg, var(--grey) 0 3px, transparent 3px 7px); }
 .cell .val { font: 400 12px/1 var(--font-mono); white-space: nowrap; }
@@ -348,9 +348,22 @@ h2 { font: 600 clamp(24px, 3.2vw, 30px)/1.15 var(--font-display); letter-spacing
 .jev-row.h2o .nm, .jev-row.h2o .val { font-weight: 600; }
 .cost { position: relative; display: block; height: 20px; }
 .cost .track { position: absolute; top: 9px; left: 0; right: 52px; height: 2px; background: var(--line); }
-.cost .dot { position: absolute; top: -5px; left: calc(100% * var(--w) - 6px); width: 12px; height: 12px; border-radius: 50%; background: var(--grey); }
+.cost .dot { position: absolute; top: -5px; left: calc(100% * var(--f) - 6px); width: 12px; height: 12px; border-radius: 50%; background: var(--grey); }
 .jev-row.h2o .dot { background: var(--yellow); box-shadow: 0 0 0 2px var(--text); }
 .cost .val { position: absolute; top: 4px; right: 0; }
+
+/* Two row sets. The Capability sort shows the board's Capability top ten and the reference, the others the Composite top
+   ten and the reference. A row in both sets carries the values and mark lengths of both, and the chart's data-sort picks:
+   .when-capability shows only under Capability, .when-composite (and the Composite cell's Composite value) everywhere else; --w
+   is a mark's length in the Composite set and --w-capability in the Capability set, each on its own scale. A row outside
+   the set that is showing keeps its own length while it fades out, and page.js hides it once it has gone. */
+.jev-chart:not([data-sort="capability"]) .when-capability,
+.jev-chart[data-sort="capability"] .when-composite,
+.jev-chart[data-sort="capability"] .comp .val:not(.when-capability) { display: none; }
+.cell .bar, .cost .dot { --f: var(--w, var(--w-capability)); }
+.jev-chart[data-sort="capability"] .cell .bar, .jev-chart[data-sort="capability"] .cost .dot { --f: var(--w-capability, var(--w)); }
+.col-composite .when-capability { letter-spacing: .075em; } /* a character longer than the Composite header: this keeps it on one line wherever that one fits, so the rows don't drop a line under Capability */
+.jev-row.is-out { opacity: 0; pointer-events: none; transition: top 600ms var(--ease), opacity 200ms ease, background-color 160ms ease; }
 
 /* ---- motion: bars grow once, the first time a chart is in view (assets/page.js adds .js-motion and .is-drawn) */
 .bars .bar, .cell .bar { transition: width 600ms var(--ease); transition-delay: calc(var(--i, var(--pos, 0)) * 35ms + var(--chart-delay, 0ms)); }
@@ -381,7 +394,6 @@ h2 { font: 600 clamp(24px, 3.2vw, 30px)/1.15 var(--font-display); letter-spacing
   .theme-toggle { padding: 0 8px; }
   .hero { padding-top: 48px; padding-bottom: 56px; }
   .bench { padding-top: 56px; padding-bottom: 56px; }
-  .hero-body { font-size: 17px; }
   .bars .row { grid-template-columns: 30px minmax(0, 132px) minmax(0, 1fr); gap: 8px; }
   .jumps { flex: 1 1 100%; margin-left: 0; }
   .footer-bar a { margin-left: 0; }
