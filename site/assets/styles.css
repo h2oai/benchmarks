@@ -311,6 +311,47 @@ h2 { font: 600 clamp(24px, 3.2vw, 30px)/1.15 var(--font-display); letter-spacing
 .bars .gap { padding: 0 6px; line-height: 22px; color: var(--muted); }
 .note { font-size: 12px; line-height: 1.5; color: var(--muted); }
 
+/* ---- the FutureX table: # Model Framework Organization Score (#95) ---------------------------------------------------
+   The table is one grid and its row groups and rows are subgrids of it, so the three text columns are as wide as their
+   longest value (and wrap, anywhere, only where the chart is too narrow for that), and Score, the last column, takes what
+   they leave: the bar beside its number is as long as the names allow. A name is never cut: nothing here sets an ellipsis
+   or a height on text. Rows are grid rows, so every part of the markup carries its role. The chart answers to its own
+   width, not the window's: it is 668 px beside the text at 1440 and 288 to 983 px elsewhere, so a container query stacks
+   the rows at 520 px and below. */
+.ft-chart { container: ft / inline-size; }
+.ft { display: grid; grid-template-columns: 32px auto auto auto minmax(100px, 1fr); column-gap: 10px; width: 100%; font: 400 13px/1.35 var(--font-body); }
+.ft-head, .ft-body, .ft-row { display: grid; grid-template-columns: subgrid; grid-column: 1 / -1; }
+.ft-cell { display: block; min-width: 0; padding: 0; font-weight: inherit; text-align: left; overflow-wrap: anywhere; }
+.ft-head .ft-row { align-items: end; padding: 0 8px 8px 0; border-bottom: 1px solid var(--strong); }
+.ft-head .ft-cell { font: 400 10px/1.3 var(--font-mono); letter-spacing: .1em; text-transform: uppercase; color: var(--text-2); overflow-wrap: normal; }
+.ft-body .ft-row { position: relative; align-items: center; min-height: 40px; padding: 8px 8px 8px 0; border-bottom: 1px solid var(--line); transition: background-color 160ms ease; }
+.ft-body .ft-row:hover { background: var(--row-hover); }
+.ft-body .ft-row.h2o { background: var(--h2o-bg); }
+.ft-body .ft-row.ft-gap { display: block; min-height: 0; padding: 0 6px; border: 0; background: none; line-height: 22px; color: var(--muted); }
+.ft .c-rank { padding-left: 6px; font: 400 12px/1.2 var(--font-mono); } /* a rank sits 6 px inside its chart's edge, as .bars .pos does */
+.ft-head .c-rank { font: 400 10px/1.3 var(--font-mono); }
+.ft .c-org { color: var(--text-2); }
+.ft .c-score { display: flex; align-items: center; gap: 8px; }
+.ft .bar { flex: none; width: calc((100% - 46px) * var(--w)); height: 16px; background: var(--grey); } /* 46 px: a score's number and its gap */
+.ft .val { font: 400 12px/1 var(--font-mono); white-space: nowrap; }
+.ft .ft-row.h2o .ft-cell, .ft .ft-row.h2o .val { font-weight: 600; }
+.ft .ft-row.h2o .c-org { color: var(--text); }
+.ft .ft-row.h2o .bar { background: var(--yellow); box-shadow: var(--h2o-ring); }
+/* a narrow chart: a row stacks, the model and its score on the first line and the framework and the organization under
+   them, the rank at the left and the bar a thin line along the foot; the header stays for screen readers only */
+@container ft (max-width: 520px) {
+  .ft, .ft-head, .ft-body { display: block; }
+  .ft-head { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+  .ft-body .ft-row { display: flex; flex-wrap: wrap; align-items: baseline; column-gap: 10px; row-gap: 2px; padding: 10px 8px 20px 40px; }
+  .ft .c-rank { position: absolute; left: 0; top: 10px; width: 32px; padding-left: 4px; }
+  .ft .c-model { order: 1; flex: 1 1 0; min-width: 0; font-size: 14px; font-weight: 500; }
+  .ft .c-score { order: 2; display: block; flex: none; }
+  .ft-body .ft-row:not(.ft-gap)::after { content: ""; order: 3; flex: 0 0 100%; height: 0; }
+  .ft .c-fw { order: 4; flex: 0 1 auto; max-width: 100%; }
+  .ft .c-org { order: 5; flex: 0 1 auto; max-width: 100%; font-size: 12px; }
+  .ft .bar { position: absolute; z-index: 2; left: 40px; bottom: 7px; width: calc((100% - 48px) * var(--w)); height: 6px; }
+}
+
 /* ---- JevBench side by side --------------------------------------------------------------------------------- */
 .jev-head { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-end; gap: 12px 24px; }
 .jev-titles { display: flex; flex-direction: column; gap: 4px; }
@@ -322,13 +363,13 @@ h2 { font: 600 clamp(24px, 3.2vw, 30px)/1.15 var(--font-display); letter-spacing
 .pills [role="radio"] { min-height: 30px; padding: 0 12px; font-size: 12px; font-weight: 500; }
 .jev-scroll { overflow-x: auto; }
 .jev-inner { min-width: 680px; }
-.jev-cols, .jev-row { display: grid; grid-template-columns: 26px minmax(0, 1fr) 200px minmax(0, 1fr) 150px; gap: 14px; }
+.jev-cols, .jev-row { display: grid; grid-template-columns: 26px minmax(0, 1fr) 200px minmax(0, 1fr) 156px; gap: 14px; }
 .jev-cols { align-items: end; padding-bottom: 8px; border-bottom: 1px solid var(--strong); font: 400 10px/1.3 var(--font-mono); letter-spacing: .1em; text-transform: uppercase; color: var(--text-2); }
 .jev-cols .col { transition: color 160ms ease; }
 .jev-cols .on { color: var(--text); }
 .col-composite { text-align: right; }
 .col-model { text-align: center; }
-.col-cost { justify-self: end; white-space: nowrap; } /* a few px wider than its 150 px column: spills into the gap */
+.col-cost { justify-self: end; white-space: nowrap; padding-right: 6px; } /* its text ends 6 px inside the chart's edge, as the Cost value does; a few px wider than the 150 px that leaves, it spills into the gap */
 .col-rank, .cell.rank { padding-left: 6px; } /* a rank sits 6 px inside its chart's edge, as .bars .pos does */
 .jev-rows { position: relative; height: calc(var(--rows) * 52px); }
 .jev-row { position: absolute; top: calc(var(--pos) * 52px); left: 0; right: 0; height: 52px; align-items: center; border-bottom: 1px solid var(--line); transition: top 600ms var(--ease), opacity 350ms ease 250ms, background-color 160ms ease; }
@@ -347,10 +388,10 @@ h2 { font: 600 clamp(24px, 3.2vw, 30px)/1.15 var(--font-display); letter-spacing
 .model .sub { font: 400 10px/1.3 var(--font-mono); color: var(--text-2); white-space: nowrap; }
 .jev-row.h2o .nm, .jev-row.h2o .val { font-weight: 600; }
 .cost { position: relative; display: block; height: 20px; }
-.cost .track { position: absolute; top: 9px; left: 0; right: 52px; height: 2px; background: var(--line); }
+.cost .track { position: absolute; top: 9px; left: 0; right: 58px; height: 2px; background: var(--line); } /* the 52 px the value needs, and the 6 px it sits in from the edge */
 .cost .dot { position: absolute; top: -5px; left: calc(100% * var(--f) - 6px); width: 12px; height: 12px; border-radius: 50%; background: var(--grey); }
 .jev-row.h2o .dot { background: var(--yellow); box-shadow: 0 0 0 2px var(--text); }
-.cost .val { position: absolute; top: 4px; right: 0; }
+.cost .val { position: absolute; top: 4px; right: 6px; } /* 6 px inside the chart's right edge (a padding on the cell would not move it) */
 
 /* Two row sets. The Capability sort shows the board's Capability top ten and the reference, the others the Composite top
    ten and the reference. A row in both sets carries the values and mark lengths of both, and the chart's data-sort picks:
@@ -366,7 +407,7 @@ h2 { font: 600 clamp(24px, 3.2vw, 30px)/1.15 var(--font-display); letter-spacing
 .jev-row.is-out { opacity: 0; pointer-events: none; transition: top 600ms var(--ease), opacity 200ms ease, background-color 160ms ease; }
 
 /* ---- motion: bars grow once, the first time a chart is in view (assets/page.js adds .js-motion and .is-drawn) */
-.bars .bar, .cell .bar { transition: width 600ms var(--ease); transition-delay: calc(var(--i, var(--pos, 0)) * 35ms + var(--chart-delay, 0ms)); }
+.bars .bar, .cell .bar, .ft .bar { transition: width 600ms var(--ease); transition-delay: calc(var(--i, var(--pos, 0)) * 35ms + var(--chart-delay, 0ms)); }
 .cost .dot { transition: left 600ms var(--ease); transition-delay: calc(var(--pos, 0) * 35ms); }
 .charts .chart + .chart { --chart-delay: 120ms; }
 @media screen {
@@ -408,5 +449,5 @@ h2 { font: 600 clamp(24px, 3.2vw, 30px)/1.15 var(--font-display); letter-spacing
 
 @media print {
   .section-bar, .theme-toggle, .skip, .sort { display: none !important; }
-  .bench, .tile, .bars .row.h2o, .jev-row.h2o, .try { print-color-adjust: exact; -webkit-print-color-adjust: exact; }
+  .bench, .tile, .bars .row.h2o, .ft-row.h2o, .jev-row.h2o, .try { print-color-adjust: exact; -webkit-print-color-adjust: exact; }
 }
