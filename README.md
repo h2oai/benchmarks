@@ -9,9 +9,9 @@ Models and agents you can run in your own environment, measured on the public le
 | Kind | Benchmark | H2O entry | Rank | Link |
 |---|---|---|---|---|
 | Generative | JevBench | H2O-Lightning-4B | **#1** of 184 | [Model card ↗](https://huggingface.co/h2oai/h2o-lightning-4b) |
-| Agentic | FutureX | h2oGPTe Super Agent | **#1** of 24 | [h2oGPTe ↗](https://h2o.ai/products/h2ogpte) |
-| Agentic | Social Simulation Arena | h2oGPTe Super Agent | **#3** of 25 | [h2oGPTe ↗](https://h2o.ai/products/h2ogpte) |
-| Agentic | Social Simulation Arena | H2O.ai Marina | **#4** of 25 | [Marina ↗](https://h2oai.github.io/marina/) |
+| Agentic | FutureX | H2O AI Super Agent | **#1** of 24 | [Enterprise h2oGPTe ↗](https://h2o.ai/products/h2ogpte) |
+| Agentic | Social Simulation Arena | H2O AI Super Agent | **#3** of 25 | [Enterprise h2oGPTe ↗](https://h2o.ai/products/h2ogpte) |
+| Agentic | Social Simulation Arena | H2O AI Marina | **#4** of 25 | [H2O AI Marina ↗](https://h2oai.github.io/marina/) |
 | Predictive | fev-bench | TimeH2O-v1-tiny | **#5** of 32 | [Model card ↗](https://huggingface.co/h2oai/timeh2o-v1-tiny) |
 | Predictive | TALENT | TabH2O | **#5** of 13 | [Try it live ↗](https://tabh2o.h2oai.com/) |
 | Predictive | TabArena | TabH2O | **#7** of 39 | [Try it live ↗](https://tabh2o.h2oai.com/) |
@@ -109,15 +109,15 @@ Default leaderboard view. By skill score TimeH2O-v1-tiny is #7 of 32; with the c
 
 ### #3 of 25 on Social Simulation Arena
 
-**h2oGPTe Super Agent ranks #3 of 25 on Social Simulation Arena's overall standings**
+**H2O AI Super Agent ranks #3 of 25 on Social Simulation Arena's overall standings**
 
 Entrants forecast the next public release of poll, sentiment and attention series. Forecasts are locked before the answer exists and scored against the published number.
 
-| arena score | questions answered | h2oGPTe Super Agent | H2O.ai Marina |
+| arena score | questions answered | H2O AI Super Agent | H2O AI Marina |
 |---|---|---|---|
 | **+23** | **26** | **#3** | **#4** |
 
-[Leaderboard ↗](https://social-simulation-arena.com/#leaderboard) · [How scoring works ↗](https://social-simulation-arena.com/docs.html) · [h2oGPTe ↗](https://h2o.ai/products/h2ogpte) · [Marina ↗](https://h2oai.github.io/marina/)
+[Leaderboard ↗](https://social-simulation-arena.com/#leaderboard) · [How scoring works ↗](https://social-simulation-arena.com/docs.html) · [Enterprise h2oGPTe ↗](https://h2o.ai/products/h2ogpte) · [H2O AI Marina ↗](https://h2oai.github.io/marina/)
 
 **Arena score · top 8 of 25** · higher is better · 0 = copying the last release
 
@@ -133,8 +133,8 @@ Entrants forecast the next public release of poll, sentiment and attention serie
 |---:|---|---:|
 | #1 | Vac-SentimentExpectations | +66 |
 | #2 | Apodex-FutureFlow | +27 |
-| **#3** | **h2oGPTe Super Agent** | **+23** |
-| **#4** | **H2O.ai Marina** | **+12** |
+| **#3** | **H2O AI Super Agent** | **+23** |
+| **#4** | **H2O AI Marina** | **+12** |
 | #5 | YuLan-OneSim | +10 |
 | #6 | Vac-PublicOpinion | +6 |
 | #7 | worldVac | +5 |
@@ -142,7 +142,7 @@ Entrants forecast the next public release of poll, sentiment and attention serie
 
 </details>
 
-Entrants answer different numbers of questions. On the Season 0 main board h2oGPTe Super Agent is #4 of 26 and H2O.ai Marina #6.
+Entrants answer different numbers of questions. On the Season 0 main board Super Agent is #4 of 26 and Marina #6.
 
 ## FutureX
 
@@ -150,7 +150,7 @@ Entrants answer different numbers of questions. On the Season 0 main board h2oGP
 
 ### 25 FutureX medals, 8 of them first places
 
-**h2oGPTe Super Agent ranks #1 of 24 on FutureX's weekly board for 2026 Oct. Week 2**
+**H2O AI Super Agent ranks #1 of 24 on FutureX's weekly board for 2026 Oct. Week 2**
 
 Agents predict real-world events before they resolve, with a new board every week, scored once the answers are known.
 
@@ -158,7 +158,7 @@ Agents predict real-world events before they resolve, with a new board every wee
 |---|---|---|
 | **#1 of 24** | **8** | **18** |
 
-[Leaderboard ↗](https://futurex.live/) · [FutureX paper ↗](https://arxiv.org/abs/2508.11987) · [h2oGPTe ↗](https://h2o.ai/products/h2ogpte)
+[Leaderboard ↗](https://futurex.live/) · [FutureX paper ↗](https://arxiv.org/abs/2508.11987) · [Enterprise h2oGPTe ↗](https://h2o.ai/products/h2ogpte)
 
 **Overall score, weekly board · top 8 of 24** · higher is better
 
