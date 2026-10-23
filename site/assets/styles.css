@@ -203,7 +203,7 @@ h1 .mark { color: var(--rank); box-shadow: var(--headline-mark); }
 .ranks { min-width: 0; display: flex; flex-direction: column; gap: 12px; }
 .ranks-label { font: 500 11px/1.4 var(--font-mono); letter-spacing: .14em; text-transform: uppercase; color: var(--text-2); }
 .ranks-label time { white-space: nowrap; } /* where the label wraps, as on phones, the date stays whole */
-.tiles { display: grid; grid-template-columns: repeat(6, minmax(0, 1fr)); gap: 12px; }
+.tiles { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; }
 .tile { --tile-from: translateY(10px); display: flex; animation: fade-in 320ms ease backwards, tile-in 420ms var(--ease) backwards; animation-delay: calc(var(--i) * 70ms); }
 /* the whole tile is one link to its section (page.js shows the section first if the filter hides it) */
 .tile > a { flex: 1; min-width: 0; display: flex; flex-direction: column; gap: 8px; padding: 18px; background: var(--tile-bg); border: 1px solid var(--tile-border); border-top: var(--tile-top); border-radius: 12px; box-shadow: var(--tile-shadow); color: var(--text); text-decoration: none; transition: border-color 160ms ease, box-shadow 200ms ease, transform 200ms ease; }
@@ -219,22 +219,34 @@ h1 .mark { color: var(--rank); box-shadow: var(--headline-mark); }
 @keyframes tile-in { from { transform: var(--tile-from); } } /* the tiles rise; the board's rows slide in */
 @keyframes statement-rise { from { transform: translateY(12px); } }
 
-/* Seven tiles in one of four shapes, best rank first and never a lone tile (#85). 3 + 2 + 2 below 804 px: six
-   columns, each tile two wide, so the rows of two start at column 2, centred. 4 + 3 from 804 px, where four 180 px
-   tiles fit (756 px of content): eight columns, the fifth tile starting at column 2 centres the last three. 7 x 1 from
-   1280 px, where the wrap leaves seven tiles 166 px; their sides go to 14 px so that "H2O-Lightning-4B", which breaks
-   only at its hyphens, keeps one line. */
-.tile { grid-column: span 2; }
-.tile:nth-child(4), .tile:nth-child(6) { grid-column: 2 / span 2; }
-@media (min-width: 804px) {
-  .tiles { grid-template-columns: repeat(8, minmax(0, 1fr)); }
-  .tile:nth-child(4), .tile:nth-child(6) { grid-column: span 2; }
-  .tile:nth-child(5) { grid-column: 2 / span 2; }
+/* Eight tiles in one of four shapes, best rank first and never a lone tile (#120; #85 drew them for seven). From 721 px
+   a tile lies down, in a grid of its own: the rank at the left, the kind, the benchmark and the model at the right
+   (the board's row, in a card). 2 x 4 from 721 px, where the longest benchmark label fits one line; 4 + 4 from 1136 px,
+   where it may wrap, so its line is two lines tall and the model, the last line, stands at one height in every tile
+   (the rank is centred in the tile). One row of eight from 1500 px, in today's tile and type: the hero's column
+   widens to 1480 px at most (a max-width, so it is the window less its gutters below that), which leaves each tile 171
+   px, 138 of them for "H2O-Lightning-31B", which breaks only at its hyphens. */
+@media (min-width: 721px) {
+  .tile > a { display: grid; grid-template-columns: 72px minmax(0, 1fr); gap: 2px 14px; align-items: center; padding: 14px 16px; }
+  .tile-rank { grid-area: 1 / 1 / 4; font-size: 40px; }
+  .tile-of { display: block; margin-top: 2px; font-size: 12px; }
+  .tile-kind { grid-area: 1 / 2; }
+  .tile-board { grid-area: 2 / 2; }
+  .tile-who { grid-area: 3 / 2; }
 }
-@media (min-width: 1280px) {
-  .tiles { grid-template-columns: repeat(7, minmax(0, 1fr)); }
-  .tile, .tile:nth-child(n) { grid-column: auto; } /* one column each; :nth-child(n) outranks the rules above */
-  .tile > a { padding-inline: 14px; }
+@media (min-width: 1136px) {
+  .tiles { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+  .tile > a { align-items: start; align-content: start; }
+  .tile-rank { align-self: center; }
+  .tile-board { min-height: 2.6em; } /* two lines of its 1.3 line height */
+}
+@media (min-width: 1500px) {
+  .hero-stack { max-width: 1480px; }
+  .tiles { grid-template-columns: repeat(8, minmax(0, 1fr)); }
+  .tile > a { display: flex; flex-direction: column; align-items: stretch; gap: 8px; padding: 18px 14px; }
+  .tile-rank { grid-area: auto; align-self: auto; font-size: 48px; }
+  .tile-of { display: inline; margin-top: 0; font-size: 14px; }
+  .tile-kind, .tile-board, .tile-who { grid-area: auto; }
 }
 /* At 720 px and below the same list is Round 3 Split C's board: black in both themes (with a border in dark, on the
    black page), one row per rank, each row the link to its section. The kind sits above the benchmark: in a column of
@@ -363,7 +375,7 @@ h2 { font: 600 clamp(24px, 3.2vw, 30px)/1.15 var(--font-display); letter-spacing
 .pills [role="radio"] { min-height: 30px; padding: 0 12px; font-size: 12px; font-weight: 500; }
 .jev-scroll { overflow-x: auto; }
 .jev-inner { min-width: 680px; }
-.jev-cols, .jev-row { display: grid; grid-template-columns: 26px minmax(0, 1fr) 200px minmax(0, 1fr) 156px; gap: 14px; }
+.jev-cols, .jev-row, .jev-gap { display: grid; grid-template-columns: 26px minmax(0, 1fr) 200px minmax(0, 1fr) 156px; gap: 14px; }
 .jev-cols { align-items: end; padding-bottom: 8px; border-bottom: 1px solid var(--strong); font: 400 10px/1.3 var(--font-mono); letter-spacing: .1em; text-transform: uppercase; color: var(--text-2); }
 .jev-cols .col { transition: color 160ms ease; }
 .jev-cols .on { color: var(--text); }
@@ -371,8 +383,11 @@ h2 { font: 600 clamp(24px, 3.2vw, 30px)/1.15 var(--font-display); letter-spacing
 .col-model { text-align: center; }
 .col-cost { justify-self: end; white-space: nowrap; padding-right: 6px; } /* its text ends 6 px inside the chart's edge, as the Cost value does; a few px wider than the 150 px that leaves, it spills into the gap */
 .col-rank, .cell.rank { padding-left: 6px; } /* a rank sits 6 px inside its chart's edge, as .bars .pos does */
-.jev-rows { position: relative; height: calc(var(--rows) * 52px); }
-.jev-row { position: absolute; top: calc(var(--pos) * 52px); left: 0; right: 0; height: 52px; align-items: center; border-bottom: 1px solid var(--line); transition: top 600ms var(--ease), opacity 350ms ease 250ms, background-color 160ms ease; }
+.jev-rows { position: relative; height: calc(var(--rows) * 52px + var(--seps, 0) * 26px); transition: height 600ms var(--ease); } /* --rows and --seps: the rows and the ellipses of the set showing (page.js sets them per sort; the build writes the first sort's rows and it has no ellipsis) */
+.jev-row { position: absolute; top: calc(var(--pos) * 52px + var(--above, 0) * 26px); left: 0; right: 0; height: 52px; align-items: center; border-bottom: 1px solid var(--line); transition: top 600ms var(--ease), opacity 350ms ease 250ms, background-color 160ms ease; }
+/* An ellipsis (#119) stands where the ranks a set skips would, half a row high, its glyph at the left edge of the model column. --above: how many ellipses stand higher, which also moves every row below one. */
+.jev-gap { position: absolute; top: calc(var(--pos) * 52px + var(--above, 0) * 26px); left: 0; right: 0; height: 26px; align-items: center; color: var(--muted); transition: top 600ms var(--ease), opacity 350ms ease 250ms; }
+.jev-gap .gap-mark { grid-column: 3; justify-self: center; font: 400 24px/1 var(--font-mono); transform: translateY(-.27em); } /* centred on the model names; the dots sit on the baseline, so the glyph is lifted until they are mid-way up the separator */
 .jev-row:hover { background: var(--row-hover); }
 .jev-row.h2o { background: var(--h2o-bg); }
 .cell { display: flex; align-items: center; gap: 8px; min-width: 0; }
@@ -393,8 +408,8 @@ h2 { font: 600 clamp(24px, 3.2vw, 30px)/1.15 var(--font-display); letter-spacing
 .jev-row.h2o .dot { background: var(--yellow); box-shadow: 0 0 0 2px var(--text); }
 .cost .val { position: absolute; top: 4px; right: 6px; } /* 6 px inside the chart's right edge (a padding on the cell would not move it) */
 
-/* Two row sets. The Capability sort shows the board's Capability top ten and the reference, the others the Composite top
-   ten and the reference. A row in both sets carries the values and mark lengths of both, and the chart's data-sort picks:
+/* Two row sets. The Capability sort shows the board's Capability top ten, H2O's row where it ranks lower, and the
+   reference(s), the others the Composite top ten and the reference(s). A row in both sets carries the values and mark lengths of both, and the chart's data-sort picks:
    .when-capability shows only under Capability, .when-composite (and the Composite cell's Composite value) everywhere else; --w
    is a mark's length in the Composite set and --w-capability in the Capability set, each on its own scale. A row outside
    the set that is showing keeps its own length while it fades out, and page.js hides it once it has gone. */
@@ -404,7 +419,7 @@ h2 { font: 600 clamp(24px, 3.2vw, 30px)/1.15 var(--font-display); letter-spacing
 .cell .bar, .cost .dot { --f: var(--w, var(--w-capability)); }
 .jev-chart[data-sort="capability"] .cell .bar, .jev-chart[data-sort="capability"] .cost .dot { --f: var(--w-capability, var(--w)); }
 .col-composite .when-capability { letter-spacing: .075em; } /* a character longer than the Composite header: this keeps it on one line wherever that one fits, so the rows don't drop a line under Capability */
-.jev-row.is-out { opacity: 0; pointer-events: none; transition: top 600ms var(--ease), opacity 200ms ease, background-color 160ms ease; }
+.jev-row.is-out, .jev-gap.is-out { opacity: 0; pointer-events: none; transition: top 600ms var(--ease), opacity 200ms ease, background-color 160ms ease; }
 
 /* ---- motion: bars grow once, the first time a chart is in view (assets/page.js adds .js-motion and .is-drawn) */
 .bars .bar, .cell .bar, .ft .bar { transition: width 600ms var(--ease); transition-delay: calc(var(--i, var(--pos, 0)) * 35ms + var(--chart-delay, 0ms)); }

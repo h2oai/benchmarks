@@ -1,0 +1,66 @@
+rank,model,author,open_weights,listing,composite,capability,intelligence,calibration,speed,cost,h2o
+1,kettei-fat (Sqwish),Sqwish,No,ranked,75.384577,75.894751,67.342955,84.446547,84.429074,68.842946,No
+2,"Wity-1 (AlphaNimble), reasoning auto",AlphaNimble,No,ranked,71.205863,74.030038,68.693215,79.366861,66.273718,71.792581,No
+3,Imajev-4B,Model author not reported,No,ranked,63.71415,68.008151,49.9121,86.104203,86.250322,51.768828,No
+4,kettei-chub (Sqwish),Sqwish,No,ranked,63.342036,66.501925,47.811655,85.192194,86.219359,74.125683,No
+5,H2O-Lightning-31B (image),H2O.ai,Yes,ranked,51.223778,80.875145,75.605038,86.145253,83.796506,43.70055,Yes
+6,"Sage 1.4 + images, beta (Levanto Labs)",Levanto Labs,No,ranked,47.906401,75.792553,68.132913,83.452192,80.968296,43.150071,No
+7,Drex Max (Nace AI),Nace AI,No,ranked,44.645306,72.471249,66.963005,77.979493,78.048821,42.323953,No
+8,Surogate Rune 26B-A4B v3,surogate (model repository owner),No,ranked,42.456609,64.807344,44.802301,84.812386,85.406789,47.077948,No
+9,Autoloops – Gemma 4 31B IT,Hosted API provider,No,ranked,41.374323,68.347224,49.692158,87.00229,75.011299,42.364619,No
+10,basal-omni-1.0-ultra (Remek Kinas),Remek Kinas,Yes,ranked,40.908274,60.553801,51.469723,69.637879,82.938853,42.171681,No
+11,Celeris-1 Decision (Celeris),Celeris,No,ranked,39.487482,58.148048,40.721277,75.57482,78.663595,59.922118,No
+12,imajev 9B,mohit67890 (model repository owner),No,ranked,34.523679,67.070832,48.332252,85.809412,80.725414,40.10842,No
+13,H2O-Lightning-4B (image),H2O.ai,Yes,ranked,34.138064,60.430994,44.905193,75.956796,83.514332,43.201551,No
+14,"Wity-1 (AlphaNimble), reasoning off",AlphaNimble,No,ranked,33.08715,56.158852,37.44121,74.876494,72.483211,71.792581,No
+15,Jev-Omni,Model author not reported,No,ranked,32.84476,54.250109,37.542893,70.957326,88.769293,60.000439,No
+16,JPT-9B (kirp / llm2jev),kirp (model repository owner),No,ranked,31.434823,58.72402,44.287844,73.160197,81.598906,42.475346,No
+17,NeoHorse Jev 4B,TokenRhythm (model repository owner),No,ranked,30.452336,57.62143,36.82579,78.41707,86.789318,50.444676,No
+18,Jevify Gemma 4 26B-A4B,kushalpatil (model repository owner),No,ranked,29.678542,58.73393,38.497418,78.970442,85.549231,47.290429,No
+19,AutoJev-27B,denis-pplx (model repository owner),No,ranked,29.338747,62.148073,37.557144,86.739002,85.685828,47.930716,No
+20,JPT-4B (kirp / llm2jev),kirp (model repository owner),No,ranked,26.548911,55.62157,38.266272,72.976869,83.32871,45.698922,No
+21,"Jev 1.13.0 + images, preview (TypeSafe)",TypeSafe,No,ranked,26.429099,72.43938,59.912309,84.966451,84.551962,33.94292,No
+22,Jev-Vision 8B (SeanLiu),SeanLiu (model repository owner),No,ranked,25.50841,37.763803,38.997625,36.529981,84.836026,47.442449,No
+23,"Jev 1.14.0 + images, preview (TypeSafe)",TypeSafe,No,ranked,24.311534,60.216739,49.891756,70.541723,84.635931,33.94292,No
+24,shisa-de-1,shisa-ai (model repository owner),No,ranked,22.827353,51.461101,34.899353,68.022849,85.497634,47.244163,No
+25,Clef-Flash (Cloudflare),Model author not reported,No,ranked,20.413326,52.242066,37.283246,67.200886,81.436081,42.216168,No
+26,Clef (Cloudflare),Model author not reported,No,ranked,18.652173,58.078072,47.40309,68.753054,75.731576,32.193053,No
+27,GPT-6 Luna via OpenAI Decisions (OpenAI),OpenAI,No,ranked,17.305447,62.868586,45.001713,80.735458,81.944592,32.236655,No
+28,Winnow-12B (Q8_0 + F16 vision projector),Model author not reported,No,ranked,17.076041,49.993274,38.631948,61.354599,82.529427,37.968863,No
+29,Image Hopper (HopitAI),Model author not reported,No,ranked,15.299609,51.682148,32.493234,70.871061,83.15802,42.654459,No
+30,OmniJev-Qwen3.5-9B-v4 (tzcfly),tzcfly (model repository owner),No,ranked,14.988416,33.143127,29.009173,37.27708,89.464406,57.613028,No
+31,OmniJev 4B (tinnel123),tinnel123 (model repository owner),No,ranked,14.830724,47.211306,28.040398,66.382214,86.373017,49.332425,No
+32,Reflex 4B (released stable configuration),Model author not reported,No,ranked,13.799726,53.343727,27.366047,79.321408,85.669045,48.431674,No
+33,GPT-6 Luna (low reasoning effort),Hosted API provider,No,ranked,12.189124,74.440162,72.403726,76.476597,64.618377,25.039489,No
+34,Bonsai-2-27B v2 PQ2_0 + Q8_0 MMProj,Model author not reported,No,ranked,11.982904,63.069903,43.227289,82.912517,72.870865,28.923657,No
+35,CUA-S1 4B,cua-ai (model repository owner),No,ranked,11.759433,48.42708,29.104778,67.749382,81.852964,42.855286,No
+36,Visual-Jev generic (zero-shot Qwen3.5-4B baseline),Qwen (model repository owner),No,ranked,11.136399,56.730444,29.700913,83.759974,80.551628,40.406488,No
+37,Mapika decider-2b-vision BF16,Model author not reported,No,ranked,9.520408,42.838795,23.076242,62.601347,85.763693,53.979691,No
+38,vjev-vision (yah01),yah01 (model repository owner),No,ranked,8.857241,55.663746,21.72754,89.599952,89.732684,58.998294,No
+39,Visual-Jev 4B Answer-SFT,guanxuyu (model repository owner),No,ranked,8.706793,35.886804,24.030767,47.742841,84.20244,47.436157,No
+40,GPT-5.6 Luna,Hosted API provider,No,ranked,7.870043,76.823975,75.994003,77.653947,66.621736,20.908249,No
+41,Jevify Gemma 4 E4B,kushalpatil (model repository owner),No,ranked,7.261254,43.713651,20.43584,66.991461,89.841645,58.71733,No
+42,JPT-0.8B (kirp / llm2jev),kirp (model repository owner),No,ranked,7.170925,46.068419,20.418452,71.718387,87.144309,53.679571,No
+43,Glance (frozen Qwen3-VL-4B),Qwen (model repository owner),No,ranked,6.853979,28.425743,21.255834,35.595651,87.772224,52.801751,No
+44,Gemini 3.1 Flash Lite,Hosted API provider,No,ranked,6.452066,46.83402,45.701496,47.966545,74.437793,22.120029,No
+45,diffusiongemma-26b djev v10 step160 (snowicarus),snowicarus (model repository owner),No,ranked,5.902685,36.73985,23.225024,50.254676,82.895445,41.203055,No
+46,imajev 2B,mohit67890 (model repository owner),No,ranked,5.758835,46.418681,19.524067,73.313294,85.15112,47.962646,No
+47,"Gevva E4B (text checkpoint, image input)",davidburhans (model repository owner),No,ranked,4.139103,49.575467,17.377596,81.773338,84.121774,46.957287,No
+48,Liquid d1-3B (Liquid AI),Liquid AI,Yes,ranked,4.096383,47.781214,16.305929,79.2565,87.59772,54.081859,No
+49,djev-distill-v4 (tarsur385),tarsur385 (model repository owner),No,ranked,3.615593,40.246912,18.818077,61.675748,82.877443,41.076687,No
+50,Jevify Qwen3-VL-2B T2,Praveenrajus (model repository owner),No,ranked,3.287126,43.932256,15.05698,72.807532,86.958645,53.467799,No
+51,OmniJev 2B (tinnel123),tinnel123 (model repository owner),No,ranked,3.16763,37.93118,14.999978,60.862381,87.566518,52.268097,No
+52,jev-spatial (Fr0zencr4nE),Fr0zencr4nE (model repository owner),No,ranked,2.061926,26.452916,12.96057,39.945261,89.749693,58.782835,No
+53,Gevva E2B multimodal,davidburhans (model repository owner),No,ranked,2.018756,47.336749,12.750615,81.922883,85.052162,48.825702,No
+54,"JEVision (divyanshx11, visual route)",Qwen (model repository owner),No,ranked,1.844492,16.201179,15.011091,17.391266,83.816791,44.992613,No
+55,OmniJev 0.8B (tinnel123),tinnel123 (model repository owner),No,ranked,1.571382,38.582913,11.413026,65.7528,88.352564,54.102566,No
+56,PlayJev 0.8B,OmniJev (model repository owner),No,ranked,0.502441,25.598351,7.609178,43.587524,87.253527,53.893916,No
+57,Liquid d1-omni-600M (Liquid AI),Liquid AI,Yes,ranked,0.236759,26.537495,5.734487,47.340503,90.948094,63.581119,No
+58,djev-dev BF16,Model author not reported,No,ranked,0.039395,25.406742,3.93986,46.873624,83.053743,35.369123,No
+59,Qevi-2B (MeerDevelopment),MeerDevelopment (model repository owner),No,ranked,0.025179,11.149289,2.676661,19.621918,86.360899,52.301413,No
+60,djev-spark NVFP4,Model author not reported,No,ranked,0.002735,24.52332,1.515935,47.530704,83.697759,36.587632,No
+61,OpenJev 4B NLI v2 (official image-premise path),Model author not reported,No,ranked,0.0,8.20441,16.408821,0.0,75.086254,33.917695,No
+62,OpenJev 4B NLI v5,AlexWortega (model repository owner),No,ranked,0.0,16.40808,32.816159,0.0,75.10978,33.954037,No
+63,Gemini 3.8 Flash,Hosted API provider,No,ranked,0.0,19.342745,7.609205,31.076285,63.618441,0.0,No
+,Standard One 3B,StandardThinking (model repository owner),No,unranked,,49.553367,13.499357,85.607378,84.969732,,No
+,Standard One 8B,StandardThinking (model repository owner),No,unranked,,51.54923,27.660471,75.437989,83.344118,,No

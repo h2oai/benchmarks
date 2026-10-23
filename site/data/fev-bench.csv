@@ -1,32 +1,32 @@
 rank,model,organization,model_type,win_rate_pct,skill_score_pct,skill_rank,commercial_use,h2o
-1,Timestral-209M,Mistral AI,pretrained,90.8387,50.3902,1,No,No
-2,t0-gamma,The Forecasting Company,pretrained,89.6129,49.4167,2,Yes,No
-3,TimesFM-3,Google,pretrained,84.3548,48.9938,3,No,No
-4,Chronos-2,AWS,pretrained,78.0968,47.2806,4,Yes,No
-5,TimeH2O-v1-tiny,H2O.ai,pretrained,77.3226,45.4924,7,No,Yes
-6,t0-beta,The Forecasting Company,pretrained,75.6452,46.6527,5,Yes,No
-7,TiRex-2,NX-AI,pretrained,74.4516,45.499,6,Yes,No
-8,Toto-2.0-2.5B,Datadog,pretrained,73.7097,44.4208,8,Yes,No
-9,TiRex,NX-AI,pretrained,66.9677,42.5761,12,No,No
-10,Toto-2.0-22m,Datadog,pretrained,66.2581,42.907,11,Yes,No
-11,TimesFM-2.5,Google,pretrained,63.1935,42.2006,13,Yes,No
-12,TabPFN-TS-3,Prior Labs,pretrained,59.9355,43.1499,9,No,No
-13,TS-ICL,EDF-Lab,pretrained,59.7419,43.1148,10,Yes,No
-14,CITRAS-FM,Hitachi,pretrained,57.2903,41.1776,15,No,No
-15,FlowState,IBM,pretrained,57.0968,39.911,17,Yes,No
-16,Toto-1.0,Datadog,pretrained,55.6774,40.7555,16,Yes,No
-17,TabPFN-TS,Prior Labs,pretrained,54.629,41.4866,14,Yes,No
-18,Moirai-2.0,Salesforce,pretrained,50.0968,39.3137,18,No,No
-19,Chronos-Bolt,AWS,pretrained,49.3871,38.893,19,Yes,No
-20,TFT,—,task-specific,37.871,32.1792,21,Yes,No
-21,Sundial-Base,Tsinghua University,pretrained,33.5161,33.4229,20,Yes,No
-22,Stat. Ensemble,—,statistical,33.0968,20.655,27,Yes,No
-23,PatchTST,—,task-specific,32.7097,30.0889,22,Yes,No
-24,DeepAR,—,task-specific,31.5968,29.0835,23,Yes,No
+1,TimeH2O-v1,H2O.ai,pretrained,91.871,50.8334,1,No,Yes
+2,Timestral-209M,Mistral AI,pretrained,89.6129,50.3902,2,No,No
+3,t0-gamma,The Forecasting Company,pretrained,88.0968,49.4167,3,Yes,No
+4,TimesFM-3,Google,pretrained,82.7097,48.9938,4,No,No
+5,Chronos-2,AWS,pretrained,76.8065,47.2806,5,Yes,No
+6,t0-beta,The Forecasting Company,pretrained,74.4839,46.6527,6,Yes,No
+7,TiRex-2,NX-AI,pretrained,73.5484,45.499,7,Yes,No
+8,Toto-2.0-2.5B,Datadog,pretrained,73.0323,44.4208,8,Yes,No
+9,TiRex,NX-AI,pretrained,66.4839,42.5761,12,No,No
+10,Toto-2.0-22m,Datadog,pretrained,65.4839,42.907,11,Yes,No
+11,TimesFM-2.5,Google,pretrained,62.7419,42.2006,13,Yes,No
+12,TabPFN-TS-3,Prior Labs,pretrained,59.3548,43.1499,9,No,No
+13,TS-ICL,EDF-Lab,pretrained,59.2258,43.1148,10,Yes,No
+14,CITRAS-FM,Hitachi,pretrained,56.8387,41.1776,15,No,No
+15,FlowState,IBM,pretrained,56.7097,39.911,17,Yes,No
+16,Toto-1.0,Datadog,pretrained,55.1935,40.7555,16,Yes,No
+17,TabPFN-TS,Prior Labs,pretrained,54.2097,41.4866,14,Yes,No
+18,Moirai-2.0,Salesforce,pretrained,49.7742,39.3137,18,No,No
+19,Chronos-Bolt,AWS,pretrained,49.0968,38.893,19,Yes,No
+20,TFT,—,task-specific,37.5806,32.1792,21,Yes,No
+21,Sundial-Base,Tsinghua University,pretrained,33.4194,33.4229,20,Yes,No
+22,Stat. Ensemble,—,statistical,32.9677,20.655,27,Yes,No
+23,PatchTST,—,task-specific,32.5806,30.0889,22,Yes,No
+24,DeepAR,—,task-specific,31.4032,29.0835,23,Yes,No
 25,AutoARIMA,—,statistical,28.7742,21.3041,25,Yes,No
-26,AutoETS,—,statistical,24.2419,-26.8185,30,Yes,No
-27,CatBoost,—,task-specific,23.7097,22.9975,24,Yes,No
-28,LightGBM,—,task-specific,21.9355,20.9791,26,Yes,No
+26,AutoETS,—,statistical,24.2097,-26.8185,30,Yes,No
+27,CatBoost,—,task-specific,23.6452,22.9975,24,Yes,No
+28,LightGBM,—,task-specific,21.9032,20.9791,26,Yes,No
 29,AutoTheta,—,statistical,19.3548,5.4574,28,Yes,No
 30,Seasonal Naive,—,statistical,13.0323,0.0,29,Yes,No
 31,Naive,—,statistical,8.4355,-45.399,31,Yes,No

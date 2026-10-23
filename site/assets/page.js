@@ -155,29 +155,55 @@
       radiogroup(group, function (radio) {
         var sort = radio.getAttribute("data-sort");
         var column = radio.getAttribute("data-column") || sort;
-        var rows = Array.prototype.slice.call(list.children);
+        var items = Array.prototype.slice.call(list.children);
+        // The list holds rows and the ellipses that stand in the place of the ranks a set skips (.jev-gap).
+        function isGap(item) {
+          return item.classList.contains("jev-gap");
+        }
+        var rows = items.filter(function (item) { return !isGap(item); });
+        var gaps = items.filter(isGap);
         // A row has a place in the order of each sort whose set of rows it is in (Capability has its own set, the
-        // other sorts share one): where it has none, the sort leaves the row out.
-        function place(row) {
-          var pos = row.getAttribute("data-pos-" + sort);
+        // other sorts share one): where it has none, the sort leaves the row out. An ellipsis has one too, the number
+        // of rows above it, as the row below it has.
+        function place(item) {
+          var pos = item.getAttribute("data-pos-" + sort);
           return pos === null ? null : Number(pos);
         }
+        // The places of the ellipses this sort shows, top to bottom. An item stands --above of them lower: the stylesheet
+        // adds half a row for each, and the list is that much taller (--seps).
+        var stops = gaps.map(place).filter(function (pos) { return pos !== null; }).sort(function (a, b) { return a - b; });
+        function stand(item) {
+          var pos = place(item);
+          var above = stops.filter(function (stop) { return isGap(item) ? stop < pos : stop <= pos; }).length;
+          item.style.setProperty("--pos", pos);
+          item.style.setProperty("--above", above);
+        }
         // Rows that join stand where they will be, transparent, before anything moves; they fade in below.
-        rows.forEach(function (row) {
-          if (row.hidden && place(row) !== null) {
-            row.classList.add("is-out");
-            row.style.setProperty("--pos", place(row));
-            row.hidden = false;
+        items.forEach(function (item) {
+          if (item.hidden && place(item) !== null) {
+            item.classList.add("is-out");
+            stand(item);
+            item.hidden = false;
           }
         });
         void list.offsetWidth; // commit that state before the rows move, fade and resize
         chart.setAttribute("data-sort", sort);
         chart.classList.add("is-sorting");
+        // The list is as tall as the set it shows: Capability's can be a row taller (H2O's, below the top ten) and
+        // half a row taller for each ellipsis.
+        list.style.setProperty("--rows", rows.filter(function (row) { return place(row) !== null; }).length);
+        list.style.setProperty("--seps", stops.length);
+        gaps.forEach(function (gap) {
+          if (place(gap) !== null) {
+            stand(gap);
+          }
+          gap.classList.toggle("is-out", place(gap) === null);
+        });
         // Each row carries its place and its number for every sort whose set it is in; the reference row has no number
         // and no cell text.
         rows.forEach(function (row) {
           if (place(row) !== null) {
-            row.style.setProperty("--pos", place(row));
+            stand(row);
           }
           row.classList.toggle("is-out", place(row) === null);
           // The number of this sort, where the row has one: a row that leaves the set has none for it, and keeps
@@ -196,8 +222,8 @@
         // and the list itself takes the new order, so a screen reader reads it as sorted too.
         window.clearTimeout(reorder);
         reorder = window.setTimeout(function () {
-          rows.forEach(function (row) {
-            row.hidden = place(row) === null;
+          items.forEach(function (item) {
+            item.hidden = place(item) === null;
           });
           rows.sort(function (a, b) {
             var pa = place(a);
@@ -205,6 +231,9 @@
             return pa === null || pb === null ? (pa === null) - (pb === null) : pa - pb;
           }).forEach(function (row) {
             list.appendChild(row);
+          });
+          gaps.forEach(function (gap) { // aria-hidden, so only the stylesheet places them: they follow the rows
+            list.appendChild(gap);
           });
         }, motion ? 650 : 0);
       });
