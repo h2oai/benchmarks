@@ -4,33 +4,34 @@
 
 Models and agents you can run in your own environment, measured on the public leaderboards where the field competes.
 
-## Top leaderboard ranks · read 20 Oct 2026
+## Top leaderboard ranks · read 23 Oct 2026
 
 | Kind | Benchmark | H2O entry | Rank | Link |
 |---|---|---|---|---|
-| Generative | JevBench | H2O-Lightning-4B | **#1** of 184 | [Model card ↗](https://huggingface.co/h2oai/h2o-lightning-4b) |
+| Generative | JevBench Composite | H2O-Lightning-4B | **#1** of 196 | [Model card ↗](https://huggingface.co/h2oai/h2o-lightning-4b) |
+| Generative | ImageJevBench Capability | H2O-Lightning-31B | **#1** of 54 | [Model card ↗](https://huggingface.co/h2oai/h2o-lightning-31b) |
+| Predictive | fev-bench | TimeH2O-v1 | **#1** of 32 | [Model card ↗](https://huggingface.co/h2oai/timeh2o-v1) |
 | Agentic | FutureX | H2O AI Super Agent | **#1** of 24 | [Enterprise h2oGPTe ↗](https://h2o.ai/products/h2ogpte) |
 | Agentic | Social Simulation Arena | H2O AI Super Agent | **#3** of 25 | [Enterprise h2oGPTe ↗](https://h2o.ai/products/h2ogpte) |
 | Agentic | Social Simulation Arena | H2O AI Marina | **#4** of 25 | [H2O AI Marina ↗](https://h2oai.github.io/marina/) |
-| Predictive | fev-bench | TimeH2O-v1-tiny | **#5** of 32 | [Model card ↗](https://huggingface.co/h2oai/timeh2o-v1-tiny) |
 | Predictive | TALENT | TabH2O | **#5** of 13 | [Try it live ↗](https://tabh2o.h2oai.com/) |
 | Predictive | TabArena | TabH2O | **#7** of 39 | [Try it live ↗](https://tabh2o.h2oai.com/) |
 
-[JevBench](#jevbench) · [fev-bench](#fev-bench) · [Social Simulation Arena](#social-simulation-arena) · [FutureX](#futurex) · [TabH2O](#tabh2o)
+[JevBench](#jevbench) · [ImageJevBench](#imagejevbench) · [fev-bench](#fev-bench) · [Social Simulation Arena](#social-simulation-arena) · [FutureX](#futurex) · [TabH2O](#tabh2o)
 
 ## JevBench
 
 *Generative AI · Decision models*
 
-### #1 of 184 on JevBench
+### #1 of 196 on JevBench
 
-**H2O-Lightning-4B ranks #1 of 184 on the JevBench Composite score for open-weights systems**
+**H2O-Lightning-4B ranks #1 of 196 on the JevBench Composite score for open-weights systems**
 
 Decision models get a situation and typed questions and must return calibrated answers, scored on intelligence, calibration, speed and cost. A 4B model with open weights.
 
 | Composite score | latency incl. network, board estimate | per 1,000 decisions, board estimate |
 |---|---|---|
-| **72.5** | **0.21 s** | **\$0.021** |
+| **73.8** | **0.21 s** | **\$0.016** |
 
 [Leaderboard ↗](https://benchmarkheaven.com/jev-models) · [How it scores ↗](https://benchmarkheaven.com/jev-models/methodology) · [H2O blog post ↗](https://h2o.ai/blog/2026/h2o-lightning-jevbench) · [Model card ↗](https://huggingface.co/h2oai/h2o-lightning-4b)
 
@@ -46,37 +47,81 @@ Decision models get a situation and typed questions and must return calibrated a
 
 | # | Composite · higher is better | Model | Latency · lower is better | Cost · lower is better |
 |:---|---:|:---:|---|---:|
-| **1** | **72.5** | **H2O-Lightning-4B v1.1** | **210 ms** | **\$0.021** |
-| 2 | 71.8 | Torchcast Decision 4B (v1.2) | 270 ms | \$0.020 |
-| 3 | 71.8 | basal-omni-1.0-ultra | 350 ms | \$0.045 |
+| **1** | **73.8** | **H2O-Lightning-4B v1.1** | **210 ms** | **\$0.016** |
+| **2** | **73.4** | **H2O-Lightning-31B v1.0.7** | **280 ms** | **\$0.044** |
+| 3 | 73.0 | Torchcast Decision 4B (v1.2) | 270 ms | \$0.015 |
 | 4 | 71.7 | decisio v0.8.0 on gemma-4-31B-it | 240 ms | \$0.041 |
+| 5 | 71.7 | basal-omni-1.0-ultra | 350 ms | \$0.045 |
 |  | 71.5 | Jev 1.13.0<br>reference · closed API · not ranked | 240 ms | \$0.032 |
-| 5 | 71.4 | Quyet-1.0-Large | 380 ms | \$0.045 |
-| 6 | 70.9 | decider-12b v2 | 260 ms | \$0.026 |
-| 7 | 70.4 | decider-12b v1, stock Gemma-4-12B-it | 260 ms | \$0.026 |
-| 8 | 69.9 | torchcast-decision-12b | 220 ms | \$0.028 |
-| 9 | 69.6 | Torchcast Decision 4B (v1.1) | 190 ms | \$0.020 |
-| 10 | 68.9 | Winnow-12B Q8 | 380 ms | \$0.028 |
+| 6 | 71.4 | Quyet-1.0-Large | 380 ms | \$0.045 |
+| 7 | 70.9 | decider-12b v2 | 260 ms | \$0.026 |
+| 8 | 70.7 | Torchcast Decision 4B (v1.1) | 190 ms | \$0.015 |
+| 9 | 70.4 | decider-12b v1, stock Gemma-4-12B-it | 260 ms | \$0.026 |
+|  | 70.2 | Jev 1.14.0<br>reference · closed API · not ranked | 220 ms | \$0.032 |
+| 10 | 69.9 | torchcast-decision-12b | 220 ms | \$0.028 |
 
 </details>
 
-Hatched: the board's Jev reference, a closed API listed but not ranked. Composite ranks 184 open-weights systems; Capability, the board's headline score, ranks the 131 inside its cost and latency caps. Latency includes network: for self-hosted models the board estimates it as 2 × its measured GPU time + 150 ms. Cost is the board's estimate. Benchmark Heaven, board v1.7.46.
+Hatched: the board's Jev reference, a closed API listed but not ranked. Composite ranks 196 open-weights systems; Capability, the board's headline score, ranks the 139 inside its cost and latency caps. Latency includes network: for self-hosted models the board estimates it as 2 × its measured GPU time + 150 ms. Cost is the board's estimate. Benchmark Heaven, board v1.7.47.
+
+## ImageJevBench
+
+*Generative AI · Image decision models*
+
+### #1 of 54 on ImageJevBench Capability
+
+**H2O-Lightning-31B ranks #1 of 54 on ImageJevBench Capability, the board's headline score**
+
+Image decision models answer typed questions about a picture and must return calibrated answers, scored on intelligence, calibration, speed and cost. An open-weights model.
+
+| Capability score | latency incl. network, board estimate | per 1,000 decisions, at the board's GPU rate |
+|---|---|---|
+| **80.9** | **0.59 s** | **\$0.075** |
+
+[Leaderboard ↗](https://benchmarkheaven.com/image-jev-bench) · [How it scores ↗](https://benchmarkheaven.com/jev-models/methodology) · [Model card ↗](https://huggingface.co/h2oai/h2o-lightning-31b)
+
+**Capability, latency and cost, side by side** · Capability top 10 · sorted by Capability · higher is better
+
+<picture>
+<source media="(prefers-color-scheme: dark)" srcset="readme/imagejevbench-dark.svg">
+<img alt="Capability, latency and cost, side by side · Capability top 10 · sorted by Capability · higher is better" src="readme/imagejevbench-light.svg">
+</picture>
+
+<details>
+<summary>Capability, latency and cost, side by side</summary>
+
+| # | Capability · higher is better | Model | Latency · lower is better | Cost · lower is better |
+|:---|---:|:---:|---|---:|
+| **1** | **80.9** | **H2O-Lightning-31B** | **590 ms** | **\$0.075** |
+| 2 | 75.9 | kettei-fat | 420 ms | \$0.011 |
+| 3 | 75.8 | Sage 1.4 + images, beta | 560 ms | \$0.079 |
+| 4 | 72.5 | Drex Max | 850 ms | \$0.084 |
+| 5 | 72.4 | Jev 1.13.0 + images, preview | 380 ms | \$0.16 |
+| 6 | 68.3 | Autoloops – Gemma 4 31B IT | 1190 ms | \$0.083 |
+| 7 | 68.0 | Imajev-4B | 370 ms | \$0.038 |
+| 8 | 67.1 | imajev 9B | 670 ms | \$0.089 |
+| 9 | 66.5 | kettei-chub | 310 ms | \$0.0073 |
+| 10 | 64.8 | Surogate Rune 26B-A4B v3 | 490 ms | \$0.058 |
+
+</details>
+
+Capability, the board's headline score, ranks the 54 Jev-class systems: those inside 2 × the cost and median latency of the board's Jev reference. On the board's official Composite H2O-Lightning-31B is #5 of 63. Latency includes network: for self-hosted models the board estimates it as 2 × its measured GPU time + 150 ms. A self-hosted system's cost is its measured GPU time at the board's hourly rate. Benchmark Heaven, board v0.3.0.
 
 ## fev-bench
 
 *Predictive AI · Time-series forecasting*
 
-### #5 of 32 on fev-bench
+### #1 of 32 on fev-bench
 
-**TimeH2O-v1-tiny ranks #5 of 32 on the fev-bench leaderboard, by win rate**
+**TimeH2O-v1 ranks #1 of 32 on the fev-bench leaderboard, by win rate**
 
-Zero-shot forecasting on real time series across many domains and frequencies, scored by probabilistic accuracy against a seasonal-naive baseline. 5.8M parameters.
+Zero-shot forecasting on real time series across many domains and frequencies, scored by probabilistic accuracy against a seasonal-naive baseline. 108.8M parameters.
 
 | win rate | skill score | parameters |
 |---|---|---|
-| **77.3%** | **45.5%** | **5.8M** |
+| **91.9%** | **50.8%** | **108.8M** |
 
-[Leaderboard ↗](https://huggingface.co/spaces/autogluon/fev-bench) · [fev-bench paper ↗](https://arxiv.org/abs/2509.26468) · [Model card ↗](https://huggingface.co/h2oai/timeh2o-v1-tiny)
+[Leaderboard ↗](https://huggingface.co/spaces/autogluon/fev-bench) · [fev-bench paper ↗](https://arxiv.org/abs/2509.26468) · [Model card ↗](https://huggingface.co/h2oai/timeh2o-v1)
 
 **Win rate · top 8 of 32** · higher is better
 
@@ -90,18 +135,18 @@ Zero-shot forecasting on real time series across many domains and frequencies, s
 
 | Rank | Entry | Win rate |
 |---:|---|---:|
-| #1 | Timestral-209M | 90.8% |
-| #2 | t0-gamma | 89.6% |
-| #3 | TimesFM-3 | 84.4% |
-| #4 | Chronos-2 | 78.1% |
-| **#5** | **TimeH2O-v1-tiny** | **77.3%** |
-| #6 | t0-beta | 75.6% |
-| #7 | TiRex-2 | 74.5% |
-| #8 | Toto-2.0-2.5B | 73.7% |
+| **#1** | **TimeH2O-v1** | **91.9%** |
+| #2 | Timestral-209M | 89.6% |
+| #3 | t0-gamma | 88.1% |
+| #4 | TimesFM-3 | 82.7% |
+| #5 | Chronos-2 | 76.8% |
+| #6 | t0-beta | 74.5% |
+| #7 | TiRex-2 | 73.5% |
+| #8 | Toto-2.0-2.5B | 73.0% |
 
 </details>
 
-Default leaderboard view. By skill score TimeH2O-v1-tiny is #7 of 32; with the closed-API models included it is #8 of 35. TimeH2O-v1-tiny has a non-commercial licence.
+Default leaderboard view. With the closed-API models included it is #2 of 36. TimeH2O-v1 has a non-commercial licence.
 
 ## Social Simulation Arena
 
@@ -142,7 +187,7 @@ Entrants forecast the next public release of poll, sentiment and attention serie
 
 </details>
 
-Entrants answer different numbers of questions. On the Season 0 main board Super Agent is #4 of 26 and Marina #6.
+Entrants answer different numbers of questions. On the Season 0 main board Marina is #7 of 26.
 
 ## FutureX
 
@@ -255,6 +300,6 @@ Two public benchmark suites of tabular classification and regression datasets, c
 
 ---
 
-Leaderboards read 20 Oct 2026. Each board ranks its own field.
+Leaderboards read 23 Oct 2026. Each board ranks its own field.
 
 [Download all data (CSV)](site/data/h2o-benchmarks.csv)
