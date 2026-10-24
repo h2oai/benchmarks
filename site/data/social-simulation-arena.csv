@@ -1,26 +1,25 @@
-rank,entrant,organization,type,arena_score,mean_crps,questions,h2o
-1,Vac-SentimentExpectations,Astraculum,participant,66.3833,0.232089,9,No
-2,Apodex-FutureFlow,Apodex,participant,27.2276,0.549188,34,No
-3,H2O.ai SuperAgent,H2O.ai,participant,23.2365,0.557131,26,Yes
-4,H2O.ai Marina,H2O.ai,participant,12.2033,0.510458,24,Yes
-5,YuLan-OneSim,Renmin University of China,participant,10.1483,0.616792,12,No
-6,Vac-PublicOpinion,Astraculum,participant,5.7675,0.80495,8,No
-7,worldVac,Astraculum,participant,5.0303,1.035706,35,No
-8,Persistence,,baseline,0.0,2.807955,76,No
-9,Gemini 3.1 Pro · web,,llm,-0.5752,2.337061,69,No
-10,Claude Sonnet 5 · web,,llm,-3.4254,2.432857,69,No
-11,Claude Sonnet 5 · web+sfc,,llm,-4.2575,2.454075,69,No
-12,Grok 4.5 · web,,llm,-12.6453,2.254063,70,No
-13,DeepSeek V4 Pro · web,,llm,-14.8854,2.050232,69,No
-14,Gemini 3.1 Pro · web+sfc,,llm,-17.7558,2.184416,69,No
-15,DeepSeek V4 Pro · web+sfc,,llm,-18.3596,2.124107,69,No
-16,GPT-5.6 Luna · web+sfc,,llm,-20.527,1.307973,66,No
-17,GLM-5.2 · web,,llm,-23.4357,2.433099,67,No
-18,GLM-5.2 · web+sfc,,llm,-25.1509,2.628397,68,No
-19,Crowd,,baseline,-25.5163,2.256499,75,No
-20,Grok 4.5 · web+sfc,,llm,-34.043,2.267244,70,No
-21,GPT-5.6 Luna · web,,llm,-39.4413,1.610396,67,No
-22,EWMA,,baseline,-74.0467,2.759424,76,No
-23,Linear trend,,baseline,-206.597,4.538791,76,No
-24,Climatology,,baseline,-292.3149,3.962307,76,No
-25,ZhengZheng Forecaster,xuanzhengwenhua,participant,-1263.6044,9.696482,34,No
+rank,method,organization,type,pairwise_win_rate,questions_answered,h2o
+1,H2O.ai SuperAgent,H2O.ai,participant,66.18,41,Yes
+2,Apodex-FutureFlow,Apodex,participant,65.46,41,No
+3,H2O.ai Marina,H2O.ai,participant,61.7,41,Yes
+4,Claude Sonnet 5 · web+sfc,,llm,57.47,41,No
+5,Crowd,,baseline,56.17,41,No
+6,Vac,,entrant,55.35,29,No
+7,worldVac,Astraculum,participant,54.43,41,No
+8,Gemini 3.1 Pro · web,,llm,53.81,41,No
+9,Gemini 3.1 Pro · web+sfc,,llm,51.86,41,No
+10,Claude Sonnet 5 · web,,llm,51.64,41,No
+11,DeepSeek V4 Pro · web,,llm,51.22,41,No
+12,Grok 4.5 · web,,llm,50.63,41,No
+13,GPT-5.6 Luna · web+sfc,,llm,49.77,41,No
+14,DeepSeek V4 Pro · web+sfc,,llm,49.72,41,No
+15,GLM-5.2 · web,,llm,45.91,40,No
+16,GLM-5.2 · web+sfc,,llm,44.82,41,No
+17,GPT-5.6 Luna · web,,llm,44.59,41,No
+18,ZhengZheng Forecaster,xuanzhengwenhua,participant,42.52,41,No
+19,Persistence,,baseline,42.4,41,No
+20,Grok 4.5 · web+sfc,,llm,38.42,41,No
+21,YuLan-OneSim,Renmin University of China,participant,33.21,24,No
+22,EWMA,,baseline,31.0,32,No
+23,Linear trend,,baseline,16.7,32,No
+24,Climatology,,baseline,15.51,32,No
