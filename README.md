@@ -4,15 +4,15 @@
 
 Models and agents you can run in your own environment, measured on the public leaderboards where the field competes.
 
-## Top leaderboard ranks · read 24 Oct 2026
+## Top leaderboard ranks · read 25 Oct 2026
 
 | Kind | Benchmark | H2O entry | Rank | Link |
 |---|---|---|---|---|
+| Generative | JevBench Capability | H2O-Lightning-31B | **#1** of 159 | [Model card ↗](https://huggingface.co/h2oai/h2o-lightning-31b) |
 | Generative | ImageJevBench Capability | H2O-Lightning-31B | **#1** of 54 | [Model card ↗](https://huggingface.co/h2oai/h2o-lightning-31b) |
 | Predictive | fev-bench | TimeH2O-v1 | **#1** of 32 | [Model card ↗](https://huggingface.co/h2oai/timeh2o-v1) |
-| Agentic | Social Simulation Arena | H2O AI Super Agent | **#1** of 24 | [Enterprise h2oGPTe ↗](https://h2o.ai/products/h2ogpte) |
 | Agentic | FutureX | H2O AI Super Agent | **#1** of 24 | [Enterprise h2oGPTe ↗](https://h2o.ai/products/h2ogpte) |
-| Generative | JevBench Composite | H2O-Lightning-4B | **#2** of 197 | [Model card ↗](https://huggingface.co/h2oai/h2o-lightning-4b) |
+| Agentic | Social Simulation Arena | H2O AI Super Agent | **#1** of 24 | [Enterprise h2oGPTe ↗](https://h2o.ai/products/h2ogpte) |
 | Agentic | Social Simulation Arena | H2O AI Marina | **#3** of 24 | [H2O AI Marina ↗](https://h2oai.github.io/marina/) |
 | Predictive | TALENT | TabH2O | **#5** of 13 | [Try it live ↗](https://tabh2o.h2oai.com/) |
 | Predictive | TabArena | TabH2O | **#7** of 39 | [Try it live ↗](https://tabh2o.h2oai.com/) |
@@ -23,46 +23,47 @@ Models and agents you can run in your own environment, measured on the public le
 
 *Generative AI · Decision models*
 
-### #2 of 197 on JevBench
+### #1 of 159 on JevBench Capability
 
-**H2O-Lightning-4B ranks #2 of 197 on the JevBench Composite score for open-weights systems**
+**H2O-Lightning-31B ranks #1 of 159 on JevBench Capability, the board's headline score**
 
-Decision models get a situation and typed questions and must return calibrated answers, scored on intelligence, calibration, speed and cost. A 4B model with open weights.
+Decision models get a situation and typed questions and must return calibrated answers, scored on intelligence, calibration, speed and cost. A 31B model with open weights.
 
-| Composite score | latency incl. network, board estimate | per 1,000 decisions, board estimate |
+| Capability score | latency incl. network, board estimate | per 1,000 decisions, board estimate |
 |---|---|---|
-| **73.8** | **0.21 s** | **\$0.016** |
+| **84.3** | **0.28 s** | **\$0.044** |
 
-[Leaderboard ↗](https://benchmarkheaven.com/jev-models) · [How it scores ↗](https://benchmarkheaven.com/jev-models/methodology) · [H2O blog post ↗](https://h2o.ai/blog/2026/h2o-lightning-jevbench) · [Model card ↗](https://huggingface.co/h2oai/h2o-lightning-4b)
+[Leaderboard ↗](https://benchmarkheaven.com/jev-models) · [How it scores ↗](https://benchmarkheaven.com/jev-models/methodology) · [H2O blog post ↗](https://h2o.ai/blog/2026/h2o-lightning-jevbench) · [Model card ↗](https://huggingface.co/h2oai/h2o-lightning-31b)
 
-**Composite, latency and cost, side by side** · Composite top 10 · sorted by Composite · higher is better
+**Capability, latency and cost, side by side** · Capability top 10 · sorted by Capability · higher is better
 
 <picture>
 <source media="(prefers-color-scheme: dark)" srcset="readme/jevbench-dark.svg">
-<img alt="Composite, latency and cost, side by side · Composite top 10 · sorted by Composite · higher is better" src="readme/jevbench-light.svg">
+<img alt="Capability, latency and cost, side by side · Capability top 10 · sorted by Capability · higher is better" src="readme/jevbench-light.svg">
 </picture>
 
 <details>
-<summary>Composite, latency and cost, side by side</summary>
+<summary>Capability, latency and cost, side by side</summary>
 
-| # | Composite · higher is better | Model | Latency · lower is better | Cost · lower is better |
+| # | Capability · higher is better | Model | Latency · lower is better | Cost · lower is better |
 |:---|---:|:---:|---|---:|
-| 1 | 76.2 | Torchcast Decision 4B (v1.3) | 220 ms | \$0.015 |
-| **2** | **73.8** | **H2O-Lightning-4B v1.1** | **210 ms** | **\$0.016** |
-| **3** | **73.4** | **H2O-Lightning-31B v1.0.7** | **280 ms** | **\$0.044** |
-| 4 | 73.0 | Torchcast Decision 4B (v1.2) | 270 ms | \$0.015 |
-| 5 | 71.7 | decisio v0.8.0 on gemma-4-31B-it | 240 ms | \$0.041 |
-| 6 | 71.7 | basal-omni-1.0-ultra | 350 ms | \$0.045 |
-|  | 71.5 | Jev 1.13.0<br>reference · closed API · not ranked | 240 ms | \$0.032 |
-| 7 | 71.4 | Quyet-1.0-Large | 380 ms | \$0.045 |
-| 8 | 70.9 | decider-12b v2 | 260 ms | \$0.026 |
-| 9 | 70.7 | Torchcast Decision 4B (v1.1) | 190 ms | \$0.015 |
-| 10 | 70.4 | decider-12b v1, stock Gemma-4-12B-it | 260 ms | \$0.026 |
-|  | 70.2 | Jev 1.14.0<br>reference · closed API · not ranked | 220 ms | \$0.032 |
+| **1** | **84.3** | **H2O-Lightning-31B v1.0.7** | **280 ms** | **\$0.044** |
+| 2 | 82.1 | basal-omni-1.0-ultra | 370 ms | \$0.045 |
+| 3 | 81.8 | Arcbright Elf 1 31B | 270 ms | \$0.047 |
+| 4 | 81.7 | Quyet-1.0-Large | 390 ms | \$0.045 |
+| 5 | 81.5 | Jeff-1.0-Large | 320 ms | \$0.049 |
+| 6 | 79.6 | metask-jev-rain-31B-trained service v3 | 520 ms | \$0.049 |
+| 7 | 79.6 | decisio v0.8.0 on gemma-4-31B-it | 240 ms | \$0.041 |
+| 8 | 78.9 | metask-jev-rain-31B-trained | 620 ms | \$0.044 |
+| 9 | 77.9 | Bobcat 1.3 | 290 ms | \$0.047 |
+| 10 | 77.6 | deck-31B | 410 ms | \$0.048 |
+|  | 77.1 | Jev 1.13.0<br>reference · closed API · not ranked | 240 ms | \$0.032 |
+| **15** | **75.0** | **H2O-Lightning-4B v1.1** | **210 ms** | **\$0.016** |
+|  | 75.0 | Jev 1.14.0<br>reference · closed API · not ranked | 230 ms | \$0.032 |
 
 </details>
 
-Hatched: the board's Jev reference, a closed API listed but not ranked. Composite ranks 197 open-weights systems; Capability, the board's headline score, ranks the 140 inside its cost and latency caps. Latency includes network: for self-hosted models the board estimates it as 2 × its measured GPU time + 150 ms. Cost is the board's estimate. Benchmark Heaven, board v1.7.47.
+Hatched: the board's Jev reference, a closed API listed but not ranked. Capability, the board's headline score, ranks the 159 inside its cost and latency caps. On the board's official Composite for open-weights systems H2O-Lightning-31B is #3 of 220. Latency includes network: for self-hosted models the board estimates it as 2 × its measured GPU time + 150 ms. Cost is the board's estimate. Benchmark Heaven, board v1.7.48.
 
 ## ImageJevBench
 
@@ -160,7 +161,7 @@ Entrants forecast the next public release of poll, sentiment and attention serie
 
 | pairwise win rate | questions answered | H2O AI Super Agent | H2O AI Marina |
 |---|---|---|---|
-| **66.18** | **41** | **#1** | **#3** |
+| **67.29** | **43** | **#1** | **#3** |
 
 [Leaderboard ↗](https://social-simulation-arena.com/#leaderboard) · [How scoring works ↗](https://social-simulation-arena.com/docs.html) · [Enterprise h2oGPTe ↗](https://h2o.ai/products/h2ogpte) · [H2O AI Marina ↗](https://h2oai.github.io/marina/)
 
@@ -176,18 +177,18 @@ Entrants forecast the next public release of poll, sentiment and attention serie
 
 | Rank | Entry | Pairwise win rate |
 |---:|---|---:|
-| **#1** | **H2O AI Super Agent** | **66.18** |
-| #2 | Apodex-FutureFlow | 65.46 |
-| **#3** | **H2O AI Marina** | **61.70** |
-| #4 | Claude Sonnet 5 · web+sfc | 57.47 |
-| #5 | Crowd (baseline) | 56.17 |
-| #6 | Vac | 55.35 |
-| #7 | worldVac | 54.43 |
-| #8 | Gemini 3.1 Pro · web | 53.81 |
+| **#1** | **H2O AI Super Agent** | **67.29** |
+| #2 | Apodex-FutureFlow | 66.60 |
+| **#3** | **H2O AI Marina** | **62.20** |
+| #4 | Vac | 57.08 |
+| #5 | Claude Sonnet 5 · web+sfc | 56.89 |
+| #6 | Crowd (baseline) | 54.95 |
+| #7 | worldVac | 54.11 |
+| #8 | Gemini 3.1 Pro · web | 52.12 |
 
 </details>
 
-The site's default view: Season 0 pairwise win rate, 41 questions locked from 30 Sep 2026, one row per method. By arena score over every resolved number question Super Agent is #3 of 25 and Marina #4; by arena score on the Season 0 main board Super Agent is #5 of 26 and Marina #6. Entrants answer different numbers of questions.
+The site's default view: Season 0 pairwise win rate, 43 questions locked from 30 Sep 2026, one row per method. By arena score over every resolved number question Super Agent is #3 of 25 and Marina #4; by arena score on the Season 0 main board Super Agent is #5 of 26 and Marina #7. Entrants answer different numbers of questions.
 
 ## FutureX
 
@@ -300,6 +301,6 @@ Two public benchmark suites of tabular classification and regression datasets, c
 
 ---
 
-Leaderboards read 24 Oct 2026. Each board ranks its own field.
+Leaderboards read 25 Oct 2026. Each board ranks its own field.
 
 [Download all data (CSV)](site/data/h2o-benchmarks.csv)
