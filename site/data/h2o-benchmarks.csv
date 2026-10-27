@@ -1,471 +1,508 @@
 benchmark,board,read_date,rank,of,entry,base_model,organization,h2o,measure,score,better,capability,latency_s,cost_per_1k_usd,cost_basis
-JevBench,JevBench Composite Score (open weights),2026-10-25,1,220,Torchcast Decision 4B (v1.3),,Torchcast AI,No,Composite score,76.157275,higher,77.497327,0.22,0.015,estimate
-JevBench,JevBench Composite Score (open weights),2026-10-25,2,220,"H2O-Lightning-4B v1.1 (H2O.ai, Qwen3.5-4B fine-tune, stock vLLM + open shim)",,H2O.ai,Yes,Composite score,73.784238,higher,74.996196,0.21,0.016,estimate
-JevBench,JevBench Composite Score (open weights),2026-10-25,3,220,"H2O-Lightning-31B v1.0.7 (H2O.ai, Gemma-4-31B-it fine-tune, vLLM + h2oai overlay, one-engine FP8 profile, self-hosted)",,"H2O.ai (paid fast-lane order 5fa1a5f0, PUBLIC visibility)",Yes,Composite score,73.066622,higher,84.338804,0.28,0.044,estimate
-JevBench,JevBench Composite Score (open weights),2026-10-25,4,220,Torchcast Decision 4B (v1.2),,Torchcast AI,No,Composite score,72.996068,higher,72.606672,0.28,0.015,estimate
-JevBench,JevBench Composite Score (open weights),2026-10-25,5,220,"decisio v0.8.0 on gemma-4-31B-it (frozen, FP8 on load, one prefill per state, self-hosted)",,Amin Roudaki (@aminry),No,Composite score,71.684612,higher,79.569742,0.24,0.041,estimate
-JevBench,JevBench Composite Score (open weights),2026-10-25,6,220,"basal-omni-1.0-ultra (Remek Kinas, Gemma-4-31B-it + merged LoRA, typed-decision readout, self-hosted)",,"Remek Kinas (Remigiusz Kinas; Hugging Face Remek, GitHub rkinas)",No,Composite score,71.450107,higher,82.132361,0.37,0.045,estimate
-JevBench,JevBench Composite Score (open weights),2026-10-25,7,220,"Quyet-1.0-Large (Chinh Nguyen, Gemma-4-31B decoder, option-letter logits)",,Chinh Nguyen (ncchinh),No,Composite score,71.298935,higher,81.688805,0.39,0.045,estimate
-JevBench,JevBench Composite Score (open weights),2026-10-25,8,220,Torchcast Decision 4B (v1.1),,Torchcast AI,No,Composite score,70.670578,higher,68.662605,0.19,0.015,estimate
-JevBench,JevBench Composite Score (open weights),2026-10-25,9,220,Arcbright Elf 1 31B,,Arcbright (arcbright on Hugging Face),No,Composite score,70.513301,higher,81.788419,0.27,0.047,estimate
-JevBench,JevBench Composite Score (open weights),2026-10-25,10,220,decider-12b v2 (Mapika),,Mark Marosi (Mapika),No,Composite score,70.303159,higher,71.34907,0.26,0.026,estimate
-JevBench,JevBench Composite Score (open weights),2026-10-25,11,220,Xevn-4B,,quevirus (Hugging Face),No,Composite score,70.182856,higher,68.639893,0.23,0.014,estimate
-JevBench,JevBench Composite Score (open weights),2026-10-25,12,220,"torchcast-decision-12b (Torchcast AI, Gemma-4-12B fine-tune, option-letter logprob readout)",,Torchcast AI,No,Composite score,69.849803,higher,71.738946,0.24,0.028,estimate
-JevBench,JevBench Composite Score (open weights),2026-10-25,13,220,"decider-12b v1, stock Gemma-4-12B-it (Mapika)",,Mark Marosi (Mapika),No,Composite score,69.836869,higher,71.044496,0.26,0.026,estimate
-JevBench,JevBench Composite Score (open weights),2026-10-25,14,220,metask-jev-rain-31B-trained,,"MeTask (Hangzhou MeTask Technology Co., Ltd.)",No,Composite score,69.591292,higher,78.906883,0.62,0.044,estimate
-JevBench,JevBench Composite Score (open weights),2026-10-25,15,220,vLLM-SR d3-mini,,vLLM Semantic Router Team (vllm-sr),No,Composite score,69.523709,higher,68.76766,0.21,0.016,estimate
-JevBench,JevBench Composite Score (open weights),2026-10-25,16,220,Bobcat 1.3 (Gemma 4 31B),,sanghwa-na (Hugging Face; code foxl-ai/bobcat on GitHub),No,Composite score,69.384539,higher,77.859912,0.29,0.047,estimate
-JevBench,JevBench Composite Score (open weights),2026-10-25,17,220,Chon-1.0-12B-Fast,,Ninh (ninhnv / xoai),No,Composite score,68.857099,higher,70.06718,0.5,0.024,estimate
-JevBench,JevBench Composite Score (open weights),2026-10-25,18,220,Winnow-12B Q8,,Eldan Ring,No,Composite score,68.801185,higher,71.245862,0.4,0.028,estimate
-JevBench,JevBench Composite Score (open weights),2026-10-25,19,220,"deck-31B (krishna765, frozen Gemma-4-31B-it, TorchAO FP8 dynamic)",,krishna765,No,Composite score,68.630448,higher,77.590743,0.41,0.048,estimate
-JevBench,JevBench Composite Score (open weights),2026-10-25,20,220,Jeff-1.0-Large,,,No,Composite score,68.539368,higher,81.503217,0.32,0.049,estimate
-JevBench,JevBench Composite Score (open weights),2026-10-25,21,220,"Cygnet (blockbrain, frozen Gemma-4-12B-it)",,blockbrain,No,Composite score,68.494918,higher,70.903411,0.24,0.028,estimate
-JevBench,JevBench Composite Score (open weights),2026-10-25,22,220,Wald 26B-A4B (Gemma 4 26B-A4B),,org2ai (Hugging Face),No,Composite score,68.211222,higher,76.782161,0.24,0.048,estimate
-JevBench,JevBench Composite Score (open weights),2026-10-25,23,220,"decisio v0.8.0 on gemma-4-12B-it (frozen, one forward pass, self-hosted)",,Amin Roudaki (@aminry),No,Composite score,68.069945,higher,70.741466,0.38,0.023,estimate
-JevBench,JevBench Composite Score (open weights),2026-10-25,24,220,"decisio v0.9.0 on gemma-4-12B-it (frozen, one prefill per question, self-hosted)",,Amin Roudaky / @aminry,No,Composite score,67.667928,higher,69.95438,0.44,0.023,estimate
-JevBench,JevBench Composite Score (open weights),2026-10-25,25,220,"Jev-Omni (akhilaaa3, Gemma-4-12B merged)",,akhilaaa3,No,Composite score,67.637858,higher,71.287366,0.47,0.029,estimate
-JevBench,JevBench Composite Score (open weights),2026-10-25,26,220,metask-jev-rain-12B-trained,,"MeTask (Hangzhou MeTask Technology Co., Ltd.)",No,Composite score,67.326487,higher,76.891468,0.41,0.038,estimate
-JevBench,JevBench Composite Score (open weights),2026-10-25,27,220,"Bobcat Flash 1.2 (Gemma-4-26B-A4B-it + two merged rank-64 LoRA adapters, typed-decision readout at the first answer position, FP8, self-hosted)",,Foxl AI / The Bobcat Authors,No,Composite score,67.137507,higher,73.049841,0.27,0.048,estimate
-JevBench,JevBench Composite Score (open weights),2026-10-25,28,220,"Xor 26B-A4B (Juspay, Gemma-4-26B-A4B, bf16)",,Juspay,No,Composite score,66.765647,higher,71.185395,0.27,0.044,estimate
-JevBench,JevBench Composite Score (open weights),2026-10-25,29,220,"Messier One v0.4 (Qwen3.5-4B fine-tune, self-hosted)",,Messier AI (@agentmessier-ai),No,Composite score,66.127744,higher,62.443616,0.29,0.02,estimate
-JevBench,JevBench Composite Score (open weights),2026-10-25,30,220,"decider chat on Gemma-4-31B-it (Mapika, frozen base, inference technique)",,Mapika,No,Composite score,66.032617,higher,70.445044,0.4,0.044,estimate
-JevBench,JevBench Composite Score (open weights),2026-10-25,31,220,"Hopper 12B trained (gemma-4-12B-it frozen + LoRA r32 unmerged, one forward pass, self-hosted)",,HopitAI (@ArchieIndian),No,Composite score,65.641767,higher,68.146101,0.52,0.029,estimate
-JevBench,JevBench Composite Score (open weights),2026-10-25,32,220,metask-jev-rain-31B-trained service v3,,"MeTask (Hangzhou MeTask Technology Co., Ltd.)",No,Composite score,65.559092,higher,79.597231,0.52,0.049,estimate
-JevBench,JevBench Composite Score (open weights),2026-10-25,33,220,Surogate Rune 26B-A4B v3 (v1.6 pool),,Surogate,No,Composite score,64.989521,higher,73.46808,0.38,0.048,estimate
-JevBench,JevBench Composite Score (open weights),2026-10-25,34,220,"GEV-26B-Decide (AutoTrust, Gemma-4-26B-A4B + LoRA + head)",,AutoTrust AI Lab,No,Composite score,64.187475,higher,70.076131,0.26,0.043,estimate
-JevBench,JevBench Composite Score (open weights),2026-10-25,35,220,"SPX-CD-Omni (SurdAI, google/gemma-4-12B-it + LoRA r32, one forward pass, self-hosted)",,SPX AI team (SurdAI),No,Composite score,63.113797,higher,68.128662,0.3,0.025,estimate
-JevBench,JevBench Composite Score (open weights),2026-10-25,36,220,Metask rain 4B,,,No,Composite score,62.506641,higher,65.986401,0.32,0.04,estimate
-JevBench,JevBench Composite Score (open weights),2026-10-25,37,220,"shisa-de-1 (shisa-ai, Gemma-4-26B-A4B)",,shisa-ai,No,Composite score,62.423601,higher,65.533778,0.21,0.047,estimate
-JevBench,JevBench Composite Score (open weights),2026-10-25,38,220,Blink v0.3 26B-A4B,,Pixilab,No,Composite score,61.120134,higher,69.9454,0.25,0.048,estimate
-JevBench,JevBench Composite Score (open weights),2026-10-25,39,220,baselabs elephant-1 (9B),,baselabs (Base Labs at Baseten; baselabs on Hugging Face),No,Composite score,60.907548,higher,70.246826,0.3,0.052,estimate
-JevBench,JevBench Composite Score (open weights),2026-10-25,40,220,"Diffusion Jev (DiffusionGemma 26B-A4B on patched SGLang, 48-step diffusion readout, self-hosted)",,Hangzhi Zhou (@Hangzhi),No,Composite score,59.269517,higher,58.087508,0.41,0.048,estimate
-JevBench,JevBench Composite Score (open weights),2026-10-25,41,220,"René-1 31B FP8 (salfatigroup, Gemma 4 31B full fine-tune, one-pass option readout)",,Elon Salfati / salfatigroup,No,Composite score,55.803088,higher,75.954083,0.38,0.063,estimate
-JevBench,JevBench Composite Score (open weights),2026-10-25,42,220,Amazon Strands Decider 26B-A4B,,Amazon / AWS (Hugging Face; serving code strands-labs/strands-decider on GitHub),No,Composite score,54.479187,higher,66.715629,0.37,0.045,estimate
-JevBench,JevBench Composite Score (open weights),2026-10-25,43,220,Wald 4B v2.1,,org2ai,No,Composite score,54.257822,higher,69.270932,0.21,0.062,estimate
-JevBench,JevBench Composite Score (open weights),2026-10-25,44,220,"pplx-decider-flash-v1.2 (Perplexity, Qwen3.5-4B full fine-tune, marker readout, self-hosted)",,Perplexity AI (perplexity-ai on Hugging Face),No,Composite score,54.008685,higher,61.736568,0.24,0.015,estimate
-JevBench,JevBench Composite Score (open weights),2026-10-25,45,220,Bespoke Nimble 9B v3 (Qwen3.5-9B LoRA),,Bespoke Labs,No,Composite score,53.456302,higher,66.792909,0.34,0.063,estimate
-JevBench,JevBench Composite Score (open weights),2026-10-25,46,220,"Aplomb 1 (5.3B decision model on Qwen3.5-4B, trained readout head, self-hosted)",,EmpirioLabs (@Adam-Dalloul),No,Composite score,52.887019,higher,67.087631,0.34,0.025,estimate
-JevBench,JevBench Composite Score (open weights),2026-10-25,47,220,Respan Span-02,,Respan (lihe07),No,Composite score,51.494682,higher,69.339058,0.21,0.068,estimate
-JevBench,JevBench Composite Score (open weights),2026-10-25,48,220,"Seb-9B-v2 (ironbcc, Qwen3.5-9B fine-tune, one forward pass, stock vLLM, self-hosted)",,ironbcc (Hugging Face),No,Composite score,50.049935,higher,64.822419,0.22,0.051,estimate
-JevBench,JevBench Composite Score (open weights),2026-10-25,49,220,"APUS-OpenJev-v1-9B (merged bf16 checkpoint-3000 on Qwen3.5-9B, their own native runtime, full depth, self-hosted)",,APUS AI-LAB (@cryptoSUN2049),No,Composite score,49.167352,higher,56.907845,0.71,0.051,estimate
-JevBench,JevBench Composite Score (open weights),2026-10-25,50,220,Arcbright Elf 1 12B,,Arcbright (arcbright on Hugging Face),No,Composite score,48.774065,higher,64.961397,0.23,0.026,estimate
-JevBench,JevBench Composite Score (open weights),2026-10-25,51,220,Jeffan-31b-1710,,tattrongvu (Hugging Face),No,Composite score,48.715281,higher,81.68367,0.4,0.081,estimate
-JevBench,JevBench Composite Score (open weights),2026-10-25,52,220,"Plumb-4B (crh225, JevK5 v0.2 + LoRA)",,unknown,No,Composite score,47.925483,higher,65.319978,0.19,0.017,estimate
-JevBench,JevBench Composite Score (open weights),2026-10-25,53,220,"Messier One v0.2 (Qwen3.5-4B fine-tune, one prefill, self-hosted)",,Messier AI (@agentmessier-ai),No,Composite score,45.27818,higher,58.130562,0.21,0.015,estimate
-JevBench,JevBench Composite Score (open weights),2026-10-25,54,220,"spark-s1-4b-v6 (Open Spark Jev, abhishek085)",,Abhishek Rai (abhishek085),No,Composite score,44.846618,higher,54.016043,0.41,0.021,estimate
-JevBench,JevBench Composite Score (open weights),2026-10-25,55,220,KnowLine 31B-Gen1,,PelaAI (Hugging Face),No,Composite score,44.376264,higher,85.213466,0.66,0.093,estimate
-JevBench,JevBench Composite Score (open weights),2026-10-25,56,220,"swanOne (blockbrain, Qwen3.8-Flash-Next NVFP4)",,blockbrain,No,Composite score,43.786873,higher,72.366277,0.71,0.085,estimate
-JevBench,JevBench Composite Score (open weights),2026-10-25,57,220,AJev lm6q (Gemma 4 31B),,andyzhang232 (Hugging Face),No,Composite score,43.718683,higher,81.399455,0.58,0.093,estimate
-JevBench,JevBench Composite Score (open weights),2026-10-25,58,220,"Quyet-1.0-Medium (Chinh Nguyen, Qwen3.5-4B decoder, option-letter logits)",,Chinh Nguyen (ncchinh),No,Composite score,43.561446,higher,59.246792,0.31,0.017,estimate
-JevBench,JevBench Composite Score (open weights),2026-10-25,59,220,Turion Jev 31B,,Turion AI (Hugging Face),No,Composite score,42.868551,higher,80.878736,0.4,0.096,estimate
-JevBench,JevBench Composite Score (open weights),2026-10-25,60,220,"JPT-4B (kirp, Qwen3.5-4B LoRA)",,kirp,No,Composite score,42.16748,higher,63.820193,0.28,0.016,estimate
-JevBench,JevBench Composite Score (open weights),2026-10-25,61,220,"lev (Interfaze AI, Qwen3.5-4B + LoRA r32, label-token readout + candidate-path head, per-bucket temperatures)",,Interfaze,No,Composite score,42.137015,higher,61.704209,0.36,0.019,estimate
-JevBench,JevBench Composite Score (open weights),2026-10-25,62,220,NInfer Qwen3.8-Flash-Next mixed,,Igor L. / NInfer contributors,No,Composite score,41.94407,higher,69.676313,0.32,0.082,estimate
-JevBench,JevBench Composite Score (open weights),2026-10-25,63,220,decider-4b v2 (Mapika),,Mapika,No,Composite score,41.124217,higher,64.881665,0.21,0.015,estimate
-JevBench,JevBench Composite Score (open weights),2026-10-25,64,220,baselabs mammoth-1 (27B),,baselabs (Base Labs at Baseten; baselabs on Hugging Face),No,Composite score,41.083253,higher,85.233002,0.53,0.1,estimate
-JevBench,JevBench Composite Score (open weights),2026-10-25,65,220,Jeffan-4B-2010,,tattrongvu (Hugging Face),No,Composite score,41.064562,higher,64.001725,0.21,0.016,estimate
-JevBench,JevBench Composite Score (open weights),2026-10-25,66,220,jev-local (Qwen3.5-9B),,us (GitHub),No,Composite score,41.035747,higher,57.458382,1.09,0.024,estimate
-JevBench,JevBench Composite Score (open weights),2026-10-25,67,220,Wald 4B,,,No,Composite score,39.701515,higher,59.552987,0.24,0.033,estimate
-JevBench,JevBench Composite Score (open weights),2026-10-25,68,220,"ClassOne Qwen 3.5 9B (Qwen3.5-9B backbone with ClassOne decision heads, schema-constrained single forward pass, self-hosted)",,Thiago Silva / @devops_thiago,No,Composite score,38.505734,higher,50.471174,0.28,0.049,estimate
-JevBench,JevBench Composite Score (open weights),2026-10-25,69,220,JevK5 v0.3 (4B),,unknown,No,Composite score,37.351269,higher,64.167568,0.19,0.017,estimate
-JevBench,JevBench Composite Score (open weights),2026-10-25,70,220,metask-jev-4b,,Wayfind (metask-ai),No,Composite score,37.326661,higher,61.791104,0.27,0.026,estimate
-JevBench,JevBench Composite Score (open weights),2026-10-25,71,220,"deck-4B v1.0 (krishna765, JevK5 + LoRA, FP8 weight-only)",,krishna765,No,Composite score,37.25912,higher,63.607913,0.3,0.017,estimate
-JevBench,JevBench Composite Score (open weights),2026-10-25,72,220,"Kahn1 4B (Okura66, Qwen3.5-4B LoRA merge, author's sysone engine)",,Axel Montzamir (Okura66),No,Composite score,36.97417,higher,61.743594,0.31,0.046,estimate
-JevBench,JevBench Composite Score (open weights),2026-10-25,73,220,"Clef-Flash (Cloudflare, Qwen3.5-9B post-train with a joint schema head, multimodal, measured on text)",,Cloudflare,No,Composite score,36.616916,higher,63.824241,0.36,0.059,estimate
-JevBench,JevBench Composite Score (open weights),2026-10-25,74,220,Decision-4B (Eval Engine / Chromia),,Eval Engine / Chromia,No,Composite score,35.402914,higher,59.09507,0.26,0.014,estimate
-JevBench,JevBench Composite Score (open weights),2026-10-25,75,220,decisor-4b,,,No,Composite score,35.336641,higher,45.737667,0.25,0.016,estimate
-JevBench,JevBench Composite Score (open weights),2026-10-25,76,220,"janus 4B (Icarus AI / cmxu, Qwen3.5-4B + LoRA r64 and pointer decision head)",,Icarus AI / cmxu,No,Composite score,35.15464,higher,62.852566,0.21,0.015,estimate
-JevBench,JevBench Composite Score (open weights),2026-10-25,77,220,Qwen3.5-9B Jev-like data-mix v2,,jsaurabh,No,Composite score,33.577476,higher,60.8654,0.49,0.065,estimate
-JevBench,JevBench Composite Score (open weights),2026-10-25,78,220,"Seb-9B (ironbcc, Qwen3.5-9B fine-tune, one forward pass, stock vLLM, self-hosted)",,ironbcc (Hugging Face),No,Composite score,32.562087,higher,63.138006,0.25,0.051,estimate
-JevBench,JevBench Composite Score (open weights),2026-10-25,79,220,JevK5 v0.2.0,,allebee,No,Composite score,32.079062,higher,62.824112,0.24,0.017,estimate
-JevBench,JevBench Composite Score (open weights),2026-10-25,80,220,"Tern-35B-A3B (matthewagi, Qwen3.6 35B-A3B MoE decision model, author server, self-hosted)",,matthewagi (Hugging Face),No,Composite score,32.055398,higher,66.394317,0.29,0.085,estimate
-JevBench,JevBench Composite Score (open weights),2026-10-25,81,220,"Aleria Judge 1.1.1 (ALERIA-ML, inference technique on stock Gemma 4 31B, author server, self-hosted)",,ALERIA-ML (GitHub; Aleria AI),No,Composite score,31.173873,higher,76.860943,0.41,0.14,estimate
-JevBench,JevBench Composite Score (open weights),2026-10-25,82,220,JevOne,,Juspay,No,Composite score,31.130839,higher,68.860448,0.28,0.1,estimate
-JevBench,JevBench Composite Score (open weights),2026-10-25,83,220,"Jebadiah 9B v2.1 (Frontier Infra, Qwen3.5-9B LoRA)",,Frontier Infra,No,Composite score,30.323115,higher,63.413489,0.25,0.051,estimate
-JevBench,JevBench Composite Score (open weights),2026-10-25,84,220,"Verdin-4B (Victor Bennett, Qwen3.5-4B + merged LoRA r16 + pointer head)",,Victor Bennett (Hugging Face victorbennett; benchmarkheaven.com/submit ref E59F3C77),No,Composite score,29.859395,higher,59.598775,0.27,0.018,estimate
-JevBench,JevBench Composite Score (open weights),2026-10-25,85,220,"TypeCastLM 1.4.0 (Mikhail Gribov, Qwen3.5-4B computed head)",,Mikhail Gribov / @MihailGGribov,No,Composite score,29.820228,higher,56.394148,0.21,0.015,estimate
-JevBench,JevBench Composite Score (open weights),2026-10-25,86,220,"blink-4b (thegovind, Qwen3.5-4B derivative)",,thegovind,No,Composite score,29.472576,higher,61.417273,0.27,0.016,estimate
-JevBench,JevBench Composite Score (open weights),2026-10-25,87,220,"jiwo 4b (Qwen3.5-4B backbone with a trained decision head, one forward pass, native probabilities, self-hosted)",,eljiwo / jiwidi,No,Composite score,28.949426,higher,60.227052,0.22,0.016,estimate
-JevBench,JevBench Composite Score (open weights),2026-10-25,88,220,Imajev-4B (RTX 5090),,unknown,No,Composite score,28.648656,higher,61.894948,0.29,0.017,estimate
-JevBench,JevBench Composite Score (open weights),2026-10-25,89,220,Uniphore-4B-Decider,,Uniphore,No,Composite score,27.150718,higher,57.065336,0.37,0.015,estimate
-JevBench,JevBench Composite Score (open weights),2026-10-25,90,220,"Decision 2.0 Lux 9B (vLLM-SR, Qwen3.5-9B lineage)",,vLLM Semantic Router Team (vllm-sr),No,Composite score,27.09414,higher,61.649512,0.29,0.052,estimate
-JevBench,JevBench Composite Score (open weights),2026-10-25,91,220,Hopper,,HopitAI,No,Composite score,26.506917,higher,61.19842,0.26,0.018,estimate
-JevBench,JevBench Composite Score (open weights),2026-10-25,92,220,"Malkuth-4B (newfull5, Kev post-train)",,newfull5 (dhtocks),No,Composite score,26.19082,higher,61.13906,0.3,0.03,estimate
-JevBench,JevBench Composite Score (open weights),2026-10-25,93,220,jqv (Qwen3-32B zero-shot),,hjmurmur (Octalab),No,Composite score,25.359237,higher,61.86477,0.39,0.042,estimate
-JevBench,JevBench Composite Score (open weights),2026-10-25,94,220,JPT-35B-A3B (Qwen3.5-35B-A3B fine-tune),,kirp,No,Composite score,25.351628,higher,70.676733,0.29,0.16,estimate
-JevBench,JevBench Composite Score (open weights),2026-10-25,95,220,decider-35b-a3b (Mapika),,Mapika,No,Composite score,24.768584,higher,66.171512,0.25,0.15,estimate
-JevBench,JevBench Composite Score (open weights),2026-10-25,96,220,"CoCo-Decision-4B (corners-ai, LoRA on Qwen3.5-4B, option-label logits of one pass, served by oh-my-jev)",,iamupd / corners-ai,No,Composite score,24.642573,higher,56.920054,0.24,0.014,estimate
-JevBench,JevBench Composite Score (open weights),2026-10-25,97,220,Manchego v2.1,,oraculumai,No,Composite score,24.480471,higher,58.275419,0.26,0.015,estimate
-JevBench,JevBench Composite Score (open weights),2026-10-25,98,220,"Decision 4B v1.2 (FlyMyJev, Qwen3.5-4B + LoRA)",,unknown,No,Composite score,24.461373,higher,60.413997,0.19,0.017,estimate
-JevBench,JevBench Composite Score (open weights),2026-10-25,99,220,Standard One 3B SH v4 (Standard Thinking),,Standard Thinking,No,Composite score,24.395575,higher,56.040099,0.21,0.052,estimate
-JevBench,JevBench Composite Score (open weights),2026-10-25,100,220,"Fastino GLiDE 1.2 (open weights, self-hosted)",,Fastino (Hugging Face),No,Composite score,22.021181,higher,84.922576,0.43,0.21,estimate
-JevBench,JevBench Composite Score (open weights),2026-10-25,101,220,Raw Qwen3 4B Instruct 2507 direct logits,,Alibaba Qwen / neutral reproduction,No,Composite score,21.778881,higher,34.566465,0.25,0.017,estimate
-JevBench,JevBench Composite Score (open weights),2026-10-25,102,220,"StartLux-Decision v1.1 27B Instant (StartLux Labs, Qwen3.8-27B fine-tune)",,StartLux Labs,No,Composite score,21.606499,higher,82.557721,0.26,0.21,estimate
-JevBench,JevBench Composite Score (open weights),2026-10-25,103,220,Standard One 3B SH (Standard Thinking),,Standard Thinking,No,Composite score,21.589,higher,55.570713,0.23,0.052,estimate
-JevBench,JevBench Composite Score (open weights),2026-10-25,104,220,RSI-Jev v6.1-VL 27B,,Shanghua Gao (@GaoShanghua),No,Composite score,21.584867,higher,73.456975,0.42,0.2,estimate
-JevBench,JevBench Composite Score (open weights),2026-10-25,105,220,"JEV-27B (AutoTrust, Qwen3.8-27B)",,AutoTrust AI Lab,No,Composite score,21.274527,higher,73.86417,0.38,0.2,estimate
-JevBench,JevBench Composite Score (open weights),2026-10-25,106,220,"torchcast-decision-27b (Torchcast AI, Qwen3.8-27B fine-tune)",,Torchcast AI,No,Composite score,21.137805,higher,80.219125,0.35,0.21,estimate
-JevBench,JevBench Composite Score (open weights),2026-10-25,107,220,Bespoke Nimble 9B (Bespoke Labs),,Bespoke Labs,No,Composite score,21.061125,higher,56.514999,0.46,0.13,estimate
-JevBench,JevBench Composite Score (open weights),2026-10-25,108,220,"Nimble-v4-max (open weights, self-hosted)",,Bespoke Labs,No,Composite score,20.704204,higher,81.15705,0.46,0.21,estimate
-JevBench,JevBench Composite Score (open weights),2026-10-25,109,220,"pplx-decider-v1.2 (Perplexity, Qwen3.8-27B full fine-tune, marker readout, self-hosted)",,Perplexity AI (perplexity-ai on Hugging Face),No,Composite score,20.634957,higher,80.839962,0.44,0.21,estimate
-JevBench,JevBench Composite Score (open weights),2026-10-25,110,220,"Perplexity Decider v1.1 27B (Qwen3.8-27B, noncausal decision readout)",,Perplexity,No,Composite score,20.592538,higher,82.709836,0.41,0.22,estimate
-JevBench,JevBench Composite Score (open weights),2026-10-25,111,220,vLLM-SR d3-turbo,,vLLM Semantic Router Team (vllm-sr),No,Composite score,20.462834,higher,82.591139,0.45,0.22,estimate
-JevBench,JevBench Composite Score (open weights),2026-10-25,112,220,vLLM-SR d3,,vLLM Semantic Router Team (vllm-sr),No,Composite score,20.4504,higher,82.149649,0.37,0.22,estimate
-JevBench,JevBench Composite Score (open weights),2026-10-25,113,220,reflex 4B (kshetrajna12),,kshetrajna12,No,Composite score,20.428813,higher,58.85612,2.87,0.017,estimate
-JevBench,JevBench Composite Score (open weights),2026-10-25,114,220,Vera Large,,scar-ai (Hugging Face),No,Composite score,20.313436,higher,79.551778,0.33,0.22,estimate
-JevBench,JevBench Composite Score (open weights),2026-10-25,115,220,JADE (Qwen3.8-27B LoRA),,theunnecessarythings,No,Composite score,20.179601,higher,49.24947,0.42,0.16,estimate
-JevBench,JevBench Composite Score (open weights),2026-10-25,116,220,"Nagi-ENORMOUS 27B (nagisanzenin, Qwen3.8-27B LoRA)",,nagisanzenin,No,Composite score,19.772172,higher,73.765364,0.46,0.22,estimate
-JevBench,JevBench Composite Score (open weights),2026-10-25,117,220,"typecastlm (Mikhail Gribov, Qwen3.5-4B computed head)",,Mikhail Gribov,No,Composite score,19.719284,higher,56.544259,0.21,0.016,estimate
-JevBench,JevBench Composite Score (open weights),2026-10-25,118,220,"Jebadiah 27B (Frontier Infra, Qwen3.8-27B LoRA)",,Frontier Infra,No,Composite score,19.217466,higher,70.232815,0.46,0.22,estimate
-JevBench,JevBench Composite Score (open weights),2026-10-25,119,220,"iota-decide-4b (Macrocosmos, Clef joint-head 4B, self-hosted)",,"Macrocosmos (paid fast-lane order d831408e, PUBLIC visibility)",No,Composite score,18.926689,higher,57.12434,0.39,0.017,estimate
-JevBench,JevBench Composite Score (open weights),2026-10-25,120,220,"Decision 2.0 Vega 27B (vLLM-SR, Qwen3.8-27B)",,vLLM Semantic Router,No,Composite score,18.867176,higher,71.305342,0.54,0.22,estimate
-JevBench,JevBench Composite Score (open weights),2026-10-25,121,220,"Jebadiah 9B v2 (Frontier Infra, Qwen3.5-9B LoRA)",,frontier-infra,No,Composite score,18.78098,higher,56.949322,0.26,0.051,estimate
-JevBench,JevBench Composite Score (open weights),2026-10-25,122,220,Standard One 8B SH (Standard Thinking),,Standard Thinking,No,Composite score,18.743073,higher,59.981612,0.28,0.078,estimate
-JevBench,JevBench Composite Score (open weights),2026-10-25,123,220,"Decision 4B v1.1 (FlyMyJev, Qwen3.5-4B + LoRA)",,unknown,No,Composite score,18.717254,higher,57.186755,0.19,0.017,estimate
-JevBench,JevBench Composite Score (open weights),2026-10-25,124,220,"AutoJev-27B (denis-pplx, Qwen3.8-27B)",,unknown,No,Composite score,18.454036,higher,71.619835,0.35,0.23,estimate
-JevBench,JevBench Composite Score (open weights),2026-10-25,125,220,"pjev-2b (Kailune AI, frozen MiniCPM5-2B + merged LoRA r64, letter-logit readout, T=1 stub)",,Kailune AI / @chi2liu (GitHub issue fstandhartinger/jevbench#145),No,Composite score,18.074373,higher,56.45475,0.22,0.016,estimate
-JevBench,JevBench Composite Score (open weights),2026-10-25,126,220,"Eikos-27B (caiovicentino1, Qwen3.8-27B)",,unknown,No,Composite score,18.071526,higher,77.189926,0.38,0.24,estimate
-JevBench,JevBench Composite Score (open weights),2026-10-25,127,220,NInfer Qwen3.8-27B NVFP4,,Igor L. / NInfer contributors,No,Composite score,17.707262,higher,67.99285,0.26,0.23,estimate
-JevBench,JevBench Composite Score (open weights),2026-10-25,128,220,"Compass 0.2.0 (adimyth, Qwen3.5-4B LoRA)",,adimyth,No,Composite score,17.606156,higher,56.09156,0.66,0.026,estimate
-JevBench,JevBench Composite Score (open weights),2026-10-25,129,220,"JEB-35B-A3B (szybkie.ai, Qwen3.6-35B-A3B LoRA)",,szybkie-ai,No,Composite score,17.297269,higher,61.606219,0.22,0.08,estimate
-JevBench,JevBench Composite Score (open weights),2026-10-25,130,220,"OpenJev (thinking, BF16)",,razorback16,No,Composite score,17.272112,higher,75.775873,1.93,0.24,estimate
-JevBench,JevBench Composite Score (open weights),2026-10-25,131,220,Open-Jev 9B (Zefan Cai),,Zefan Cai (@Zefan_Cai),No,Composite score,17.042644,higher,61.845495,1.44,0.17,estimate
-JevBench,JevBench Composite Score (open weights),2026-10-25,132,220,Standard One 8B (Standard Thinking),,Standard Thinking (myeongho12),No,Composite score,16.909498,higher,58.409673,0.22,0.078,estimate
-JevBench,JevBench Composite Score (open weights),2026-10-25,133,220,"Clef (Cloudflare, Qwen3.8-27B post-train with a joint schema head, multimodal, measured on text)",,Cloudflare,No,Composite score,16.734593,higher,75.329345,0.61,0.25,estimate
-JevBench,JevBench Composite Score (open weights),2026-10-25,134,220,"ArseneLupin v1.1 (IBOU-SEARCH, Qwen3.5-4B LoRA)",,IBOU-SEARCH,No,Composite score,16.545556,higher,55.091324,0.32,0.02,estimate
-JevBench,JevBench Composite Score (open weights),2026-10-25,135,220,JEV Qwen3.5-9B Base NVFP4,,WilfLin,No,Composite score,15.970465,higher,57.142007,0.2,0.056,estimate
-JevBench,JevBench Composite Score (open weights),2026-10-25,136,220,"Arbiter-4B (Goddragon, NeoHorse 4B pointer model, author server, self-hosted)",,Goddragon (Hugging Face),No,Composite score,15.914507,higher,52.293224,0.24,0.013,estimate
-JevBench,JevBench Composite Score (open weights),2026-10-25,137,220,"Decider-4B (roudone, NeoHorse 4B pointer model, author server, self-hosted)",,roudone (Hugging Face),No,Composite score,15.739032,higher,56.822253,0.25,0.013,estimate
-JevBench,JevBench Composite Score (open weights),2026-10-25,138,220,"ClassOne Gemma 4 E4B (Gemma-4-E4B backbone with ClassOne decision heads, schema-constrained single forward pass, self-hosted)",,Thiago Silva / @devops_thiago,No,Composite score,15.604463,higher,38.351444,0.23,0.011,estimate
-JevBench,JevBench Composite Score (open weights),2026-10-25,139,220,"SemIf, formerly OpenJev (Qwen3.5-4B, TheoLeeCJ)",,Theodore Lee (TheoLeeCJ),No,Composite score,15.508983,higher,55.350369,0.27,0.017,estimate
-JevBench,JevBench Composite Score (open weights),2026-10-25,140,220,DecisionNode Edge 0.9.2,,Bynn Intelligence (Hugging Face),No,Composite score,15.3299,higher,52.142924,0.21,0.0091,estimate
-JevBench,JevBench Composite Score (open weights),2026-10-25,141,220,RYOTIDE-Qwen9,,Csaba Garay,No,Composite score,14.694072,higher,52.489947,0.42,0.049,estimate
-JevBench,JevBench Composite Score (open weights),2026-10-25,142,220,"ClassOne Qwen 3.5 4B (Qwen3.5-4B backbone with ClassOne decision heads, schema-constrained single forward pass, self-hosted)",,Thiago Silva / @devops_thiago,No,Composite score,14.333332,higher,38.092177,0.25,0.015,estimate
-JevBench,JevBench Composite Score (open weights),2026-10-25,143,220,"Jez-large-1.0.0 (pragmaticfrontier, Gemma-4-E4B label-logit decision model, author server, self-hosted)",,pragmaticfrontier (Hugging Face),No,Composite score,13.781857,higher,54.392802,0.27,0.0096,estimate
-JevBench,JevBench Composite Score (open weights),2026-10-25,144,220,"RYOTIDE-Qwen (csabag, Qwen3.5-4B stock weights)",,csabag,No,Composite score,12.935252,higher,56.302543,0.34,0.018,estimate
-JevBench,JevBench Composite Score (open weights),2026-10-25,145,220,Chon-1.0-12B,,Ninh (ninhnv / xoai),No,Composite score,12.822528,higher,42.993963,0.51,0.05,estimate
-JevBench,JevBench Composite Score (open weights),2026-10-25,146,220,"Noma (Blackdrome AI Labs, Qwen3.5-4B-Base derivative)",,BlackdromeAILabs,No,Composite score,12.749287,higher,54.344262,0.2,0.019,estimate
-JevBench,JevBench Composite Score (open weights),2026-10-25,147,220,KnowLine 35B-A3B-Gen1.5,,PelaAI (Hugging Face),No,Composite score,12.431479,higher,76.650606,0.25,0.32,estimate
-JevBench,JevBench Composite Score (open weights),2026-10-25,148,220,Bev / Bonsai 27B,,Reza Sayar,No,Composite score,11.737862,higher,66.138733,2.13,0.25,estimate
-JevBench,JevBench Composite Score (open weights),2026-10-25,149,220,LitJev (Qwen3.8-27B),,Zhengxu Yu,No,Composite score,11.455731,higher,66.603293,3.15,0.24,estimate
-JevBench,JevBench Composite Score (open weights),2026-10-25,150,220,local-jev Qwen3.5-4B,,Amith Chandrappa (amithgc),No,Composite score,11.429477,higher,54.994113,0.42,0.023,estimate
-JevBench,JevBench Composite Score (open weights),2026-10-25,151,220,"system-one (Qwen3-8B, Sean Goedecke)",,Sean Goedecke,No,Composite score,11.022831,higher,29.718121,0.26,0.068,estimate
-JevBench,JevBench Composite Score (open weights),2026-10-25,152,220,"StartLux-Decision v1.1 27B AutoThink (StartLux Labs, Qwen3.8-27B fine-tune, gate 0.6)",,StartLux Labs,No,Composite score,10.816783,higher,78.8041,0.29,0.35,estimate
-JevBench,JevBench Composite Score (open weights),2026-10-25,153,220,kev 8B (research preview),,Jared Palmer,No,Composite score,10.614631,higher,50.009176,0.3,0.097,estimate
-JevBench,JevBench Composite Score (open weights),2026-10-25,154,220,"Decision 2B (FlyMy.AI, v59)",,FlyMy.AI (@denti),No,Composite score,10.289709,higher,54.822903,0.3,0.013,estimate
-JevBench,JevBench Composite Score (open weights),2026-10-25,155,220,"OpenSourceJev (Qwen3.5-4B Q4_K_M, native llama.cpp)",,sabeel111,No,Composite score,10.238095,higher,48.571422,0.79,0.011,estimate
-JevBench,JevBench Composite Score (open weights),2026-10-25,156,220,"Imajev-9B (mohit67890, Qwen3.5-9B LoRA)",,mohit67890,No,Composite score,9.786091,higher,62.421045,0.93,0.2,estimate
-JevBench,JevBench Composite Score (open weights),2026-10-25,157,220,"open-alternative-jev (Qwen3.5-4B, IkerMoel)",,IkerMoel,No,Composite score,9.429815,higher,49.144972,0.25,0.017,estimate
-JevBench,JevBench Composite Score (open weights),2026-10-25,158,220,Raw Qwen3 8B direct logits,,Alibaba Qwen / neutral reproduction,No,Composite score,9.29645,higher,30.135339,0.31,0.065,estimate
-JevBench,JevBench Composite Score (open weights),2026-10-25,159,220,Liquid AI d1-3B,,Liquid AI,No,Composite score,8.853035,higher,49.506656,0.18,0.044,estimate
-JevBench,JevBench Composite Score (open weights),2026-10-25,160,220,Krino-2B,,guru0381,No,Composite score,8.723813,higher,42.413154,0.21,0.02,estimate
-JevBench,JevBench Composite Score (open weights),2026-10-25,161,220,"Imajev-2B (mohit67890, Qwen3.5-2B LoRA)",,mohit67890,No,Composite score,7.924238,higher,53.968527,0.75,0.041,estimate
-JevBench,JevBench Composite Score (open weights),2026-10-25,162,220,decider-2b (Mapika),,Mapika,No,Composite score,7.669657,higher,44.589479,0.18,0.015,estimate
-JevBench,JevBench Composite Score (open weights),2026-10-25,163,220,"Nemotron Diffusion 8B (pst2154, optimized vLLM)",,pst2154,No,Composite score,7.294935,higher,47.462945,0.2,0.03,estimate
-JevBench,JevBench Composite Score (open weights),2026-10-25,164,220,kev 4B (research preview),,Jared Palmer,No,Composite score,6.609648,higher,43.981784,0.29,0.014,estimate
-JevBench,JevBench Composite Score (open weights),2026-10-25,165,220,Clef-omni,,Cloudflare,No,Composite score,6.064517,higher,58.315927,0.44,0.28,estimate
-JevBench,JevBench Composite Score (open weights),2026-10-25,166,220,"Kev 27B (Kev 1.0, Qwen3.8-27B)",,Jared Palmer,No,Composite score,5.764808,higher,78.938961,0.52,0.53,estimate
-JevBench,JevBench Composite Score (open weights),2026-10-25,167,220,FrontiersMind Lumma-fev-27B,,FrontiersMind (FrontiersMind on Hugging Face),No,Composite score,5.313847,higher,72.288556,0.43,0.54,estimate
-JevBench,JevBench Composite Score (open weights),2026-10-25,168,220,DecisionNode Edge Mini 0.9.2,,Bynn Intelligence (Hugging Face),No,Composite score,5.298918,higher,47.611939,0.21,0.0046,estimate
-JevBench,JevBench Composite Score (open weights),2026-10-25,169,220,"jiwo 0.8b (Qwen3.5-0.8B backbone with a trained decision head, one forward pass, native probabilities, self-hosted)",,eljiwo / jiwidi,No,Composite score,4.067693,higher,47.207103,0.19,0.0052,estimate
-JevBench,JevBench Composite Score (open weights),2026-10-25,170,220,"Malkuth-2B (newfull5, Kev post-train)",,newfull5 (dhtocks),No,Composite score,3.991847,higher,47.633125,0.24,0.014,estimate
-JevBench,JevBench Composite Score (open weights),2026-10-25,171,220,Qwen3-Reranker-4B,,Qwen,No,Composite score,3.709367,higher,44.745725,0.57,0.052,estimate
-JevBench,JevBench Composite Score (open weights),2026-10-25,172,220,"SimpleJev Qwen3.8-27B (self-hosted, v1.6 pool)",,Featherless,No,Composite score,3.39358,higher,74.892709,1.43,0.68,estimate
-JevBench,JevBench Composite Score (open weights),2026-10-25,173,220,ZeroEntropy zerank-2,,ZeroEntropy,No,Composite score,3.344799,higher,49.398509,0.52,0.052,estimate
-JevBench,JevBench Composite Score (open weights),2026-10-25,174,220,"EXAONE-4.0-1.2B-JEV v0.3 (unofficial fine-tune of LGAI-EXAONE/EXAONE-4.0-1.2B, native option-label softmax, two reads averaged, self-hosted)",,Dongmin Kim / @carrtesy - unofficial personal project,No,Composite score,3.265807,higher,47.679952,0.19,0.025,estimate
-JevBench,JevBench Composite Score (open weights),2026-10-25,175,220,Open-Jev 2B (Zefan Cai),,Zefan Cai (@Zefan_Cai),No,Composite score,3.238365,higher,47.711371,1.05,0.17,estimate
-JevBench,JevBench Composite Score (open weights),2026-10-25,176,220,Vega 4B,,Nandakishor M,No,Composite score,3.070123,higher,36.578675,0.54,0.058,estimate
-JevBench,JevBench Composite Score (open weights),2026-10-25,177,220,"Open-Jev 27B v1.1 (Zefan Cai, LoRA + decision head on Qwen3.8-27B)",,Zefan Cai,No,Composite score,2.879134,higher,67.963069,1.79,0.72,estimate
-JevBench,JevBench Composite Score (open weights),2026-10-25,178,220,Raw Phi-4 mini direct logits,,Microsoft / neutral reproduction,No,Composite score,2.478528,higher,35.337852,0.24,0.036,estimate
-JevBench,JevBench Composite Score (open weights),2026-10-25,179,220,"SimpleJev (Qwen3.5-0.8B, CPU)",,sabeel111 / Featherless AI,No,Composite score,1.972491,higher,31.07287,9.16,0.0098,estimate
-JevBench,JevBench Composite Score (open weights),2026-10-25,180,220,smalljev semantic-v9,,Aditya (isHeSatoshi),No,Composite score,0.77189,higher,42.95073,0.28,0.02,estimate
-JevBench,JevBench Composite Score (open weights),2026-10-25,181,220,Gutsy 0.8B v0.3,,Omar / @kouhxp,No,Composite score,0.757877,higher,42.248491,1.9,0.0053,estimate
-JevBench,JevBench Composite Score (open weights),2026-10-25,182,220,Vega-U (Qwen3.5-4B reader),,Nandakishor M,No,Composite score,0.724518,higher,42.63531,0.33,0.015,estimate
-JevBench,JevBench Composite Score (open weights),2026-10-25,183,220,PurpleMIST-Mini-1.0 (Olaverse),,Olaverse,No,Composite score,0.712231,higher,43.031846,0.3,0.0094,estimate
-JevBench,JevBench Composite Score (open weights),2026-10-25,184,220,kev 0.6B (research preview),,Jared Palmer,No,Composite score,0.543111,higher,36.932672,0.26,0.0046,estimate
-JevBench,JevBench Composite Score (open weights),2026-10-25,185,220,"jul fast (usejul/jul-decision-minicpm5-2b: MiniCPM5-2B fine-tune with a pointer head, option probabilities from one pass, self-hosted via `jul serve`)",,Julien Lestel / @jlestel (JuL),No,Composite score,0.517234,higher,42.62929,0.24,0.011,estimate
-JevBench,JevBench Composite Score (open weights),2026-10-25,186,220,OpenDecision (ModernBERT-large zero-shot),,Deepan Wadhwa,No,Composite score,0.508496,higher,37.995645,0.34,0.005,estimate
-JevBench,JevBench Composite Score (open weights),2026-10-25,187,220,"ClassOne Gemma 4 E2B (Gemma-4-E2B backbone with ClassOne decision heads, schema-constrained single forward pass, self-hosted)",,Thiago Silva / @devops_thiago,No,Composite score,0.493458,higher,15.208879,0.21,0.0098,estimate
-JevBench,JevBench Composite Score (open weights),2026-10-25,188,220,Deem 0.8B v1,,LibertAI,No,Composite score,0.3233,higher,18.079517,0.48,0.0045,estimate
-JevBench,JevBench Composite Score (open weights),2026-10-25,189,220,"Decision Fast (FlyMy.AI, v53a)",,FlyMy.AI (@denti),No,Composite score,0.298149,higher,40.594032,0.27,0.0046,estimate
-JevBench,JevBench Composite Score (open weights),2026-10-25,190,220,"Quyet-1.0-Small-EN (Chinh Nguyen, ModernBERT-base encoder with fixed heads)",,Chinh Nguyen (ncchinh),No,Composite score,0.29239,higher,39.538077,0.18,0.0023,estimate
-JevBench,JevBench Composite Score (open weights),2026-10-25,191,220,"ClassOne Qwen 3.5 2B (Qwen3.5-2B backbone with ClassOne decision heads, schema-constrained single forward pass, self-hosted)",,Thiago Silva / @devops_thiago,No,Composite score,0.23764,higher,19.218889,0.21,0.0098,estimate
-JevBench,JevBench Composite Score (open weights),2026-10-25,192,220,Laya typed-decisions,,Convai Innovations,No,Composite score,0.216366,higher,44.220618,2.15,0.0038,estimate
-JevBench,JevBench Composite Score (open weights),2026-10-25,193,220,Vega-U (Qwen3.5-0.8B reader),,Nandakishor M,No,Composite score,0.199962,higher,36.13823,1.61,0.0049,estimate
-JevBench,JevBench Composite Score (open weights),2026-10-25,194,220,"WaterSheep (Samrat Dutta, ModernBERT-base encoder with calibrated heads, served by the author's own `watersheep --serve`)",,Samrat Dutta,No,Composite score,0.194797,higher,35.543102,1.08,0.011,estimate
-JevBench,JevBench Composite Score (open weights),2026-10-25,195,220,openJev Verdict 1.4,,Hemant (heman10x),No,Composite score,0.172165,higher,40.367404,0.82,0.0028,estimate
-JevBench,JevBench Composite Score (open weights),2026-10-25,196,220,Raw Qwen3 0.6B direct logits,,Alibaba Qwen / neutral reproduction,No,Composite score,0.167347,higher,8.247747,0.21,0.0056,estimate
-JevBench,JevBench Composite Score (open weights),2026-10-25,197,220,"lev-350m (Franck Verrot, LFM2.5-350M)",,Franck Verrot (franckverrot),No,Composite score,0.153756,higher,43.345904,0.19,0.0046,estimate
-JevBench,JevBench Composite Score (open weights),2026-10-25,198,220,Raw Qwen3 1.7B direct logits,,Alibaba Qwen / neutral reproduction,No,Composite score,0.136712,higher,8.320307,0.21,0.011,estimate
-JevBench,JevBench Composite Score (open weights),2026-10-25,199,220,kev 0.5B,,Jared Palmer,No,Composite score,0.131588,higher,32.90231,0.24,0.0046,estimate
-JevBench,JevBench Composite Score (open weights),2026-10-25,200,220,"Jez-small-1.0.0 (pragmaticfrontier, Qwen3.5-0.8B label-logit decision model, author server, self-hosted)",,pragmaticfrontier (Hugging Face),No,Composite score,0.130554,higher,43.232306,0.24,0.0048,estimate
-JevBench,JevBench Composite Score (open weights),2026-10-25,201,220,"openJev Verdict (heman10x, ModernBERT-base 151M)",,Hemant (heman10x),No,Composite score,0.096456,higher,26.632203,0.79,0.0028,estimate
-JevBench,JevBench Composite Score (open weights),2026-10-25,202,220,"Quyet-1.0-Small (Chinh Nguyen, SEA-LION-ModernBERT-300M encoder with fixed heads)",,Chinh Nguyen (ncchinh),No,Composite score,0.089637,higher,32.492364,0.18,0.0048,estimate
-JevBench,JevBench Composite Score (open weights),2026-10-25,203,220,"watt-flash-0.1 (Zaitgeist Labs, 140M mmBERT-small encoder with an option-marker scorer, one forward pass per request, self-hosted)",,Zaitgeist Labs / Christian Oezbek (GitHub @coezbek / @zaitgeist-charly),No,Composite score,0.074529,higher,41.569073,1.13,0.0023,estimate
-JevBench,JevBench Composite Score (open weights),2026-10-25,204,220,"Quyet-1.0-Tiny (Chinh Nguyen, mmBERT-small encoder (16 layers kept) with fixed heads)",,Chinh Nguyen (ncchinh),No,Composite score,0.070647,higher,31.080529,0.18,0.0024,estimate
-JevBench,JevBench Composite Score (open weights),2026-10-25,205,220,Phocinae-Largha-150M-v1,,Phocinae / NovelNexus AI,No,Composite score,0.065526,higher,30.240174,1.12,0.0014,estimate
-JevBench,JevBench Composite Score (open weights),2026-10-25,206,220,Liquid AI d1-omni-600M,,Liquid AI,No,Composite score,0.049056,higher,32.791105,0.19,0.0079,estimate
-JevBench,JevBench Composite Score (open weights),2026-10-25,207,220,Vega 0.8B,,Nandakishor M,No,Composite score,0.040218,higher,32.994691,0.32,0.019,estimate
-JevBench,JevBench Composite Score (open weights),2026-10-25,208,220,open-jev-deberta-v3-large (local CPU),,Kotoba Labs,No,Composite score,0.032353,higher,35.397661,3.52,0.0056,estimate
-JevBench,JevBench Composite Score (open weights),2026-10-25,209,220,Julia-1 (Supersonic Labs),,Supersonic Labs / @supersonicai (Hugging Face SupersonicLabs),No,Composite score,0.0194,higher,9.854655,0.82,0.0022,estimate
-JevBench,JevBench Composite Score (open weights),2026-10-25,210,220,"verdict-small (Manavarya09, multilingual-e5-small 118M)",,Manavarya09 (Manav),No,Composite score,0.01899,higher,37.630857,0.28,0.00087,estimate
-JevBench,JevBench Composite Score (open weights),2026-10-25,211,220,"Tacet Sonata (CodePawl, 144M packed encoder on mmBERT-small, option-marker softmax in one pass, in-process via the author's tacet package)",,CodePawl / @anxuanng,No,Composite score,0.015686,higher,24.235271,0.68,0.0023,estimate
-JevBench,JevBench Composite Score (open weights),2026-10-25,212,220,"Laya (Convai Innovations, ModernBERT-large 421M)",,Convai Innovations,No,Composite score,0.008559,higher,32.50715,2.01,0.0032,estimate
-JevBench,JevBench Composite Score (open weights),2026-10-25,213,220,Mixedbread mxbai-rerank-base-v2,,Mixedbread,No,Composite score,0.002274,higher,43.874216,0.21,0.021,estimate
-JevBench,JevBench Composite Score (open weights),2026-10-25,214,220,Laya multilingual,,Convai Innovations,No,Composite score,3.8e-05,higher,16.971883,0.95,0.0039,estimate
-JevBench,JevBench Composite Score (open weights),2026-10-25,215,220,Certo v1 (AltSlate Labs),,AltSlate Labs,No,Composite score,1.3e-05,higher,43.174372,0.23,0.0013,estimate
-JevBench,JevBench Composite Score (open weights),2026-10-25,216,220,"CLM-8B (Contrastive-LM, clm-latest)",,"Contrastive-LM (Kwok, Kang, Suresh, Saad-Falcon, Pavone, Ré, Mirhoseini)",No,Composite score,4e-06,higher,20.081855,0.22,0.045,estimate
-JevBench,JevBench Composite Score (open weights),2026-10-25,217,220,BAAI bge-reranker-v2-m3,,BAAI,No,Composite score,0.0,higher,44.082796,0.19,0.023,estimate
-JevBench,JevBench Composite Score (open weights),2026-10-25,218,220,Alibaba GTE Reranker ModernBERT-base,,Alibaba-NLP,No,Composite score,0.0,higher,41.727812,0.2,0.011,estimate
-JevBench,JevBench Composite Score (open weights),2026-10-25,219,220,Mirror,,Bluusun,No,Composite score,0.0,higher,25.806386,1.27,0.0023,estimate
-JevBench,JevBench Composite Score (open weights),2026-10-25,220,220,Open Jev JSON Canvas (JoshuaSP),,JoshuaSP,No,Composite score,0.0,higher,30.596109,0.47,0.049,estimate
-JevBench,JevBench Composite Score (open weights),2026-10-25,,220,Super Decider,,Singularity Compute,No,Composite score,78.482191,higher,84.867484,,,
-JevBench,JevBench Composite Score (open weights),2026-10-25,,220,kettei-fat (Sqwish),,Sqwish,No,Composite score,77.691229,higher,86.309986,,,
-JevBench,JevBench Composite Score (open weights),2026-10-25,,220,"Fastino GLiDE (hosted API, 22 Oct 2026)",,Fastino,No,Composite score,76.441111,higher,84.455981,,,
-JevBench,JevBench Composite Score (open weights),2026-10-25,,220,d1-ultra (Liquid AI),,Liquid AI,No,Composite score,76.046015,higher,80.477043,,,
-JevBench,JevBench Composite Score (open weights),2026-10-25,,220,SubQ Snap 1.1 (SubQ),,SubQ,No,Composite score,75.737025,higher,81.911122,,,
-JevBench,JevBench Composite Score (open weights),2026-10-25,,220,Drex Max (Nace AI),,Nace AI,No,Composite score,75.376211,higher,84.229083,,,
-JevBench,JevBench Composite Score (open weights),2026-10-25,,220,Bespoke Nimble-v4-max (Bespoke Labs),,Bespoke Labs,No,Composite score,74.821155,higher,79.717453,,,
-JevBench,JevBench Composite Score (open weights),2026-10-25,,220,Super Decider (thinking),,Singularity Compute,No,Composite score,74.540503,higher,85.852266,,,
-JevBench,JevBench Composite Score (open weights),2026-10-25,,220,"SubQ Snap (preview, SubQ)",,SubQ,No,Composite score,74.378451,higher,81.473727,,,
-JevBench,JevBench Composite Score (open weights),2026-10-25,,220,Sage 1.3.0 (Levanto Labs),,Levanto Labs,No,Composite score,73.72798,higher,78.595543,,,
-JevBench,JevBench Composite Score (open weights),2026-10-25,,220,kettei-chub (Sqwish),,Sqwish,No,Composite score,73.447128,higher,73.142905,,,
-JevBench,JevBench Composite Score (open weights),2026-10-25,,220,d1 (Liquid AI),,Liquid AI,No,Composite score,72.816364,higher,74.421692,,,
-JevBench,JevBench Composite Score (open weights),2026-10-25,,220,"Mercury Decide (Inception; System One decisions API, served free on OpenRouter as inception/mercury-decide:free)",,"Inception (API, free on OpenRouter) - Florian work order, 6 Oct 2026",No,Composite score,72.249687,higher,73.625215,,,
-JevBench,JevBench Composite Score (open weights),2026-10-25,,220,Jev 1.13.0 (TypeSafe AI),,TypeSafe AI,No,Composite score,71.447117,higher,77.12648,0.24,0.032,list price
-JevBench,JevBench Composite Score (open weights),2026-10-25,,220,Microsoft-Decision-1 (Azure Foundry) — A2 re-run,,Microsoft,No,Composite score,71.395135,higher,72.034828,,,
-JevBench,JevBench Composite Score (open weights),2026-10-25,,220,Celeris-1 Decision (Celeris),,Celeris,No,Composite score,70.964159,higher,73.622453,,,
-JevBench,JevBench Composite Score (open weights),2026-10-25,,220,Myles-G 31B (Launchables),,Launchables,No,Composite score,70.565964,higher,78.818592,,,
-JevBench,JevBench Composite Score (open weights),2026-10-25,,220,Jev 1.14.0 (TypeSafe AI),,TypeSafe AI,No,Composite score,70.154185,higher,75.012469,0.23,0.032,estimate
-JevBench,JevBench Composite Score (open weights),2026-10-25,,220,Microsoft-Decision-1 (Azure Foundry),,Microsoft,No,Composite score,69.084166,higher,70.784158,,,
-JevBench,JevBench Composite Score (open weights),2026-10-25,,220,"wity-1 (Wity, reasoning auto)",,Wity (alphanimble),No,Composite score,68.964709,higher,76.911441,,,
-JevBench,JevBench Composite Score (open weights),2026-10-25,,220,Myles-G 12B (Launchables),,Launchables,No,Composite score,68.349491,higher,70.65141,,,
-JevBench,JevBench Composite Score (open weights),2026-10-25,,220,attest-31B-v1.0,,attest,No,Composite score,67.856949,higher,69.543213,,,
-JevBench,JevBench Composite Score (open weights),2026-10-25,,220,Sage 1.4 (Levanto Labs),,Levanto Labs,No,Composite score,67.698279,higher,73.308032,,,
-JevBench,JevBench Composite Score (open weights),2026-10-25,,220,"SPX-CD Flash (SurdAI, hosted /v1/systemone, Oct-4 checkpoint)",,"SPX AI team (SurdAI, formerly Simplex AI)",No,Composite score,66.644349,higher,74.315441,,,
-JevBench,JevBench Composite Score (open weights),2026-10-25,,220,OpenAI Decisions (gpt-6-luna),,OpenAI,No,Composite score,62.37,higher,73.5,,,
-JevBench,JevBench Composite Score (open weights),2026-10-25,,220,"Instinct (ZooWork, Qwen3.8-27B)",,rayrain-srp (ZooWork),No,Composite score,62.23,higher,70.47,,,
-JevBench,JevBench Composite Score (open weights),2026-10-25,,220,HS1 0.1.2 (Hyland),,Hyland,No,Composite score,61.068034,higher,64.348569,,,
-JevBench,JevBench Composite Score (open weights),2026-10-25,,220,"SPX-CD Pro (SurdAI, hosted /v1/systemone, Oct-4 checkpoint)",,"SPX AI team (SurdAI, formerly Simplex AI)",No,Composite score,47.553774,higher,78.479596,,,
-JevBench,JevBench Composite Score (open weights),2026-10-25,,220,Chon-1.0-E4B,,Ninh (ninhnv / xoai),No,Composite score,45.934764,higher,68.392711,44.5,0.0094,list price
-JevBench,JevBench Composite Score (open weights),2026-10-25,,220,Bespoke Nimble-v4 (Bespoke Labs),,Bespoke Labs,No,Composite score,43.228743,higher,64.019681,,,
-JevBench,JevBench Composite Score (open weights),2026-10-25,,220,"Vansa-3.4 (Vansa, hosted System One API)",,Vansa,No,Composite score,42.57,higher,63.68,,,
-JevBench,JevBench Composite Score (open weights),2026-10-25,,220,GPT-6 Luna (low reasoning effort),,OpenAI,No,Composite score,40.39,higher,97.07,,,
-JevBench,JevBench Composite Score (open weights),2026-10-25,,220,Autoloops – Gemma 4 31B IT,,Autoloops,No,Composite score,40.17,higher,72.7,,,
-JevBench,JevBench Composite Score (open weights),2026-10-25,,220,GPT-6 Luna (default medium reasoning effort),,OpenAI,No,Composite score,39.1,higher,98.4,,,
-JevBench,JevBench Composite Score (open weights),2026-10-25,,220,Amos 1 medium (Scira),,Scira,No,Composite score,31.638672,higher,62.850218,,,
-JevBench,JevBench Composite Score (open weights),2026-10-25,,220,Fastino GLiDE,,Fastino,No,Composite score,30.57,higher,77.02,,,
-JevBench,JevBench Composite Score (open weights),2026-10-25,,220,SimpleJev Qwen3.6-35B-A3B,,Featherless AI,No,Composite score,27.53,higher,68.29,,,
-JevBench,JevBench Composite Score (open weights),2026-10-25,,220,GPT-5.6 Luna (low reasoning effort),,OpenAI,No,Composite score,21.36,higher,93.64,,,
-JevBench,JevBench Composite Score (open weights),2026-10-25,,220,Amos 1 large (Scira),,Scira,No,Composite score,20.250534,higher,77.988802,,,
-JevBench,JevBench Composite Score (open weights),2026-10-25,,220,Instinct Dual 4B,,ZooWork / pierre-srp,No,Composite score,17.97,higher,57.21,,,
-JevBench,JevBench Composite Score (open weights),2026-10-25,,220,Gemini 3.1 Flash-Lite,,Google,No,Composite score,16.93,higher,59.75,,,
-JevBench,JevBench Composite Score (open weights),2026-10-25,,220,system-one-open (Gemma 4 E2B LoRA on an L4),,mithalouni,No,Composite score,16.39,higher,51.94,,,
-JevBench,JevBench Composite Score (open weights),2026-10-25,,220,openjev-sglang (Qwen3.6-35B-A3B on SGLang),,ekzhang,No,Composite score,15.38,higher,58.67,,,
-JevBench,JevBench Composite Score (open weights),2026-10-25,,220,Nev-2B (EryriLabs),,EryriLabs,No,Composite score,6.944821,higher,49.91717,12.84,0.0092,estimate
-JevBench,JevBench Composite Score (open weights),2026-10-25,,220,DeepSeek V4.1 Flash (thinking default),,DeepSeek,No,Composite score,6.9,higher,89.62,,,
-JevBench,JevBench Composite Score (open weights),2026-10-25,,220,SimpleJev Qwen3.8-27B,,Featherless AI,No,Composite score,3.22,higher,71.6,,,
-JevBench,JevBench Composite Score (open weights),2026-10-25,,220,decision-machine-1 (milliseconds.ai),,milliseconds.ai (Baptiste Laget),No,Composite score,2.35,higher,46.13,,,
-JevBench,JevBench Composite Score (open weights),2026-10-25,,220,"JevAct (einptein, jev1-2b-v2)",,einptein,No,Composite score,1.11,higher,28.77,,,
-JevBench,JevBench Composite Score (open weights),2026-10-25,,220,Qwen3.5-0.8B Decision Model (Mourad Ghafiri),,Mourad Ghafiri,No,Composite score,0.472475,higher,42.626924,11.25,0.0048,estimate
-JevBench,JevBench Composite Score (open weights),2026-10-25,,220,Fastino GLiNER-2.5-Decide (hosted API),,Fastino,No,Composite score,0.343399,higher,34.572116,,,
-JevBench,JevBench Composite Score (open weights),2026-10-25,,220,Reflex Instinct 0.6B (Atlas AI),,Atlas AI / @leemadov,No,Composite score,0.08486,higher,38.556357,3.89,0.0047,estimate
-JevBench,JevBench Composite Score (open weights),2026-10-25,,220,modernbert-jev v2,,ksonny4 / @kubelpe,No,Composite score,0.025389,higher,34.646633,5.35,0.0097,estimate
-JevBench,JevBench Composite Score (open weights),2026-10-25,,220,Qwen3.8 27B (Chutes TEE),,Qwen / Chutes,No,Composite score,0.0,higher,48.59,,,
-ImageJevBench,ImageJevBench Composite Score (official),2026-10-25,1,63,kettei-fat (Sqwish),,Sqwish,No,Composite score,75.384577,higher,75.894751,0.42,0.011,list price
-ImageJevBench,ImageJevBench Composite Score (official),2026-10-25,2,63,"Wity-1 (AlphaNimble), reasoning auto",,AlphaNimble,No,Composite score,71.205863,higher,74.030038,2.71,0.0087,measured GPU time at the board's rate
-ImageJevBench,ImageJevBench Composite Score (official),2026-10-25,3,63,Imajev-4B,,Model author not reported,No,Composite score,63.71415,higher,68.008151,0.37,0.038,measured GPU time at the board's rate
-ImageJevBench,ImageJevBench Composite Score (official),2026-10-25,4,63,kettei-chub (Sqwish),,Sqwish,No,Composite score,63.342036,higher,66.501925,0.31,0.0073,list price
-ImageJevBench,ImageJevBench Composite Score (official),2026-10-25,5,63,H2O-Lightning-31B (image),,H2O.ai,Yes,Composite score,51.223778,higher,80.875145,0.59,0.075,measured GPU time at the board's rate
-ImageJevBench,ImageJevBench Composite Score (official),2026-10-25,6,63,"Sage 1.4 + images, beta (Levanto Labs)",,Levanto Labs,No,Composite score,47.906401,higher,75.792553,0.56,0.079,list price
-ImageJevBench,ImageJevBench Composite Score (official),2026-10-25,7,63,Drex Max (Nace AI),,Nace AI,No,Composite score,44.645306,higher,72.471249,0.85,0.084,list price
-ImageJevBench,ImageJevBench Composite Score (official),2026-10-25,8,63,Surogate Rune 26B-A4B v3,,surogate (model repository owner),No,Composite score,42.456609,higher,64.807344,0.49,0.058,measured GPU time at the board's rate
-ImageJevBench,ImageJevBench Composite Score (official),2026-10-25,9,63,Autoloops – Gemma 4 31B IT,,Hosted API provider,No,Composite score,41.374323,higher,68.347224,1.19,0.083,measured GPU time at the board's rate
-ImageJevBench,ImageJevBench Composite Score (official),2026-10-25,10,63,basal-omni-1.0-ultra (Remek Kinas),,Remek Kinas,No,Composite score,40.908274,higher,60.553801,0.63,0.085,measured GPU time at the board's rate
-ImageJevBench,ImageJevBench Composite Score (official),2026-10-25,11,63,Celeris-1 Decision (Celeris),,Celeris,No,Composite score,39.487482,higher,58.148048,0.89,0.022,list price
-ImageJevBench,ImageJevBench Composite Score (official),2026-10-25,12,63,imajev 9B,,mohit67890 (model repository owner),No,Composite score,34.523679,higher,67.070832,0.67,0.089,measured GPU time at the board's rate
-ImageJevBench,ImageJevBench Composite Score (official),2026-10-25,13,63,H2O-Lightning-4B (image),,H2O.ai,No,Composite score,34.138064,higher,60.430994,0.57,0.078,measured GPU time at the board's rate
-ImageJevBench,ImageJevBench Composite Score (official),2026-10-25,14,63,"Wity-1 (AlphaNimble), reasoning off",,AlphaNimble,No,Composite score,33.08715,higher,56.158852,1.64,0.0087,measured GPU time at the board's rate
-ImageJevBench,ImageJevBench Composite Score (official),2026-10-25,15,63,Jev-Omni,,Model author not reported,No,Composite score,32.84476,higher,54.250109,0.32,0.022,measured GPU time at the board's rate
-ImageJevBench,ImageJevBench Composite Score (official),2026-10-25,16,63,JPT-9B (kirp / llm2jev),,kirp (model repository owner),No,Composite score,31.434823,higher,58.72402,0.6,0.083,measured GPU time at the board's rate
-ImageJevBench,ImageJevBench Composite Score (official),2026-10-25,17,63,NeoHorse Jev 4B,,TokenRhythm (model repository owner),No,Composite score,30.452336,higher,57.62143,0.43,0.042,measured GPU time at the board's rate
-ImageJevBench,ImageJevBench Composite Score (official),2026-10-25,18,63,Jevify Gemma 4 26B-A4B,,kushalpatil (model repository owner),No,Composite score,29.678542,higher,58.73393,0.49,0.057,measured GPU time at the board's rate
-ImageJevBench,ImageJevBench Composite Score (official),2026-10-25,19,63,AutoJev-27B,,denis-pplx (model repository owner),No,Composite score,29.338747,higher,62.148073,0.48,0.054,measured GPU time at the board's rate
-ImageJevBench,ImageJevBench Composite Score (official),2026-10-25,20,63,JPT-4B (kirp / llm2jev),,kirp (model repository owner),No,Composite score,26.548911,higher,55.62157,0.5,0.065,measured GPU time at the board's rate
-ImageJevBench,ImageJevBench Composite Score (official),2026-10-25,21,63,"Jev 1.13.0 + images, preview (TypeSafe)",,TypeSafe,No,Composite score,26.429099,higher,72.43938,0.38,0.16,list price
-ImageJevBench,ImageJevBench Composite Score (official),2026-10-25,22,63,Jev-Vision 8B (SeanLiu),,SeanLiu (model repository owner),No,Composite score,25.50841,higher,37.763803,0.53,0.056,measured GPU time at the board's rate
-ImageJevBench,ImageJevBench Composite Score (official),2026-10-25,23,63,"Jev 1.14.0 + images, preview (TypeSafe)",,TypeSafe,No,Composite score,24.311534,higher,60.216739,0.39,0.16,list price
-ImageJevBench,ImageJevBench Composite Score (official),2026-10-25,24,63,shisa-de-1,,shisa-ai (model repository owner),No,Composite score,22.827353,higher,51.461101,0.49,0.057,measured GPU time at the board's rate
-ImageJevBench,ImageJevBench Composite Score (official),2026-10-25,25,63,Clef-Flash (Cloudflare),,Model author not reported,No,Composite score,20.413326,higher,52.242066,0.62,0.084,measured GPU time at the board's rate
-ImageJevBench,ImageJevBench Composite Score (official),2026-10-25,26,63,Clef (Cloudflare),,Model author not reported,No,Composite score,18.652173,higher,58.078072,1.18,0.18,measured GPU time at the board's rate
-ImageJevBench,ImageJevBench Composite Score (official),2026-10-25,27,63,GPT-6 Luna via OpenAI Decisions (OpenAI),,OpenAI,No,Composite score,17.305447,higher,62.868586,0.41,0.18,measured GPU time at the board's rate
-ImageJevBench,ImageJevBench Composite Score (official),2026-10-25,28,63,Winnow-12B (Q8_0 + F16 vision projector),,Model author not reported,No,Composite score,17.076041,higher,49.993274,0.68,0.087,measured GPU time at the board's rate
-ImageJevBench,ImageJevBench Composite Score (official),2026-10-25,29,63,Image Hopper (HopitAI),,Model author not reported,No,Composite score,15.299609,higher,51.682148,0.5,0.077,measured GPU time at the board's rate
-ImageJevBench,ImageJevBench Composite Score (official),2026-10-25,30,63,OmniJev-Qwen3.5-9B-v4 (tzcfly),,tzcfly (model repository owner),No,Composite score,14.988416,higher,33.143127,0.3,0.026,measured GPU time at the board's rate
-ImageJevBench,ImageJevBench Composite Score (official),2026-10-25,31,63,OmniJev 4B (tinnel123),,tinnel123 (model repository owner),No,Composite score,14.830724,higher,47.211306,0.44,0.049,measured GPU time at the board's rate
-ImageJevBench,ImageJevBench Composite Score (official),2026-10-25,32,63,Reflex 4B (released stable configuration),,Model author not reported,No,Composite score,13.799726,higher,53.343727,0.48,0.052,measured GPU time at the board's rate
-ImageJevBench,ImageJevBench Composite Score (official),2026-10-25,33,63,GPT-6 Luna (low reasoning effort),,Hosted API provider,No,Composite score,12.189124,higher,74.440162,4.19,0.32,measured GPU time at the board's rate
-ImageJevBench,ImageJevBench Composite Score (official),2026-10-25,34,63,Bonsai-2-27B v2 PQ2_0 + Q8_0 MMProj,,Model author not reported,No,Composite score,11.982904,higher,63.069903,1.45,0.23,measured GPU time at the board's rate
-ImageJevBench,ImageJevBench Composite Score (official),2026-10-25,35,63,CUA-S1 4B,,cua-ai (model repository owner),No,Composite score,11.759433,higher,48.42708,0.59,0.08,measured GPU time at the board's rate
-ImageJevBench,ImageJevBench Composite Score (official),2026-10-25,36,63,Visual-Jev generic (zero-shot Qwen3.5-4B baseline),,Qwen (model repository owner),No,Composite score,11.136399,higher,56.730444,0.68,0.091,measured GPU time at the board's rate
-ImageJevBench,ImageJevBench Composite Score (official),2026-10-25,37,63,Mapika decider-2b-vision BF16,,Model author not reported,No,Composite score,9.520408,higher,42.838795,0.38,0.034,measured GPU time at the board's rate
-ImageJevBench,ImageJevBench Composite Score (official),2026-10-25,38,63,vjev-vision (yah01),,yah01 (model repository owner),No,Composite score,8.857241,higher,55.663746,0.29,0.023,measured GPU time at the board's rate
-ImageJevBench,ImageJevBench Composite Score (official),2026-10-25,39,63,Visual-Jev 4B Answer-SFT,,guanxuyu (model repository owner),No,Composite score,8.706793,higher,35.886804,0.45,0.057,measured GPU time at the board's rate
-ImageJevBench,ImageJevBench Composite Score (official),2026-10-25,40,63,GPT-5.6 Luna,,Hosted API provider,No,Composite score,7.870043,higher,76.823975,3.34,0.43,measured GPU time at the board's rate
-ImageJevBench,ImageJevBench Composite Score (official),2026-10-25,41,63,Jevify Gemma 4 E4B,,kushalpatil (model repository owner),No,Composite score,7.261254,higher,43.713651,0.29,0.024,measured GPU time at the board's rate
-ImageJevBench,ImageJevBench Composite Score (official),2026-10-25,42,63,JPT-0.8B (kirp / llm2jev),,kirp (model repository owner),No,Composite score,7.170925,higher,46.068419,0.34,0.035,measured GPU time at the board's rate
-ImageJevBench,ImageJevBench Composite Score (official),2026-10-25,43,63,Glance (frozen Qwen3-VL-4B),,Qwen (model repository owner),No,Composite score,6.853979,higher,28.425743,0.36,0.035,measured GPU time at the board's rate
-ImageJevBench,ImageJevBench Composite Score (official),2026-10-25,44,63,Gemini 3.1 Flash Lite,,Hosted API provider,No,Composite score,6.452066,higher,46.83402,1.61,0.39,measured GPU time at the board's rate
-ImageJevBench,ImageJevBench Composite Score (official),2026-10-25,45,63,diffusiongemma-26b djev v10 step160 (snowicarus),,snowicarus (model repository owner),No,Composite score,5.902685,higher,36.73985,0.6,0.071,measured GPU time at the board's rate
-ImageJevBench,ImageJevBench Composite Score (official),2026-10-25,46,63,imajev 2B,,mohit67890 (model repository owner),No,Composite score,5.758835,higher,46.418681,0.42,0.048,measured GPU time at the board's rate
-ImageJevBench,ImageJevBench Composite Score (official),2026-10-25,47,63,"Gevva E4B (text checkpoint, image input)",,davidburhans (model repository owner),No,Composite score,4.139103,higher,49.575467,0.52,0.059,measured GPU time at the board's rate
-ImageJevBench,ImageJevBench Composite Score (official),2026-10-25,48,63,Liquid d1-3B (Liquid AI),,Liquid AI,No,Composite score,4.096383,higher,47.781214,0.35,0.034,measured GPU time at the board's rate
-ImageJevBench,ImageJevBench Composite Score (official),2026-10-25,49,63,djev-distill-v4 (tarsur385),,tarsur385 (model repository owner),No,Composite score,3.615593,higher,40.246912,0.61,0.072,measured GPU time at the board's rate
-ImageJevBench,ImageJevBench Composite Score (official),2026-10-25,50,63,Jevify Qwen3-VL-2B T2,,Praveenrajus (model repository owner),No,Composite score,3.287126,higher,43.932256,0.34,0.036,measured GPU time at the board's rate
-ImageJevBench,ImageJevBench Composite Score (official),2026-10-25,51,63,OmniJev 2B (tinnel123),,tinnel123 (model repository owner),No,Composite score,3.16763,higher,37.93118,0.38,0.039,measured GPU time at the board's rate
-ImageJevBench,ImageJevBench Composite Score (official),2026-10-25,52,63,jev-spatial (Fr0zencr4nE),,Fr0zencr4nE (model repository owner),No,Composite score,2.061926,higher,26.452916,0.29,0.024,measured GPU time at the board's rate
-ImageJevBench,ImageJevBench Composite Score (official),2026-10-25,53,63,Gevva E2B multimodal,,davidburhans (model repository owner),No,Composite score,2.018756,higher,47.336749,0.47,0.051,measured GPU time at the board's rate
-ImageJevBench,ImageJevBench Composite Score (official),2026-10-25,54,63,"JEVision (divyanshx11, visual route)",,Qwen (model repository owner),No,Composite score,1.844492,higher,16.201179,0.54,0.066,measured GPU time at the board's rate
-ImageJevBench,ImageJevBench Composite Score (official),2026-10-25,55,63,OmniJev 0.8B (tinnel123),,tinnel123 (model repository owner),No,Composite score,1.571382,higher,38.582913,0.35,0.034,measured GPU time at the board's rate
-ImageJevBench,ImageJevBench Composite Score (official),2026-10-25,56,63,PlayJev 0.8B,,OmniJev (model repository owner),No,Composite score,0.502441,higher,25.598351,0.33,0.034,measured GPU time at the board's rate
-ImageJevBench,ImageJevBench Composite Score (official),2026-10-25,57,63,Liquid d1-omni-600M (Liquid AI),,Liquid AI,No,Composite score,0.236759,higher,26.537495,0.25,0.016,measured GPU time at the board's rate
-ImageJevBench,ImageJevBench Composite Score (official),2026-10-25,58,63,djev-dev BF16,,Model author not reported,No,Composite score,0.039395,higher,25.406742,0.59,0.072,measured GPU time at the board's rate
-ImageJevBench,ImageJevBench Composite Score (official),2026-10-25,59,63,Qevi-2B (MeerDevelopment),,MeerDevelopment (model repository owner),No,Composite score,0.025179,higher,11.149289,0.35,0.039,measured GPU time at the board's rate
-ImageJevBench,ImageJevBench Composite Score (official),2026-10-25,60,63,djev-spark NVFP4,,Model author not reported,No,Composite score,0.002735,higher,24.52332,0.54,0.064,measured GPU time at the board's rate
-ImageJevBench,ImageJevBench Composite Score (official),2026-10-25,61,63,OpenJev 4B NLI v2 (official image-premise path),,Model author not reported,No,Composite score,0.0,higher,8.20441,1.26,0.16,measured GPU time at the board's rate
-ImageJevBench,ImageJevBench Composite Score (official),2026-10-25,62,63,OpenJev 4B NLI v5,,AlexWortega (model repository owner),No,Composite score,0.0,higher,16.40808,1.26,0.15,measured GPU time at the board's rate
-ImageJevBench,ImageJevBench Composite Score (official),2026-10-25,63,63,Gemini 3.8 Flash,,Hosted API provider,No,Composite score,0.0,higher,19.342745,4.9,2.2,measured GPU time at the board's rate
-ImageJevBench,ImageJevBench Composite Score (official),2026-10-25,,63,Standard One 3B,,StandardThinking (model repository owner),No,Composite score,,higher,49.553367,0.47,,
-ImageJevBench,ImageJevBench Composite Score (official),2026-10-25,,63,Standard One 8B,,StandardThinking (model repository owner),No,Composite score,,higher,51.54923,0.57,,
-fev-bench,fev-bench leaderboard · default view,2026-10-25,1,32,TimeH2O-v1,,H2O.ai,Yes,Win rate,91.871,higher,,,,
-fev-bench,fev-bench leaderboard · default view,2026-10-25,2,32,Timestral-209M,,Mistral AI,No,Win rate,89.6129,higher,,,,
-fev-bench,fev-bench leaderboard · default view,2026-10-25,3,32,t0-gamma,,The Forecasting Company,No,Win rate,88.0968,higher,,,,
-fev-bench,fev-bench leaderboard · default view,2026-10-25,4,32,TimesFM-3,,Google,No,Win rate,82.7097,higher,,,,
-fev-bench,fev-bench leaderboard · default view,2026-10-25,5,32,Chronos-2,,AWS,No,Win rate,76.8065,higher,,,,
-fev-bench,fev-bench leaderboard · default view,2026-10-25,6,32,t0-beta,,The Forecasting Company,No,Win rate,74.4839,higher,,,,
-fev-bench,fev-bench leaderboard · default view,2026-10-25,7,32,TiRex-2,,NX-AI,No,Win rate,73.5484,higher,,,,
-fev-bench,fev-bench leaderboard · default view,2026-10-25,8,32,Toto-2.0-2.5B,,Datadog,No,Win rate,73.0323,higher,,,,
-fev-bench,fev-bench leaderboard · default view,2026-10-25,9,32,TiRex,,NX-AI,No,Win rate,66.4839,higher,,,,
-fev-bench,fev-bench leaderboard · default view,2026-10-25,10,32,Toto-2.0-22m,,Datadog,No,Win rate,65.4839,higher,,,,
-fev-bench,fev-bench leaderboard · default view,2026-10-25,11,32,TimesFM-2.5,,Google,No,Win rate,62.7419,higher,,,,
-fev-bench,fev-bench leaderboard · default view,2026-10-25,12,32,TabPFN-TS-3,,Prior Labs,No,Win rate,59.3548,higher,,,,
-fev-bench,fev-bench leaderboard · default view,2026-10-25,13,32,TS-ICL,,EDF-Lab,No,Win rate,59.2258,higher,,,,
-fev-bench,fev-bench leaderboard · default view,2026-10-25,14,32,CITRAS-FM,,Hitachi,No,Win rate,56.8387,higher,,,,
-fev-bench,fev-bench leaderboard · default view,2026-10-25,15,32,FlowState,,IBM,No,Win rate,56.7097,higher,,,,
-fev-bench,fev-bench leaderboard · default view,2026-10-25,16,32,Toto-1.0,,Datadog,No,Win rate,55.1935,higher,,,,
-fev-bench,fev-bench leaderboard · default view,2026-10-25,17,32,TabPFN-TS,,Prior Labs,No,Win rate,54.2097,higher,,,,
-fev-bench,fev-bench leaderboard · default view,2026-10-25,18,32,Moirai-2.0,,Salesforce,No,Win rate,49.7742,higher,,,,
-fev-bench,fev-bench leaderboard · default view,2026-10-25,19,32,Chronos-Bolt,,AWS,No,Win rate,49.0968,higher,,,,
-fev-bench,fev-bench leaderboard · default view,2026-10-25,20,32,TFT,,—,No,Win rate,37.5806,higher,,,,
-fev-bench,fev-bench leaderboard · default view,2026-10-25,21,32,Sundial-Base,,Tsinghua University,No,Win rate,33.4194,higher,,,,
-fev-bench,fev-bench leaderboard · default view,2026-10-25,22,32,Stat. Ensemble,,—,No,Win rate,32.9677,higher,,,,
-fev-bench,fev-bench leaderboard · default view,2026-10-25,23,32,PatchTST,,—,No,Win rate,32.5806,higher,,,,
-fev-bench,fev-bench leaderboard · default view,2026-10-25,24,32,DeepAR,,—,No,Win rate,31.4032,higher,,,,
-fev-bench,fev-bench leaderboard · default view,2026-10-25,25,32,AutoARIMA,,—,No,Win rate,28.7742,higher,,,,
-fev-bench,fev-bench leaderboard · default view,2026-10-25,26,32,AutoETS,,—,No,Win rate,24.2097,higher,,,,
-fev-bench,fev-bench leaderboard · default view,2026-10-25,27,32,CatBoost,,—,No,Win rate,23.6452,higher,,,,
-fev-bench,fev-bench leaderboard · default view,2026-10-25,28,32,LightGBM,,—,No,Win rate,21.9032,higher,,,,
-fev-bench,fev-bench leaderboard · default view,2026-10-25,29,32,AutoTheta,,—,No,Win rate,19.3548,higher,,,,
-fev-bench,fev-bench leaderboard · default view,2026-10-25,30,32,Seasonal Naive,,—,No,Win rate,13.0323,higher,,,,
-fev-bench,fev-bench leaderboard · default view,2026-10-25,31,32,Naive,,—,No,Win rate,8.4355,higher,,,,
-fev-bench,fev-bench leaderboard · default view,2026-10-25,32,32,Drift,,—,No,Win rate,7.4194,higher,,,,
-Social Simulation Arena,Season 0 pairwise win rate,2026-10-25,1,24,H2O.ai SuperAgent,,H2O.ai,Yes,Pairwise win rate,67.29,higher,,,,
-Social Simulation Arena,Season 0 pairwise win rate,2026-10-25,2,24,Apodex-FutureFlow,,Apodex,No,Pairwise win rate,66.6,higher,,,,
-Social Simulation Arena,Season 0 pairwise win rate,2026-10-25,3,24,H2O.ai Marina,,H2O.ai,Yes,Pairwise win rate,62.2,higher,,,,
-Social Simulation Arena,Season 0 pairwise win rate,2026-10-25,4,24,Vac,,,No,Pairwise win rate,57.08,higher,,,,
-Social Simulation Arena,Season 0 pairwise win rate,2026-10-25,5,24,Claude Sonnet 5 · web+sfc,,,No,Pairwise win rate,56.89,higher,,,,
-Social Simulation Arena,Season 0 pairwise win rate,2026-10-25,6,24,Crowd,,,No,Pairwise win rate,54.95,higher,,,,
-Social Simulation Arena,Season 0 pairwise win rate,2026-10-25,7,24,worldVac,,Astraculum,No,Pairwise win rate,54.11,higher,,,,
-Social Simulation Arena,Season 0 pairwise win rate,2026-10-25,8,24,Gemini 3.1 Pro · web,,,No,Pairwise win rate,52.12,higher,,,,
-Social Simulation Arena,Season 0 pairwise win rate,2026-10-25,9,24,Grok 4.5 · web,,,No,Pairwise win rate,51.88,higher,,,,
-Social Simulation Arena,Season 0 pairwise win rate,2026-10-25,10,24,DeepSeek V4 Pro · web,,,No,Pairwise win rate,51.28,higher,,,,
-Social Simulation Arena,Season 0 pairwise win rate,2026-10-25,11,24,Claude Sonnet 5 · web,,,No,Pairwise win rate,50.99,higher,,,,
-Social Simulation Arena,Season 0 pairwise win rate,2026-10-25,12,24,Gemini 3.1 Pro · web+sfc,,,No,Pairwise win rate,50.85,higher,,,,
-Social Simulation Arena,Season 0 pairwise win rate,2026-10-25,13,24,DeepSeek V4 Pro · web+sfc,,,No,Pairwise win rate,50.08,higher,,,,
-Social Simulation Arena,Season 0 pairwise win rate,2026-10-25,14,24,GPT-5.6 Luna · web+sfc,,,No,Pairwise win rate,49.67,higher,,,,
-Social Simulation Arena,Season 0 pairwise win rate,2026-10-25,15,24,GLM-5.2 · web,,,No,Pairwise win rate,45.51,higher,,,,
-Social Simulation Arena,Season 0 pairwise win rate,2026-10-25,16,24,GLM-5.2 · web+sfc,,,No,Pairwise win rate,43.79,higher,,,,
-Social Simulation Arena,Season 0 pairwise win rate,2026-10-25,17,24,GPT-5.6 Luna · web,,,No,Pairwise win rate,43.44,higher,,,,
-Social Simulation Arena,Season 0 pairwise win rate,2026-10-25,18,24,Persistence,,,No,Pairwise win rate,42.64,higher,,,,
-Social Simulation Arena,Season 0 pairwise win rate,2026-10-25,19,24,ZhengZheng Forecaster,,xuanzhengwenhua,No,Pairwise win rate,40.54,higher,,,,
-Social Simulation Arena,Season 0 pairwise win rate,2026-10-25,20,24,Grok 4.5 · web+sfc,,,No,Pairwise win rate,40.0,higher,,,,
-Social Simulation Arena,Season 0 pairwise win rate,2026-10-25,21,24,YuLan-OneSim,,Renmin University of China,No,Pairwise win rate,34.58,higher,,,,
-Social Simulation Arena,Season 0 pairwise win rate,2026-10-25,22,24,EWMA,,,No,Pairwise win rate,29.56,higher,,,,
-Social Simulation Arena,Season 0 pairwise win rate,2026-10-25,23,24,Linear trend,,,No,Pairwise win rate,15.92,higher,,,,
-Social Simulation Arena,Season 0 pairwise win rate,2026-10-25,24,24,Climatology,,,No,Pairwise win rate,14.79,higher,,,,
-FutureX,Weekly board · 2026 Oct. Week 2,2026-10-25,1,24,H2O AI Super Agent v1.82,sonnet-5.5 - v2,h2o.ai,Yes,Overall score,52.16,higher,,,,
-FutureX,Weekly board · 2026 Oct. Week 2,2026-10-25,2,24,H2O AI Super Agent v1.82,sonnet-5.5 - 3x,h2o.ai,Yes,Overall score,46.6,higher,,,,
-FutureX,Weekly board · 2026 Oct. Week 2,2026-10-25,3,24,arce #1,GLM 5.2,Individual AI Researcher,No,Overall score,46.05,higher,,,,
-FutureX,Weekly board · 2026 Oct. Week 2,2026-10-25,4,24,H2O AI Super Agent v1.82,grok-4.7+sonnet-5.5 - v4,h2o.ai,Yes,Overall score,45.56,higher,,,,
-FutureX,Weekly board · 2026 Oct. Week 2,2026-10-25,5,24,H2O AI Super Agent v1.82,sonnet-5-5,h2o.ai,Yes,Overall score,45.49,higher,,,,
-FutureX,Weekly board · 2026 Oct. Week 2,2026-10-25,6,24,H2O AI Super Agent v1.82,grok-4.7+sonnet-5.5 - v1,h2o.ai,Yes,Overall score,45.49,higher,,,,
-FutureX,Weekly board · 2026 Oct. Week 2,2026-10-25,7,24,arce #2,GLM 5.2,Individual AI Researcher,No,Overall score,45.0,higher,,,,
-FutureX,Weekly board · 2026 Oct. Week 2,2026-10-25,8,24,blue-fish,blue-fish,Google DeepMind,No,Overall score,43.88,higher,,,,
-FutureX,Weekly board · 2026 Oct. Week 2,2026-10-25,9,24,SWM-b,Deepseek V4 Pro,Individual AI Researcher,No,Overall score,42.72,higher,,,,
-FutureX,Weekly board · 2026 Oct. Week 2,2026-10-25,10,24,NevarBC harness,Cinder,Individual AI Researcher,No,Overall score,42.35,higher,,,,
-FutureX,Weekly board · 2026 Oct. Week 2,2026-10-25,11,24,SWM-d,Deepseek V4 Pro,Individual AI Researcher,No,Overall score,42.3,higher,,,,
-FutureX,Weekly board · 2026 Oct. Week 2,2026-10-25,12,24,hermes,Hadrian_v1,Individual AI Researcher,No,Overall score,41.8,higher,,,,
-FutureX,Weekly board · 2026 Oct. Week 2,2026-10-25,13,24,SWM-a,Deepseek V4 Pro,Individual AI Researcher,No,Overall score,39.39,higher,,,,
-FutureX,Weekly board · 2026 Oct. Week 2,2026-10-25,14,24,Nevar-B harness,Onyx,Individual AI Researcher,No,Overall score,39.23,higher,,,,
-FutureX,Weekly board · 2026 Oct. Week 2,2026-10-25,15,24,Nevar-C harness,Quartz,Individual AI Researcher,No,Overall score,39.1,higher,,,,
-FutureX,Weekly board · 2026 Oct. Week 2,2026-10-25,16,24,H2O AI Super Agent v1.82,grok-4.7+sonnet-5.5 - v2,h2o.ai,Yes,Overall score,38.12,higher,,,,
-FutureX,Weekly board · 2026 Oct. Week 2,2026-10-25,17,24,H2O AI Super Agent v1.82,grok-4.7+sonnet-5.5 - v3,h2o.ai,Yes,Overall score,38.12,higher,,,,
-FutureX,Weekly board · 2026 Oct. Week 2,2026-10-25,18,24,SWM-c,Deepseek V4 Pro,Individual AI Researcher,No,Overall score,37.99,higher,,,,
-FutureX,Weekly board · 2026 Oct. Week 2,2026-10-25,19,24,Nevar-B harness,Gypsum,Individual AI Researcher,No,Overall score,35.27,higher,,,,
-FutureX,Weekly board · 2026 Oct. Week 2,2026-10-25,20,24,Nevar-A harness,Basalt,Individual AI Researcher,No,Overall score,34.27,higher,,,,
-FutureX,Weekly board · 2026 Oct. Week 2,2026-10-25,21,24,hermes,Charles_V_v1,Individual AI Researcher,No,Overall score,33.52,higher,,,,
-FutureX,Weekly board · 2026 Oct. Week 2,2026-10-25,22,24,SenseFlux,S-Forecaster,Individual AI Researcher,No,Overall score,33.29,higher,,,,
-FutureX,Weekly board · 2026 Oct. Week 2,2026-10-25,23,24,H2O AI Super Agent v1.82,grok-4-7,h2o.ai,Yes,Overall score,32.19,higher,,,,
-FutureX,Weekly board · 2026 Oct. Week 2,2026-10-25,24,24,hermes,Maxmilia_v3,Individual AI Researcher,No,Overall score,29.59,higher,,,,
-TALENT,TALENT · one entry per model,2026-10-25,1,13,TabICL v2 (fine-tuned),,,No,Average rank across datasets,3.476,lower,,,,
-TALENT,TALENT · one entry per model,2026-10-25,2,13,EXAONE-Tabular,,LG AI Research,No,Average rank across datasets,3.8475,lower,,,,
-TALENT,TALENT · one entry per model,2026-10-25,3,13,TabPFN v3.0,,,No,Average rank across datasets,4.2341,lower,,,,
-TALENT,TALENT · one entry per model,2026-10-25,4,13,TabICL v2,,,No,Average rank across datasets,4.4033,lower,,,,
-TALENT,TALENT · one entry per model,2026-10-25,5,13,TabH2O v1.1,,H2O.ai,Yes,Average rank across datasets,5.2833,lower,,,,
-TALENT,TALENT · one entry per model,2026-10-25,6,13,TabPFN v2.6,,,No,Average rank across datasets,5.885,lower,,,,
-TALENT,TALENT · one entry per model,2026-10-25,7,13,TabPFN v2.5,,,No,Average rank across datasets,6.2334,lower,,,,
-TALENT,TALENT · one entry per model,2026-10-25,8,13,AutoGluon,,,No,Average rank across datasets,8.0733,lower,,,,
-TALENT,TALENT · one entry per model,2026-10-25,9,13,CatBoost (tuned),,,No,Average rank across datasets,8.266,lower,,,,
-TALENT,TALENT · one entry per model,2026-10-25,10,13,AutoGluon (quick preset),,,No,Average rank across datasets,8.46,lower,,,,
-TALENT,TALENT · one entry per model,2026-10-25,11,13,H2O AutoML (10 min),,H2O.ai,No,Average rank across datasets,9.0,lower,,,,
-TALENT,TALENT · one entry per model,2026-10-25,12,13,LightGBM,,,No,Average rank across datasets,10.1077,lower,,,,
-TALENT,TALENT · one entry per model,2026-10-25,13,13,LightGBM (quick),,,No,Average rank across datasets,11.2667,lower,,,,
-TabArena,TabArena · one entry per model,2026-10-25,1,39,TabFM ensemble (official results),,Google,No,Average rank across datasets,1.7647,lower,,,,
-TabArena,TabArena · one entry per model,2026-10-25,2,39,TabFM (official results),,Google,No,Average rank across datasets,3.3137,lower,,,,
-TabArena,TabArena · one entry per model,2026-10-25,3,39,EXAONE-Tabular,,LG AI Research,No,Average rank across datasets,4.9583,lower,,,,
-TabArena,TabArena · one entry per model,2026-10-25,4,39,TabPFN v3.0,,,No,Average rank across datasets,6.3725,lower,,,,
-TabArena,TabArena · one entry per model,2026-10-25,5,39,TabICL v2 (fine-tuned),,,No,Average rank across datasets,7.1837,lower,,,,
-TabArena,TabArena · one entry per model,2026-10-25,6,39,TabPFN v2.6,,,No,Average rank across datasets,7.5098,lower,,,,
-TabArena,TabArena · one entry per model,2026-10-25,7,39,TabH2O v1.1,,H2O.ai,Yes,Average rank across datasets,8.3922,lower,,,,
-TabArena,TabArena · one entry per model,2026-10-25,8,39,TabICL v2,,,No,Average rank across datasets,8.7647,lower,,,,
-TabArena,TabArena · one entry per model,2026-10-25,9,39,TabPFN v2.5,,,No,Average rank across datasets,9.7647,lower,,,,
-TabArena,TabArena · one entry per model,2026-10-25,10,39,CatBoost (tuned),,,No,Average rank across datasets,14.5,lower,,,,
-TabArena,TabArena · one entry per model,2026-10-25,11,39,DAI 10-7-1,,,No,Average rank across datasets,14.9,lower,,,,
-TabArena,TabArena · one entry per model,2026-10-25,12,39,LightGBM (tuned),,,No,Average rank across datasets,14.94,lower,,,,
-TabArena,TabArena · one entry per model,2026-10-25,13,39,CatBoost,,,No,Average rank across datasets,16.0,lower,,,,
-TabArena,TabArena · one entry per model,2026-10-25,14,39,TabM (tuned),,,No,Average rank across datasets,16.2,lower,,,,
-TabArena,TabArena · one entry per model,2026-10-25,15,39,XGBoost (tuned),,,No,Average rank across datasets,16.34,lower,,,,
-TabArena,TabArena · one entry per model,2026-10-25,16,39,TabPFN v2.0,,,No,Average rank across datasets,17.1373,lower,,,,
-TabArena,TabArena · one entry per model,2026-10-25,17,39,ModernNCA (tuned),,,No,Average rank across datasets,17.78,lower,,,,
-TabArena,TabArena · one entry per model,2026-10-25,18,39,RealMLP (tuned),,,No,Average rank across datasets,18.98,lower,,,,
-TabArena,TabArena · one entry per model,2026-10-25,19,39,TabM,,,No,Average rank across datasets,19.46,lower,,,,
-TabArena,TabArena · one entry per model,2026-10-25,20,39,ModernNCA,,,No,Average rank across datasets,20.34,lower,,,,
-TabArena,TabArena · one entry per model,2026-10-25,21,39,TabDPT,,,No,Average rank across datasets,21.28,lower,,,,
-TabArena,TabArena · one entry per model,2026-10-25,22,39,RealMLP,,,No,Average rank across datasets,22.84,lower,,,,
-TabArena,TabArena · one entry per model,2026-10-25,23,39,H2O AutoML,,H2O.ai,No,Average rank across datasets,22.9608,lower,,,,
-TabArena,TabArena · one entry per model,2026-10-25,24,39,EBM (tuned),,,No,Average rank across datasets,23.32,lower,,,,
-TabArena,TabArena · one entry per model,2026-10-25,25,39,XGBoost,,,No,Average rank across datasets,23.46,lower,,,,
-TabArena,TabArena · one entry per model,2026-10-25,26,39,PyTorch MLP (tuned),,,No,Average rank across datasets,24.12,lower,,,,
-TabArena,TabArena · one entry per model,2026-10-25,27,39,EBM,,,No,Average rank across datasets,24.34,lower,,,,
-TabArena,TabArena · one entry per model,2026-10-25,28,39,LightGBM,,,No,Average rank across datasets,24.82,lower,,,,
-TabArena,TabArena · one entry per model,2026-10-25,29,39,Extra trees (tuned),,,No,Average rank across datasets,25.56,lower,,,,
-TabArena,TabArena · one entry per model,2026-10-25,30,39,FastAI MLP (tuned),,,No,Average rank across datasets,25.96,lower,,,,
-TabArena,TabArena · one entry per model,2026-10-25,31,39,Random forest (tuned),,,No,Average rank across datasets,26.76,lower,,,,
-TabArena,TabArena · one entry per model,2026-10-25,32,39,PyTorch MLP,,,No,Average rank across datasets,29.08,lower,,,,
-TabArena,TabArena · one entry per model,2026-10-25,33,39,Random forest,,,No,Average rank across datasets,30.82,lower,,,,
-TabArena,TabArena · one entry per model,2026-10-25,34,39,FastAI MLP,,,No,Average rank across datasets,30.84,lower,,,,
-TabArena,TabArena · one entry per model,2026-10-25,35,39,Extra trees,,,No,Average rank across datasets,31.54,lower,,,,
-TabArena,TabArena · one entry per model,2026-10-25,36,39,Linear model (tuned),,,No,Average rank across datasets,33.1,lower,,,,
-TabArena,TabArena · one entry per model,2026-10-25,37,39,Linear model,,,No,Average rank across datasets,33.6,lower,,,,
-TabArena,TabArena · one entry per model,2026-10-25,38,39,KNN (tuned),,,No,Average rank across datasets,36.74,lower,,,,
-TabArena,TabArena · one entry per model,2026-10-25,39,39,KNN,,,No,Average rank across datasets,37.94,lower,,,,
+JevBench,JevBench Composite Score (open weights),2026-10-27,1,232,Torchcast Decision 4B (v1.3),,Torchcast AI,No,Composite score,76.157275,higher,77.497327,0.22,0.015,estimate
+JevBench,JevBench Composite Score (open weights),2026-10-27,2,232,"H2O-Lightning-4B v1.1 (H2O.ai, Qwen3.5-4B fine-tune, stock vLLM + open shim)",,H2O.ai,Yes,Composite score,73.784238,higher,74.996196,0.21,0.016,estimate
+JevBench,JevBench Composite Score (open weights),2026-10-27,3,232,"H2O-Lightning-31B v1.0.7 (H2O.ai, Gemma-4-31B-it fine-tune, vLLM + h2oai overlay, one-engine FP8 profile, self-hosted)",,"H2O.ai (paid fast-lane order 5fa1a5f0, PUBLIC visibility)",Yes,Composite score,73.066622,higher,84.338804,0.28,0.044,estimate
+JevBench,JevBench Composite Score (open weights),2026-10-27,4,232,Torchcast Decision 4B (v1.2),,Torchcast AI,No,Composite score,72.996068,higher,72.606672,0.28,0.015,estimate
+JevBench,JevBench Composite Score (open weights),2026-10-27,5,232,Chon-1.0-E4B,,Ninh (ninhnv / xoai),No,Composite score,71.817472,higher,68.502883,0.3,0.0094,estimate
+JevBench,JevBench Composite Score (open weights),2026-10-27,6,232,Decisio 12B tuned commit (variant of the Decisio family),,tachara-ai (Hugging Face),No,Composite score,71.455654,higher,75.696862,0.27,0.028,estimate
+JevBench,JevBench Composite Score (open weights),2026-10-27,7,232,"basal-omni-1.0-ultra (Remek Kinas, Gemma-4-31B-it + merged LoRA, typed-decision readout, self-hosted)",,"Remek Kinas (Remigiusz Kinas; Hugging Face Remek, GitHub rkinas)",No,Composite score,71.450107,higher,82.132361,0.37,0.045,estimate
+JevBench,JevBench Composite Score (open weights),2026-10-27,8,232,"Quyet-1.0-Large (Chinh Nguyen, Gemma-4-31B decoder, option-letter logits)",,Chinh Nguyen (ncchinh),No,Composite score,71.298935,higher,81.688805,0.39,0.045,estimate
+JevBench,JevBench Composite Score (open weights),2026-10-27,9,232,Philly Decider v2 (PhillyLabs),,PhillyLabs (Hugging Face),No,Composite score,71.210657,higher,69.299287,0.2,0.015,estimate
+JevBench,JevBench Composite Score (open weights),2026-10-27,10,232,Sieve-31B-v2,,sthanika-ai (Hugging Face),No,Composite score,70.690451,higher,81.065352,0.43,0.043,estimate
+JevBench,JevBench Composite Score (open weights),2026-10-27,11,232,Torchcast Decision 4B (v1.1),,Torchcast AI,No,Composite score,70.670578,higher,68.662605,0.19,0.015,estimate
+JevBench,JevBench Composite Score (open weights),2026-10-27,12,232,Arcbright Elf 1 31B,,Arcbright (arcbright on Hugging Face),No,Composite score,70.513301,higher,81.788419,0.27,0.047,estimate
+JevBench,JevBench Composite Score (open weights),2026-10-27,13,232,Jeff-1.1-Medium (jgeuter),,jgeuter (Hugging Face),No,Composite score,70.507798,higher,81.888282,0.28,0.035,estimate
+JevBench,JevBench Composite Score (open weights),2026-10-27,14,232,decider-12b v2 (Mapika),,Mark Marosi (Mapika),No,Composite score,70.303159,higher,71.34907,0.26,0.026,estimate
+JevBench,JevBench Composite Score (open weights),2026-10-27,15,232,Xevn-4B,,quevirus (Hugging Face),No,Composite score,70.182856,higher,68.639893,0.23,0.014,estimate
+JevBench,JevBench Composite Score (open weights),2026-10-27,16,232,"torchcast-decision-12b (Torchcast AI, Gemma-4-12B fine-tune, option-letter logprob readout)",,Torchcast AI,No,Composite score,69.849803,higher,71.738946,0.24,0.028,estimate
+JevBench,JevBench Composite Score (open weights),2026-10-27,17,232,"decider-12b v1, stock Gemma-4-12B-it (Mapika)",,Mark Marosi (Mapika),No,Composite score,69.836869,higher,71.044496,0.26,0.026,estimate
+JevBench,JevBench Composite Score (open weights),2026-10-27,18,232,metask-jev-rain-31B-trained,,"MeTask (Hangzhou MeTask Technology Co., Ltd.)",No,Composite score,69.591292,higher,78.906883,0.62,0.044,estimate
+JevBench,JevBench Composite Score (open weights),2026-10-27,19,232,"decisio v0.8.0 on gemma-4-31B-it (frozen, FP8 on load, one prefill per state, self-hosted)",,Amin Roudaki (@aminry),No,Composite score,69.534614,higher,79.569742,0.24,0.048,estimate
+JevBench,JevBench Composite Score (open weights),2026-10-27,20,232,vLLM-SR d3-mini,,vLLM Semantic Router Team (vllm-sr),No,Composite score,69.523709,higher,68.76766,0.21,0.016,estimate
+JevBench,JevBench Composite Score (open weights),2026-10-27,21,232,Bobcat 1.3 (Gemma 4 31B),,sanghwa-na (Hugging Face; code foxl-ai/bobcat on GitHub),No,Composite score,69.384539,higher,77.859912,0.29,0.047,estimate
+JevBench,JevBench Composite Score (open weights),2026-10-27,22,232,"iota-decide-4b-v0.3 (Macrocosmos, letter-readout 4B, self-hosted)",,"Macrocosmos (paid fast-lane order b6b2b557, PUBLIC visibility)",No,Composite score,69.188936,higher,68.644547,0.38,0.015,estimate
+JevBench,JevBench Composite Score (open weights),2026-10-27,23,232,Chon-1.0-12B-Fast,,Ninh (ninhnv / xoai),No,Composite score,68.857099,higher,70.06718,0.5,0.024,estimate
+JevBench,JevBench Composite Score (open weights),2026-10-27,24,232,Winnow-12B Q8,,Eldan Ring,No,Composite score,68.801185,higher,71.245862,0.4,0.028,estimate
+JevBench,JevBench Composite Score (open weights),2026-10-27,25,232,"deck-31B (krishna765, frozen Gemma-4-31B-it, TorchAO FP8 dynamic)",,krishna765,No,Composite score,68.630448,higher,77.590743,0.41,0.048,estimate
+JevBench,JevBench Composite Score (open weights),2026-10-27,26,232,Jeff-1.0-Large,,,No,Composite score,68.539368,higher,81.503217,0.32,0.049,estimate
+JevBench,JevBench Composite Score (open weights),2026-10-27,27,232,"Cygnet (blockbrain, frozen Gemma-4-12B-it)",,blockbrain,No,Composite score,68.494918,higher,70.903411,0.24,0.028,estimate
+JevBench,JevBench Composite Score (open weights),2026-10-27,28,232,Wald 26B-A4B (Gemma 4 26B-A4B),,org2ai (Hugging Face),No,Composite score,68.211222,higher,76.782161,0.24,0.048,estimate
+JevBench,JevBench Composite Score (open weights),2026-10-27,29,232,DOPEST 1.0 31B,,DOPEST-studio (Hugging Face),No,Composite score,67.756167,higher,82.033786,0.62,0.049,estimate
+JevBench,JevBench Composite Score (open weights),2026-10-27,30,232,"Jev-Omni (akhilaaa3, Gemma-4-12B merged)",,akhilaaa3,No,Composite score,67.637858,higher,71.287366,0.47,0.029,estimate
+JevBench,JevBench Composite Score (open weights),2026-10-27,31,232,"decisio v0.8.0 on gemma-4-12B-it (frozen, one forward pass, self-hosted)",,Amin Roudaki (@aminry),No,Composite score,67.371887,higher,70.741466,0.38,0.027,estimate
+JevBench,JevBench Composite Score (open weights),2026-10-27,32,232,metask-jev-rain-12B-trained,,"MeTask (Hangzhou MeTask Technology Co., Ltd.)",No,Composite score,67.326487,higher,76.891468,0.41,0.038,estimate
+JevBench,JevBench Composite Score (open weights),2026-10-27,33,232,"Bobcat Flash 1.2 (Gemma-4-26B-A4B-it + two merged rank-64 LoRA adapters, typed-decision readout at the first answer position, FP8, self-hosted)",,Foxl AI / The Bobcat Authors,No,Composite score,67.137507,higher,73.049841,0.27,0.048,estimate
+JevBench,JevBench Composite Score (open weights),2026-10-27,34,232,"decisio v0.9.0 on gemma-4-12B-it (frozen, one prefill per question, self-hosted)",,Amin Roudaky / @aminry,No,Composite score,66.97805,higher,69.95438,0.44,0.027,estimate
+JevBench,JevBench Composite Score (open weights),2026-10-27,35,232,"Xor 26B-A4B (Juspay, Gemma-4-26B-A4B, bf16)",,Juspay,No,Composite score,66.765647,higher,71.185395,0.27,0.044,estimate
+JevBench,JevBench Composite Score (open weights),2026-10-27,36,232,"Messier One v0.4 (Qwen3.5-4B fine-tune, self-hosted)",,Messier AI (@agentmessier-ai),No,Composite score,66.127744,higher,62.443616,0.29,0.02,estimate
+JevBench,JevBench Composite Score (open weights),2026-10-27,37,232,"decider chat on Gemma-4-31B-it (Mapika, frozen base, inference technique)",,Mapika,No,Composite score,66.032617,higher,70.445044,0.4,0.044,estimate
+JevBench,JevBench Composite Score (open weights),2026-10-27,38,232,"Hopper 12B trained (gemma-4-12B-it frozen + LoRA r32 unmerged, one forward pass, self-hosted)",,HopitAI (@ArchieIndian),No,Composite score,65.641767,higher,68.146101,0.52,0.029,estimate
+JevBench,JevBench Composite Score (open weights),2026-10-27,39,232,metask-jev-rain-31B-trained service v3,,"MeTask (Hangzhou MeTask Technology Co., Ltd.)",No,Composite score,65.559092,higher,79.597231,0.52,0.049,estimate
+JevBench,JevBench Composite Score (open weights),2026-10-27,40,232,Surogate Rune 26B-A4B v3 (v1.6 pool),,Surogate,No,Composite score,64.989521,higher,73.46808,0.38,0.048,estimate
+JevBench,JevBench Composite Score (open weights),2026-10-27,41,232,"GEV-26B-Decide (AutoTrust, Gemma-4-26B-A4B + LoRA + head)",,AutoTrust AI Lab,No,Composite score,64.187475,higher,70.076131,0.26,0.043,estimate
+JevBench,JevBench Composite Score (open weights),2026-10-27,42,232,"SPX-CD-Omni (SurdAI, google/gemma-4-12B-it + LoRA r32, one forward pass, self-hosted)",,SPX AI team (SurdAI),No,Composite score,63.113797,higher,68.128662,0.3,0.025,estimate
+JevBench,JevBench Composite Score (open weights),2026-10-27,43,232,Metask rain 4B,,,No,Composite score,62.506641,higher,65.986401,0.32,0.04,estimate
+JevBench,JevBench Composite Score (open weights),2026-10-27,44,232,"shisa-de-1 (shisa-ai, Gemma-4-26B-A4B)",,shisa-ai,No,Composite score,62.423601,higher,65.533778,0.21,0.047,estimate
+JevBench,JevBench Composite Score (open weights),2026-10-27,45,232,Blink v0.3 26B-A4B,,Pixilab,No,Composite score,61.120134,higher,69.9454,0.25,0.048,estimate
+JevBench,JevBench Composite Score (open weights),2026-10-27,46,232,baselabs elephant-1 (9B),,baselabs (Base Labs at Baseten; baselabs on Hugging Face),No,Composite score,60.907548,higher,70.246826,0.3,0.052,estimate
+JevBench,JevBench Composite Score (open weights),2026-10-27,47,232,"Diffusion Jev (DiffusionGemma 26B-A4B on patched SGLang, 48-step diffusion readout, self-hosted)",,Hangzhi Zhou (@Hangzhi),No,Composite score,59.269517,higher,58.087508,0.41,0.048,estimate
+JevBench,JevBench Composite Score (open weights),2026-10-27,48,232,"René-1 31B FP8 (salfatigroup, Gemma 4 31B full fine-tune, one-pass option readout)",,Elon Salfati / salfatigroup,No,Composite score,55.803088,higher,75.954083,0.38,0.063,estimate
+JevBench,JevBench Composite Score (open weights),2026-10-27,49,232,Amazon Strands Decider 26B-A4B,,Amazon / AWS (Hugging Face; serving code strands-labs/strands-decider on GitHub),No,Composite score,54.479187,higher,66.715629,0.37,0.045,estimate
+JevBench,JevBench Composite Score (open weights),2026-10-27,50,232,Wald 4B v2.1,,org2ai,No,Composite score,54.257822,higher,69.270932,0.21,0.062,estimate
+JevBench,JevBench Composite Score (open weights),2026-10-27,51,232,"pplx-decider-flash-v1.2 (Perplexity, Qwen3.5-4B full fine-tune, marker readout, self-hosted)",,Perplexity AI (perplexity-ai on Hugging Face),No,Composite score,54.008685,higher,61.736568,0.24,0.015,estimate
+JevBench,JevBench Composite Score (open weights),2026-10-27,52,232,Bespoke Nimble 9B v3 (Qwen3.5-9B LoRA),,Bespoke Labs,No,Composite score,53.456302,higher,66.792909,0.34,0.063,estimate
+JevBench,JevBench Composite Score (open weights),2026-10-27,53,232,"Aplomb 1 (5.3B decision model on Qwen3.5-4B, trained readout head, self-hosted)",,EmpirioLabs (@Adam-Dalloul),No,Composite score,52.887019,higher,67.087631,0.34,0.025,estimate
+JevBench,JevBench Composite Score (open weights),2026-10-27,54,232,Respan Span-02,,Respan (lihe07),No,Composite score,51.494682,higher,69.339058,0.21,0.068,estimate
+JevBench,JevBench Composite Score (open weights),2026-10-27,55,232,"Seb-9B-v2 (ironbcc, Qwen3.5-9B fine-tune, one forward pass, stock vLLM, self-hosted)",,ironbcc (Hugging Face),No,Composite score,50.049935,higher,64.822419,0.22,0.051,estimate
+JevBench,JevBench Composite Score (open weights),2026-10-27,56,232,"APUS-OpenJev-v1-9B (merged bf16 checkpoint-3000 on Qwen3.5-9B, their own native runtime, full depth, self-hosted)",,APUS AI-LAB (@cryptoSUN2049),No,Composite score,49.167352,higher,56.907845,0.71,0.051,estimate
+JevBench,JevBench Composite Score (open weights),2026-10-27,57,232,Arcbright Elf 1 12B,,Arcbright (arcbright on Hugging Face),No,Composite score,48.774065,higher,64.961397,0.23,0.026,estimate
+JevBench,JevBench Composite Score (open weights),2026-10-27,58,232,Jeffan-31b-1710,,tattrongvu (Hugging Face),No,Composite score,48.715281,higher,81.68367,0.4,0.081,estimate
+JevBench,JevBench Composite Score (open weights),2026-10-27,59,232,"Plumb-4B (crh225, JevK5 v0.2 + LoRA)",,unknown,No,Composite score,47.925483,higher,65.319978,0.19,0.017,estimate
+JevBench,JevBench Composite Score (open weights),2026-10-27,60,232,"Messier One v0.2 (Qwen3.5-4B fine-tune, one prefill, self-hosted)",,Messier AI (@agentmessier-ai),No,Composite score,45.27818,higher,58.130562,0.21,0.015,estimate
+JevBench,JevBench Composite Score (open weights),2026-10-27,61,232,"spark-s1-4b-v6 (Open Spark Jev, abhishek085)",,Abhishek Rai (abhishek085),No,Composite score,44.846618,higher,54.016043,0.41,0.021,estimate
+JevBench,JevBench Composite Score (open weights),2026-10-27,62,232,KnowLine 31B-Gen1,,PelaAI (Hugging Face),No,Composite score,44.376264,higher,85.213466,0.66,0.093,estimate
+JevBench,JevBench Composite Score (open weights),2026-10-27,63,232,"swanOne (blockbrain, Qwen3.8-Flash-Next NVFP4)",,blockbrain,No,Composite score,43.786873,higher,72.366277,0.71,0.085,estimate
+JevBench,JevBench Composite Score (open weights),2026-10-27,64,232,AJev lm6q (Gemma 4 31B),,andyzhang232 (Hugging Face),No,Composite score,43.718683,higher,81.399455,0.58,0.093,estimate
+JevBench,JevBench Composite Score (open weights),2026-10-27,65,232,"Quyet-1.0-Medium (Chinh Nguyen, Qwen3.5-4B decoder, option-letter logits)",,Chinh Nguyen (ncchinh),No,Composite score,43.561446,higher,59.246792,0.31,0.017,estimate
+JevBench,JevBench Composite Score (open weights),2026-10-27,66,232,Turion Jev 31B,,Turion AI (Hugging Face),No,Composite score,42.868551,higher,80.878736,0.4,0.096,estimate
+JevBench,JevBench Composite Score (open weights),2026-10-27,67,232,"JPT-4B (kirp, Qwen3.5-4B LoRA)",,kirp,No,Composite score,42.16748,higher,63.820193,0.28,0.016,estimate
+JevBench,JevBench Composite Score (open weights),2026-10-27,68,232,"lev (Interfaze AI, Qwen3.5-4B + LoRA r32, label-token readout + candidate-path head, per-bucket temperatures)",,Interfaze,No,Composite score,42.137015,higher,61.704209,0.36,0.019,estimate
+JevBench,JevBench Composite Score (open weights),2026-10-27,69,232,NInfer Qwen3.8-Flash-Next mixed,,Igor L. / NInfer contributors,No,Composite score,41.94407,higher,69.676313,0.32,0.082,estimate
+JevBench,JevBench Composite Score (open weights),2026-10-27,70,232,decider-4b v2 (Mapika),,Mapika,No,Composite score,41.124217,higher,64.881665,0.21,0.015,estimate
+JevBench,JevBench Composite Score (open weights),2026-10-27,71,232,baselabs mammoth-1 (27B),,baselabs (Base Labs at Baseten; baselabs on Hugging Face),No,Composite score,41.083253,higher,85.233002,0.53,0.1,estimate
+JevBench,JevBench Composite Score (open weights),2026-10-27,72,232,Jeffan-4B-2010,,tattrongvu (Hugging Face),No,Composite score,41.064562,higher,64.001725,0.21,0.016,estimate
+JevBench,JevBench Composite Score (open weights),2026-10-27,73,232,jev-local (Qwen3.5-9B),,us (GitHub),No,Composite score,41.035747,higher,57.458382,1.09,0.024,estimate
+JevBench,JevBench Composite Score (open weights),2026-10-27,74,232,Wald 4B,,,No,Composite score,39.701515,higher,59.552987,0.24,0.033,estimate
+JevBench,JevBench Composite Score (open weights),2026-10-27,75,232,"ClassOne Qwen 3.5 9B (Qwen3.5-9B backbone with ClassOne decision heads, schema-constrained single forward pass, self-hosted)",,Thiago Silva / @devops_thiago,No,Composite score,38.505734,higher,50.471174,0.28,0.049,estimate
+JevBench,JevBench Composite Score (open weights),2026-10-27,76,232,JevK5 v0.3 (4B),,unknown,No,Composite score,37.351269,higher,64.167568,0.19,0.017,estimate
+JevBench,JevBench Composite Score (open weights),2026-10-27,77,232,metask-jev-4b,,Wayfind (metask-ai),No,Composite score,37.326661,higher,61.791104,0.27,0.026,estimate
+JevBench,JevBench Composite Score (open weights),2026-10-27,78,232,"deck-4B v1.0 (krishna765, JevK5 + LoRA, FP8 weight-only)",,krishna765,No,Composite score,37.25912,higher,63.607913,0.3,0.017,estimate
+JevBench,JevBench Composite Score (open weights),2026-10-27,79,232,GLiClass v4 9B (Knowledgator),,knowledgator (Hugging Face),No,Composite score,36.996991,higher,63.19888,0.42,0.042,estimate
+JevBench,JevBench Composite Score (open weights),2026-10-27,80,232,"Kahn1 4B (Okura66, Qwen3.5-4B LoRA merge, author's sysone engine)",,Axel Montzamir (Okura66),No,Composite score,36.97417,higher,61.743594,0.31,0.046,estimate
+JevBench,JevBench Composite Score (open weights),2026-10-27,81,232,"Clef-Flash (Cloudflare, Qwen3.5-9B post-train with a joint schema head, multimodal, measured on text)",,Cloudflare,No,Composite score,36.616916,higher,63.824241,0.36,0.059,estimate
+JevBench,JevBench Composite Score (open weights),2026-10-27,82,232,Decision-4B (Eval Engine / Chromia),,Eval Engine / Chromia,No,Composite score,35.402914,higher,59.09507,0.26,0.014,estimate
+JevBench,JevBench Composite Score (open weights),2026-10-27,83,232,decisor-4b,,,No,Composite score,35.336641,higher,45.737667,0.25,0.016,estimate
+JevBench,JevBench Composite Score (open weights),2026-10-27,84,232,"janus 4B (Icarus AI / cmxu, Qwen3.5-4B + LoRA r64 and pointer decision head)",,Icarus AI / cmxu,No,Composite score,35.15464,higher,62.852566,0.21,0.015,estimate
+JevBench,JevBench Composite Score (open weights),2026-10-27,85,232,Qwen3.5-9B Jev-like data-mix v2,,jsaurabh,No,Composite score,33.577476,higher,60.8654,0.49,0.065,estimate
+JevBench,JevBench Composite Score (open weights),2026-10-27,86,232,"Seb-9B (ironbcc, Qwen3.5-9B fine-tune, one forward pass, stock vLLM, self-hosted)",,ironbcc (Hugging Face),No,Composite score,32.562087,higher,63.138006,0.25,0.051,estimate
+JevBench,JevBench Composite Score (open weights),2026-10-27,87,232,JevK5 v0.2.0,,allebee,No,Composite score,32.079062,higher,62.824112,0.24,0.017,estimate
+JevBench,JevBench Composite Score (open weights),2026-10-27,88,232,"Tern-35B-A3B (matthewagi, Qwen3.6 35B-A3B MoE decision model, author server, self-hosted)",,matthewagi (Hugging Face),No,Composite score,32.055398,higher,66.394317,0.29,0.085,estimate
+JevBench,JevBench Composite Score (open weights),2026-10-27,89,232,"Aleria Judge 1.1.1 (ALERIA-ML, inference technique on stock Gemma 4 31B, author server, self-hosted)",,ALERIA-ML (GitHub; Aleria AI),No,Composite score,31.173873,higher,76.860943,0.41,0.14,estimate
+JevBench,JevBench Composite Score (open weights),2026-10-27,90,232,JevOne,,Juspay,No,Composite score,31.130839,higher,68.860448,0.28,0.1,estimate
+JevBench,JevBench Composite Score (open weights),2026-10-27,91,232,"Jebadiah 9B v2.1 (Frontier Infra, Qwen3.5-9B LoRA)",,Frontier Infra,No,Composite score,30.323115,higher,63.413489,0.25,0.051,estimate
+JevBench,JevBench Composite Score (open weights),2026-10-27,92,232,"Verdin-4B (Victor Bennett, Qwen3.5-4B + merged LoRA r16 + pointer head)",,Victor Bennett (Hugging Face victorbennett; benchmarkheaven.com/submit ref E59F3C77),No,Composite score,29.859395,higher,59.598775,0.27,0.018,estimate
+JevBench,JevBench Composite Score (open weights),2026-10-27,93,232,"TypeCastLM 1.4.0 (Mikhail Gribov, Qwen3.5-4B computed head)",,Mikhail Gribov / @MihailGGribov,No,Composite score,29.820228,higher,56.394148,0.21,0.015,estimate
+JevBench,JevBench Composite Score (open weights),2026-10-27,94,232,"blink-4b (thegovind, Qwen3.5-4B derivative)",,thegovind,No,Composite score,29.472576,higher,61.417273,0.27,0.016,estimate
+JevBench,JevBench Composite Score (open weights),2026-10-27,95,232,"jiwo 4b (Qwen3.5-4B backbone with a trained decision head, one forward pass, native probabilities, self-hosted)",,eljiwo / jiwidi,No,Composite score,28.949426,higher,60.227052,0.22,0.016,estimate
+JevBench,JevBench Composite Score (open weights),2026-10-27,96,232,Imajev-4B (RTX 5090),,unknown,No,Composite score,28.648656,higher,61.894948,0.29,0.017,estimate
+JevBench,JevBench Composite Score (open weights),2026-10-27,97,232,Uniphore-4B-Decider,,Uniphore,No,Composite score,27.150718,higher,57.065336,0.37,0.015,estimate
+JevBench,JevBench Composite Score (open weights),2026-10-27,98,232,"Decision 2.0 Lux 9B (vLLM-SR, Qwen3.5-9B lineage)",,vLLM Semantic Router Team (vllm-sr),No,Composite score,27.09414,higher,61.649512,0.29,0.052,estimate
+JevBench,JevBench Composite Score (open weights),2026-10-27,99,232,Hopper,,HopitAI,No,Composite score,26.506917,higher,61.19842,0.26,0.018,estimate
+JevBench,JevBench Composite Score (open weights),2026-10-27,100,232,"Malkuth-4B (newfull5, Kev post-train)",,newfull5 (dhtocks),No,Composite score,26.19082,higher,61.13906,0.3,0.03,estimate
+JevBench,JevBench Composite Score (open weights),2026-10-27,101,232,jqv (Qwen3-32B zero-shot),,hjmurmur (Octalab),No,Composite score,25.359237,higher,61.86477,0.39,0.042,estimate
+JevBench,JevBench Composite Score (open weights),2026-10-27,102,232,JPT-35B-A3B (Qwen3.5-35B-A3B fine-tune),,kirp,No,Composite score,25.351628,higher,70.676733,0.29,0.16,estimate
+JevBench,JevBench Composite Score (open weights),2026-10-27,103,232,decider-35b-a3b (Mapika),,Mapika,No,Composite score,24.768584,higher,66.171512,0.25,0.15,estimate
+JevBench,JevBench Composite Score (open weights),2026-10-27,104,232,"CoCo-Decision-4B (corners-ai, LoRA on Qwen3.5-4B, option-label logits of one pass, served by oh-my-jev)",,iamupd / corners-ai,No,Composite score,24.642573,higher,56.920054,0.24,0.014,estimate
+JevBench,JevBench Composite Score (open weights),2026-10-27,105,232,Manchego v2.1,,oraculumai,No,Composite score,24.480471,higher,58.275419,0.26,0.015,estimate
+JevBench,JevBench Composite Score (open weights),2026-10-27,106,232,"Decision 4B v1.2 (FlyMyJev, Qwen3.5-4B + LoRA)",,unknown,No,Composite score,24.461373,higher,60.413997,0.19,0.017,estimate
+JevBench,JevBench Composite Score (open weights),2026-10-27,107,232,Standard One 3B SH v4 (Standard Thinking),,Standard Thinking,No,Composite score,24.395575,higher,56.040099,0.21,0.052,estimate
+JevBench,JevBench Composite Score (open weights),2026-10-27,108,232,"Fastino GLiDE 1.2 (open weights, self-hosted)",,Fastino (Hugging Face),No,Composite score,22.021181,higher,84.922576,0.43,0.21,estimate
+JevBench,JevBench Composite Score (open weights),2026-10-27,109,232,Raw Qwen3 4B Instruct 2507 direct logits,,Alibaba Qwen / neutral reproduction,No,Composite score,21.778881,higher,34.566465,0.25,0.017,estimate
+JevBench,JevBench Composite Score (open weights),2026-10-27,110,232,"StartLux-Decision v1.1 27B Instant (StartLux Labs, Qwen3.8-27B fine-tune)",,StartLux Labs,No,Composite score,21.606499,higher,82.557721,0.26,0.21,estimate
+JevBench,JevBench Composite Score (open weights),2026-10-27,111,232,Standard One 3B SH (Standard Thinking),,Standard Thinking,No,Composite score,21.589,higher,55.570713,0.23,0.052,estimate
+JevBench,JevBench Composite Score (open weights),2026-10-27,112,232,RSI-Jev v6.1-VL 27B,,Shanghua Gao (@GaoShanghua),No,Composite score,21.584867,higher,73.456975,0.42,0.2,estimate
+JevBench,JevBench Composite Score (open weights),2026-10-27,113,232,"JEV-27B (AutoTrust, Qwen3.8-27B)",,AutoTrust AI Lab,No,Composite score,21.274527,higher,73.86417,0.38,0.2,estimate
+JevBench,JevBench Composite Score (open weights),2026-10-27,114,232,"torchcast-decision-27b (Torchcast AI, Qwen3.8-27B fine-tune)",,Torchcast AI,No,Composite score,21.137805,higher,80.219125,0.35,0.21,estimate
+JevBench,JevBench Composite Score (open weights),2026-10-27,115,232,Bespoke Nimble 9B (Bespoke Labs),,Bespoke Labs,No,Composite score,21.061125,higher,56.514999,0.46,0.13,estimate
+JevBench,JevBench Composite Score (open weights),2026-10-27,116,232,"Nimble-v4-max (open weights, self-hosted)",,Bespoke Labs,No,Composite score,20.704204,higher,81.15705,0.46,0.21,estimate
+JevBench,JevBench Composite Score (open weights),2026-10-27,117,232,"pplx-decider-v1.2 (Perplexity, Qwen3.8-27B full fine-tune, marker readout, self-hosted)",,Perplexity AI (perplexity-ai on Hugging Face),No,Composite score,20.634957,higher,80.839962,0.44,0.21,estimate
+JevBench,JevBench Composite Score (open weights),2026-10-27,118,232,"Perplexity Decider v1.1 27B (Qwen3.8-27B, noncausal decision readout)",,Perplexity,No,Composite score,20.592538,higher,82.709836,0.41,0.22,estimate
+JevBench,JevBench Composite Score (open weights),2026-10-27,119,232,vLLM-SR d3-turbo,,vLLM Semantic Router Team (vllm-sr),No,Composite score,20.462834,higher,82.591139,0.45,0.22,estimate
+JevBench,JevBench Composite Score (open weights),2026-10-27,120,232,vLLM-SR d3,,vLLM Semantic Router Team (vllm-sr),No,Composite score,20.4504,higher,82.149649,0.37,0.22,estimate
+JevBench,JevBench Composite Score (open weights),2026-10-27,121,232,reflex 4B (kshetrajna12),,kshetrajna12,No,Composite score,20.428813,higher,58.85612,2.87,0.017,estimate
+JevBench,JevBench Composite Score (open weights),2026-10-27,122,232,Vera Large,,scar-ai (Hugging Face),No,Composite score,20.313436,higher,79.551778,0.33,0.22,estimate
+JevBench,JevBench Composite Score (open weights),2026-10-27,123,232,JADE (Qwen3.8-27B LoRA),,theunnecessarythings,No,Composite score,20.179601,higher,49.24947,0.42,0.16,estimate
+JevBench,JevBench Composite Score (open weights),2026-10-27,124,232,"Nagi-ENORMOUS 27B (nagisanzenin, Qwen3.8-27B LoRA)",,nagisanzenin,No,Composite score,19.772172,higher,73.765364,0.46,0.22,estimate
+JevBench,JevBench Composite Score (open weights),2026-10-27,125,232,"typecastlm (Mikhail Gribov, Qwen3.5-4B computed head)",,Mikhail Gribov,No,Composite score,19.719284,higher,56.544259,0.21,0.016,estimate
+JevBench,JevBench Composite Score (open weights),2026-10-27,126,232,"Jebadiah 27B (Frontier Infra, Qwen3.8-27B LoRA)",,Frontier Infra,No,Composite score,19.217466,higher,70.232815,0.46,0.22,estimate
+JevBench,JevBench Composite Score (open weights),2026-10-27,127,232,"iota-decide-4b (Macrocosmos, Clef joint-head 4B, self-hosted)",,"Macrocosmos (paid fast-lane order d831408e, PUBLIC visibility)",No,Composite score,18.926689,higher,57.12434,0.39,0.017,estimate
+JevBench,JevBench Composite Score (open weights),2026-10-27,128,232,"Decision 2.0 Vega 27B (vLLM-SR, Qwen3.8-27B)",,vLLM Semantic Router,No,Composite score,18.867176,higher,71.305342,0.54,0.22,estimate
+JevBench,JevBench Composite Score (open weights),2026-10-27,129,232,"Jebadiah 9B v2 (Frontier Infra, Qwen3.5-9B LoRA)",,frontier-infra,No,Composite score,18.78098,higher,56.949322,0.26,0.051,estimate
+JevBench,JevBench Composite Score (open weights),2026-10-27,130,232,Standard One 8B SH (Standard Thinking),,Standard Thinking,No,Composite score,18.743073,higher,59.981612,0.28,0.078,estimate
+JevBench,JevBench Composite Score (open weights),2026-10-27,131,232,"Decision 4B v1.1 (FlyMyJev, Qwen3.5-4B + LoRA)",,unknown,No,Composite score,18.717254,higher,57.186755,0.19,0.017,estimate
+JevBench,JevBench Composite Score (open weights),2026-10-27,132,232,"AutoJev-27B (denis-pplx, Qwen3.8-27B)",,unknown,No,Composite score,18.454036,higher,71.619835,0.35,0.23,estimate
+JevBench,JevBench Composite Score (open weights),2026-10-27,133,232,"pjev-2b (Kailune AI, frozen MiniCPM5-2B + merged LoRA r64, letter-logit readout, T=1 stub)",,Kailune AI / @chi2liu (GitHub issue fstandhartinger/jevbench#145),No,Composite score,18.074373,higher,56.45475,0.22,0.016,estimate
+JevBench,JevBench Composite Score (open weights),2026-10-27,134,232,"Eikos-27B (caiovicentino1, Qwen3.8-27B)",,unknown,No,Composite score,18.071526,higher,77.189926,0.38,0.24,estimate
+JevBench,JevBench Composite Score (open weights),2026-10-27,135,232,NInfer Qwen3.8-27B NVFP4,,Igor L. / NInfer contributors,No,Composite score,17.707262,higher,67.99285,0.26,0.23,estimate
+JevBench,JevBench Composite Score (open weights),2026-10-27,136,232,"Compass 0.2.0 (adimyth, Qwen3.5-4B LoRA)",,adimyth,No,Composite score,17.606156,higher,56.09156,0.66,0.026,estimate
+JevBench,JevBench Composite Score (open weights),2026-10-27,137,232,"JEB-35B-A3B (szybkie.ai, Qwen3.6-35B-A3B LoRA)",,szybkie-ai,No,Composite score,17.297269,higher,61.606219,0.22,0.08,estimate
+JevBench,JevBench Composite Score (open weights),2026-10-27,138,232,"OpenJev (thinking, BF16)",,razorback16,No,Composite score,17.272112,higher,75.775873,1.93,0.24,estimate
+JevBench,JevBench Composite Score (open weights),2026-10-27,139,232,Open-Jev 9B (Zefan Cai),,Zefan Cai (@Zefan_Cai),No,Composite score,17.042644,higher,61.845495,1.44,0.17,estimate
+JevBench,JevBench Composite Score (open weights),2026-10-27,140,232,Standard One 8B (Standard Thinking),,Standard Thinking (myeongho12),No,Composite score,16.909498,higher,58.409673,0.22,0.078,estimate
+JevBench,JevBench Composite Score (open weights),2026-10-27,141,232,"Clef (Cloudflare, Qwen3.8-27B post-train with a joint schema head, multimodal, measured on text)",,Cloudflare,No,Composite score,16.734593,higher,75.329345,0.61,0.25,estimate
+JevBench,JevBench Composite Score (open weights),2026-10-27,142,232,"ArseneLupin v1.1 (IBOU-SEARCH, Qwen3.5-4B LoRA)",,IBOU-SEARCH,No,Composite score,16.545556,higher,55.091324,0.32,0.02,estimate
+JevBench,JevBench Composite Score (open weights),2026-10-27,143,232,JEV Qwen3.5-9B Base NVFP4,,WilfLin,No,Composite score,15.970465,higher,57.142007,0.2,0.056,estimate
+JevBench,JevBench Composite Score (open weights),2026-10-27,144,232,"Arbiter-4B (Goddragon, NeoHorse 4B pointer model, author server, self-hosted)",,Goddragon (Hugging Face),No,Composite score,15.914507,higher,52.293224,0.24,0.013,estimate
+JevBench,JevBench Composite Score (open weights),2026-10-27,145,232,"Decider-4B (roudone, NeoHorse 4B pointer model, author server, self-hosted)",,roudone (Hugging Face),No,Composite score,15.739032,higher,56.822253,0.25,0.013,estimate
+JevBench,JevBench Composite Score (open weights),2026-10-27,146,232,"ClassOne Gemma 4 E4B (Gemma-4-E4B backbone with ClassOne decision heads, schema-constrained single forward pass, self-hosted)",,Thiago Silva / @devops_thiago,No,Composite score,15.604463,higher,38.351444,0.23,0.011,estimate
+JevBench,JevBench Composite Score (open weights),2026-10-27,147,232,"SemIf, formerly OpenJev (Qwen3.5-4B, TheoLeeCJ)",,Theodore Lee (TheoLeeCJ),No,Composite score,15.508983,higher,55.350369,0.27,0.017,estimate
+JevBench,JevBench Composite Score (open weights),2026-10-27,148,232,DecisionNode Edge 0.9.2,,Bynn Intelligence (Hugging Face),No,Composite score,15.3299,higher,52.142924,0.21,0.0091,estimate
+JevBench,JevBench Composite Score (open weights),2026-10-27,149,232,RYOTIDE-Qwen9,,Csaba Garay,No,Composite score,14.694072,higher,52.489947,0.42,0.049,estimate
+JevBench,JevBench Composite Score (open weights),2026-10-27,150,232,"ClassOne Qwen 3.5 4B (Qwen3.5-4B backbone with ClassOne decision heads, schema-constrained single forward pass, self-hosted)",,Thiago Silva / @devops_thiago,No,Composite score,14.333332,higher,38.092177,0.25,0.015,estimate
+JevBench,JevBench Composite Score (open weights),2026-10-27,151,232,"Jez-large-1.0.0 (pragmaticfrontier, Gemma-4-E4B label-logit decision model, author server, self-hosted)",,pragmaticfrontier (Hugging Face),No,Composite score,13.781857,higher,54.392802,0.27,0.0096,estimate
+JevBench,JevBench Composite Score (open weights),2026-10-27,152,232,"RYOTIDE-Qwen (csabag, Qwen3.5-4B stock weights)",,csabag,No,Composite score,12.935252,higher,56.302543,0.34,0.018,estimate
+JevBench,JevBench Composite Score (open weights),2026-10-27,153,232,Chon-1.0-12B,,Ninh (ninhnv / xoai),No,Composite score,12.822528,higher,42.993963,0.51,0.05,estimate
+JevBench,JevBench Composite Score (open weights),2026-10-27,154,232,"Noma (Blackdrome AI Labs, Qwen3.5-4B-Base derivative)",,BlackdromeAILabs,No,Composite score,12.749287,higher,54.344262,0.2,0.019,estimate
+JevBench,JevBench Composite Score (open weights),2026-10-27,155,232,KnowLine 35B-A3B-Gen1.5,,PelaAI (Hugging Face),No,Composite score,12.431479,higher,76.650606,0.25,0.32,estimate
+JevBench,JevBench Composite Score (open weights),2026-10-27,156,232,Bev / Bonsai 27B,,Reza Sayar,No,Composite score,11.737862,higher,66.138733,2.13,0.25,estimate
+JevBench,JevBench Composite Score (open weights),2026-10-27,157,232,LitJev (Qwen3.8-27B),,Zhengxu Yu,No,Composite score,11.455731,higher,66.603293,3.15,0.24,estimate
+JevBench,JevBench Composite Score (open weights),2026-10-27,158,232,local-jev Qwen3.5-4B,,Amith Chandrappa (amithgc),No,Composite score,11.429477,higher,54.994113,0.42,0.023,estimate
+JevBench,JevBench Composite Score (open weights),2026-10-27,159,232,"system-one (Qwen3-8B, Sean Goedecke)",,Sean Goedecke,No,Composite score,11.022831,higher,29.718121,0.26,0.068,estimate
+JevBench,JevBench Composite Score (open weights),2026-10-27,160,232,"StartLux-Decision v1.1 27B AutoThink (StartLux Labs, Qwen3.8-27B fine-tune, gate 0.6)",,StartLux Labs,No,Composite score,10.816783,higher,78.8041,0.29,0.35,estimate
+JevBench,JevBench Composite Score (open weights),2026-10-27,161,232,kev 8B (research preview),,Jared Palmer,No,Composite score,10.614631,higher,50.009176,0.3,0.097,estimate
+JevBench,JevBench Composite Score (open weights),2026-10-27,162,232,"Decision 2B (FlyMy.AI, v59)",,FlyMy.AI (@denti),No,Composite score,10.289709,higher,54.822903,0.3,0.013,estimate
+JevBench,JevBench Composite Score (open weights),2026-10-27,163,232,"OpenSourceJev (Qwen3.5-4B Q4_K_M, native llama.cpp)",,sabeel111,No,Composite score,10.238095,higher,48.571422,0.79,0.011,estimate
+JevBench,JevBench Composite Score (open weights),2026-10-27,164,232,"Imajev-9B (mohit67890, Qwen3.5-9B LoRA)",,mohit67890,No,Composite score,9.786091,higher,62.421045,0.93,0.2,estimate
+JevBench,JevBench Composite Score (open weights),2026-10-27,165,232,"open-alternative-jev (Qwen3.5-4B, IkerMoel)",,IkerMoel,No,Composite score,9.429815,higher,49.144972,0.25,0.017,estimate
+JevBench,JevBench Composite Score (open weights),2026-10-27,166,232,"Decisio v0.9.0 on Qwen3.6-35B-A3B (official FP8, self-hosted)",,aminry (Decisio server); Qwen (base weights),No,Composite score,9.40575,higher,61.488023,0.28,0.18,estimate
+JevBench,JevBench Composite Score (open weights),2026-10-27,167,232,Raw Qwen3 8B direct logits,,Alibaba Qwen / neutral reproduction,No,Composite score,9.29645,higher,30.135339,0.31,0.065,estimate
+JevBench,JevBench Composite Score (open weights),2026-10-27,168,232,Liquid AI d1-3B,,Liquid AI,No,Composite score,8.853035,higher,49.506656,0.18,0.044,estimate
+JevBench,JevBench Composite Score (open weights),2026-10-27,169,232,Krino-2B,,guru0381,No,Composite score,8.723813,higher,42.413154,0.21,0.02,estimate
+JevBench,JevBench Composite Score (open weights),2026-10-27,170,232,"Imajev-2B (mohit67890, Qwen3.5-2B LoRA)",,mohit67890,No,Composite score,7.924238,higher,53.968527,0.75,0.041,estimate
+JevBench,JevBench Composite Score (open weights),2026-10-27,171,232,decider-2b (Mapika),,Mapika,No,Composite score,7.669657,higher,44.589479,0.18,0.015,estimate
+JevBench,JevBench Composite Score (open weights),2026-10-27,172,232,"Nemotron Diffusion 8B (pst2154, optimized vLLM)",,pst2154,No,Composite score,7.294935,higher,47.462945,0.2,0.03,estimate
+JevBench,JevBench Composite Score (open weights),2026-10-27,173,232,D1A on Gemma 4 E4B (JohnP1 d1a-e4b),,JohnP1 (Hugging Face),No,Composite score,7.073189,higher,51.106577,0.23,0.021,estimate
+JevBench,JevBench Composite Score (open weights),2026-10-27,174,232,kev 4B (research preview),,Jared Palmer,No,Composite score,6.609648,higher,43.981784,0.29,0.014,estimate
+JevBench,JevBench Composite Score (open weights),2026-10-27,175,232,Clef-omni,,Cloudflare,No,Composite score,6.064517,higher,58.315927,0.44,0.28,estimate
+JevBench,JevBench Composite Score (open weights),2026-10-27,176,232,"Kev 27B (Kev 1.0, Qwen3.8-27B)",,Jared Palmer,No,Composite score,5.764808,higher,78.938961,0.52,0.53,estimate
+JevBench,JevBench Composite Score (open weights),2026-10-27,177,232,FrontiersMind Lumma-fev-27B,,FrontiersMind (FrontiersMind on Hugging Face),No,Composite score,5.313847,higher,72.288556,0.43,0.54,estimate
+JevBench,JevBench Composite Score (open weights),2026-10-27,178,232,DecisionNode Edge Mini 0.9.2,,Bynn Intelligence (Hugging Face),No,Composite score,5.298918,higher,47.611939,0.21,0.0046,estimate
+JevBench,JevBench Composite Score (open weights),2026-10-27,179,232,"jiwo 0.8b (Qwen3.5-0.8B backbone with a trained decision head, one forward pass, native probabilities, self-hosted)",,eljiwo / jiwidi,No,Composite score,4.067693,higher,47.207103,0.19,0.0052,estimate
+JevBench,JevBench Composite Score (open weights),2026-10-27,180,232,"Malkuth-2B (newfull5, Kev post-train)",,newfull5 (dhtocks),No,Composite score,3.991847,higher,47.633125,0.24,0.014,estimate
+JevBench,JevBench Composite Score (open weights),2026-10-27,181,232,Qwen3-Reranker-4B,,Qwen,No,Composite score,3.709367,higher,44.745725,0.57,0.052,estimate
+JevBench,JevBench Composite Score (open weights),2026-10-27,182,232,"SimpleJev Qwen3.8-27B (self-hosted, v1.6 pool)",,Featherless,No,Composite score,3.39358,higher,74.892709,1.43,0.68,estimate
+JevBench,JevBench Composite Score (open weights),2026-10-27,183,232,ZeroEntropy zerank-2,,ZeroEntropy,No,Composite score,3.344799,higher,49.398509,0.52,0.052,estimate
+JevBench,JevBench Composite Score (open weights),2026-10-27,184,232,"EXAONE-4.0-1.2B-JEV v0.3 (unofficial fine-tune of LGAI-EXAONE/EXAONE-4.0-1.2B, native option-label softmax, two reads averaged, self-hosted)",,Dongmin Kim / @carrtesy - unofficial personal project,No,Composite score,3.265807,higher,47.679952,0.19,0.025,estimate
+JevBench,JevBench Composite Score (open weights),2026-10-27,185,232,Open-Jev 2B (Zefan Cai),,Zefan Cai (@Zefan_Cai),No,Composite score,3.238365,higher,47.711371,1.05,0.17,estimate
+JevBench,JevBench Composite Score (open weights),2026-10-27,186,232,Vega 4B,,Nandakishor M,No,Composite score,3.070123,higher,36.578675,0.54,0.058,estimate
+JevBench,JevBench Composite Score (open weights),2026-10-27,187,232,"Open-Jev 27B v1.1 (Zefan Cai, LoRA + decision head on Qwen3.8-27B)",,Zefan Cai,No,Composite score,2.879134,higher,67.963069,1.79,0.72,estimate
+JevBench,JevBench Composite Score (open weights),2026-10-27,188,232,Raw Phi-4 mini direct logits,,Microsoft / neutral reproduction,No,Composite score,2.478528,higher,35.337852,0.24,0.036,estimate
+JevBench,JevBench Composite Score (open weights),2026-10-27,189,232,"SimpleJev (Qwen3.5-0.8B, CPU)",,sabeel111 / Featherless AI,No,Composite score,1.972491,higher,31.07287,9.16,0.0098,estimate
+JevBench,JevBench Composite Score (open weights),2026-10-27,190,232,Jeetu Decider 2B,,Jeetu456 (Hugging Face),No,Composite score,1.21279,higher,41.663434,0.27,0.0098,estimate
+JevBench,JevBench Composite Score (open weights),2026-10-27,191,232,D1A on Gemma 4 E2B (JohnP1 d1a-e2b),,JohnP1 (Hugging Face),No,Composite score,0.823759,higher,45.493951,0.21,0.021,estimate
+JevBench,JevBench Composite Score (open weights),2026-10-27,192,232,smalljev semantic-v9,,Aditya (isHeSatoshi),No,Composite score,0.77189,higher,42.95073,0.28,0.02,estimate
+JevBench,JevBench Composite Score (open weights),2026-10-27,193,232,Gutsy 0.8B v0.3,,Omar / @kouhxp,No,Composite score,0.757877,higher,42.248491,1.9,0.0053,estimate
+JevBench,JevBench Composite Score (open weights),2026-10-27,194,232,Vega-U (Qwen3.5-4B reader),,Nandakishor M,No,Composite score,0.724518,higher,42.63531,0.33,0.015,estimate
+JevBench,JevBench Composite Score (open weights),2026-10-27,195,232,PurpleMIST-Mini-1.0 (Olaverse),,Olaverse,No,Composite score,0.712231,higher,43.031846,0.3,0.0094,estimate
+JevBench,JevBench Composite Score (open weights),2026-10-27,196,232,kev 0.6B (research preview),,Jared Palmer,No,Composite score,0.543111,higher,36.932672,0.26,0.0046,estimate
+JevBench,JevBench Composite Score (open weights),2026-10-27,197,232,"jul fast (usejul/jul-decision-minicpm5-2b: MiniCPM5-2B fine-tune with a pointer head, option probabilities from one pass, self-hosted via `jul serve`)",,Julien Lestel / @jlestel (JuL),No,Composite score,0.517234,higher,42.62929,0.24,0.011,estimate
+JevBench,JevBench Composite Score (open weights),2026-10-27,198,232,OpenDecision (ModernBERT-large zero-shot),,Deepan Wadhwa,No,Composite score,0.508496,higher,37.995645,0.34,0.005,estimate
+JevBench,JevBench Composite Score (open weights),2026-10-27,199,232,"ClassOne Gemma 4 E2B (Gemma-4-E2B backbone with ClassOne decision heads, schema-constrained single forward pass, self-hosted)",,Thiago Silva / @devops_thiago,No,Composite score,0.493458,higher,15.208879,0.21,0.0098,estimate
+JevBench,JevBench Composite Score (open weights),2026-10-27,200,232,Deem 0.8B v1,,LibertAI,No,Composite score,0.3233,higher,18.079517,0.48,0.0045,estimate
+JevBench,JevBench Composite Score (open weights),2026-10-27,201,232,"Decision Fast (FlyMy.AI, v53a)",,FlyMy.AI (@denti),No,Composite score,0.298149,higher,40.594032,0.27,0.0046,estimate
+JevBench,JevBench Composite Score (open weights),2026-10-27,202,232,"Quyet-1.0-Small-EN (Chinh Nguyen, ModernBERT-base encoder with fixed heads)",,Chinh Nguyen (ncchinh),No,Composite score,0.29239,higher,39.538077,0.18,0.0023,estimate
+JevBench,JevBench Composite Score (open weights),2026-10-27,203,232,"ClassOne Qwen 3.5 2B (Qwen3.5-2B backbone with ClassOne decision heads, schema-constrained single forward pass, self-hosted)",,Thiago Silva / @devops_thiago,No,Composite score,0.23764,higher,19.218889,0.21,0.0098,estimate
+JevBench,JevBench Composite Score (open weights),2026-10-27,204,232,Laya typed-decisions,,Convai Innovations,No,Composite score,0.216366,higher,44.220618,2.15,0.0038,estimate
+JevBench,JevBench Composite Score (open weights),2026-10-27,205,232,Vega-U (Qwen3.5-0.8B reader),,Nandakishor M,No,Composite score,0.199962,higher,36.13823,1.61,0.0049,estimate
+JevBench,JevBench Composite Score (open weights),2026-10-27,206,232,"WaterSheep (Samrat Dutta, ModernBERT-base encoder with calibrated heads, served by the author's own `watersheep --serve`)",,Samrat Dutta,No,Composite score,0.194797,higher,35.543102,1.08,0.011,estimate
+JevBench,JevBench Composite Score (open weights),2026-10-27,207,232,openJev Verdict 1.4,,Hemant (heman10x),No,Composite score,0.172165,higher,40.367404,0.82,0.0028,estimate
+JevBench,JevBench Composite Score (open weights),2026-10-27,208,232,Raw Qwen3 0.6B direct logits,,Alibaba Qwen / neutral reproduction,No,Composite score,0.167347,higher,8.247747,0.21,0.0056,estimate
+JevBench,JevBench Composite Score (open weights),2026-10-27,209,232,"lev-350m (Franck Verrot, LFM2.5-350M)",,Franck Verrot (franckverrot),No,Composite score,0.153756,higher,43.345904,0.19,0.0046,estimate
+JevBench,JevBench Composite Score (open weights),2026-10-27,210,232,Raw Qwen3 1.7B direct logits,,Alibaba Qwen / neutral reproduction,No,Composite score,0.136712,higher,8.320307,0.21,0.011,estimate
+JevBench,JevBench Composite Score (open weights),2026-10-27,211,232,kev 0.5B,,Jared Palmer,No,Composite score,0.131588,higher,32.90231,0.24,0.0046,estimate
+JevBench,JevBench Composite Score (open weights),2026-10-27,212,232,"Jez-small-1.0.0 (pragmaticfrontier, Qwen3.5-0.8B label-logit decision model, author server, self-hosted)",,pragmaticfrontier (Hugging Face),No,Composite score,0.130554,higher,43.232306,0.24,0.0048,estimate
+JevBench,JevBench Composite Score (open weights),2026-10-27,213,232,"openJev Verdict (heman10x, ModernBERT-base 151M)",,Hemant (heman10x),No,Composite score,0.096456,higher,26.632203,0.79,0.0028,estimate
+JevBench,JevBench Composite Score (open weights),2026-10-27,214,232,"Quyet-1.0-Small (Chinh Nguyen, SEA-LION-ModernBERT-300M encoder with fixed heads)",,Chinh Nguyen (ncchinh),No,Composite score,0.089637,higher,32.492364,0.18,0.0048,estimate
+JevBench,JevBench Composite Score (open weights),2026-10-27,215,232,"watt-flash-0.1 (Zaitgeist Labs, 140M mmBERT-small encoder with an option-marker scorer, one forward pass per request, self-hosted)",,Zaitgeist Labs / Christian Oezbek (GitHub @coezbek / @zaitgeist-charly),No,Composite score,0.074529,higher,41.569073,1.13,0.0023,estimate
+JevBench,JevBench Composite Score (open weights),2026-10-27,216,232,"Quyet-1.0-Tiny (Chinh Nguyen, mmBERT-small encoder (16 layers kept) with fixed heads)",,Chinh Nguyen (ncchinh),No,Composite score,0.070647,higher,31.080529,0.18,0.0024,estimate
+JevBench,JevBench Composite Score (open weights),2026-10-27,217,232,Phocinae-Largha-150M-v1,,Phocinae / NovelNexus AI,No,Composite score,0.065526,higher,30.240174,1.12,0.0014,estimate
+JevBench,JevBench Composite Score (open weights),2026-10-27,218,232,Liquid AI d1-omni-600M,,Liquid AI,No,Composite score,0.049056,higher,32.791105,0.19,0.0079,estimate
+JevBench,JevBench Composite Score (open weights),2026-10-27,219,232,Vega 0.8B,,Nandakishor M,No,Composite score,0.040218,higher,32.994691,0.32,0.019,estimate
+JevBench,JevBench Composite Score (open weights),2026-10-27,220,232,open-jev-deberta-v3-large (local CPU),,Kotoba Labs,No,Composite score,0.032353,higher,35.397661,3.52,0.0056,estimate
+JevBench,JevBench Composite Score (open weights),2026-10-27,221,232,Julia-1 (Supersonic Labs),,Supersonic Labs / @supersonicai (Hugging Face SupersonicLabs),No,Composite score,0.0194,higher,9.854655,0.82,0.0022,estimate
+JevBench,JevBench Composite Score (open weights),2026-10-27,222,232,"verdict-small (Manavarya09, multilingual-e5-small 118M)",,Manavarya09 (Manav),No,Composite score,0.01899,higher,37.630857,0.28,0.00087,estimate
+JevBench,JevBench Composite Score (open weights),2026-10-27,223,232,"Tacet Sonata (CodePawl, 144M packed encoder on mmBERT-small, option-marker softmax in one pass, in-process via the author's tacet package)",,CodePawl / @anxuanng,No,Composite score,0.015686,higher,24.235271,0.68,0.0023,estimate
+JevBench,JevBench Composite Score (open weights),2026-10-27,224,232,"Laya (Convai Innovations, ModernBERT-large 421M)",,Convai Innovations,No,Composite score,0.008559,higher,32.50715,2.01,0.0032,estimate
+JevBench,JevBench Composite Score (open weights),2026-10-27,225,232,Mixedbread mxbai-rerank-base-v2,,Mixedbread,No,Composite score,0.002274,higher,43.874216,0.21,0.021,estimate
+JevBench,JevBench Composite Score (open weights),2026-10-27,226,232,Laya multilingual,,Convai Innovations,No,Composite score,3.8e-05,higher,16.971883,0.95,0.0039,estimate
+JevBench,JevBench Composite Score (open weights),2026-10-27,227,232,Certo v1 (AltSlate Labs),,AltSlate Labs,No,Composite score,1.3e-05,higher,43.174372,0.23,0.0013,estimate
+JevBench,JevBench Composite Score (open weights),2026-10-27,228,232,"CLM-8B (Contrastive-LM, clm-latest)",,"Contrastive-LM (Kwok, Kang, Suresh, Saad-Falcon, Pavone, Ré, Mirhoseini)",No,Composite score,4e-06,higher,20.081855,0.22,0.045,estimate
+JevBench,JevBench Composite Score (open weights),2026-10-27,229,232,BAAI bge-reranker-v2-m3,,BAAI,No,Composite score,0.0,higher,44.082796,0.19,0.023,estimate
+JevBench,JevBench Composite Score (open weights),2026-10-27,230,232,Alibaba GTE Reranker ModernBERT-base,,Alibaba-NLP,No,Composite score,0.0,higher,41.727812,0.2,0.011,estimate
+JevBench,JevBench Composite Score (open weights),2026-10-27,231,232,Mirror,,Bluusun,No,Composite score,0.0,higher,25.806386,1.27,0.0023,estimate
+JevBench,JevBench Composite Score (open weights),2026-10-27,232,232,Open Jev JSON Canvas (JoshuaSP),,JoshuaSP,No,Composite score,0.0,higher,30.596109,0.47,0.049,estimate
+JevBench,JevBench Composite Score (open weights),2026-10-27,,232,Super Decider,,Singularity Compute,No,Composite score,78.482191,higher,84.867484,,,
+JevBench,JevBench Composite Score (open weights),2026-10-27,,232,Myles-G 12B (Launchables),,Launchables,No,Composite score,78.196883,higher,70.65141,,,
+JevBench,JevBench Composite Score (open weights),2026-10-27,,232,kettei-fat (Sqwish),,Sqwish,No,Composite score,77.691229,higher,86.309986,,,
+JevBench,JevBench Composite Score (open weights),2026-10-27,,232,"Fastino GLiDE (hosted API, 22 Oct 2026)",,Fastino,No,Composite score,76.441111,higher,84.455981,,,
+JevBench,JevBench Composite Score (open weights),2026-10-27,,232,d1-ultra (Liquid AI),,Liquid AI,No,Composite score,76.046015,higher,80.477043,,,
+JevBench,JevBench Composite Score (open weights),2026-10-27,,232,SubQ Snap 1.1 (SubQ),,SubQ,No,Composite score,75.737025,higher,81.911122,,,
+JevBench,JevBench Composite Score (open weights),2026-10-27,,232,Drex Max (Nace AI),,Nace AI,No,Composite score,75.376211,higher,84.229083,,,
+JevBench,JevBench Composite Score (open weights),2026-10-27,,232,Bespoke Nimble-v4-max (Bespoke Labs),,Bespoke Labs,No,Composite score,74.821155,higher,79.717453,,,
+JevBench,JevBench Composite Score (open weights),2026-10-27,,232,Super Decider (thinking),,Singularity Compute,No,Composite score,74.540503,higher,85.852266,,,
+JevBench,JevBench Composite Score (open weights),2026-10-27,,232,"SubQ Snap (preview, SubQ)",,SubQ,No,Composite score,74.378451,higher,81.473727,,,
+JevBench,JevBench Composite Score (open weights),2026-10-27,,232,Sage 1.3.0 (Levanto Labs),,Levanto Labs,No,Composite score,73.72798,higher,78.595543,,,
+JevBench,JevBench Composite Score (open weights),2026-10-27,,232,kettei-chub (Sqwish),,Sqwish,No,Composite score,73.447128,higher,73.142905,,,
+JevBench,JevBench Composite Score (open weights),2026-10-27,,232,d1 (Liquid AI),,Liquid AI,No,Composite score,72.816364,higher,74.421692,,,
+JevBench,JevBench Composite Score (open weights),2026-10-27,,232,"Mercury Decide (Inception; System One decisions API, served free on OpenRouter as inception/mercury-decide:free)",,"Inception (API, free on OpenRouter) - Florian work order, 6 Oct 2026",No,Composite score,72.249687,higher,73.625215,,,
+JevBench,JevBench Composite Score (open weights),2026-10-27,,232,Jev 1.13.0 (TypeSafe AI),,TypeSafe AI,No,Composite score,71.447117,higher,77.12648,0.24,0.032,list price
+JevBench,JevBench Composite Score (open weights),2026-10-27,,232,Microsoft-Decision-1 (Azure Foundry) — A2 re-run,,Microsoft,No,Composite score,71.395135,higher,72.034828,,,
+JevBench,JevBench Composite Score (open weights),2026-10-27,,232,Celeris-1 Decision (Celeris),,Celeris,No,Composite score,70.964159,higher,73.622453,,,
+JevBench,JevBench Composite Score (open weights),2026-10-27,,232,Myles-G 31B (Launchables),,Launchables,No,Composite score,70.565964,higher,78.818592,,,
+JevBench,JevBench Composite Score (open weights),2026-10-27,,232,Jev 1.14.0 (TypeSafe AI),,TypeSafe AI,No,Composite score,70.154185,higher,75.012469,0.23,0.032,estimate
+JevBench,JevBench Composite Score (open weights),2026-10-27,,232,Microsoft-Decision-1 (Azure Foundry),,Microsoft,No,Composite score,69.084166,higher,70.784158,,,
+JevBench,JevBench Composite Score (open weights),2026-10-27,,232,"wity-1 (Wity, reasoning auto)",,Wity (alphanimble),No,Composite score,68.964709,higher,76.911441,,,
+JevBench,JevBench Composite Score (open weights),2026-10-27,,232,attest-31B-v1.0,,attest,No,Composite score,67.856949,higher,69.543213,,,
+JevBench,JevBench Composite Score (open weights),2026-10-27,,232,Sage 1.4 (Levanto Labs),,Levanto Labs,No,Composite score,67.698279,higher,73.308032,,,
+JevBench,JevBench Composite Score (open weights),2026-10-27,,232,"SPX-CD Flash (SurdAI, hosted /v1/systemone, Oct-4 checkpoint)",,"SPX AI team (SurdAI, formerly Simplex AI)",No,Composite score,66.644349,higher,74.315441,,,
+JevBench,JevBench Composite Score (open weights),2026-10-27,,232,OpenAI Decisions (gpt-6-luna),,OpenAI,No,Composite score,62.37,higher,73.5,,,
+JevBench,JevBench Composite Score (open weights),2026-10-27,,232,"Instinct (ZooWork, Qwen3.8-27B)",,rayrain-srp (ZooWork),No,Composite score,62.23,higher,70.47,,,
+JevBench,JevBench Composite Score (open weights),2026-10-27,,232,HS1 0.1.2 (Hyland),,Hyland,No,Composite score,61.068034,higher,64.348569,,,
+JevBench,JevBench Composite Score (open weights),2026-10-27,,232,"SPX-CD Pro (SurdAI, hosted /v1/systemone, Oct-4 checkpoint)",,"SPX AI team (SurdAI, formerly Simplex AI)",No,Composite score,47.553774,higher,78.479596,,,
+JevBench,JevBench Composite Score (open weights),2026-10-27,,232,Bespoke Nimble-v4 (Bespoke Labs),,Bespoke Labs,No,Composite score,43.228743,higher,64.019681,,,
+JevBench,JevBench Composite Score (open weights),2026-10-27,,232,"Vansa-3.4 (Vansa, hosted System One API)",,Vansa,No,Composite score,42.57,higher,63.68,,,
+JevBench,JevBench Composite Score (open weights),2026-10-27,,232,GPT-6 Luna (low reasoning effort),,OpenAI,No,Composite score,40.39,higher,97.07,,,
+JevBench,JevBench Composite Score (open weights),2026-10-27,,232,Autoloops – Gemma 4 31B IT,,Autoloops,No,Composite score,40.17,higher,72.7,,,
+JevBench,JevBench Composite Score (open weights),2026-10-27,,232,GPT-6 Luna (default medium reasoning effort),,OpenAI,No,Composite score,39.1,higher,98.4,,,
+JevBench,JevBench Composite Score (open weights),2026-10-27,,232,Amos 1 medium (Scira),,Scira,No,Composite score,31.638672,higher,62.850218,,,
+JevBench,JevBench Composite Score (open weights),2026-10-27,,232,Fastino GLiDE,,Fastino,No,Composite score,30.57,higher,77.02,,,
+JevBench,JevBench Composite Score (open weights),2026-10-27,,232,SimpleJev Qwen3.6-35B-A3B,,Featherless AI,No,Composite score,27.53,higher,68.29,,,
+JevBench,JevBench Composite Score (open weights),2026-10-27,,232,GPT-5.6 Luna (low reasoning effort),,OpenAI,No,Composite score,21.36,higher,93.64,,,
+JevBench,JevBench Composite Score (open weights),2026-10-27,,232,Amos 1 large (Scira),,Scira,No,Composite score,20.250534,higher,77.988802,,,
+JevBench,JevBench Composite Score (open weights),2026-10-27,,232,Instinct Dual 4B,,ZooWork / pierre-srp,No,Composite score,17.97,higher,57.21,,,
+JevBench,JevBench Composite Score (open weights),2026-10-27,,232,Gemini 3.1 Flash-Lite,,Google,No,Composite score,16.93,higher,59.75,,,
+JevBench,JevBench Composite Score (open weights),2026-10-27,,232,system-one-open (Gemma 4 E2B LoRA on an L4),,mithalouni,No,Composite score,16.39,higher,51.94,,,
+JevBench,JevBench Composite Score (open weights),2026-10-27,,232,openjev-sglang (Qwen3.6-35B-A3B on SGLang),,ekzhang,No,Composite score,15.38,higher,58.67,,,
+JevBench,JevBench Composite Score (open weights),2026-10-27,,232,classify-1 (ScaleDown),,ScaleDown,No,Composite score,8.476552,higher,52.307933,,,
+JevBench,JevBench Composite Score (open weights),2026-10-27,,232,Nev-2B (EryriLabs),,EryriLabs,No,Composite score,6.944821,higher,49.91717,12.84,0.0092,estimate
+JevBench,JevBench Composite Score (open weights),2026-10-27,,232,DeepSeek V4.1 Flash (thinking default),,DeepSeek,No,Composite score,6.9,higher,89.62,,,
+JevBench,JevBench Composite Score (open weights),2026-10-27,,232,SimpleJev Qwen3.8-27B,,Featherless AI,No,Composite score,3.22,higher,71.6,,,
+JevBench,JevBench Composite Score (open weights),2026-10-27,,232,decision-machine-1 (milliseconds.ai),,milliseconds.ai (Baptiste Laget),No,Composite score,2.35,higher,46.13,,,
+JevBench,JevBench Composite Score (open weights),2026-10-27,,232,"JevAct (einptein, jev1-2b-v2)",,einptein,No,Composite score,1.11,higher,28.77,,,
+JevBench,JevBench Composite Score (open weights),2026-10-27,,232,Qwen3.5-0.8B Decision Model (Mourad Ghafiri),,Mourad Ghafiri,No,Composite score,0.472475,higher,42.626924,11.25,0.0048,estimate
+JevBench,JevBench Composite Score (open weights),2026-10-27,,232,Fastino GLiNER-2.5-Decide (hosted API),,Fastino,No,Composite score,0.343399,higher,34.572116,,,
+JevBench,JevBench Composite Score (open weights),2026-10-27,,232,Reflex Instinct 0.6B (Atlas AI),,Atlas AI / @leemadov,No,Composite score,0.08486,higher,38.556357,3.89,0.0047,estimate
+JevBench,JevBench Composite Score (open weights),2026-10-27,,232,modernbert-jev v2,,ksonny4 / @kubelpe,No,Composite score,0.025389,higher,34.646633,5.35,0.0097,estimate
+JevBench,JevBench Composite Score (open weights),2026-10-27,,232,Qwen3.8 27B (Chutes TEE),,Qwen / Chutes,No,Composite score,0.0,higher,48.59,,,
+ImageJevBench,ImageJevBench Composite Score (official),2026-10-27,1,63,kettei-fat (Sqwish),,Sqwish,No,Composite score,75.384577,higher,75.894751,0.42,0.011,list price
+ImageJevBench,ImageJevBench Composite Score (official),2026-10-27,2,63,"Wity-1 (AlphaNimble), reasoning auto",,AlphaNimble,No,Composite score,71.205863,higher,74.030038,2.71,0.0087,measured GPU time at the board's rate
+ImageJevBench,ImageJevBench Composite Score (official),2026-10-27,3,63,Imajev-4B,,Model author not reported,No,Composite score,63.71415,higher,68.008151,0.37,0.038,measured GPU time at the board's rate
+ImageJevBench,ImageJevBench Composite Score (official),2026-10-27,4,63,kettei-chub (Sqwish),,Sqwish,No,Composite score,63.342036,higher,66.501925,0.31,0.0073,list price
+ImageJevBench,ImageJevBench Composite Score (official),2026-10-27,5,63,H2O-Lightning-31B (image),,H2O.ai,Yes,Composite score,51.223778,higher,80.875145,0.59,0.075,measured GPU time at the board's rate
+ImageJevBench,ImageJevBench Composite Score (official),2026-10-27,6,63,"Sage 1.4 + images, beta (Levanto Labs)",,Levanto Labs,No,Composite score,47.906401,higher,75.792553,0.56,0.079,list price
+ImageJevBench,ImageJevBench Composite Score (official),2026-10-27,7,63,Drex Max (Nace AI),,Nace AI,No,Composite score,44.645306,higher,72.471249,0.85,0.084,list price
+ImageJevBench,ImageJevBench Composite Score (official),2026-10-27,8,63,Surogate Rune 26B-A4B v3,,surogate (model repository owner),No,Composite score,42.456609,higher,64.807344,0.49,0.058,measured GPU time at the board's rate
+ImageJevBench,ImageJevBench Composite Score (official),2026-10-27,9,63,Autoloops – Gemma 4 31B IT,,Hosted API provider,No,Composite score,41.374323,higher,68.347224,1.19,0.083,measured GPU time at the board's rate
+ImageJevBench,ImageJevBench Composite Score (official),2026-10-27,10,63,basal-omni-1.0-ultra (Remek Kinas),,Remek Kinas,No,Composite score,40.908274,higher,60.553801,0.63,0.085,measured GPU time at the board's rate
+ImageJevBench,ImageJevBench Composite Score (official),2026-10-27,11,63,Celeris-1 Decision (Celeris),,Celeris,No,Composite score,39.487482,higher,58.148048,0.89,0.022,list price
+ImageJevBench,ImageJevBench Composite Score (official),2026-10-27,12,63,imajev 9B,,mohit67890 (model repository owner),No,Composite score,34.523679,higher,67.070832,0.67,0.089,measured GPU time at the board's rate
+ImageJevBench,ImageJevBench Composite Score (official),2026-10-27,13,63,H2O-Lightning-4B (image),,H2O.ai,No,Composite score,34.138064,higher,60.430994,0.57,0.078,measured GPU time at the board's rate
+ImageJevBench,ImageJevBench Composite Score (official),2026-10-27,14,63,"Wity-1 (AlphaNimble), reasoning off",,AlphaNimble,No,Composite score,33.08715,higher,56.158852,1.64,0.0087,measured GPU time at the board's rate
+ImageJevBench,ImageJevBench Composite Score (official),2026-10-27,15,63,Jev-Omni,,Model author not reported,No,Composite score,32.84476,higher,54.250109,0.32,0.022,measured GPU time at the board's rate
+ImageJevBench,ImageJevBench Composite Score (official),2026-10-27,16,63,JPT-9B (kirp / llm2jev),,kirp (model repository owner),No,Composite score,31.434823,higher,58.72402,0.6,0.083,measured GPU time at the board's rate
+ImageJevBench,ImageJevBench Composite Score (official),2026-10-27,17,63,NeoHorse Jev 4B,,TokenRhythm (model repository owner),No,Composite score,30.452336,higher,57.62143,0.43,0.042,measured GPU time at the board's rate
+ImageJevBench,ImageJevBench Composite Score (official),2026-10-27,18,63,Jevify Gemma 4 26B-A4B,,kushalpatil (model repository owner),No,Composite score,29.678542,higher,58.73393,0.49,0.057,measured GPU time at the board's rate
+ImageJevBench,ImageJevBench Composite Score (official),2026-10-27,19,63,AutoJev-27B,,denis-pplx (model repository owner),No,Composite score,29.338747,higher,62.148073,0.48,0.054,measured GPU time at the board's rate
+ImageJevBench,ImageJevBench Composite Score (official),2026-10-27,20,63,JPT-4B (kirp / llm2jev),,kirp (model repository owner),No,Composite score,26.548911,higher,55.62157,0.5,0.065,measured GPU time at the board's rate
+ImageJevBench,ImageJevBench Composite Score (official),2026-10-27,21,63,"Jev 1.13.0 + images, preview (TypeSafe)",,TypeSafe,No,Composite score,26.429099,higher,72.43938,0.38,0.16,list price
+ImageJevBench,ImageJevBench Composite Score (official),2026-10-27,22,63,Jev-Vision 8B (SeanLiu),,SeanLiu (model repository owner),No,Composite score,25.50841,higher,37.763803,0.53,0.056,measured GPU time at the board's rate
+ImageJevBench,ImageJevBench Composite Score (official),2026-10-27,23,63,"Jev 1.14.0 + images, preview (TypeSafe)",,TypeSafe,No,Composite score,24.311534,higher,60.216739,0.39,0.16,list price
+ImageJevBench,ImageJevBench Composite Score (official),2026-10-27,24,63,shisa-de-1,,shisa-ai (model repository owner),No,Composite score,22.827353,higher,51.461101,0.49,0.057,measured GPU time at the board's rate
+ImageJevBench,ImageJevBench Composite Score (official),2026-10-27,25,63,Clef-Flash (Cloudflare),,Model author not reported,No,Composite score,20.413326,higher,52.242066,0.62,0.084,measured GPU time at the board's rate
+ImageJevBench,ImageJevBench Composite Score (official),2026-10-27,26,63,Clef (Cloudflare),,Model author not reported,No,Composite score,18.652173,higher,58.078072,1.18,0.18,measured GPU time at the board's rate
+ImageJevBench,ImageJevBench Composite Score (official),2026-10-27,27,63,GPT-6 Luna via OpenAI Decisions (OpenAI),,OpenAI,No,Composite score,17.305447,higher,62.868586,0.41,0.18,measured GPU time at the board's rate
+ImageJevBench,ImageJevBench Composite Score (official),2026-10-27,28,63,Winnow-12B (Q8_0 + F16 vision projector),,Model author not reported,No,Composite score,17.076041,higher,49.993274,0.68,0.087,measured GPU time at the board's rate
+ImageJevBench,ImageJevBench Composite Score (official),2026-10-27,29,63,Image Hopper (HopitAI),,Model author not reported,No,Composite score,15.299609,higher,51.682148,0.5,0.077,measured GPU time at the board's rate
+ImageJevBench,ImageJevBench Composite Score (official),2026-10-27,30,63,OmniJev-Qwen3.5-9B-v4 (tzcfly),,tzcfly (model repository owner),No,Composite score,14.988416,higher,33.143127,0.3,0.026,measured GPU time at the board's rate
+ImageJevBench,ImageJevBench Composite Score (official),2026-10-27,31,63,OmniJev 4B (tinnel123),,tinnel123 (model repository owner),No,Composite score,14.830724,higher,47.211306,0.44,0.049,measured GPU time at the board's rate
+ImageJevBench,ImageJevBench Composite Score (official),2026-10-27,32,63,Reflex 4B (released stable configuration),,Model author not reported,No,Composite score,13.799726,higher,53.343727,0.48,0.052,measured GPU time at the board's rate
+ImageJevBench,ImageJevBench Composite Score (official),2026-10-27,33,63,GPT-6 Luna (low reasoning effort),,Hosted API provider,No,Composite score,12.189124,higher,74.440162,4.19,0.32,measured GPU time at the board's rate
+ImageJevBench,ImageJevBench Composite Score (official),2026-10-27,34,63,Bonsai-2-27B v2 PQ2_0 + Q8_0 MMProj,,Model author not reported,No,Composite score,11.982904,higher,63.069903,1.45,0.23,measured GPU time at the board's rate
+ImageJevBench,ImageJevBench Composite Score (official),2026-10-27,35,63,CUA-S1 4B,,cua-ai (model repository owner),No,Composite score,11.759433,higher,48.42708,0.59,0.08,measured GPU time at the board's rate
+ImageJevBench,ImageJevBench Composite Score (official),2026-10-27,36,63,Visual-Jev generic (zero-shot Qwen3.5-4B baseline),,Qwen (model repository owner),No,Composite score,11.136399,higher,56.730444,0.68,0.091,measured GPU time at the board's rate
+ImageJevBench,ImageJevBench Composite Score (official),2026-10-27,37,63,Mapika decider-2b-vision BF16,,Model author not reported,No,Composite score,9.520408,higher,42.838795,0.38,0.034,measured GPU time at the board's rate
+ImageJevBench,ImageJevBench Composite Score (official),2026-10-27,38,63,vjev-vision (yah01),,yah01 (model repository owner),No,Composite score,8.857241,higher,55.663746,0.29,0.023,measured GPU time at the board's rate
+ImageJevBench,ImageJevBench Composite Score (official),2026-10-27,39,63,Visual-Jev 4B Answer-SFT,,guanxuyu (model repository owner),No,Composite score,8.706793,higher,35.886804,0.45,0.057,measured GPU time at the board's rate
+ImageJevBench,ImageJevBench Composite Score (official),2026-10-27,40,63,GPT-5.6 Luna,,Hosted API provider,No,Composite score,7.870043,higher,76.823975,3.34,0.43,measured GPU time at the board's rate
+ImageJevBench,ImageJevBench Composite Score (official),2026-10-27,41,63,Jevify Gemma 4 E4B,,kushalpatil (model repository owner),No,Composite score,7.261254,higher,43.713651,0.29,0.024,measured GPU time at the board's rate
+ImageJevBench,ImageJevBench Composite Score (official),2026-10-27,42,63,JPT-0.8B (kirp / llm2jev),,kirp (model repository owner),No,Composite score,7.170925,higher,46.068419,0.34,0.035,measured GPU time at the board's rate
+ImageJevBench,ImageJevBench Composite Score (official),2026-10-27,43,63,Glance (frozen Qwen3-VL-4B),,Qwen (model repository owner),No,Composite score,6.853979,higher,28.425743,0.36,0.035,measured GPU time at the board's rate
+ImageJevBench,ImageJevBench Composite Score (official),2026-10-27,44,63,Gemini 3.1 Flash Lite,,Hosted API provider,No,Composite score,6.452066,higher,46.83402,1.61,0.39,measured GPU time at the board's rate
+ImageJevBench,ImageJevBench Composite Score (official),2026-10-27,45,63,diffusiongemma-26b djev v10 step160 (snowicarus),,snowicarus (model repository owner),No,Composite score,5.902685,higher,36.73985,0.6,0.071,measured GPU time at the board's rate
+ImageJevBench,ImageJevBench Composite Score (official),2026-10-27,46,63,imajev 2B,,mohit67890 (model repository owner),No,Composite score,5.758835,higher,46.418681,0.42,0.048,measured GPU time at the board's rate
+ImageJevBench,ImageJevBench Composite Score (official),2026-10-27,47,63,"Gevva E4B (text checkpoint, image input)",,davidburhans (model repository owner),No,Composite score,4.139103,higher,49.575467,0.52,0.059,measured GPU time at the board's rate
+ImageJevBench,ImageJevBench Composite Score (official),2026-10-27,48,63,Liquid d1-3B (Liquid AI),,Liquid AI,No,Composite score,4.096383,higher,47.781214,0.35,0.034,measured GPU time at the board's rate
+ImageJevBench,ImageJevBench Composite Score (official),2026-10-27,49,63,djev-distill-v4 (tarsur385),,tarsur385 (model repository owner),No,Composite score,3.615593,higher,40.246912,0.61,0.072,measured GPU time at the board's rate
+ImageJevBench,ImageJevBench Composite Score (official),2026-10-27,50,63,Jevify Qwen3-VL-2B T2,,Praveenrajus (model repository owner),No,Composite score,3.287126,higher,43.932256,0.34,0.036,measured GPU time at the board's rate
+ImageJevBench,ImageJevBench Composite Score (official),2026-10-27,51,63,OmniJev 2B (tinnel123),,tinnel123 (model repository owner),No,Composite score,3.16763,higher,37.93118,0.38,0.039,measured GPU time at the board's rate
+ImageJevBench,ImageJevBench Composite Score (official),2026-10-27,52,63,jev-spatial (Fr0zencr4nE),,Fr0zencr4nE (model repository owner),No,Composite score,2.061926,higher,26.452916,0.29,0.024,measured GPU time at the board's rate
+ImageJevBench,ImageJevBench Composite Score (official),2026-10-27,53,63,Gevva E2B multimodal,,davidburhans (model repository owner),No,Composite score,2.018756,higher,47.336749,0.47,0.051,measured GPU time at the board's rate
+ImageJevBench,ImageJevBench Composite Score (official),2026-10-27,54,63,"JEVision (divyanshx11, visual route)",,Qwen (model repository owner),No,Composite score,1.844492,higher,16.201179,0.54,0.066,measured GPU time at the board's rate
+ImageJevBench,ImageJevBench Composite Score (official),2026-10-27,55,63,OmniJev 0.8B (tinnel123),,tinnel123 (model repository owner),No,Composite score,1.571382,higher,38.582913,0.35,0.034,measured GPU time at the board's rate
+ImageJevBench,ImageJevBench Composite Score (official),2026-10-27,56,63,PlayJev 0.8B,,OmniJev (model repository owner),No,Composite score,0.502441,higher,25.598351,0.33,0.034,measured GPU time at the board's rate
+ImageJevBench,ImageJevBench Composite Score (official),2026-10-27,57,63,Liquid d1-omni-600M (Liquid AI),,Liquid AI,No,Composite score,0.236759,higher,26.537495,0.25,0.016,measured GPU time at the board's rate
+ImageJevBench,ImageJevBench Composite Score (official),2026-10-27,58,63,djev-dev BF16,,Model author not reported,No,Composite score,0.039395,higher,25.406742,0.59,0.072,measured GPU time at the board's rate
+ImageJevBench,ImageJevBench Composite Score (official),2026-10-27,59,63,Qevi-2B (MeerDevelopment),,MeerDevelopment (model repository owner),No,Composite score,0.025179,higher,11.149289,0.35,0.039,measured GPU time at the board's rate
+ImageJevBench,ImageJevBench Composite Score (official),2026-10-27,60,63,djev-spark NVFP4,,Model author not reported,No,Composite score,0.002735,higher,24.52332,0.54,0.064,measured GPU time at the board's rate
+ImageJevBench,ImageJevBench Composite Score (official),2026-10-27,61,63,OpenJev 4B NLI v2 (official image-premise path),,Model author not reported,No,Composite score,0.0,higher,8.20441,1.26,0.16,measured GPU time at the board's rate
+ImageJevBench,ImageJevBench Composite Score (official),2026-10-27,62,63,OpenJev 4B NLI v5,,AlexWortega (model repository owner),No,Composite score,0.0,higher,16.40808,1.26,0.15,measured GPU time at the board's rate
+ImageJevBench,ImageJevBench Composite Score (official),2026-10-27,63,63,Gemini 3.8 Flash,,Hosted API provider,No,Composite score,0.0,higher,19.342745,4.9,2.2,measured GPU time at the board's rate
+ImageJevBench,ImageJevBench Composite Score (official),2026-10-27,,63,Standard One 3B,,StandardThinking (model repository owner),No,Composite score,,higher,49.553367,0.47,,
+ImageJevBench,ImageJevBench Composite Score (official),2026-10-27,,63,Standard One 8B,,StandardThinking (model repository owner),No,Composite score,,higher,51.54923,0.57,,
+fev-bench,fev-bench leaderboard · default view,2026-10-27,1,32,TimeH2O-v1,,H2O.ai,Yes,Win rate,91.871,higher,,,,
+fev-bench,fev-bench leaderboard · default view,2026-10-27,2,32,Timestral-209M,,Mistral AI,No,Win rate,89.6129,higher,,,,
+fev-bench,fev-bench leaderboard · default view,2026-10-27,3,32,t0-gamma,,The Forecasting Company,No,Win rate,88.0968,higher,,,,
+fev-bench,fev-bench leaderboard · default view,2026-10-27,4,32,TimesFM-3,,Google,No,Win rate,82.7097,higher,,,,
+fev-bench,fev-bench leaderboard · default view,2026-10-27,5,32,Chronos-2,,AWS,No,Win rate,76.8065,higher,,,,
+fev-bench,fev-bench leaderboard · default view,2026-10-27,6,32,t0-beta,,The Forecasting Company,No,Win rate,74.4839,higher,,,,
+fev-bench,fev-bench leaderboard · default view,2026-10-27,7,32,TiRex-2,,NX-AI,No,Win rate,73.5484,higher,,,,
+fev-bench,fev-bench leaderboard · default view,2026-10-27,8,32,Toto-2.0-2.5B,,Datadog,No,Win rate,73.0323,higher,,,,
+fev-bench,fev-bench leaderboard · default view,2026-10-27,9,32,TiRex,,NX-AI,No,Win rate,66.4839,higher,,,,
+fev-bench,fev-bench leaderboard · default view,2026-10-27,10,32,Toto-2.0-22m,,Datadog,No,Win rate,65.4839,higher,,,,
+fev-bench,fev-bench leaderboard · default view,2026-10-27,11,32,TimesFM-2.5,,Google,No,Win rate,62.7419,higher,,,,
+fev-bench,fev-bench leaderboard · default view,2026-10-27,12,32,TabPFN-TS-3,,Prior Labs,No,Win rate,59.3548,higher,,,,
+fev-bench,fev-bench leaderboard · default view,2026-10-27,13,32,TS-ICL,,EDF-Lab,No,Win rate,59.2258,higher,,,,
+fev-bench,fev-bench leaderboard · default view,2026-10-27,14,32,CITRAS-FM,,Hitachi,No,Win rate,56.8387,higher,,,,
+fev-bench,fev-bench leaderboard · default view,2026-10-27,15,32,FlowState,,IBM,No,Win rate,56.7097,higher,,,,
+fev-bench,fev-bench leaderboard · default view,2026-10-27,16,32,Toto-1.0,,Datadog,No,Win rate,55.1935,higher,,,,
+fev-bench,fev-bench leaderboard · default view,2026-10-27,17,32,TabPFN-TS,,Prior Labs,No,Win rate,54.2097,higher,,,,
+fev-bench,fev-bench leaderboard · default view,2026-10-27,18,32,Moirai-2.0,,Salesforce,No,Win rate,49.7742,higher,,,,
+fev-bench,fev-bench leaderboard · default view,2026-10-27,19,32,Chronos-Bolt,,AWS,No,Win rate,49.0968,higher,,,,
+fev-bench,fev-bench leaderboard · default view,2026-10-27,20,32,TFT,,—,No,Win rate,37.5806,higher,,,,
+fev-bench,fev-bench leaderboard · default view,2026-10-27,21,32,Sundial-Base,,Tsinghua University,No,Win rate,33.4194,higher,,,,
+fev-bench,fev-bench leaderboard · default view,2026-10-27,22,32,Stat. Ensemble,,—,No,Win rate,32.9677,higher,,,,
+fev-bench,fev-bench leaderboard · default view,2026-10-27,23,32,PatchTST,,—,No,Win rate,32.5806,higher,,,,
+fev-bench,fev-bench leaderboard · default view,2026-10-27,24,32,DeepAR,,—,No,Win rate,31.4032,higher,,,,
+fev-bench,fev-bench leaderboard · default view,2026-10-27,25,32,AutoARIMA,,—,No,Win rate,28.7742,higher,,,,
+fev-bench,fev-bench leaderboard · default view,2026-10-27,26,32,AutoETS,,—,No,Win rate,24.2097,higher,,,,
+fev-bench,fev-bench leaderboard · default view,2026-10-27,27,32,CatBoost,,—,No,Win rate,23.6452,higher,,,,
+fev-bench,fev-bench leaderboard · default view,2026-10-27,28,32,LightGBM,,—,No,Win rate,21.9032,higher,,,,
+fev-bench,fev-bench leaderboard · default view,2026-10-27,29,32,AutoTheta,,—,No,Win rate,19.3548,higher,,,,
+fev-bench,fev-bench leaderboard · default view,2026-10-27,30,32,Seasonal Naive,,—,No,Win rate,13.0323,higher,,,,
+fev-bench,fev-bench leaderboard · default view,2026-10-27,31,32,Naive,,—,No,Win rate,8.4355,higher,,,,
+fev-bench,fev-bench leaderboard · default view,2026-10-27,32,32,Drift,,—,No,Win rate,7.4194,higher,,,,
+Social Simulation Arena,Season 0 pairwise win rate,2026-10-27,1,24,H2O.ai SuperAgent,,H2O.ai,Yes,Pairwise win rate,67.44,higher,,,,
+Social Simulation Arena,Season 0 pairwise win rate,2026-10-27,2,24,Apodex-FutureFlow,,Apodex,No,Pairwise win rate,66.65,higher,,,,
+Social Simulation Arena,Season 0 pairwise win rate,2026-10-27,3,24,H2O.ai Marina,,H2O.ai,Yes,Pairwise win rate,62.7,higher,,,,
+Social Simulation Arena,Season 0 pairwise win rate,2026-10-27,4,24,Claude Sonnet 5 · web+sfc,,,No,Pairwise win rate,56.91,higher,,,,
+Social Simulation Arena,Season 0 pairwise win rate,2026-10-27,5,24,Vac,,,No,Pairwise win rate,55.78,higher,,,,
+Social Simulation Arena,Season 0 pairwise win rate,2026-10-27,6,24,Crowd,,,No,Pairwise win rate,53.82,higher,,,,
+Social Simulation Arena,Season 0 pairwise win rate,2026-10-27,7,24,worldVac,,Astraculum,No,Pairwise win rate,53.48,higher,,,,
+Social Simulation Arena,Season 0 pairwise win rate,2026-10-27,8,24,Grok 4.5 · web,,,No,Pairwise win rate,52.73,higher,,,,
+Social Simulation Arena,Season 0 pairwise win rate,2026-10-27,9,24,Gemini 3.1 Pro · web,,,No,Pairwise win rate,51.77,higher,,,,
+Social Simulation Arena,Season 0 pairwise win rate,2026-10-27,10,24,Gemini 3.1 Pro · web+sfc,,,No,Pairwise win rate,51.48,higher,,,,
+Social Simulation Arena,Season 0 pairwise win rate,2026-10-27,11,24,DeepSeek V4 Pro · web,,,No,Pairwise win rate,51.19,higher,,,,
+Social Simulation Arena,Season 0 pairwise win rate,2026-10-27,12,24,GPT-5.6 Luna · web+sfc,,,No,Pairwise win rate,50.81,higher,,,,
+Social Simulation Arena,Season 0 pairwise win rate,2026-10-27,13,24,Claude Sonnet 5 · web,,,No,Pairwise win rate,50.78,higher,,,,
+Social Simulation Arena,Season 0 pairwise win rate,2026-10-27,14,24,DeepSeek V4 Pro · web+sfc,,,No,Pairwise win rate,49.18,higher,,,,
+Social Simulation Arena,Season 0 pairwise win rate,2026-10-27,15,24,GLM-5.2 · web,,,No,Pairwise win rate,45.68,higher,,,,
+Social Simulation Arena,Season 0 pairwise win rate,2026-10-27,16,24,GPT-5.6 Luna · web,,,No,Pairwise win rate,43.89,higher,,,,
+Social Simulation Arena,Season 0 pairwise win rate,2026-10-27,17,24,GLM-5.2 · web+sfc,,,No,Pairwise win rate,43.15,higher,,,,
+Social Simulation Arena,Season 0 pairwise win rate,2026-10-27,18,24,Persistence,,,No,Pairwise win rate,42.27,higher,,,,
+Social Simulation Arena,Season 0 pairwise win rate,2026-10-27,19,24,Grok 4.5 · web+sfc,,,No,Pairwise win rate,41.25,higher,,,,
+Social Simulation Arena,Season 0 pairwise win rate,2026-10-27,20,24,ZhengZheng Forecaster,,xuanzhengwenhua,No,Pairwise win rate,39.62,higher,,,,
+Social Simulation Arena,Season 0 pairwise win rate,2026-10-27,21,24,YuLan-OneSim,,Renmin University of China,No,Pairwise win rate,34.39,higher,,,,
+Social Simulation Arena,Season 0 pairwise win rate,2026-10-27,22,24,EWMA,,,No,Pairwise win rate,28.89,higher,,,,
+Social Simulation Arena,Season 0 pairwise win rate,2026-10-27,23,24,Linear trend,,,No,Pairwise win rate,15.56,higher,,,,
+Social Simulation Arena,Season 0 pairwise win rate,2026-10-27,24,24,Climatology,,,No,Pairwise win rate,14.45,higher,,,,
+FutureX,Weekly board · 2026 Oct. Week 3,2026-10-27,1,49,OPS-Agentic-Search_S10.2,Kimi K3,Individual AI Researcher,No,Overall score,47.81,higher,,,,
+FutureX,Weekly board · 2026 Oct. Week 3,2026-10-27,2,49,arce,DeepSeek-V4-Pro,Individual AI Researcher,No,Overall score,47.4,higher,,,,
+FutureX,Weekly board · 2026 Oct. Week 3,2026-10-27,3,49,OPS-Agentic-Search_S10.7,Kimi K3,Individual AI Researcher,No,Overall score,46.87,higher,,,,
+FutureX,Weekly board · 2026 Oct. Week 3,2026-10-27,4,49,OPS-Agentic-Search_S10.1,Kimi K3,Individual AI Researcher,No,Overall score,46.61,higher,,,,
+FutureX,Weekly board · 2026 Oct. Week 3,2026-10-27,5,49,OPS-Agentic-Search_S10.9,Kimi K3,Individual AI Researcher,No,Overall score,45.67,higher,,,,
+FutureX,Weekly board · 2026 Oct. Week 3,2026-10-27,6,49,H2O AI Super Agent v1.82,gpt-6-sol,h2o.ai,Yes,Overall score,45.11,higher,,,,
+FutureX,Weekly board · 2026 Oct. Week 3,2026-10-27,7,49,H2O AI Super Agent v1.82,gpt-6-sol + sonnet-5.5 - v3,h2o.ai,Yes,Overall score,45.01,higher,,,,
+FutureX,Weekly board · 2026 Oct. Week 3,2026-10-27,8,49,OPS-Agentic-Search_S10.5,Kimi K3,Individual AI Researcher,No,Overall score,44.31,higher,,,,
+FutureX,Weekly board · 2026 Oct. Week 3,2026-10-27,9,49,H2O AI Super Agent v1.82,gpt-6-sol + sonnet-5.5 - v1,h2o.ai,Yes,Overall score,44.09,higher,,,,
+FutureX,Weekly board · 2026 Oct. Week 3,2026-10-27,10,49,Google_Deepmind,blue-fish,Individual AI Researcher,No,Overall score,43.47,higher,,,,
+FutureX,Weekly board · 2026 Oct. Week 3,2026-10-27,11,49, SWM-b,Deepseek V4 Pro,Individual AI Researcher,No,Overall score,43.18,higher,,,,
+FutureX,Weekly board · 2026 Oct. Week 3,2026-10-27,12,49,SWM-c,Deepseek V4 Pro,Individual AI Researcher,No,Overall score,43.16,higher,,,,
+FutureX,Weekly board · 2026 Oct. Week 3,2026-10-27,13,49,H2O AI Super Agent v1.82,gpt-6-sol + sonnet-5.5 - v2,h2o.ai,Yes,Overall score,43.04,higher,,,,
+FutureX,Weekly board · 2026 Oct. Week 3,2026-10-27,14,49,SWM-a,Deepseek V4 Pro,Individual AI Researcher,No,Overall score,42.77,higher,,,,
+FutureX,Weekly board · 2026 Oct. Week 3,2026-10-27,15,49,OPS-Agentic-Search_S10.3,Kimi K3,Individual AI Researcher,No,Overall score,42.35,higher,,,,
+FutureX,Weekly board · 2026 Oct. Week 3,2026-10-27,16,49,OPS-Agentic-Search_S10.6,Kimi K3,Individual AI Researcher,No,Overall score,42.29,higher,,,,
+FutureX,Weekly board · 2026 Oct. Week 3,2026-10-27,17,49,SWM-d,Deepseek V4 Pro,Individual AI Researcher,No,Overall score,42.24,higher,,,,
+FutureX,Weekly board · 2026 Oct. Week 3,2026-10-27,18,49,Raven,obsidian,Individual AI Researcher,No,Overall score,41.65,higher,,,,
+FutureX,Weekly board · 2026 Oct. Week 3,2026-10-27,19,49,anon-agent,anon-a1,Individual AI Researcher,No,Overall score,41.46,higher,,,,
+FutureX,Weekly board · 2026 Oct. Week 3,2026-10-27,20,49,anon-agent,anon-a6,Individual AI Researcher,No,Overall score,41.46,higher,,,,
+FutureX,Weekly board · 2026 Oct. Week 3,2026-10-27,21,49,anon-agent,anon-a5,Individual AI Researcher,No,Overall score,40.99,higher,,,,
+FutureX,Weekly board · 2026 Oct. Week 3,2026-10-27,22,49,anon-agent,anon-a3,Individual AI Researcher,No,Overall score,40.78,higher,,,,
+FutureX,Weekly board · 2026 Oct. Week 3,2026-10-27,23,49,anon-agent,anon-a2,Individual AI Researcher,No,Overall score,40.65,higher,,,,
+FutureX,Weekly board · 2026 Oct. Week 3,2026-10-27,24,49,H2O AI Super Agent v1.82,gpt-6-sol + sonnet-5.5 - v4,h2o.ai,Yes,Overall score,39.68,higher,,,,
+FutureX,Weekly board · 2026 Oct. Week 3,2026-10-27,25,49,H2O AI Super Agent v1.82,grok-4.7,h2o.ai,Yes,Overall score,39.29,higher,,,,
+FutureX,Weekly board · 2026 Oct. Week 3,2026-10-27,26,49,SenseFlow_Multiagent,S-Forecaster,Individual AI Researcher,No,Overall score,39.19,higher,,,,
+FutureX,Weekly board · 2026 Oct. Week 3,2026-10-27,27,49,hermes,Charles_V_v1,Individual AI Researcher,No,Overall score,38.78,higher,,,,
+FutureX,Weekly board · 2026 Oct. Week 3,2026-10-27,28,49,OPS-Agentic-Search_S1,Kimi K3,Individual AI Researcher,No,Overall score,38.68,higher,,,,
+FutureX,Weekly board · 2026 Oct. Week 3,2026-10-27,29,49,H2O AI Super Agent v1.82,sonnet-5.5,h2o.ai,Yes,Overall score,38.45,higher,,,,
+FutureX,Weekly board · 2026 Oct. Week 3,2026-10-27,30,49,OPS-Agentic-Search_S4,Kimi K3,Individual AI Researcher,No,Overall score,38.17,higher,,,,
+FutureX,Weekly board · 2026 Oct. Week 3,2026-10-27,31,49,SenseFlux,S-Forecaster,Individual AI Researcher,No,Overall score,38.08,higher,,,,
+FutureX,Weekly board · 2026 Oct. Week 3,2026-10-27,32,49,SenseFlow,deepseek-v4-pro-v3.1,Individual AI Researcher,No,Overall score,38.07,higher,,,,
+FutureX,Weekly board · 2026 Oct. Week 3,2026-10-27,33,49,Nevar-A harness,Basalt,Individual AI Researcher,No,Overall score,37.8,higher,,,,
+FutureX,Weekly board · 2026 Oct. Week 3,2026-10-27,34,49,Nevar-B,Garnet,Individual AI Researcher,No,Overall score,37.54,higher,,,,
+FutureX,Weekly board · 2026 Oct. Week 3,2026-10-27,35,49,arce-2,glm 5.2,Individual AI Researcher,No,Overall score,37.44,higher,,,,
+FutureX,Weekly board · 2026 Oct. Week 3,2026-10-27,36,49,arce,GLM 5.2,Individual AI Researcher,No,Overall score,37.44,higher,,,,
+FutureX,Weekly board · 2026 Oct. Week 3,2026-10-27,37,49,OPS-Agentic-Search_S7,Kimi K3,Individual AI Researcher,No,Overall score,37.13,higher,,,,
+FutureX,Weekly board · 2026 Oct. Week 3,2026-10-27,38,49,Nevar-C harness,Quartz,Individual AI Researcher,No,Overall score,36.91,higher,,,,
+FutureX,Weekly board · 2026 Oct. Week 3,2026-10-27,39,49,SenseFlux_rf,S-Forecaster,Individual AI Researcher,No,Overall score,36.6,higher,,,,
+FutureX,Weekly board · 2026 Oct. Week 3,2026-10-27,40,49,SenseFlow,DeepSeek-V4-Pro,Individual AI Researcher,No,Overall score,36.13,higher,,,,
+FutureX,Weekly board · 2026 Oct. Week 3,2026-10-27,41,49,Nevar-B harness,Onyx,Individual AI Researcher,No,Overall score,35.84,higher,,,,
+FutureX,Weekly board · 2026 Oct. Week 3,2026-10-27,42,49,SenseFlow,deepseek-v4-pro-v1,Individual AI Researcher,No,Overall score,34.3,higher,,,,
+FutureX,Weekly board · 2026 Oct. Week 3,2026-10-27,43,49,SenseFlow,deepseek-v4-pro-v3,Individual AI Researcher,No,Overall score,34.19,higher,,,,
+FutureX,Weekly board · 2026 Oct. Week 3,2026-10-27,44,49,SenseFlow,deepseek-v4-pro-v2,Individual AI Researcher,No,Overall score,33.96,higher,,,,
+FutureX,Weekly board · 2026 Oct. Week 3,2026-10-27,45,49,SenseFlow,deepseek-v4-pro-verifier,Individual AI Researcher,No,Overall score,33.89,higher,,,,
+FutureX,Weekly board · 2026 Oct. Week 3,2026-10-27,46,49,SenseFlow,deepseek-v4-pro-graphv2,Individual AI Researcher,No,Overall score,33.61,higher,,,,
+FutureX,Weekly board · 2026 Oct. Week 3,2026-10-27,47,49,Nevar-B harness,Gypsum,Individual AI Researcher,No,Overall score,33.29,higher,,,,
+FutureX,Weekly board · 2026 Oct. Week 3,2026-10-27,48,49,SenseFlow,deepseek-v4-pro-graphv1,Individual AI Researcher,No,Overall score,32.72,higher,,,,
+FutureX,Weekly board · 2026 Oct. Week 3,2026-10-27,49,49,TTT-v0.4,DeepSeek V4.1 Flash,Individual AI Researcher,No,Overall score,27.6,higher,,,,
+TALENT,TALENT · one entry per model,2026-10-27,1,13,TabICL v2 (fine-tuned),,,No,Average rank across datasets,3.476,lower,,,,
+TALENT,TALENT · one entry per model,2026-10-27,2,13,EXAONE-Tabular,,LG AI Research,No,Average rank across datasets,3.8475,lower,,,,
+TALENT,TALENT · one entry per model,2026-10-27,3,13,TabPFN v3.0,,,No,Average rank across datasets,4.2341,lower,,,,
+TALENT,TALENT · one entry per model,2026-10-27,4,13,TabICL v2,,,No,Average rank across datasets,4.4033,lower,,,,
+TALENT,TALENT · one entry per model,2026-10-27,5,13,TabH2O v1.1,,H2O.ai,Yes,Average rank across datasets,5.2833,lower,,,,
+TALENT,TALENT · one entry per model,2026-10-27,6,13,TabPFN v2.6,,,No,Average rank across datasets,5.885,lower,,,,
+TALENT,TALENT · one entry per model,2026-10-27,7,13,TabPFN v2.5,,,No,Average rank across datasets,6.2334,lower,,,,
+TALENT,TALENT · one entry per model,2026-10-27,8,13,AutoGluon,,,No,Average rank across datasets,8.0733,lower,,,,
+TALENT,TALENT · one entry per model,2026-10-27,9,13,CatBoost (tuned),,,No,Average rank across datasets,8.266,lower,,,,
+TALENT,TALENT · one entry per model,2026-10-27,10,13,AutoGluon (quick preset),,,No,Average rank across datasets,8.46,lower,,,,
+TALENT,TALENT · one entry per model,2026-10-27,11,13,H2O AutoML (10 min),,H2O.ai,No,Average rank across datasets,9.0,lower,,,,
+TALENT,TALENT · one entry per model,2026-10-27,12,13,LightGBM,,,No,Average rank across datasets,10.1077,lower,,,,
+TALENT,TALENT · one entry per model,2026-10-27,13,13,LightGBM (quick),,,No,Average rank across datasets,11.2667,lower,,,,
+TabArena,TabArena · one entry per model,2026-10-27,1,39,TabFM ensemble (official results),,Google,No,Average rank across datasets,1.7647,lower,,,,
+TabArena,TabArena · one entry per model,2026-10-27,2,39,TabFM (official results),,Google,No,Average rank across datasets,3.3137,lower,,,,
+TabArena,TabArena · one entry per model,2026-10-27,3,39,EXAONE-Tabular,,LG AI Research,No,Average rank across datasets,4.9583,lower,,,,
+TabArena,TabArena · one entry per model,2026-10-27,4,39,TabPFN v3.0,,,No,Average rank across datasets,6.3725,lower,,,,
+TabArena,TabArena · one entry per model,2026-10-27,5,39,TabICL v2 (fine-tuned),,,No,Average rank across datasets,7.1837,lower,,,,
+TabArena,TabArena · one entry per model,2026-10-27,6,39,TabPFN v2.6,,,No,Average rank across datasets,7.5098,lower,,,,
+TabArena,TabArena · one entry per model,2026-10-27,7,39,TabH2O v1.1,,H2O.ai,Yes,Average rank across datasets,8.3922,lower,,,,
+TabArena,TabArena · one entry per model,2026-10-27,8,39,TabICL v2,,,No,Average rank across datasets,8.7647,lower,,,,
+TabArena,TabArena · one entry per model,2026-10-27,9,39,TabPFN v2.5,,,No,Average rank across datasets,9.7647,lower,,,,
+TabArena,TabArena · one entry per model,2026-10-27,10,39,CatBoost (tuned),,,No,Average rank across datasets,14.5,lower,,,,
+TabArena,TabArena · one entry per model,2026-10-27,11,39,DAI 10-7-1,,,No,Average rank across datasets,14.9,lower,,,,
+TabArena,TabArena · one entry per model,2026-10-27,12,39,LightGBM (tuned),,,No,Average rank across datasets,14.94,lower,,,,
+TabArena,TabArena · one entry per model,2026-10-27,13,39,CatBoost,,,No,Average rank across datasets,16.0,lower,,,,
+TabArena,TabArena · one entry per model,2026-10-27,14,39,TabM (tuned),,,No,Average rank across datasets,16.2,lower,,,,
+TabArena,TabArena · one entry per model,2026-10-27,15,39,XGBoost (tuned),,,No,Average rank across datasets,16.34,lower,,,,
+TabArena,TabArena · one entry per model,2026-10-27,16,39,TabPFN v2.0,,,No,Average rank across datasets,17.1373,lower,,,,
+TabArena,TabArena · one entry per model,2026-10-27,17,39,ModernNCA (tuned),,,No,Average rank across datasets,17.78,lower,,,,
+TabArena,TabArena · one entry per model,2026-10-27,18,39,RealMLP (tuned),,,No,Average rank across datasets,18.98,lower,,,,
+TabArena,TabArena · one entry per model,2026-10-27,19,39,TabM,,,No,Average rank across datasets,19.46,lower,,,,
+TabArena,TabArena · one entry per model,2026-10-27,20,39,ModernNCA,,,No,Average rank across datasets,20.34,lower,,,,
+TabArena,TabArena · one entry per model,2026-10-27,21,39,TabDPT,,,No,Average rank across datasets,21.28,lower,,,,
+TabArena,TabArena · one entry per model,2026-10-27,22,39,RealMLP,,,No,Average rank across datasets,22.84,lower,,,,
+TabArena,TabArena · one entry per model,2026-10-27,23,39,H2O AutoML,,H2O.ai,No,Average rank across datasets,22.9608,lower,,,,
+TabArena,TabArena · one entry per model,2026-10-27,24,39,EBM (tuned),,,No,Average rank across datasets,23.32,lower,,,,
+TabArena,TabArena · one entry per model,2026-10-27,25,39,XGBoost,,,No,Average rank across datasets,23.46,lower,,,,
+TabArena,TabArena · one entry per model,2026-10-27,26,39,PyTorch MLP (tuned),,,No,Average rank across datasets,24.12,lower,,,,
+TabArena,TabArena · one entry per model,2026-10-27,27,39,EBM,,,No,Average rank across datasets,24.34,lower,,,,
+TabArena,TabArena · one entry per model,2026-10-27,28,39,LightGBM,,,No,Average rank across datasets,24.82,lower,,,,
+TabArena,TabArena · one entry per model,2026-10-27,29,39,Extra trees (tuned),,,No,Average rank across datasets,25.56,lower,,,,
+TabArena,TabArena · one entry per model,2026-10-27,30,39,FastAI MLP (tuned),,,No,Average rank across datasets,25.96,lower,,,,
+TabArena,TabArena · one entry per model,2026-10-27,31,39,Random forest (tuned),,,No,Average rank across datasets,26.76,lower,,,,
+TabArena,TabArena · one entry per model,2026-10-27,32,39,PyTorch MLP,,,No,Average rank across datasets,29.08,lower,,,,
+TabArena,TabArena · one entry per model,2026-10-27,33,39,Random forest,,,No,Average rank across datasets,30.82,lower,,,,
+TabArena,TabArena · one entry per model,2026-10-27,34,39,FastAI MLP,,,No,Average rank across datasets,30.84,lower,,,,
+TabArena,TabArena · one entry per model,2026-10-27,35,39,Extra trees,,,No,Average rank across datasets,31.54,lower,,,,
+TabArena,TabArena · one entry per model,2026-10-27,36,39,Linear model (tuned),,,No,Average rank across datasets,33.1,lower,,,,
+TabArena,TabArena · one entry per model,2026-10-27,37,39,Linear model,,,No,Average rank across datasets,33.6,lower,,,,
+TabArena,TabArena · one entry per model,2026-10-27,38,39,KNN (tuned),,,No,Average rank across datasets,36.74,lower,,,,
+TabArena,TabArena · one entry per model,2026-10-27,39,39,KNN,,,No,Average rank across datasets,37.94,lower,,,,
