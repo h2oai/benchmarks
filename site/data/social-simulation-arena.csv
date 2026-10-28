@@ -1,25 +1,25 @@
 rank,method,organization,type,pairwise_win_rate,questions_answered,h2o
-1,H2O.ai SuperAgent,H2O.ai,participant,67.44,44,Yes
-2,Apodex-FutureFlow,Apodex,participant,66.65,44,No
-3,H2O.ai Marina,H2O.ai,participant,62.7,44,Yes
-4,Claude Sonnet 5 · web+sfc,,llm,56.91,44,No
-5,Vac,,entrant,55.78,31,No
-6,Crowd,,baseline,53.82,44,No
-7,worldVac,Astraculum,participant,53.48,44,No
-8,Grok 4.5 · web,,llm,52.73,44,No
-9,Gemini 3.1 Pro · web,,llm,51.77,44,No
-10,Gemini 3.1 Pro · web+sfc,,llm,51.48,44,No
-11,DeepSeek V4 Pro · web,,llm,51.19,44,No
-12,GPT-5.6 Luna · web+sfc,,llm,50.81,44,No
-13,Claude Sonnet 5 · web,,llm,50.78,44,No
-14,DeepSeek V4 Pro · web+sfc,,llm,49.18,44,No
-15,GLM-5.2 · web,,llm,45.68,43,No
-16,GPT-5.6 Luna · web,,llm,43.89,44,No
-17,GLM-5.2 · web+sfc,,llm,43.15,44,No
-18,Persistence,,baseline,42.27,44,No
-19,Grok 4.5 · web+sfc,,llm,41.25,44,No
-20,ZhengZheng Forecaster,xuanzhengwenhua,participant,39.62,44,No
-21,YuLan-OneSim,Renmin University of China,participant,34.39,27,No
-22,EWMA,,baseline,28.89,32,No
-23,Linear trend,,baseline,15.56,32,No
-24,Climatology,,baseline,14.45,32,No
+1,H2O.ai SuperAgent,H2O.ai,participant,68.16,45,Yes
+2,Apodex-FutureFlow,Apodex,participant,66.92,45,No
+3,H2O.ai Marina,H2O.ai,participant,61.54,45,Yes
+4,Claude Sonnet 5 · web+sfc,,llm,56.7,45,No
+5,Vac,,entrant,56.64,32,No
+6,Crowd,,baseline,53.68,45,No
+7,Grok 4.5 · web,,llm,52.61,45,No
+8,worldVac,Astraculum,participant,52.35,45,No
+9,Gemini 3.1 Pro · web,,llm,51.67,45,No
+10,Claude Sonnet 5 · web,,llm,51.64,45,No
+11,Gemini 3.1 Pro · web+sfc,,llm,51.39,45,No
+12,GPT-5.6 Luna · web+sfc,,llm,50.73,45,No
+13,DeepSeek V4 Pro · web,,llm,50.11,45,No
+14,DeepSeek V4 Pro · web+sfc,,llm,49.14,45,No
+15,GLM-5.2 · web,,llm,45.71,44,No
+16,GLM-5.2 · web+sfc,,llm,44.06,45,No
+17,GPT-5.6 Luna · web,,llm,43.97,45,No
+18,Persistence,,baseline,41.68,45,No
+19,Grok 4.5 · web+sfc,,llm,41.38,45,No
+20,ZhengZheng Forecaster,xuanzhengwenhua,participant,39.79,45,No
+21,YuLan-OneSim,Renmin University of China,participant,33.62,27,No
+22,EWMA,,baseline,28.25,32,No
+23,Linear trend,,baseline,15.22,32,No
+24,Climatology,,baseline,14.13,32,No
