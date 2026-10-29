@@ -1,11 +1,13 @@
-/* h2o.ai/benchmarks: theme toggle, section filter, JevBench sort and one-time motion. A classic script loaded
-   in <head> (inlined in h2o-benchmarks.html), so it runs from file:// with no modules and no fetch. Without it
-   the page still reads in full: the theme follows the system, every section shows, bars are drawn, and the
+/* h2o.ai/benchmarks: theme toggle, section filter, JevBench sort, one-time motion and the cookie's footer control. A
+   classic script loaded in <head> (inlined in h2o-benchmarks.html), so it runs from file:// with no modules and no fetch.
+   Without it the page still reads in full: the theme follows the system, every section shows, bars are drawn, and the
    controls that need it stay hidden. */
 (function () {
   "use strict";
   var root = document.documentElement;
   var KEY = "h2o-benchmarks-theme";
+  var CONSENT_KEY = "h2o-benchmarks-consent-saved";
+  var CONSENT_CLASS = "consent-saved";
   var stored = null;
   try {
     stored = window.localStorage.getItem(KEY);
@@ -16,6 +18,77 @@
     root.setAttribute("data-theme", stored);
   }
   root.className = root.className.replace(/\bno-js\b/, "js");
+  // A visitor who saved their cookie preferences on an earlier visit: the class that hides Osano's cookie (styles.css) is on
+  // <html> before <body> is parsed, like the stored theme, so the cookie is never drawn.
+  try {
+    if (window.localStorage.getItem(CONSENT_KEY) === "1") {
+      root.classList.add(CONSENT_CLASS);
+    }
+  } catch (err) {
+    // storage blocked: the cookie shows until a Save in this visit
+  }
+
+  // Osano (landing/analytics.py) draws a cookie button that stays on every page, by design, as the way back to its
+  // preferences panel. Once the visitor has saved their preferences in that panel the page hides it (styles.css, under
+  // .consent-saved) and the footer's "Cookie settings" button opens the panel instead, for this visit and later ones.
+  // Only a Save in the panel counts. Osano also records an "accept all" by itself some 200 ms after load, and replays it on
+  // every visit, with the panel closed (a US visitor's consent is implicit); the notice's x and its 8-second timer change no
+  // consent. Osano emits the visitor's osano-cm-consent-saved while the panel is open and closes the panel after it, so the
+  // event counts only while Osano.cm.drawerOpen, a documented property, says the panel is open (checked against CMP
+  // 2026.10.22, configuration revision 54). Listening for the event, not for a click on Osano's Save button, keeps this
+  // independent of its class names. Osano shows the cookie again after each Save, which is why a rule hides it and
+  // Osano.cm.hideWidget() could not.
+  // The page remembers a Save for as long as Osano remembers its choice. That lapses (after about a year, or at once when
+  // marketing publishes a reconsent) and Osano then starts over with the visitor: it shows its notice again, and the page
+  // forgets the Save with it, since a visitor who accepted the old terms has not accepted the new ones. Osano shows its notice
+  // only when it has no current choice, so ["dialog", "show"] is the signal. It comes some 240 ms into the load, so the page
+  // listens here, in <head>, where Osano's synchronous script has already run, and not at DOMContentLoaded.
+  var listening = false;
+
+  function remember() {
+    root.classList.add(CONSENT_CLASS);
+    try {
+      window.localStorage.setItem(CONSENT_KEY, "1");
+    } catch (err) {
+      // the cookie stays hidden for this visit only
+    }
+  }
+
+  function forget() {
+    root.classList.remove(CONSENT_CLASS);
+    try {
+      window.localStorage.removeItem(CONSENT_KEY);
+    } catch (err) {
+      // storage blocked: nothing was kept
+    }
+  }
+
+  function listen(cm) {
+    if (listening || !cm || typeof cm.addEventListener !== "function") {
+      return;
+    }
+    cm.addEventListener("osano-cm-consent-saved", function () {
+      if (cm.drawerOpen) {
+        remember();
+      }
+    });
+    cm.addEventListener("osano-cm-ui-changed", function (component, state) {
+      if (component === "dialog" && state === "show") {
+        forget();
+      }
+    });
+    listening = true;
+    if (cm.dialogOpen) {
+      forget(); // Osano came after <head> and its notice is open already
+    }
+  }
+
+  try {
+    listen(window.Osano && window.Osano.cm);
+  } catch (err) {
+    // Osano is a third party and this is <head>: whatever its API does, the rest of this script must still be set up.
+    // DOMContentLoaded tries once more, outside anything else.
+  }
 
   var media = function (query) {
     return window.matchMedia ? window.matchMedia(query) : { matches: false };
@@ -258,6 +331,20 @@
     });
   }
 
+  // The footer's "Cookie settings" opens Osano's panel, so it is shown only where Osano is.
+  function setUpConsent() {
+    var cm = window.Osano && window.Osano.cm;
+    var button = document.querySelector(".cookie-settings");
+    if (!cm || !button) {
+      return; // no Osano (blocked, or none on this page): the button stays hidden, as without script
+    }
+    listen(cm); // already listening, unless Osano only came after <head>
+    button.addEventListener("click", function () {
+      cm.showDrawer();
+    });
+    button.hidden = false;
+  }
+
   function init() {
     try {
       setUpTheme();
@@ -267,6 +354,10 @@
     } catch (err) {
       root.classList.remove("js-motion"); // whatever failed, never leave the bars empty
       throw err;
+    } finally {
+      // Last, so that whatever Osano (a third party) does, the page's own controls are set up; and still run when one of them
+      // fails, since a visitor who saved has no cookie and this button is the way back to the panel.
+      setUpConsent();
     }
   }
 
