@@ -552,6 +552,69 @@ h2 { font: 600 clamp(24px, 3.2vw, 30px)/1.15 var(--font-display); letter-spacing
 .site-footer { padding: 40px var(--gutter); border-top: 1px solid var(--line); }
 .footer-bar { display: flex; flex-wrap: wrap; gap: 12px 32px; font-size: 13px; color: var(--text-2); }
 .footer-bar a { margin-left: auto; }
+.cookie-settings { margin: -2px 0; padding: 2px 0; border: 0; background: none; text-decoration: underline; text-underline-offset: 3px; } /* reads as the footer's link: same line box, 25 px to click */
+.cookie-settings:hover { color: var(--a-hover); }
+
+/* ---- consent UI (#141): Osano's notice, cookie and preferences panel in the page's tokens ------------------------------
+   Osano reads its colours from --osano-* custom properties that it declares on :root in a <style> it inserts as the first
+   child of <head>. This sheet comes after that one and declares them again on :root, at the same specificity, so these win;
+   a var() makes the notice, the cookie and the panel follow light and dark with no script. Osano writes the hover, contrast
+   and disabled steps of its buttons and switches as literals, so those are set here too. The names are those of CMP
+   2026.10.22 (configuration revision 54); a new release can rename them, and then the consent UI quietly goes back to black
+   and purple, which only a check against the real script notices. tests/landing/test_page.py holds each pair to its contrast:
+   text 4.5 : 1, the cookie's outline, the switches and the focus ring 3 : 1. */
+:root {
+  --osano-dialog-background-color: var(--bg);
+  --osano-dialog-foreground-color: var(--text);
+  --osano-link-color: var(--text);
+  --osano-link-color-contrast: var(--a-hover);
+  /* Save: black on Summer Yellow (15.6 : 1; Osano's own white on its yellow is 1.46 : 1), a darker yellow on hover and focus */
+  --osano-button-background-color: var(--yellow);
+  --osano-button-foreground-color: #000000;
+  --osano-button-background-color-contrast: #E6C700;
+  --osano-button-foreground-color-contrast: #000000;
+  /* the cookie: the ink on the surface, yellow chips */
+  --osano-widget-color: var(--yellow);
+  --osano-widget-outline-color: var(--text);
+  --osano-widget-fill-color: var(--bg);
+  --osano-focus-outline-color: var(--focus);
+  /* the switches: ON yellow with a black thumb, OFF grey with the surface for a thumb; the ON track's edge is below */
+  --osano-toggle-on-track-color: var(--yellow);
+  --osano-toggle-on-thumb-color: #000000;
+  --osano-toggle-off-track-color: var(--grey);
+  --osano-toggle-off-thumb-color: var(--bg);
+  --osano-toggle-on-track-color-contrast: #E6C700;
+  --osano-toggle-on-thumb-color-contrast: #000000;
+  --osano-toggle-on-thumb-color-hover: #000000;
+  --osano-info-dialog-toggle-on-thumb-color-hover: #000000;
+  --osano-toggle-off-track-color-contrast: #6E6E6E;
+  --osano-toggle-off-thumb-color-contrast: var(--bg);
+  /* a switch that cannot be changed (Essential is always on): its own muted steps, which Osano writes in green and grey */
+  --osano-toggle-on-track-color-disabled: rgba(255, 221, 0, .55);
+  --osano-toggle-on-thumb-color-disabled: var(--muted);
+  --osano-toggle-off-track-color-disabled: var(--control);
+  --osano-toggle-off-thumb-color-disabled: var(--bg);
+}
+.osano-cm-window {
+  font-family: var(--font-body);
+  --osano-focus-outline: 2px solid var(--osano-focus-outline-color); /* the page's focus ring (Osano's is 3 px in a system colour) */
+  --osano-focus-outline-offset: 2px;
+}
+/* the notice and the panel take the page's hairline, corners and shadow (Osano's are square, borderless, black or #ccc) */
+.osano-cm-dialog { border: 1px solid var(--line); border-radius: 12px; box-shadow: var(--tile-hover-shadow); }
+.osano-cm-info { border: 0 solid var(--line); box-shadow: var(--tile-hover-shadow); }
+.osano-cm-info--position_left { border-right-width: 1px; }
+.osano-cm-info--position_right { border-left-width: 1px; }
+/* Yellow alone is 1.35 : 1 on a white panel, under the 3 : 1 an ON switch's edge needs: its track gets an edge in the pill
+   colour, black in light and yellow, so that it merges, in dark. The ring Osano draws around a focused switch is its hover
+   colour, which for ON is that same yellow: it is the page's ring instead. */
+.osano-cm-toggle__input:checked + .osano-cm-toggle__switch { border-color: var(--pill-bg); }
+.osano-cm-toggle__input:focus-visible + .osano-cm-toggle__switch:before,
+.osano-cm-toggle__input:checked:focus-visible + .osano-cm-toggle__switch:before { --osano-toggle-border-color: var(--focus); }
+/* Osano shows the cookie again after every Save, so only a rule keeps it away once the visitor has saved: page.js puts
+   .consent-saved on <html> (in <head>, from localStorage, so a returning visitor never sees it drawn). It leaves the tab order
+   too. The footer's "Cookie settings" button is the way back. */
+.consent-saved .osano-cm-widget { display: none !important; }
 
 /* ---- small screens ---------------------------------------------------------------------------------------- */
 @media (max-width: 720px) {
@@ -569,6 +632,7 @@ h2 { font: 600 clamp(24px, 3.2vw, 30px)/1.15 var(--font-display); letter-spacing
   .bars .row { grid-template-columns: 30px minmax(0, 132px) minmax(0, 1fr); gap: 8px; }
   .jumps { flex: 1 1 100%; margin-left: 0; }
   .footer-bar a { margin-left: 0; }
+  .footer-bar .cookie-settings { margin-left: auto; } /* the right end of its row, clear of Osano's cookie at the left */
 }
 
 /* ---- reduced motion: the final state, no transitions -------------------------------------------------------- */
@@ -579,6 +643,6 @@ h2 { font: 600 clamp(24px, 3.2vw, 30px)/1.15 var(--font-display); letter-spacing
 }
 
 @media print {
-  .section-bar, .theme-toggle, .skip, .sort { display: none !important; }
+  .section-bar, .theme-toggle, .skip, .sort, .cookie-settings { display: none !important; }
   .bench, .tile, .bars .row.h2o, .ft-row.h2o, .jev-row.h2o, .try { print-color-adjust: exact; -webkit-print-color-adjust: exact; }
 }
