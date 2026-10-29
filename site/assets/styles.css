@@ -2,7 +2,10 @@
    own Sunshine Yellow #FFE600); DM Sans (headings) / Inter (body) / DM Mono (labels and numbers).
    Contrast: text is at least 4.5:1 in both themes (secondary #4A4945 is 9:1 on white; the dark theme's secondary
    and muted whites are 12:1 and 10:1 on black). Grey bars #8A8A8A are 3.5:1 on white and 6:1 on black. Yellow
-   is never text on white: in light it is a fill or sits on black, in dark it is text on black. */
+   is never text on white: in light it is a fill or sits on black, in dark it is text on black.
+   The hero's charts (#139) use a softer grey, the owner's pick: #999999 is 2.85:1 on white, under 3:1, and #666666 is
+   3.7:1 on black. Every hero bar carries its value, its logo and its rank as visible labels, which is the relief the
+   data-viz guidance allows for marks under 3:1; H2O's yellow bars (1.35:1 on white) were already labelled. */
 
 @font-face { font-family: "DM Sans"; src: url("fonts/dm-sans-latin.woff2") format("woff2"); font-weight: 400 700; font-display: swap; }
 @font-face { font-family: "Inter"; src: url("fonts/inter-latin.woff2") format("woff2"); font-weight: 400 700; font-display: swap; }
@@ -35,11 +38,18 @@
   --focus-halo: 0 0 0 5px rgba(255, 221, 0, .55);
   --bar-bg: rgba(255, 255, 255, .92);
   --tile-bg: #FFFFFF;
-  --tile-border: #EBEBEB;
-  --tile-top: 3px solid #FFDD00;
+  --tile-ring: #EBEBEB;
   --tile-shadow: 0 1px 3px rgba(12, 13, 15, .08), 0 1px 2px rgba(12, 13, 15, .04);
   --tile-hover: #000000;
   --tile-hover-shadow: 0 12px 32px rgba(12, 13, 15, .12);
+  --hero-grey: #999999;
+  --hero-track: #EDEDED;
+  --hero-ink: #1D1D1B;
+  --hero-center: #BDBDBD;
+  --hero-mark: inset 0 -.42em 0 #FFDD00;
+  --mark-plate: transparent;
+  --mark-pad: 0;
+  --list-line: rgba(0, 0, 0, .1);
   --link-bg: #FFFFFF;
   --link-hover: #000000;
   --a-hover: #4A4945;
@@ -47,13 +57,6 @@
   --try-text: #FFFFFF;
   --try-eyebrow: #FFDD00;
   --try-focus: #FFDD00;
-  --board-bg: #000000;
-  --board-text: #FFFFFF;
-  --board-muted: rgba(255, 255, 255, .75);
-  --board-top: rgba(255, 255, 255, .3);
-  --board-line: rgba(255, 255, 255, .14);
-  --board-hover: rgba(255, 255, 255, .06);
-  --board-border: transparent;
   --when-light: inline;
   --when-dark: none;
   --font-display: "DM Sans", "Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
@@ -87,11 +90,18 @@
     --focus-halo: none;
     --bar-bg: rgba(0, 0, 0, .88);
     --tile-bg: transparent;
-    --tile-border: rgba(255, 255, 255, .18);
-    --tile-top: 1px solid rgba(255, 255, 255, .18);
-    --tile-shadow: none;
+    --tile-ring: rgba(255, 255, 255, .18);
+    --tile-shadow: 0 0 #0000;
     --tile-hover: #FFDD00;
-    --tile-hover-shadow: none;
+    --tile-hover-shadow: 0 0 #0000;
+    --hero-grey: #666666;
+    --hero-track: rgba(255, 255, 255, .12);
+    --hero-ink: #FFFFFF;
+    --hero-center: rgba(255, 255, 255, .3);
+    --hero-mark: none;
+    --mark-plate: #FFFFFF;
+    --mark-pad: 2px;
+    --list-line: rgba(255, 255, 255, .16);
     --link-bg: transparent;
     --link-hover: #FFDD00;
     --a-hover: #FFDD00;
@@ -99,7 +109,6 @@
     --try-text: #000000;
     --try-eyebrow: #4A4945;
     --try-focus: #000000;
-    --board-border: rgba(255, 255, 255, .18);
     --when-light: none;
     --when-dark: inline;
   }
@@ -127,11 +136,18 @@
   --focus-halo: none;
   --bar-bg: rgba(0, 0, 0, .88);
   --tile-bg: transparent;
-  --tile-border: rgba(255, 255, 255, .18);
-  --tile-top: 1px solid rgba(255, 255, 255, .18);
-  --tile-shadow: none;
+  --tile-ring: rgba(255, 255, 255, .18);
+  --tile-shadow: 0 0 #0000;
   --tile-hover: #FFDD00;
-  --tile-hover-shadow: none;
+  --tile-hover-shadow: 0 0 #0000;
+  --hero-grey: #666666;
+  --hero-track: rgba(255, 255, 255, .12);
+  --hero-ink: #FFFFFF;
+  --hero-center: rgba(255, 255, 255, .3);
+  --hero-mark: none;
+  --mark-plate: #FFFFFF;
+  --mark-pad: 2px;
+  --list-line: rgba(255, 255, 255, .16);
   --link-bg: transparent;
   --link-hover: #FFDD00;
   --a-hover: #FFDD00;
@@ -139,7 +155,6 @@
   --try-text: #000000;
   --try-eyebrow: #4A4945;
   --try-focus: #000000;
-  --board-border: rgba(255, 255, 255, .18);
   --when-light: none;
   --when-dark: inline;
 }
@@ -183,7 +198,7 @@ a:hover { color: var(--a-hover); }
 .when-light { display: var(--when-light); }
 .when-dark { display: var(--when-dark); }
 
-/* ---- hero: the top ranks across the page, the statement centred below them --------------------------------- */
+/* ---- hero: the board of top ranks (#139, the owner's "Benchmarks hero"), the statement centred below ------------ */
 .hero { padding: 72px var(--gutter) 88px; }
 .hero-stack { display: flex; flex-direction: column; gap: 72px; }
 .statement { width: 100%; max-width: 1100px; margin: 0 auto; display: flex; flex-direction: column; align-items: center; gap: 22px; text-align: center; animation: fade-in 420ms ease 520ms backwards, statement-rise 520ms var(--ease) 520ms backwards; }
@@ -203,68 +218,169 @@ h1 .mark { color: var(--rank); box-shadow: var(--headline-mark); }
 .ranks { min-width: 0; display: flex; flex-direction: column; gap: 12px; }
 .ranks-label { font: 500 11px/1.4 var(--font-mono); letter-spacing: .14em; text-transform: uppercase; color: var(--text-2); }
 .ranks-label time { white-space: nowrap; } /* where the label wraps, as on phones, the date stays whole */
-.tiles { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; }
-.tile { --tile-from: translateY(10px); display: flex; animation: fade-in 320ms ease backwards, tile-in 420ms var(--ease) backwards; animation-delay: calc(var(--i) * 70ms); }
-/* the whole tile is one link to its section (page.js shows the section first if the filter hides it) */
-.tile > a { flex: 1; min-width: 0; display: flex; flex-direction: column; gap: 8px; padding: 18px; background: var(--tile-bg); border: 1px solid var(--tile-border); border-top: var(--tile-top); border-radius: 12px; box-shadow: var(--tile-shadow); color: var(--text); text-decoration: none; transition: border-color 160ms ease, box-shadow 200ms ease, transform 200ms ease; }
-.tile > a:hover { border-color: var(--tile-hover); box-shadow: var(--tile-hover-shadow); color: var(--text); transform: translateY(-2px); }
-.tile > a:focus-visible { box-shadow: var(--focus-halo); } /* the global ring's halo, over the tile's own shadow */
-.tile-kind { font: 500 10px/1.4 var(--font-mono); letter-spacing: .14em; text-transform: uppercase; color: var(--text-2); }
-.tile-rank { font: 700 48px/1 var(--font-display); letter-spacing: -.03em; color: var(--rank); }
-.tile-of { font: 500 14px/1 var(--font-display); letter-spacing: 0; color: var(--text-2); }
-.tile-board { font-size: 15px; font-weight: 600; line-height: 1.3; }
-.tile-who { font: 700 15px/1.35 var(--font-display); letter-spacing: -.01em; color: var(--rank); }
-.tile-who > span { box-shadow: var(--name-mark); } /* inline, so the stripe hugs the name */
+
+/* The tiles. Every tile is one link to its section (page.js shows the section first if the filter hides it); its chart
+   is a list, each item a player's name (a logo's alt, or the bar line's text), rank and value, so the values are all
+   visible labels and nothing in a tile has a pointer state of its own. The tiles are a size container: the names of
+   the 193 px row follow its width (below). */
+.tiles { --radius: 12px; container: tiles / inline-size; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; }
+.tile { --tile-from: translateY(10px); display: flex; min-width: 0; animation: fade-in 320ms ease backwards, tile-in 420ms var(--ease) backwards; animation-delay: calc(var(--i) * 70ms); }
+.tile > a, .tile-list { flex: 1; min-width: 0; padding: 24px; background: var(--tile-bg); border-radius: var(--radius); box-shadow: inset 0 0 0 1px var(--tile-ring), var(--tile-shadow); color: var(--text); }
+.tile > a { display: flex; flex-direction: column; text-decoration: none; transition: box-shadow 200ms ease, transform 200ms ease; }
+.tile > a:hover { box-shadow: inset 0 0 0 1px var(--tile-hover), var(--tile-hover-shadow); color: var(--text); transform: translateY(-2px); }
+.tile > a:focus-visible { box-shadow: var(--focus-halo); } /* the global ring's halo, over the tile's own ring */
+.tile-text { display: flex; flex-direction: column; min-width: 0; }
+.tile-kind { font: 500 11px/14px var(--font-mono); letter-spacing: .14em; text-transform: uppercase; color: var(--text-2); white-space: nowrap; }
+.tile-rank { display: flex; align-items: baseline; margin-top: 8px; font: 700 var(--rank-size, 52px)/.78 var(--font-display); letter-spacing: -.045em; color: var(--rank); white-space: nowrap; }
+.tile-rank .amp { margin-inline: calc(.14em / .6); font-size: .6em; letter-spacing: -.03em; } /* the arena's "&": 0.6 of the rank, 0.14 em of the rank on each side */
+.tile-board { margin-top: auto; font: 600 var(--board-size, 18px)/1.25 var(--font-display); white-space: nowrap; }
+.tile-who { margin-top: 4px; font: 700 var(--who-size, 19px)/1.3 var(--font-display); letter-spacing: -.01em; color: var(--rank); white-space: nowrap; }
+.tile-who + .tile-who { margin-top: 2px; }
+.tile-who > span { box-shadow: var(--hero-mark); } /* inline, so the stripe hugs the name */
+.nb { white-space: nowrap; }
+.tile-stat { display: flex; flex-direction: column; min-width: 0; }
+.stat-num { font: 700 88px/.8 var(--font-display); letter-spacing: -.045em; white-space: nowrap; } /* a label: white in dark, as the chart's are */
+.stat-text { margin-top: 10px; font: 500 16px/1.4 var(--font-body); color: var(--hero-ink); }
 @keyframes fade-in { from { opacity: 0; } }
-@keyframes tile-in { from { transform: var(--tile-from); } } /* the tiles rise; the board's rows slide in */
+@keyframes tile-in { from { transform: var(--tile-from); } } /* the tiles rise */
 @keyframes statement-rise { from { transform: translateY(12px); } }
 
-/* Eight tiles in one of four shapes, best rank first and never a lone tile (#120; #85 drew them for seven). From 721 px
-   a tile lies down, in a grid of its own: the rank at the left, the kind, the benchmark and the model at the right
-   (the board's row, in a card). 2 x 4 from 721 px, where the longest benchmark label fits one line; 4 + 4 from 1136 px,
-   where it may wrap, so its line is two lines tall and the model, the last line, stands at one height in every tile
-   (the rank is centred in the tile). One row of eight from 1500 px, in today's tile and type: the hero's column
-   widens to 1480 px at most (a max-width, so it is the window less its gutters below that), which leaves each tile 171
-   px, 138 of them for "H2O-Lightning-31B", which breaks only at its hyphens. */
+/* The charts. "--h" is a mark's length as a share of the scale, set per item by the build. Columns and the arena's
+   columns are placed from the foot of their item, so a percentage of the item's height is a share of the plot: under
+   the plot are a 1 px axis, the logo and the rank (--below), over the tallest mark its label (--room). */
+.hc { --mark-size: 22px; --room: 22px; --below: calc(var(--mark-size) + 23px); min-width: 0; min-height: 0; display: flex; flex-direction: column; container: hc / inline-size; }
+.hc-label { padding-bottom: 10px; border-bottom: 1px solid var(--line); font: 500 11px/14px var(--font-mono); letter-spacing: .14em; text-transform: uppercase; color: var(--text-2); text-align: right; white-space: nowrap; }
+.hc-plot { flex: 1 1 auto; min-height: 0; display: flex; flex-direction: column; }
+.hc-list { flex: 1 1 auto; min-height: 0; }
+.hc-logo { display: block; flex: none; width: var(--mark-size); height: var(--mark-size); padding: var(--mark-pad); border-radius: 5px; background: var(--mark-plate); object-fit: contain; }
+.hc-rank { font: 500 11px/11px var(--font-mono); letter-spacing: .04em; color: var(--text-2); white-space: nowrap; }
+.hc-val { font: 600 13px/16px var(--font-display); white-space: nowrap; }
+.hc-item.h2o .hc-val { font-weight: 700; }
+.hc-bar { display: block; background: var(--hero-grey); }
+.hc-item.h2o .hc-bar { background: var(--yellow); }
+/* columns: worst at the left, H2O at the right; the bar 80 % of its column, a 4 px rounded top on a square base */
+.hc-columns .hc-plot { padding-top: 10px; }
+.hc-columns .hc-list, .hc-diverging .hc-list { display: grid; grid-auto-flow: column; grid-auto-columns: minmax(0, 1fr); column-gap: 6px; }
+.hc-columns .hc-item, .hc-diverging .hc-item { position: relative; min-width: 0; display: flex; flex-direction: column; justify-content: flex-end; align-items: center; }
+.hc-columns .hc-item::after, .hc-diverging .hc-item::after { content: ""; position: absolute; left: -3px; right: -3px; bottom: var(--below); height: 1px; background: var(--control); }
+.hc-columns .hc-item:first-child::after { left: 0; }
+.hc-columns .hc-item:last-child::after { right: 0; }
+.hc-columns .hc-bar, .hc-diverging .hc-bar { position: absolute; left: 0; right: 0; bottom: calc(var(--below) + 1px); width: 80%; max-width: 64px; min-height: 3px; height: calc((100% - var(--below) - 1px - var(--room)) * var(--h)); margin-inline: auto; border-radius: 4px 4px 0 0; transform-origin: bottom; }
+.hc-columns .hc-val, .hc-diverging .hc-val { position: absolute; left: 50%; bottom: calc(var(--below) + 7px + max(3px, (100% - var(--below) - 1px - var(--room)) * var(--h))); transform: translateX(-50%); }
+.hc-columns .hc-logo, .hc-diverging .hc-logo { margin-top: 8px; }
+.hc-columns .hc-rank, .hc-diverging .hc-rank { margin-top: 4px; text-align: center; }
+/* the arena's columns rise from the line at the centre when above it and hang from it when under, on one scale (--u
+   and --d share the plot above and below the line, set by the build); a label under the line sits just above it */
+.hc-diverging .hc-label { padding-bottom: 0; border: 0; }
+.hc-diverging .hc-plot { --room: 20px; --below: calc(var(--mark-size) + 21px); --span: calc(100% - var(--below) - 1px - var(--room)); --axis-y: calc(var(--below) + var(--span) * var(--d)); flex-direction: row; gap: 8px; margin-top: 8px; }
+.hc-diverging .hc-list { column-gap: 8px; }
+.hc-diverging .hc-item::after { bottom: var(--axis-y); left: -4px; right: -4px; background: var(--hero-center); }
+.hc-diverging .hc-bar { bottom: calc(var(--axis-y) + 1px); width: 78%; max-width: 40px; min-height: 0; height: calc(var(--span) * var(--u) * var(--h)); border-radius: 3px 3px 0 0; }
+.hc-diverging .hc-val { bottom: calc(var(--axis-y) + 5px + var(--span) * var(--u) * var(--h)); }
+.hc-diverging .down .hc-bar { bottom: auto; top: calc(100% - var(--axis-y)); height: calc(var(--span) * var(--d) * var(--h)); border-radius: 0 0 3px 3px; transform-origin: top; }
+.hc-diverging .down .hc-val { bottom: calc(var(--axis-y) + 5px); }
+.hc-diverging .hc-logo { margin-top: 6px; }
+.hc-center { position: relative; flex: none; width: 16px; }
+.hc-center > span { position: absolute; left: 0; right: 0; bottom: calc(var(--axis-y) - 5.5px); font: 500 11px/12px var(--font-mono); letter-spacing: .04em; color: var(--text-2); text-align: right; }
+/* bar lines: H2O first; logo, name, the bar on its track, value and rank in columns the lines share */
+.hc-bars { --mark-size: 24px; }
+.hc-bars .hc-list { display: grid; grid-template-columns: var(--mark-size) max-content minmax(24px, 1fr) max-content max-content; column-gap: 10px; row-gap: 19.8px; align-content: start; }
+.hc-bars .hc-item { display: grid; grid-template-columns: subgrid; grid-column: 1 / -1; align-items: center; }
+.hc-name { min-width: 0; font: 500 15px/1.25 var(--font-body); color: var(--hero-ink); white-space: nowrap; }
+.hc-item.h2o .hc-name { font-weight: 700; color: var(--text); }
+.hc-track { display: block; height: 12px; border-radius: 0 4px 4px 0; background: var(--hero-track); }
+.hc-bars .hc-bar { width: calc(100% * var(--h)); height: 100%; border-radius: 0 4px 4px 0; transform-origin: left; }
+.hc-bars .hc-val { font-size: 17px; line-height: 1; text-align: right; }
+.hc-bars .hc-rank { font-size: 12px; line-height: 1; text-align: right; }
+/* a narrow chart beside its rank (ImageJevBench in a tile under 600 px, from 1200 px) draws smaller; phone cards keep
+   the full size, the chart under the rank */
 @media (min-width: 721px) {
-  .tile > a { display: grid; grid-template-columns: 72px minmax(0, 1fr); gap: 2px 14px; align-items: center; padding: 14px 16px; }
-  .tile-rank { grid-area: 1 / 1 / 4; font-size: 40px; }
-  .tile-of { display: block; margin-top: 2px; font-size: 12px; }
-  .tile-kind { grid-area: 1 / 2; }
-  .tile-board { grid-area: 2 / 2; }
-  .tile-who { grid-area: 3 / 2; }
+  @container hc (max-width: 360px) {
+    .hc-bars .hc-list { --mark-size: 20px; column-gap: 8px; }
+    .hc-bars .hc-name { font-size: 12px; }
+    .hc-bars .hc-val { font-size: 14px; }
+    .hc-bars .hc-rank { font-size: 11px; }
+  }
 }
-@media (min-width: 1136px) {
-  .tiles { grid-template-columns: repeat(4, minmax(0, 1fr)); }
-  .tile > a { align-items: start; align-content: start; }
-  .tile-rank { align-self: center; }
-  .tile-board { min-height: 2.6em; } /* two lines of its 1.3 line height */
+/* the bars grow once, the first time their chart is in view (page.js), as the sections' do */
+.hc-bar { transition: transform 600ms var(--ease); transition-delay: calc(var(--i, 0) * 35ms); }
+@media screen {
+  .js-motion .hc[data-chart]:not(.is-drawn) .hc-bar { transform: scaleY(0); }
+  .js-motion .hc-bars[data-chart]:not(.is-drawn) .hc-bar { transform: scaleX(0); }
 }
-@media (min-width: 1500px) {
-  .hero-stack { max-width: 1480px; }
-  .tiles { grid-template-columns: repeat(8, minmax(0, 1fr)); }
-  .tile > a { display: flex; flex-direction: column; align-items: stretch; gap: 8px; padding: 18px 14px; }
-  .tile-rank { grid-area: auto; align-self: auto; font-size: 48px; }
-  .tile-of { display: inline; margin-top: 0; font-size: 14px; }
-  .tile-kind, .tile-board, .tile-who { grid-area: auto; }
-}
-/* At 720 px and below the same list is Round 3 Split C's board: black in both themes (with a border in dark, on the
-   black page), one row per rank, each row the link to its section. The kind sits above the benchmark: in a column of
-   its own on the right it took 74 px, and the names broke over three lines at 360 to 390 px. */
+
+/* Phones, up to 720 px: one column. The three mains are cards (rank, chart, then the benchmark and the model at the
+   foot), fev-bench's chart as bar lines; the arena and the small tiles give way to one list card of their standings,
+   a row each. */
+.tile-list { display: none; }
+.hc-narrow { display: none; }
 @media (max-width: 720px) {
-  .ranks { gap: 16px; padding: 28px; border: 1px solid var(--board-border); border-radius: 12px; background: var(--board-bg); color: var(--board-text); }
-  .ranks-label { color: var(--yellow); }
-  .tiles { display: block; border-top: 1px solid var(--board-top); }
-  .tile { --tile-from: translateX(12px); animation-duration: 300ms, 420ms; animation-delay: calc(var(--i) * 80ms); } /* the same animations, so crossing 720 px doesn't replay them */
-  .tile > a { display: grid; grid-template-columns: 96px minmax(0, 1fr); gap: 2px 16px; align-items: center; padding: 14px 0; border: 0; border-bottom: 1px solid var(--board-line); border-radius: 0; background: transparent; box-shadow: none; color: var(--board-text); }
-  .tile > a:hover { border-color: var(--board-line); background: var(--board-hover); box-shadow: none; color: var(--board-text); transform: none; }
-  .tile > a:focus-visible { outline-color: var(--yellow); box-shadow: none; } /* yellow on black in both themes */
-  .tile-rank { grid-area: 1 / 1 / 4; font-size: 38px; color: var(--yellow); }
-  .tile-of { display: block; margin-top: 2px; font-size: 12px; color: var(--board-muted); }
-  .tile-kind { grid-area: 1 / 2; color: var(--board-muted); }
-  .tile-board { grid-area: 2 / 2; font-size: 16px; }
-  .tile-who { grid-area: 3 / 2; color: var(--yellow); }
-  .tile-who > span { box-shadow: none; }
+  .tiles { --radius: 8px; grid-template-columns: minmax(0, 1fr); }
+  .tile > a, .tile-list { padding: 16px; }
+  .tile-arena, .tile-small, .tile-stat, .hc-wide { display: none; }
+  .tile-list, .hc-narrow { display: flex; }
+  .tile-main > a { height: 451.5px; --rank-size: 72px; --board-size: 16px; --who-size: 16px; }
+  .tile-main .tile-text { display: contents; }
+  .tile-main .tile-kind { order: 0; }
+  .tile-main .tile-rank { order: 1; }
+  .tile-main .hc { order: 2; margin-top: 10px; }
+  .tile-main .hc-columns { flex: 1 1 auto; }
+  .tile-main .tile-board { order: 3; margin-top: auto; padding-top: 10px; line-height: 20px; }
+  .tile-main .tile-who { order: 4; margin-top: 3px; line-height: 20.8px; }
+  .hc-bars .hc-list { row-gap: 18.9px; }
+  .hc-narrow.hc-bars { --mark-size: 16px; }
+  .hc-narrow .hc-list { row-gap: 7.5px; }
+  .hc-narrow .hc-name { font-size: 11px; }
+  .hc-narrow .hc-val { font-size: 12px; }
+  .hc-narrow .hc-rank { font-size: 11px; }
+  .hc-narrow .hc-track { height: 6px; }
+  .tile-list { flex-direction: column; }
+  .hero-list li + li { border-top: 1px solid var(--list-line); }
+  .hero-list a { display: grid; grid-template-columns: 72px minmax(0, 1fr); column-gap: 8px; align-items: center; padding: 11px 0; color: var(--text); text-decoration: none; }
+  .hero-list a:hover { background: var(--row-hover); color: var(--text); }
+  .hero-list .tile-rank { grid-area: 1 / 1 / 4; margin: 0; --rank-size: 40px; }
+  .hero-list .tile-kind { grid-area: 1 / 2; }
+  .hero-list .tile-board { grid-area: 2 / 2; margin-top: 4px; font-size: 15px; }
+  .hero-list .tile-who { grid-area: 3 / 2; margin-top: 3px; font-size: 16px; }
+}
+
+/* From 721 px the mains draw as the desktop board does: fev-bench's rank and stat over its columns, JevBench and
+   ImageJevBench with the rank at the left and the chart at the right. 721 to 1199 px: each main is a row of its own at
+   its desktop height, then the arena, then the three small tiles in one row. */
+@media (min-width: 721px) {
+  .tile-fev-bench > a { display: grid; grid-template-columns: max-content minmax(0, 1fr); grid-template-rows: auto minmax(0, 1fr); column-gap: 32px; row-gap: 18px; align-items: last baseline; --rank-size: 140px; --board-size: 24px; --who-size: 24px; }
+  .tile-fev-bench .tile-board { margin-top: 18px; }
+  /* the design's last name lines sit a little lower, on its common baseline above the tile's foot */
+  .tile-fev-bench .tile-who { position: relative; top: 1.4px; }
+  .tile-jevbench .tile-who, .tile-imagejevbench .tile-who { position: relative; top: 1.8px; }
+  .tile-arena .tile-board + .tile-who { margin-top: 2.2px; }
+  .tile-fev-bench .hc { grid-column: 1 / -1; align-self: stretch; --mark-size: 28px; --room: 25px; }
+  .tile-fev-bench .hc-val { font-size: 16px; line-height: 19px; }
+  .tile-jevbench > a, .tile-imagejevbench > a { display: grid; grid-template-columns: minmax(207px, max-content) minmax(0, 1fr); column-gap: 36px; --rank-size: 152px; --board-size: 22px; --who-size: 22px; }
+  .tile-arena > a { display: grid; grid-template-columns: minmax(calc(var(--row-board) * 11.56), max-content) minmax(0, 1fr); column-gap: 28px; padding: 24px 18px; --rank-size: 42px; }
+  .tile-arena .hc-label { line-height: 14px; }
+  .tile-small > a { padding: 24px 18px; }
+  .tile-arena > a, .tile-small > a { --board-size: var(--row-board); --who-size: var(--row-who); }
+  .tile-main, .tile-arena { grid-column: 1 / -1; }
+  .tile-fev-bench > a { height: 680px; }
+  .tile-jevbench > a, .tile-imagejevbench > a { height: 332px; }
+  .tile-arena > a, .tile-small > a { height: 193px; }
+  /* the 193 px row shares one type size, as large as its narrowest name allows ("H2O AI Super Agent" is 9.38 of its
+     size wide): a small tile is a third of the row less 32 px of gaps and 36 px of padding, with a pixel to spare */
+  .tiles { --row-who: min(19px, calc(3.5522cqi - 5.08px)); --row-board: min(18px, calc(3.3652cqi - 4.81px)); }
+}
+/* From 1200 px, the board: 12 columns of the 1376 px content width (32 px margins at 1440), fev-bench six of them over
+   two 332 px rows, JevBench and ImageJevBench six each beside it, then a 193 px row: the arena under fev-bench and the
+   small tiles two columns each. The columns follow the width; below 1440 px the 193 px row's names follow it too. */
+@media (min-width: 1200px) {
+  .hero { padding: 32px 32px 88px; }
+  .hero-stack { max-width: 1376px; gap: 112px; }
+  .tiles { grid-template-columns: repeat(12, minmax(0, 1fr)); grid-template-rows: 332px 332px 193px; --row-who: min(19px, calc(1.7761cqi - 5.364px)); --row-board: min(18px, calc(1.6826cqi - 5.082px)); }
+  .tile-fev-bench { grid-column: 1 / span 6; grid-row: 1 / span 2; }
+  .tile-jevbench { grid-column: 7 / span 6; grid-row: 1; }
+  .tile-imagejevbench { grid-column: 7 / span 6; grid-row: 2; }
+  .tile-arena { grid-column: 1 / span 6; grid-row: 3; }
+  .tile-small { grid-column: span 2; grid-row: 3; }
 }
 
 /* ---- sticky section bar: filter left, jump links right ---------------------------------------------------- */
