@@ -130,8 +130,9 @@
         explore.setAttribute("href", "#" + shown[0].id);
       }
     });
-    // Each hero tile (on phones, a row of the board) links to its benchmark's section. When the filter hides that
-    // section, the click first sets the filter back to All; the link then lands on the section as any anchor does.
+    // Each hero tile (on phones, also each row of the list card) links to its benchmark's section. When the filter
+    // hides that section, the click first sets the filter back to All; the link then lands on the section as any
+    // anchor does.
     // A click that opens the link elsewhere (a modifier key) leaves this page's filter alone.
     var all = group.querySelector('[data-kind="all"]');
     each(document.querySelectorAll(".tile a"), function (link) {
