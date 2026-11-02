@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 520" width="96" height="96">
+  <defs>
+    <linearGradient id="torch-handle" x1="116" y1="422" x2="247" y2="108" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#03162f"/>
+      <stop offset="0.46" stop-color="#061d3b"/>
+      <stop offset="1" stop-color="#19325c"/>
+    </linearGradient>
+    <linearGradient id="handle-sheen" x1="92" y1="406" x2="255" y2="116" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#ffffff" stop-opacity="0"/>
+      <stop offset="0.55" stop-color="#ffffff" stop-opacity="0.06"/>
+      <stop offset="1" stop-color="#ffffff" stop-opacity="0.18"/>
+    </linearGradient>
+    <linearGradient id="beam-outer" x1="360" y1="158" x2="360" y2="462" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#f0b51f" stop-opacity="0.42"/>
+      <stop offset="0.55" stop-color="#f0b51f" stop-opacity="0.22"/>
+      <stop offset="1" stop-color="#f0b51f" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="beam-mid" x1="360" y1="158" x2="360" y2="462" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#f5be2c" stop-opacity="0.7"/>
+      <stop offset="0.55" stop-color="#f5be2c" stop-opacity="0.36"/>
+      <stop offset="1" stop-color="#f5be2c" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="beam-core" x1="366" y1="158" x2="366" y2="462" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#d89008" stop-opacity="0.9"/>
+      <stop offset="0.55" stop-color="#f0aa14" stop-opacity="0.5"/>
+      <stop offset="1" stop-color="#f0aa14" stop-opacity="0"/>
+    </linearGradient>
+    <radialGradient id="flame-halo" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#E0B12E" stop-opacity="0.28"/>
+      <stop offset="0.62" stop-color="#E0B12E" stop-opacity="0.14"/>
+      <stop offset="1" stop-color="#E0B12E" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="flame-edge" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0.72" stop-color="#E0B12E" stop-opacity="0"/>
+      <stop offset="0.88" stop-color="#E0B12E" stop-opacity="0.2"/>
+      <stop offset="1" stop-color="#E0B12E" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect x="103" y="65" width="90" height="410" rx="45" fill="url(#torch-handle)" transform="rotate(29 148 270)"/>
+  <rect x="115" y="78" width="17" height="384" rx="8.5" fill="url(#handle-sheen)" opacity="0.5" transform="rotate(29 148 270)"/>
+  <circle cx="369" cy="119" r="48" fill="url(#flame-halo)"/>
+  <circle cx="369" cy="119" r="32" fill="#E0B12E"/>
+  <circle cx="369" cy="119" r="36" fill="url(#flame-edge)"/>
+  <path d="M369 154 L470 458 L268 458 Z" fill="url(#beam-outer)"/>
+  <path d="M369 154 L425 458 L313 458 Z" fill="url(#beam-mid)"/>
+  <path d="M369 154 L388 458 L350 458 Z" fill="url(#beam-core)"/>
+</svg>
