@@ -39,8 +39,103 @@ gtag('consent', 'default', {
     <link rel="icon" href="/benchmarks/favicon.svg">
     <meta property="og:title" content="H2O.ai Benchmarks">
     <meta property="og:description" content="Explore AI model benchmark results and discover top-performing models with a clean, easy-to-scan overview for researchers and developers.">
-    <script data-osano="ESSENTIAL" type="module" crossorigin src="/benchmarks/assets/index-CJHM4J4Y.js"></script>
-    <link rel="stylesheet" crossorigin href="/benchmarks/assets/index-CCJ1m4t-.css">
+    <script data-osano="ESSENTIAL" type="module" crossorigin src="/benchmarks/assets/index-D-EBTu7V.js"></script>
+    <link rel="stylesheet" crossorigin href="/benchmarks/assets/index-So_oc51E.css">
+    <script data-osano="ESSENTIAL">/* Keeps Osano's cookie button away once a visitor has saved their preferences.
+   Inlined into <head> at build time by vite.config.ts (consentSavedScript), after Osano's own
+   synchronous script, so it runs before <body> is parsed and a returning visitor never sees the
+   button drawn. A classic script on purpose: no modules, nothing to wait for. The rule that does
+   the hiding is `.consent-saved .osano-cm-widget` in src/index.css.
+
+   Osano draws a cookie button that stays on every page, by design, as the way back to its
+   preferences panel. Once the visitor has saved in that panel the page hides it, and the footer's
+   "Cookie Preferences" button (Footer.tsx) opens the panel instead, for this visit and later ones.
+
+   Only a Save in the panel counts. Osano also records an "accept all" by itself some 200 ms after
+   load, and replays it on every visit with the panel closed (a US visitor's consent is implicit);
+   the notice's x and its 8-second timer change no consent. Osano emits osano-cm-consent-saved for
+   the visitor's own Save while the panel is open and closes the panel after it, so the event
+   counts only while Osano.cm.drawerOpen, a documented property, says the panel is open (checked
+   against CMP 2026.10.22, configuration revision 54). Listening for the event, not for a click on
+   Osano's Save button, keeps this independent of its class names. Osano shows the cookie again
+   after each Save, which is why a CSS rule hides it and Osano.cm.hideWidget() could not.
+
+   The page remembers a Save for as long as Osano remembers its choice. That lapses (after about a
+   year, or at once when marketing publishes a reconsent) and Osano then starts over with the
+   visitor: it shows its notice again, and the page forgets the Save with it, since a visitor who
+   accepted the old terms has not accepted the new ones. Osano shows its notice only when it has no
+   current choice, so ["dialog", "show"] is the signal. It comes some 240 ms into the load, so the
+   page listens here, in <head>, and not later.
+
+   The storage key is the one the previous page used, so a visitor who saved on it stays hidden. */
+(function () {
+  "use strict";
+  var root = document.documentElement;
+  var KEY = "h2o-benchmarks-consent-saved";
+  var CLASS = "consent-saved";
+  var listening = false;
+
+  function remember() {
+    root.classList.add(CLASS);
+    try {
+      window.localStorage.setItem(KEY, "1");
+    } catch (err) {
+      // storage blocked: the cookie stays hidden for this visit only
+    }
+  }
+
+  function forget() {
+    root.classList.remove(CLASS);
+    try {
+      window.localStorage.removeItem(KEY);
+    } catch (err) {
+      // storage blocked: nothing was kept
+    }
+  }
+
+  // A visitor who saved on an earlier visit: the class is on <html> before <body> is parsed.
+  try {
+    if (window.localStorage.getItem(KEY) === "1") {
+      root.classList.add(CLASS);
+    }
+  } catch (err) {
+    // storage blocked: the cookie shows until a Save in this visit
+  }
+
+  function listen(cm) {
+    if (listening || !cm || typeof cm.addEventListener !== "function") {
+      return;
+    }
+    cm.addEventListener("osano-cm-consent-saved", function () {
+      if (cm.drawerOpen) {
+        remember();
+      }
+    });
+    cm.addEventListener("osano-cm-ui-changed", function (component, state) {
+      if (component === "dialog" && state === "show") {
+        forget();
+      }
+    });
+    listening = true;
+    if (cm.dialogOpen) {
+      forget(); // Osano's notice is open already
+    }
+  }
+
+  function attach() {
+    // Osano is a third party and this is <head>: whatever its API does, the page must still load.
+    try {
+      listen(window.Osano && window.Osano.cm);
+    } catch (err) {
+      // nothing to do: the cookie stays visible, as without this script
+    }
+  }
+
+  attach();
+  // Once more when the document is parsed, for an Osano that came after this script.
+  document.addEventListener("DOMContentLoaded", attach);
+})();
+</script>
   </head>
   <body>
     <!-- Google Tag Manager (noscript) -->
