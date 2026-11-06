@@ -63,5 +63,6 @@ rank,model,author,open_weights,listing,composite,capability,intelligence,calibra
 62,OpenJev 4B NLI v2 (official image-premise path),Model author not reported,No,ranked,0.0,8.20441,16.408821,0.0,75.086254,33.917695,No
 63,OpenJev 4B NLI v5,AlexWortega (model repository owner),No,ranked,0.0,16.40808,32.816159,0.0,75.10978,33.954037,No
 64,Gemini 3.8 Flash,Hosted API provider,No,ranked,0.0,19.34165,7.60811,31.07519,63.618441,0.0,No
+,H2O-Lightning-4B v1.4.1 @d7f1b05a (image),H2O.ai,Yes,unranked,68.513737,71.837263,55.482492,88.192034,88.719198,56.343302,No
 ,Standard One 3B,StandardThinking (model repository owner),No,unranked,,49.553367,13.499357,85.607378,84.969732,,No
 ,Standard One 8B,StandardThinking (model repository owner),No,unranked,,51.54923,27.660471,75.437989,83.344118,,No
