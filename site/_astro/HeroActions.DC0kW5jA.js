@@ -1,0 +1,1 @@
+import{i as e}from"./navigation.8e9-S-36.js";import{t}from"./jsx-runtime.CVFlYIZn.js";var n={actions:`_actions_1ypmo_1`},r=t();function i({exploreHref:t,sectionMappings:i,children:a}){return(0,r.jsx)(`div`,{className:n.actions,onClick:n=>{n.target.closest(`a`)?.getAttribute(`href`)===t&&e(i,t)&&n.preventDefault()},children:a})}export{i as HeroActions};

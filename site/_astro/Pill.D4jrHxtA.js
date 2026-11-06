@@ -1,0 +1,1 @@
+import{t as e}from"./jsx-runtime.CVFlYIZn.js";function t(...e){return e.filter(Boolean).join(` `)}var n={pill:`_pill_1tadp_1`,small:`_small_1tadp_27`},r=e();function i({label:e,pressed:i,size:a=`medium`,onClick:o}){return(0,r.jsx)(`button`,{type:`button`,className:t(n.pill,a===`small`&&n.small),"aria-pressed":i,onClick:o,children:e})}export{t as n,i as t};
