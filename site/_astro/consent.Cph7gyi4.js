@@ -1,0 +1,1 @@
+var e=`h2o-benchmarks:osano-loaded`;function t(){let e=window.Osano?.cm;return typeof e?.showDrawer==`function`?e:void 0}function n(){return t()!==void 0}function r(){let e=t();return e?(e.showDrawer(`osano-cm-dom-info-dialog-open`),!0):!1}export{r as i,t as n,n as r,e as t};

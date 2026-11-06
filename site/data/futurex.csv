@@ -1,50 +1,36 @@
 rank,framework,model,organization,events,level1,level2,level3,level4,score,h2o
-1,OPS-Agentic-Search_S10.2,Kimi K3,Individual AI Researcher,71,61.9,47.37,35.96,53.4,47.81,No
-2,arce,DeepSeek-V4-Pro,Individual AI Researcher,71,52.38,47.37,48.11,45.65,47.4,No
-3,OPS-Agentic-Search_S10.7,Kimi K3,Individual AI Researcher,71,61.9,42.11,34.74,54.59,46.87,No
-4,OPS-Agentic-Search_S10.1,Kimi K3,Individual AI Researcher,71,61.9,47.37,35.96,50.4,46.61,No
-5,OPS-Agentic-Search_S10.9,Kimi K3,Individual AI Researcher,71,61.9,42.11,34.74,51.58,45.67,No
-6,H2O AI Super Agent v1.82,gpt-6-sol,h2o.ai,71,61.9,47.37,33.1,48.79,45.11,Yes
-7,H2O AI Super Agent v1.82,gpt-6-sol + sonnet-5.5 - v3,h2o.ai,71,71.43,42.11,33.1,48.79,45.01,Yes
-8,OPS-Agentic-Search_S10.5,Kimi K3,Individual AI Researcher,71,61.9,42.11,26.21,54.59,44.31,No
-9,H2O AI Super Agent v1.82,gpt-6-sol + sonnet-5.5 - v1,h2o.ai,71,71.43,47.37,26.54,48.79,44.09,Yes
-10,Google_Deepmind,blue-fish,Individual AI Researcher,71,57.14,36.84,39.83,46.1,43.47,No
-11, SWM-b,Deepseek V4 Pro,Individual AI Researcher,71,57.14,47.37,40.83,39.35,43.18,No
-12,SWM-c,Deepseek V4 Pro,Individual AI Researcher,71,61.9,47.37,41.55,37.57,43.16,No
-13,H2O AI Super Agent v1.82,gpt-6-sol + sonnet-5.5 - v2,h2o.ai,71,71.43,42.11,26.54,48.79,43.04,Yes
-14,SWM-a,Deepseek V4 Pro,Individual AI Researcher,71,52.38,47.37,40.29,39.92,42.77,No
-15,OPS-Agentic-Search_S10.3,Kimi K3,Individual AI Researcher,71,61.9,52.63,29.38,42.06,42.35,No
-16,OPS-Agentic-Search_S10.6,Kimi K3,Individual AI Researcher,71,52.38,42.11,37.96,43.11,42.29,No
-17,SWM-d,Deepseek V4 Pro,Individual AI Researcher,71,57.14,47.37,40.83,37.0,42.24,No
-18,Raven,obsidian,Individual AI Researcher,71,66.67,42.11,27.61,45.7,41.65,No
-19,anon-agent,anon-a1,Individual AI Researcher,71,61.9,42.11,37.11,39.29,41.46,No
-20,anon-agent,anon-a6,Individual AI Researcher,71,61.9,42.11,37.11,39.29,41.46,No
-21,anon-agent,anon-a5,Individual AI Researcher,71,57.14,42.11,37.11,39.29,40.99,No
-22,anon-agent,anon-a3,Individual AI Researcher,71,61.9,42.11,36.42,38.12,40.78,No
-23,anon-agent,anon-a2,Individual AI Researcher,71,61.9,42.11,28.87,43.46,40.65,No
-24,H2O AI Super Agent v1.82,gpt-6-sol + sonnet-5.5 - v4,h2o.ai,71,61.9,47.37,26.54,40.13,39.68,Yes
-25,H2O AI Super Agent v1.82,grok-4.7,h2o.ai,71,71.43,42.11,35.89,32.41,39.29,Yes
-26,SenseFlow_Multiagent,S-Forecaster,Individual AI Researcher,71,57.14,36.84,34.94,39.06,39.19,No
-27,hermes,Charles_V_v1,Individual AI Researcher,71,52.38,31.58,53.98,27.58,38.78,No
-28,OPS-Agentic-Search_S1,Kimi K3,Individual AI Researcher,71,57.14,52.63,29.38,34.06,38.68,No
-29,H2O AI Super Agent v1.82,sonnet-5.5,h2o.ai,71,71.43,42.11,26.54,37.3,38.45,Yes
-30,OPS-Agentic-Search_S4,Kimi K3,Individual AI Researcher,71,42.86,36.84,37.65,38.05,38.17,No
-31,SenseFlux,S-Forecaster,Individual AI Researcher,71,52.38,36.84,29.87,41.29,38.08,No
-32,SenseFlow,deepseek-v4-pro-v3.1,Individual AI Researcher,71,57.14,47.37,32.13,33.12,38.07,No
-33,Nevar-A harness,Basalt,Individual AI Researcher,71,57.14,47.37,21.43,40.47,37.8,No
-34,Nevar-B,Garnet,Individual AI Researcher,71,61.9,36.84,32.73,35.4,37.54,No
-35,arce-2,glm 5.2,Individual AI Researcher,71,57.14,36.84,31.61,37.18,37.44,No
-36,arce,GLM 5.2,Individual AI Researcher,71,57.14,36.84,31.61,37.18,37.44,No
-37,OPS-Agentic-Search_S7,Kimi K3,Individual AI Researcher,71,52.38,36.84,26.21,41.64,37.13,No
-38,Nevar-C harness,Quartz,Individual AI Researcher,71,52.38,63.16,18.6,33.65,36.91,No
-39,SenseFlux_rf,S-Forecaster,Individual AI Researcher,71,52.38,36.84,29.94,37.53,36.6,No
-40,SenseFlow,DeepSeek-V4-Pro,Individual AI Researcher,71,61.9,36.84,34.63,30.47,36.13,No
-41,Nevar-B harness,Onyx,Individual AI Researcher,71,61.9,36.84,28.16,34.59,35.84,No
-42,SenseFlow,deepseek-v4-pro-v1,Individual AI Researcher,71,57.14,31.58,34.17,30.06,34.3,No
-43,SenseFlow,deepseek-v4-pro-v3,Individual AI Researcher,71,52.38,42.11,32.13,27.23,34.19,No
-44,SenseFlow,deepseek-v4-pro-v2,Individual AI Researcher,71,47.62,42.11,33.66,26.7,33.96,No
-45,SenseFlow,deepseek-v4-pro-verifier,Individual AI Researcher,71,57.14,36.84,40.92,21.33,33.89,No
-46,SenseFlow,deepseek-v4-pro-graphv2,Individual AI Researcher,71,57.14,36.84,32.13,27.23,33.61,No
-47,Nevar-B harness,Gypsum,Individual AI Researcher,71,61.9,47.37,13.88,33.65,33.29,No
-48,SenseFlow,deepseek-v4-pro-graphv1,Individual AI Researcher,71,42.86,42.11,30.67,27.04,32.72,No
-49,TTT-v0.4,DeepSeek V4.1 Flash,Individual AI Researcher,71,47.62,42.11,14.16,25.41,27.6,No
+1,H2O AI Super Agent Next - a2,sonnet-5.5 - v2,h2o.ai,64,84.21,47.06,53.57,52.91,55.07,Yes
+2,Nevar-B harness,Gypsum,Individual AI Researcher,64,68.42,58.82,64.85,34.07,51.69,No
+3,OPS-Agentic-Search_S10.3,Kimi K3,Individual AI Researcher,64,78.95,52.94,60.01,37.24,51.38,No
+4,SenseFlux,S-Forecaster,Individual AI Researcher,64,68.42,52.94,60.44,38.01,50.77,No
+5,arce #2,glm 5.3,Individual AI Researcher,64,73.68,52.94,53.43,40.68,50.26,No
+6,OPS-Agentic-Search_S10.5,Kimi K3,Individual AI Researcher,64,73.68,52.94,58.24,36.87,50.18,No
+7,SWM-b,Deepseek V4 Pro,Individual AI Researcher,64,68.42,41.18,61.16,40.05,49.45,No
+8,OPS-Agentic-Search_S1,Kimi K3,Individual AI Researcher,64,73.68,52.94,52.87,37.24,48.71,No
+9,SenseFlow,deepseek-v4-pro-v3.1,Individual AI Researcher,64,84.21,47.06,60.63,31.63,48.68,No
+10,H2O AI Super Agent v1.82,sonnet-5.5,h2o.ai,64,78.95,47.06,54.19,37.48,48.56,Yes
+11,OPS-Agentic-Search_S10.9,Kimi K3,Individual AI Researcher,64,73.68,52.94,57.71,32.03,48.08,No
+12,SenseFlow,deepseek-v4-pro-graphv2,Individual AI Researcher,64,68.42,58.82,53.23,33.49,47.97,No
+13,Nevar-A harness,Basalt,Individual AI Researcher,64,68.42,47.06,59.6,34.59,47.97,No
+14,Nevar-B harness,Garnet,Individual AI Researcher,64,68.42,41.18,61.07,36.38,47.95,No
+15,OPS-Agentic-Search_S10.10,Kimi K3,Individual AI Researcher,64,73.68,52.94,58.3,30.97,47.83,No
+16,OPS-Agentic-Search_S10.1,Kimi K3,Individual AI Researcher,64,73.68,52.94,58.3,30.97,47.83,No
+17,SenseFlow_Multiagent,S-Forecaster,Individual AI Researcher,64,73.68,41.18,52.88,39.9,47.43,No
+18,OPS-Agentic-Search_S10.2,Kimi K3,Individual AI Researcher,64,73.68,47.06,58.83,30.97,46.82,No
+19,SenseFlow,deepseek-v4-pro-graphv1,Individual AI Researcher,64,73.68,41.18,54.0,37.1,46.65,No
+20,OPS-Agentic-Search_S7,Kimi K3,Individual AI Researcher,64,68.42,47.06,51.1,36.87,46.33,No
+21,SWM-a,Deepseek V4 Pro,Individual AI Researcher,64,73.68,35.29,61.16,33.43,46.15,No
+22,SenseFlow,deepseek-v4-pro-v3,Individual AI Researcher,64,78.95,47.06,53.49,31.63,46.01,No
+23,SenseFlow,deepseek-v4-pro-v1,Individual AI Researcher,64,78.95,47.06,53.48,31.63,46.0,No
+24,SenseFlow,deepseek-v4-pro-verifier,Individual AI Researcher,64,73.68,47.06,54.53,31.74,45.84,No
+25,SenseFlow,deepseek-v4-pro-v2,Individual AI Researcher,64,73.68,47.06,53.49,31.93,45.6,No
+26,OPS-Agentic-Search_S4,Kimi K3,Individual AI Researcher,64,68.42,47.06,53.99,30.94,44.83,No
+27,Nevar-B harness,Onyx,Individual AI Researcher,64,78.95,41.18,48.37,35.0,44.64,No
+28,SWM-c,Deepseek V4 Pro,Individual AI Researcher,64,63.16,47.06,48.11,35.66,44.43,No
+29,arce #1,glm 5.2,Individual AI Researcher,64,78.95,41.18,55.94,28.31,44.24,No
+30,hermes,Charles_V_v1,Individual AI Researcher,64,73.68,35.29,56.06,32.16,44.11,No
+31,Nevar-C harness,Quartz,Individual AI Researcher,64,73.68,52.94,48.27,24.18,42.11,No
+32,51Folds AI Bot,51Folds,51Folds.AI,64,78.95,23.53,35.54,38.04,38.48,No
+33,SWM-d,Deepseek V4 Pro,Individual AI Researcher,64,52.63,35.29,21.13,42.29,35.58,No
+34,TTT-v0.4,DeepSeek V4.1 Flash,Individual AI Researcher,64,63.16,23.53,53.54,12.78,32.19,No
+35,51Folds AI Bot,51Folds Ensemble,51Folds.AI,64,73.68,11.76,43.67,18.66,30.29,No
