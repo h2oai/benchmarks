@@ -5,17 +5,17 @@
 
 <h1>Leading AI in <br>Predictive, Generative, and Agentic AI.</h1>
 
-Benchmark data read on November 5, 2026.
+Benchmark data read on November 8, 2026.
 
-[Overview](#overview-cards) · [Featured](#featured) · [fev-bench](#fev-bench) · [ImageJevBench](#imagejevbench) · [JevBench](#jevbench) · [TabH2O](#tabh2o) · [FutureX](#futurex) · [Social Simulation Arena](#social-simulation-arena)
+[Overview](#overview-cards) · [Featured](#featured) · [fev-bench](#fev-bench) · [ImageJevBench](#imagejevbench) · [ImageJevBench Box Track](#imagejevbench-box-track) · [JevBench](#jevbench) · [TabH2O](#tabh2o) · [FutureX](#futurex) · [Social Simulation Arena](#social-simulation-arena)
 
 <a id="overview-cards"></a>
 
 ## Overview
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="readme/carousel-6-overview-dark.png">
-  <img src="readme/carousel-6-overview.png" alt="All benchmark results as cards">
+  <source media="(prefers-color-scheme: dark)" srcset="readme/carousel-7-overview-dark.png">
+  <img src="readme/carousel-7-overview.png" alt="All benchmark results as cards">
 </picture>
 
 | Category | Rank | Benchmark | Model |
@@ -99,6 +99,40 @@ Benchmark data read on November 5, 2026.
 | 22 | Qwen | Visual-Jev (Qwen3.5-4B) | 56.70 |
 | 33 | Liquid AI | d1-3B | 47.80 |
 
+### #3 ImageJevBench Box Track
+
+*Generative AI · Image boxes*
+
+**H2O-Lightning-4B v1.4.1**
+
+<table width="560">
+<tr><td colspan="3" width="560">Models answer with a bounding box and a confidence. Ranks are among 20 ranked systems, scored on 300 public items (546 sealed items are held back for official runs). A preview track: it does not change ImageJevBench&#x27;s own ranking.</td></tr>
+<tr>
+<td width="186" align="center" valign="top"><b><code>84.90</code></b><br><sub>CAPABILITY</sub></td>
+<td width="186" align="center" valign="top"><b><code>0.28s</code></b><br><sub>MEDIAN LATENCY</sub></td>
+<td width="186" align="center" valign="top"><b><code>$0.096</code></b><br><sub>PER 1,000 BOXES</sub></td>
+</tr>
+<tr><td colspan="3" width="560"><a href="https://benchmarkheaven.com/image-jev-bench#box-track">Leaderboard</a> · <a href="https://benchmarkheaven.com/jev-models/methodology">How it scores</a> · <a href="https://huggingface.co/h2oai/h2o-lightning-4b">Model card</a></td></tr>
+</table>
+
+**Capability** · Higher is better
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="readme/carousel-3-imagejevbench-box-track-dark.png">
+  <img src="readme/carousel-3-imagejevbench-box-track.png" alt="ImageJevBench Box Track Capability by model" width="560">
+</picture>
+
+| Rank | Company | Model | Capability |
+| ---: | --- | --- | ---: |
+| 1 | Z.ai | GLM-4.6V | 89.47 |
+| 2 | Qwen | Qwen3-VL-32B Instruct | 85.27 |
+| **3** | **H2O.ai** | **H2O-Lightning-4B v1.4.1** | **84.90** |
+| 4 | Anthropic | Claude Haiku 5.5 | 78.81 |
+| 5 | Google | Gemma 4 31B IT | 76.44 |
+| 8 | TypeSafe AI | Jev 1.14.0 | 75.71 |
+| 11 | OpenAI | GPT-6 Luna | 70.70 |
+| 19 | Microsoft | Florence-2-large | 28.95 |
+
 ### #4 JevBench
 
 *Generative AI · Decision models*
@@ -118,8 +152,8 @@ Benchmark data read on November 5, 2026.
 **Capability** · Higher is better
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="readme/carousel-3-jevbench-dark.png">
-  <img src="readme/carousel-3-jevbench.png" alt="JevBench capability by model" width="560">
+  <source media="(prefers-color-scheme: dark)" srcset="readme/carousel-4-jevbench-dark.png">
+  <img src="readme/carousel-4-jevbench.png" alt="JevBench capability by model" width="560">
 </picture>
 
 | Rank | Company | Model | Capability |
@@ -152,8 +186,8 @@ Benchmark data read on November 5, 2026.
 **Overall score** · Higher is better
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="readme/carousel-4-futurex-dark.png">
-  <img src="readme/carousel-4-futurex.png" alt="FutureX overall score by agent" width="560">
+  <source media="(prefers-color-scheme: dark)" srcset="readme/carousel-5-futurex-dark.png">
+  <img src="readme/carousel-5-futurex.png" alt="FutureX overall score by agent" width="560">
 </picture>
 
 | Rank | Company | Model | Overall score |
@@ -176,9 +210,9 @@ Benchmark data read on November 5, 2026.
 <table width="560">
 <tr><td colspan="3" width="560">Entrants forecast the next public release of poll, sentiment and attention series. Forecasts are locked before the answer exists and scored against the published number.</td></tr>
 <tr>
-<td width="186" align="center" valign="top"><b><code>70.74</code></b><br><sub>PAIRWISE WIN RATE</sub></td>
-<td width="186" align="center" valign="top"><b><code>56</code></b><br><sub>QUESTIONS ANSWERED</sub></td>
-<td width="186" align="center" valign="top"><b><code>+20.21</code></b><br><sub>AHEAD OF ANTHROPIC</sub></td>
+<td width="186" align="center" valign="top"><b><code>71.63</code></b><br><sub>PAIRWISE WIN RATE</sub></td>
+<td width="186" align="center" valign="top"><b><code>64</code></b><br><sub>QUESTIONS ANSWERED</sub></td>
+<td width="186" align="center" valign="top"><b><code>+27.18</code></b><br><sub>AHEAD OF ANTHROPIC</sub></td>
 </tr>
 <tr><td colspan="3" width="560"><a href="https://social-simulation-arena.com/#leaderboard">Leaderboard</a> · <a href="https://h2o.ai/products/h2ogpte">Enterprise h2oGPTe</a> · <a href="https://h2oai.github.io/marina/">H2O AI Marina</a></td></tr>
 </table>
@@ -186,20 +220,20 @@ Benchmark data read on November 5, 2026.
 **Pairwise win rate** · Higher is better
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="readme/carousel-5-social-simulation-arena-dark.png">
-  <img src="readme/carousel-5-social-simulation-arena.png" alt="Social Simulation Arena pairwise win rate by model" width="560">
+  <source media="(prefers-color-scheme: dark)" srcset="readme/carousel-6-social-simulation-arena-dark.png">
+  <img src="readme/carousel-6-social-simulation-arena.png" alt="Social Simulation Arena pairwise win rate by model" width="560">
 </picture>
 
 | Rank | Company | Model | Pairwise win rate |
 | ---: | --- | --- | ---: |
-| **1** | **H2O.ai** | **H2O AI Super Agent** | **70.74** |
-| **3** | **H2O.ai** | **H2O AI Marina** | **64.29** |
-| 7 | Google | Gemini 3.1 Pro · web | 53.02 |
-| 8 | xAI | Grok 4.5 · web | 52.39 |
-| 9 | Anthropic | Claude Sonnet 5 · web+sfc | 50.53 |
-| 11 | OpenAI | GPT-5.6 Luna · web+sfc | 48.86 |
-| 13 | DeepSeek | DeepSeek V4 Pro · web | 48.02 |
-| 15 | Zhipu | GLM-5.2 · web | 44.78 |
+| **1** | **H2O.ai** | **H2O AI Super Agent** | **71.63** |
+| **3** | **H2O.ai** | **H2O AI Marina** | **65.86** |
+| 7 | Google | Gemini 3.1 Pro · web | 47.88 |
+| 8 | xAI | Grok 4.5 · web | 46.54 |
+| 10 | Anthropic | Claude Sonnet 5 · web+sfc | 44.45 |
+| 11 | OpenAI | GPT-5.6 Luna · web+sfc | 43.61 |
+| 14 | DeepSeek | DeepSeek V4 Pro · web | 42.96 |
+| 18 | Z.ai | GLM-5.2 · web | 39.49 |
 
 [↑ Back to top](#top)
 
@@ -351,6 +385,46 @@ Benchmark data read on November 5, 2026.
 | 10 | Nace AI | Drex Max | \$0.084 |
 
 </details>
+
+[↑ Back to top](#top)
+
+<a id="imagejevbench-box-track"></a>
+
+### #3 ImageJevBench Box Track
+
+*Generative AI · Image boxes*
+
+**H2O-Lightning-4B v1.4.1**
+
+<table width="560">
+<tr><td colspan="3" width="560">Models answer with a bounding box and a confidence. Ranks are among 20 ranked systems, scored on 300 public items (546 sealed items are held back for official runs). A preview track: it does not change ImageJevBench&#x27;s own ranking.</td></tr>
+<tr>
+<td width="186" align="center" valign="top"><b><code>84.90</code></b><br><sub>CAPABILITY</sub></td>
+<td width="186" align="center" valign="top"><b><code>0.28s</code></b><br><sub>MEDIAN LATENCY</sub></td>
+<td width="186" align="center" valign="top"><b><code>$0.096</code></b><br><sub>PER 1,000 BOXES</sub></td>
+</tr>
+<tr><td colspan="3" width="560"><a href="https://benchmarkheaven.com/image-jev-bench#box-track">Leaderboard</a> · <a href="https://benchmarkheaven.com/jev-models/methodology">How it scores</a> · <a href="https://huggingface.co/h2oai/h2o-lightning-4b">Model card</a></td></tr>
+</table>
+
+**Capability · top 10** · Higher is better
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="readme/imagejevbench-box-track-dark.png">
+  <img src="readme/imagejevbench-box-track.png" alt="ImageJevBench Box Track top 10 models by Capability" width="560">
+</picture>
+
+| Rank | Company | Model | Score |
+| ---: | --- | --- | ---: |
+| 1 | Z.ai | GLM-4.6V | 89.47 |
+| 2 | Qwen | Qwen3-VL-32B Instruct | 85.27 |
+| **3** | **H2O.ai** | **H2O-Lightning-4B v1.4.1** | **84.90** |
+| 4 | Anthropic | Claude Haiku 5.5 | 78.81 |
+| 5 | Google | Gemma 4 31B IT | 76.44 |
+| 6 | Qwen | Qwen3-VL-235B-A22B Instruct | 75.99 |
+| 7 | Qwen | Qwen3-VL-30B-A3B Instruct | 75.86 |
+| 8 | TypeSafe AI | Jev 1.14.0 | 75.71 |
+| 9 | Qwen | Qwen3.5-397B-A17B | 74.69 |
+| 10 | Qwen | Qwen3-VL-8B Instruct | 72.78 |
 
 [↑ Back to top](#top)
 
@@ -579,9 +653,9 @@ Benchmark data read on November 5, 2026.
 <table width="560">
 <tr><td colspan="3" width="560">Entrants forecast the next public release of poll, sentiment and attention series. Forecasts are locked before the answer exists and scored against the published number.</td></tr>
 <tr>
-<td width="186" align="center" valign="top"><b><code>70.74</code></b><br><sub>PAIRWISE WIN RATE</sub></td>
-<td width="186" align="center" valign="top"><b><code>56</code></b><br><sub>QUESTIONS ANSWERED</sub></td>
-<td width="186" align="center" valign="top"><b><code>+20.21</code></b><br><sub>AHEAD OF ANTHROPIC</sub></td>
+<td width="186" align="center" valign="top"><b><code>71.63</code></b><br><sub>PAIRWISE WIN RATE</sub></td>
+<td width="186" align="center" valign="top"><b><code>64</code></b><br><sub>QUESTIONS ANSWERED</sub></td>
+<td width="186" align="center" valign="top"><b><code>+27.18</code></b><br><sub>AHEAD OF ANTHROPIC</sub></td>
 </tr>
 <tr><td colspan="3" width="560"><a href="https://social-simulation-arena.com/#leaderboard">Leaderboard</a> · <a href="https://h2o.ai/products/h2ogpte">Enterprise h2oGPTe</a> · <a href="https://h2oai.github.io/marina/">H2O AI Marina</a></td></tr>
 </table>
@@ -595,16 +669,16 @@ Benchmark data read on November 5, 2026.
 
 | Rank | Company | Model | Score |
 | ---: | --- | --- | ---: |
-| **1** | **H2O.ai** | **H2O AI Super Agent** | **70.74** |
-| 2 | Apodex | Apodex-FutureFlow | 69.56 |
-| **3** | **H2O.ai** | **H2O AI Marina** | **64.29** |
-| 4 | Astraculum | Vac | 61.55 |
-| 5 | Social Atoms | Crowd (baseline) | 55.92 |
-| 6 | Astraculum | worldVac | 54.28 |
-| 7 | Google | Gemini 3.1 Pro · web | 53.02 |
-| 8 | xAI | Grok 4.5 · web | 52.39 |
-| 9 | Anthropic | Claude Sonnet 5 · web+sfc | 50.53 |
-| 10 | Google | Gemini 3.1 Pro · web+sfc | 49.85 |
+| **1** | **H2O.ai** | **H2O AI Super Agent** | **71.63** |
+| 2 | Apodex | Apodex-FutureFlow | 70.16 |
+| **3** | **H2O.ai** | **H2O AI Marina** | **65.86** |
+| 4 | Astraculum | Vac | 56.20 |
+| 5 | Social Atoms | Crowd (baseline) | 54.52 |
+| 6 | Astraculum | worldVac | 52.16 |
+| 7 | Google | Gemini 3.1 Pro · web | 47.88 |
+| 8 | xAI | Grok 4.5 · web | 46.54 |
+| 9 | Google | Gemini 3.1 Pro · web+sfc | 44.87 |
+| 10 | Anthropic | Claude Sonnet 5 · web+sfc | 44.45 |
 
 [↑ Back to top](#top)
 
