@@ -1,25 +1,23 @@
 rank,method,organization,type,pairwise_win_rate,questions_answered,h2o
-1,Apodex-FutureFlow,Apodex,participant,69.33,69,No
-2,H2O.ai SuperAgent,H2O.ai,participant,68.99,67,Yes
-3,H2O.ai Marina,H2O.ai,participant,65.04,69,Yes
-4,Vac,,entrant,54.88,48,No
-5,Crowd,,baseline,54.52,69,No
-6,worldVac,Astraculum,participant,53.44,69,No
-7,Grok 4.5 · web,,llm,46.09,60,No
-8,Gemini 3.1 Pro · web,,llm,46.05,60,No
-9,Claude Sonnet 5 · web+sfc,,llm,44.27,60,No
-10,YuLan-OneSim,Renmin University of China,participant,43.62,51,No
-11,DeepSeek V4 Pro · web+sfc,,llm,43.02,60,No
-12,Gemini 3.1 Pro · web+sfc,,llm,43.0,60,No
-13,Claude Sonnet 5 · web,,llm,42.63,60,No
-14,GPT-5.6 Luna · web+sfc,,llm,41.54,60,No
-15,DeepSeek V4 Pro · web,,llm,41.06,60,No
-16,Persistence,,baseline,40.44,69,No
-17,GLM-5.2 · web,,llm,39.02,58,No
-18,ZhengZheng Forecaster,xuanzhengwenhua,participant,38.92,69,No
-19,Grok 4.5 · web+sfc,,llm,37.92,60,No
-20,GLM-5.2 · web+sfc,,llm,37.72,60,No
-21,GPT-5.6 Luna · web,,llm,37.53,60,No
-22,EWMA,,baseline,29.96,50,No
-23,Climatology,,baseline,15.34,50,No
-24,Linear trend,,baseline,14.94,50,No
+1,Apodex-FutureFlow,Apodex,participant,68.64,79,No
+2,H2O.ai SuperAgent,H2O.ai,participant,67.34,77,Yes
+3,H2O.ai Marina,H2O.ai,participant,62.72,79,Yes
+4,Vac,,entrant,54.47,58,No
+5,worldVac,Astraculum,participant,54.46,79,No
+6,Crowd,,baseline,52.08,79,No
+7,Persistence,,baseline,43.17,79,No
+8,YuLan-OneSim,Renmin University of China,participant,40.91,54,No
+9,Gemini 3.1 Pro · web,,llm,40.36,61,No
+10,Claude Sonnet 5 · web+sfc,,llm,39.43,61,No
+11,Gemini 3.1 Pro · web+sfc,,llm,38.38,61,No
+12,ZhengZheng Forecaster,xuanzhengwenhua,participant,37.87,79,No
+13,Claude Sonnet 5 · web,,llm,37.83,61,No
+14,DeepSeek V4 Pro · web+sfc,,llm,36.98,60,No
+15,GPT-5.6 Luna · web+sfc,,llm,36.22,61,No
+16,DeepSeek V4 Pro · web,,llm,35.91,60,No
+17,GLM-5.2 · web,,llm,34.45,58,No
+18,GLM-5.2 · web+sfc,,llm,32.98,61,No
+19,GPT-5.6 Luna · web,,llm,32.7,61,No
+20,EWMA,,baseline,30.59,57,No
+21,Climatology,,baseline,16.75,57,No
+22,Linear trend,,baseline,16.5,57,No
