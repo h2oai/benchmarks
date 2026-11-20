@@ -5,17 +5,17 @@
 
 <h1>Leading AI in <br>Predictive, Generative, and Agentic AI.</h1>
 
-Benchmark data read on November 13, 2026.
+Benchmark data read on November 20, 2026.
 
-[Overview](#overview-cards) · [Featured](#featured) · [fev-bench](#fev-bench) · [ImageJevBench](#imagejevbench) · [ImageJevBench Box Track](#imagejevbench-box-track) · [JevBench](#jevbench) · [TabH2O](#tabh2o) · [FutureX](#futurex) · [Social Simulation Arena](#social-simulation-arena)
+[Overview](#overview-cards) · [Featured](#featured) · [fev-bench](#fev-bench) · [EnergyBench by Foretec](#energybench) · [ImageJevBench](#imagejevbench) · [ImageJevBench Box Track](#imagejevbench-box-track) · [JevBench](#jevbench) · [TabH2O](#tabh2o) · [FutureX](#futurex) · [Social Simulation Arena](#social-simulation-arena)
 
 <a id="overview-cards"></a>
 
 ## Overview
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="readme/carousel-7-overview-dark.png">
-  <img src="readme/carousel-7-overview.png" alt="All benchmark results as cards">
+  <source media="(prefers-color-scheme: dark)" srcset="readme/carousel-8-overview-dark.png">
+  <img src="readme/carousel-8-overview.png" alt="All benchmark results as cards">
 </picture>
 
 | Category | Rank | Benchmark | Model |
@@ -59,11 +59,44 @@ Benchmark data read on November 13, 2026.
 | Rank | Company | Model | Capability |
 | ---: | --- | --- | ---: |
 | **1** | **H2O.ai** | **H2O-Lightning-31B** | **80.88** |
-| 5 | TypeSafe AI | Jev 1.13.0 + images | 72.44 |
-| 12 | OpenAI | GPT-6 Luna | 62.90 |
-| 20 | Cloudflare | Clef | 58.10 |
-| 22 | Qwen | Visual-Jev (Qwen3.5-4B) | 56.70 |
-| 33 | Liquid AI | d1-3B | 47.80 |
+| 6 | TypeSafe AI | Jev 1.13.0 + images | 72.44 |
+| 13 | OpenAI | GPT-6 Luna | 62.90 |
+| 21 | Cloudflare | Clef | 58.10 |
+| 23 | Qwen | Visual-Jev (Qwen3.5-4B) | 56.70 |
+| 34 | Liquid AI | d1-3B | 47.80 |
+
+### #1 EnergyBench by Foretec
+
+*Predictive AI · Energy forecasting*
+
+**TimeH2O-v1**
+
+<table width="560">
+<tr><td colspan="3" width="560">Day-ahead electricity forecasting in six European zones, scored every day against the grid operators&#x27; own figures. Ranked by Elo on the board&#x27;s default view (all zones, all four targets) over 48 live days to November 19. Data and scores: CC BY 4.0.</td></tr>
+<tr>
+<td width="186" align="center" valign="top"><b><code>1195</code></b><br><sub>ELO</sub></td>
+<td width="186" align="center" valign="top"><b><code>74.00%</code></b><br><sub>WIN RATE</sub></td>
+<td width="186" align="center" valign="top"><b><code>67.70%</code></b><br><sub>SKILL SCORE</sub></td>
+</tr>
+<tr><td colspan="3" width="560"><a href="https://energybench.foretec.co/">Leaderboard</a> · <a href="https://energybench.foretec.co/methodology.html">How it scores</a> · <a href="https://huggingface.co/h2oai/timeh2o-v1">Model card</a> · <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a></td></tr>
+</table>
+
+**Elo** · Higher is better
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="readme/carousel-2-energybench-dark.png">
+  <img src="readme/carousel-2-energybench.png" alt="EnergyBench Elo by model" width="560">
+</picture>
+
+| Rank | Company | Model | Elo |
+| ---: | --- | --- | ---: |
+| **1** | **H2O.ai** | **TimeH2O-v1 + covariates** | **1195.00** |
+| 2 | The Forecasting Company | t0-gamma + covariates | 1187.00 |
+| 3 | AWS | Chronos-2 + covariates | 1176.00 |
+| 4 | Google | TimesFM 3 + covariates | 1175.00 |
+| 5 | Mistral AI | Timestral + covariates | 1166.00 |
+| 10 | NX-AI | TiRex-2 + covariates | 1101.00 |
+| 18 | Datadog | Toto 2.0 (1B) | 985.00 |
 
 ### #2 fev-bench
 
@@ -84,8 +117,8 @@ Benchmark data read on November 13, 2026.
 **Win rate** · Higher is better
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="readme/carousel-2-fev-bench-dark.png">
-  <img src="readme/carousel-2-fev-bench.png" alt="fev-bench win rate by model" width="560">
+  <source media="(prefers-color-scheme: dark)" srcset="readme/carousel-3-fev-bench-dark.png">
+  <img src="readme/carousel-3-fev-bench.png" alt="fev-bench win rate by model" width="560">
 </picture>
 
 | Rank | Company | Model | Win rate |
@@ -108,9 +141,9 @@ Benchmark data read on November 13, 2026.
 <table width="560">
 <tr><td colspan="3" width="560">Entrants forecast the next public release of poll, sentiment and attention series. Forecasts are locked before the answer exists and scored against the published number.</td></tr>
 <tr>
-<td width="186" align="center" valign="top"><b><code>68.99</code></b><br><sub>PAIRWISE WIN RATE</sub></td>
-<td width="186" align="center" valign="top"><b><code>67</code></b><br><sub>QUESTIONS ANSWERED</sub></td>
-<td width="186" align="center" valign="top"><b><code>+24.72</code></b><br><sub>AHEAD OF ANTHROPIC</sub></td>
+<td width="186" align="center" valign="top"><b><code>67.34</code></b><br><sub>PAIRWISE WIN RATE</sub></td>
+<td width="186" align="center" valign="top"><b><code>77</code></b><br><sub>QUESTIONS ANSWERED</sub></td>
+<td width="186" align="center" valign="top"><b><code>+27.91</code></b><br><sub>AHEAD OF ANTHROPIC</sub></td>
 </tr>
 <tr><td colspan="3" width="560"><a href="https://social-simulation-arena.com/#leaderboard">Leaderboard</a> · <a href="https://h2o.ai/products/h2ogpte">Enterprise h2oGPTe</a> · <a href="https://h2oai.github.io/marina/">H2O AI Marina</a></td></tr>
 </table>
@@ -118,20 +151,19 @@ Benchmark data read on November 13, 2026.
 **Pairwise win rate** · Higher is better
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="readme/carousel-3-social-simulation-arena-dark.png">
-  <img src="readme/carousel-3-social-simulation-arena.png" alt="Social Simulation Arena pairwise win rate by model" width="560">
+  <source media="(prefers-color-scheme: dark)" srcset="readme/carousel-4-social-simulation-arena-dark.png">
+  <img src="readme/carousel-4-social-simulation-arena.png" alt="Social Simulation Arena pairwise win rate by model" width="560">
 </picture>
 
 | Rank | Company | Model | Pairwise win rate |
 | ---: | --- | --- | ---: |
-| **2** | **H2O.ai** | **H2O AI Super Agent** | **68.99** |
-| **3** | **H2O.ai** | **H2O AI Marina** | **65.04** |
-| 7 | xAI | Grok 4.5 · web | 46.09 |
-| 8 | Google | Gemini 3.1 Pro · web | 46.05 |
-| 9 | Anthropic | Claude Sonnet 5 · web+sfc | 44.27 |
-| 11 | DeepSeek | DeepSeek V4 Pro · web+sfc | 43.02 |
-| 14 | OpenAI | GPT-5.6 Luna · web+sfc | 41.54 |
-| 17 | Z.ai | GLM-5.2 · web | 39.02 |
+| **2** | **H2O.ai** | **H2O AI Super Agent** | **67.34** |
+| **3** | **H2O.ai** | **H2O AI Marina** | **62.72** |
+| 9 | Google | Gemini 3.1 Pro · web | 40.36 |
+| 10 | Anthropic | Claude Sonnet 5 · web+sfc | 39.43 |
+| 14 | DeepSeek | DeepSeek V4 Pro · web+sfc | 36.98 |
+| 15 | OpenAI | GPT-5.6 Luna · web+sfc | 36.22 |
+| 17 | Z.ai | GLM-5.2 · web | 34.45 |
 
 ### #3 FutureX
 
@@ -153,8 +185,8 @@ Benchmark data read on November 13, 2026.
 **Overall score** · Higher is better
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="readme/carousel-4-futurex-dark.png">
-  <img src="readme/carousel-4-futurex.png" alt="FutureX overall score by agent" width="560">
+  <source media="(prefers-color-scheme: dark)" srcset="readme/carousel-5-futurex-dark.png">
+  <img src="readme/carousel-5-futurex.png" alt="FutureX overall score by agent" width="560">
 </picture>
 
 | Rank | Company | Model | Overall score |
@@ -187,8 +219,8 @@ Benchmark data read on November 13, 2026.
 **Capability** · Higher is better
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="readme/carousel-5-imagejevbench-box-track-dark.png">
-  <img src="readme/carousel-5-imagejevbench-box-track.png" alt="ImageJevBench Box Track Capability by model" width="560">
+  <source media="(prefers-color-scheme: dark)" srcset="readme/carousel-6-imagejevbench-box-track-dark.png">
+  <img src="readme/carousel-6-imagejevbench-box-track.png" alt="ImageJevBench Box Track Capability by model" width="560">
 </picture>
 
 | Rank | Company | Model | Capability |
@@ -221,8 +253,8 @@ Benchmark data read on November 13, 2026.
 **Capability** · Higher is better
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="readme/carousel-6-jevbench-dark.png">
-  <img src="readme/carousel-6-jevbench.png" alt="JevBench capability by model" width="560">
+  <source media="(prefers-color-scheme: dark)" srcset="readme/carousel-7-jevbench-dark.png">
+  <img src="readme/carousel-7-jevbench.png" alt="JevBench capability by model" width="560">
 </picture>
 
 | Rank | Company | Model | Capability |
@@ -279,6 +311,46 @@ Benchmark data read on November 13, 2026.
 
 [↑ Back to top](#top)
 
+<a id="energybench"></a>
+
+### #1 EnergyBench by Foretec
+
+*Predictive AI · Energy forecasting*
+
+**TimeH2O-v1**
+
+<table width="560">
+<tr><td colspan="3" width="560">Day-ahead electricity forecasting in six European zones, scored every day against the grid operators&#x27; own figures. Ranked by Elo on the board&#x27;s default view (all zones, all four targets) over 48 live days to November 19. Data and scores: CC BY 4.0.</td></tr>
+<tr>
+<td width="186" align="center" valign="top"><b><code>1195</code></b><br><sub>ELO</sub></td>
+<td width="186" align="center" valign="top"><b><code>74.00%</code></b><br><sub>WIN RATE</sub></td>
+<td width="186" align="center" valign="top"><b><code>67.70%</code></b><br><sub>SKILL SCORE</sub></td>
+</tr>
+<tr><td colspan="3" width="560"><a href="https://energybench.foretec.co/">Leaderboard</a> · <a href="https://energybench.foretec.co/methodology.html">How it scores</a> · <a href="https://huggingface.co/h2oai/timeh2o-v1">Model card</a> · <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a></td></tr>
+</table>
+
+**Elo · top 10** · Higher is better
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="readme/energybench-dark.png">
+  <img src="readme/energybench.png" alt="EnergyBench top 10 entries by Elo" width="560">
+</picture>
+
+| Rank | Company | Model | Score |
+| ---: | --- | --- | ---: |
+| **1** | **H2O.ai** | **TimeH2O-v1 + covariates** | **1195.00** |
+| 2 | The Forecasting Company | t0-gamma + covariates | 1187.00 |
+| 3 | AWS | Chronos-2 + covariates | 1176.00 |
+| 4 | Google | TimesFM 3 + covariates | 1175.00 |
+| 5 | Mistral AI | Timestral + covariates | 1166.00 |
+| 6 | Foretec | LightGBM (lgbm\_prod) | 1135.00 |
+| 7 | The Forecasting Company | t0-beta + covariates | 1125.00 |
+| 8 | Huawei Noah's Ark Lab | Tabby + covariates | 1113.00 |
+| 9 | Huawei Noah's Ark Lab | Tabby-Pretrain + covariates | 1105.00 |
+| 10 | NX-AI | TiRex-2 + covariates | 1101.00 |
+
+[↑ Back to top](#top)
+
 <a id="imagejevbench"></a>
 
 ### #1 ImageJevBench
@@ -307,15 +379,15 @@ Benchmark data read on November 13, 2026.
 | Rank | Company | Model | Capability |
 | ---: | --- | --- | ---: |
 | **1** | **H2O.ai** | **H2O-Lightning-31B** | **80.88** |
-| 2 | Sqwish | kettei-fat | 75.89 |
-| 3 | Levanto Labs | Sage 1.4 + images, beta | 75.79 |
-| 4 | Nace AI | Drex Max | 72.47 |
-| 5 | TypeSafe AI | Jev 1.13.0 + images, preview | 72.44 |
-| 6 | Autoloops | Autoloops – Gemma 4 31B IT | 68.35 |
-| 7 | Mohit Garg | Imajev-4B | 68.01 |
-| 8 | Mohit Garg | imajev 9B | 67.07 |
-| 9 | Sqwish | kettei-chub | 66.50 |
-| **10** | **H2O.ai** | **H2O-Lightning-4B v1.4.1** | **66.16** |
+| **2** | **H2O.ai** | **H2O-Lightning-31B v1.3.4 @c35ed950** | **80.34** |
+| 3 | Sqwish | kettei-fat | 75.89 |
+| 4 | Levanto Labs | Sage 1.4 + images, beta | 75.79 |
+| 5 | Nace AI | Drex Max | 72.47 |
+| 6 | TypeSafe AI | Jev 1.13.0 + images, preview | 72.44 |
+| 7 | Autoloops | Autoloops – Gemma 4 31B IT | 68.35 |
+| 8 | Mohit Garg | Imajev-4B | 68.01 |
+| 9 | Mohit Garg | imajev 9B | 67.07 |
+| 10 | Sqwish | kettei-chub | 66.50 |
 
 <details>
 <summary><b>Composite · top 10</b> · Higher is better</summary>
@@ -333,10 +405,10 @@ Benchmark data read on November 13, 2026.
 | 4 | Mohit Garg | Imajev-4B | 63.71 |
 | 5 | Sqwish | kettei-chub | 63.34 |
 | **6** | **H2O.ai** | **H2O-Lightning-31B** | **51.22** |
-| 7 | Levanto Labs | Sage 1.4 + images, beta | 47.91 |
-| 8 | Nace AI | Drex Max | 44.65 |
-| 9 | Surogate | Surogate Rune 26B-A4B v3 | 42.46 |
-| 10 | Autoloops | Autoloops – Gemma 4 31B IT | 41.37 |
+| **7** | **H2O.ai** | **H2O-Lightning-31B v1.3.4 @c35ed950** | **50.96** |
+| 8 | Levanto Labs | Sage 1.4 + images, beta | 47.91 |
+| 9 | Nace AI | Drex Max | 44.65 |
+| 10 | Surogate | Surogate Rune 26B-A4B v3 | 42.46 |
 
 </details>
 
@@ -357,8 +429,8 @@ Benchmark data read on November 13, 2026.
 | 5 | Surogate | Surogate Rune 26B-A4B v3 | 490 ms |
 | 6 | Levanto Labs | Sage 1.4 + images, beta | 560 ms |
 | **7** | **H2O.ai** | **H2O-Lightning-31B** | **590 ms** |
-| 8 | Nace AI | Drex Max | 850 ms |
-| 9 | Autoloops | Autoloops – Gemma 4 31B IT | 1190 ms |
+| **8** | **H2O.ai** | **H2O-Lightning-31B v1.3.4 @c35ed950** | **590 ms** |
+| 9 | Nace AI | Drex Max | 850 ms |
 | 10 | AlphaNimble | Wity-1 | 2710 ms |
 
 </details>
@@ -380,8 +452,8 @@ Benchmark data read on November 13, 2026.
 | 5 | Mohit Garg | Imajev-4B | \$0.038 |
 | 6 | Surogate | Surogate Rune 26B-A4B v3 | \$0.058 |
 | **7** | **H2O.ai** | **H2O-Lightning-31B** | **\$0.075** |
-| 8 | Levanto Labs | Sage 1.4 + images, beta | \$0.079 |
-| 9 | Autoloops | Autoloops – Gemma 4 31B IT | \$0.083 |
+| **8** | **H2O.ai** | **H2O-Lightning-31B v1.3.4 @c35ed950** | **\$0.075** |
+| 9 | Levanto Labs | Sage 1.4 + images, beta | \$0.079 |
 | 10 | Nace AI | Drex Max | \$0.084 |
 
 </details>
@@ -653,9 +725,9 @@ Benchmark data read on November 13, 2026.
 <table width="560">
 <tr><td colspan="3" width="560">Entrants forecast the next public release of poll, sentiment and attention series. Forecasts are locked before the answer exists and scored against the published number.</td></tr>
 <tr>
-<td width="186" align="center" valign="top"><b><code>68.99</code></b><br><sub>PAIRWISE WIN RATE</sub></td>
-<td width="186" align="center" valign="top"><b><code>67</code></b><br><sub>QUESTIONS ANSWERED</sub></td>
-<td width="186" align="center" valign="top"><b><code>+24.72</code></b><br><sub>AHEAD OF ANTHROPIC</sub></td>
+<td width="186" align="center" valign="top"><b><code>67.34</code></b><br><sub>PAIRWISE WIN RATE</sub></td>
+<td width="186" align="center" valign="top"><b><code>77</code></b><br><sub>QUESTIONS ANSWERED</sub></td>
+<td width="186" align="center" valign="top"><b><code>+27.91</code></b><br><sub>AHEAD OF ANTHROPIC</sub></td>
 </tr>
 <tr><td colspan="3" width="560"><a href="https://social-simulation-arena.com/#leaderboard">Leaderboard</a> · <a href="https://h2o.ai/products/h2ogpte">Enterprise h2oGPTe</a> · <a href="https://h2oai.github.io/marina/">H2O AI Marina</a></td></tr>
 </table>
@@ -669,16 +741,16 @@ Benchmark data read on November 13, 2026.
 
 | Rank | Company | Model | Score |
 | ---: | --- | --- | ---: |
-| 1 | Apodex | Apodex-FutureFlow | 69.33 |
-| **2** | **H2O.ai** | **H2O AI Super Agent** | **68.99** |
-| **3** | **H2O.ai** | **H2O AI Marina** | **65.04** |
-| 4 | Astraculum | Vac | 54.88 |
-| 5 | Social Atoms | Crowd (baseline) | 54.52 |
-| 6 | Astraculum | worldVac | 53.44 |
-| 7 | xAI | Grok 4.5 · web | 46.09 |
-| 8 | Google | Gemini 3.1 Pro · web | 46.05 |
-| 9 | Anthropic | Claude Sonnet 5 · web+sfc | 44.27 |
-| 10 | Renmin University of China | YuLan-OneSim | 43.62 |
+| 1 | Apodex | Apodex-FutureFlow | 68.64 |
+| **2** | **H2O.ai** | **H2O AI Super Agent** | **67.34** |
+| **3** | **H2O.ai** | **H2O AI Marina** | **62.72** |
+| 4 | Astraculum | Vac | 54.47 |
+| 5 | Astraculum | worldVac | 54.46 |
+| 6 | Social Atoms | Crowd (baseline) | 52.08 |
+| 7 | ? | Persistence | 43.17 |
+| 8 | Renmin University of China | YuLan-OneSim | 40.91 |
+| 9 | Google | Gemini 3.1 Pro · web | 40.36 |
+| 10 | Anthropic | Claude Sonnet 5 · web+sfc | 39.43 |
 
 [↑ Back to top](#top)
 
