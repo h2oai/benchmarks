@@ -5,7 +5,7 @@
 
 <h1>Leading AI in <br>Predictive, Generative, and Agentic AI.</h1>
 
-Benchmark data read on November 20, 2026.
+Benchmark data read on November 24, 2026.
 
 [Overview](#overview-cards) · [Featured](#featured) · [fev-bench](#fev-bench) · [EnergyBench by Foretec](#energybench) · [ImageJevBench](#imagejevbench) · [ImageJevBench Box Track](#imagejevbench-box-track) · [JevBench](#jevbench) · [TabH2O](#tabh2o) · [FutureX](#futurex) · [Social Simulation Arena](#social-simulation-arena)
 
@@ -21,11 +21,11 @@ Benchmark data read on November 20, 2026.
 | Category | Rank | Benchmark | Model |
 | --- | --- | --- | --- |
 | Generative | #1 | ImageJevBench | H2O-Lightning-31B |
+| Agentic | #1 | Social Simulation Arena | H2O AI Super Agent |
 | Predictive | #2 | fev-bench | TimeH2O-v1 |
-| Agentic | #2 | Social Simulation Arena | H2O AI Super Agent |
+| Generative | #3 | JevBench | H2O-Lightning-31B |
 | Agentic | #3 | Social Simulation Arena | H2O AI Marina |
-| Agentic | #3 | FutureX | H2O AI Super Agent |
-| Generative | #7 | JevBench | H2O-Lightning-31B |
+| Agentic | #5 | FutureX | H2O AI Super Agent |
 | Predictive | #5 | TALENT | TabH2O |
 | Predictive | #7 | TabArena | TabH2O |
 
@@ -72,11 +72,11 @@ Benchmark data read on November 20, 2026.
 **TimeH2O-v1**
 
 <table width="560">
-<tr><td colspan="3" width="560">Day-ahead electricity forecasting in six European zones, scored every day against the grid operators&#x27; own figures. Ranked by Elo on the board&#x27;s default view (all zones, all four targets) over 48 live days to November 19. Data and scores: CC BY 4.0.</td></tr>
+<tr><td colspan="3" width="560">Day-ahead electricity forecasting in six European zones, scored every day against the grid operators&#x27; own figures. Ranked by Elo on the board&#x27;s default view (all zones, all four targets) over 53 live days to November 24. Data and scores: CC BY 4.0.</td></tr>
 <tr>
 <td width="186" align="center" valign="top"><b><code>1195</code></b><br><sub>ELO</sub></td>
-<td width="186" align="center" valign="top"><b><code>74.00%</code></b><br><sub>WIN RATE</sub></td>
-<td width="186" align="center" valign="top"><b><code>67.70%</code></b><br><sub>SKILL SCORE</sub></td>
+<td width="186" align="center" valign="top"><b><code>74.10%</code></b><br><sub>WIN RATE</sub></td>
+<td width="186" align="center" valign="top"><b><code>66.60%</code></b><br><sub>SKILL SCORE</sub></td>
 </tr>
 <tr><td colspan="3" width="560"><a href="https://energybench.foretec.co/">Leaderboard</a> · <a href="https://energybench.foretec.co/methodology.html">How it scores</a> · <a href="https://huggingface.co/h2oai/timeh2o-v1">Model card</a> · <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a></td></tr>
 </table>
@@ -91,12 +91,45 @@ Benchmark data read on November 20, 2026.
 | Rank | Company | Model | Elo |
 | ---: | --- | --- | ---: |
 | **1** | **H2O.ai** | **TimeH2O-v1 + covariates** | **1195.00** |
-| 2 | The Forecasting Company | t0-gamma + covariates | 1187.00 |
-| 3 | AWS | Chronos-2 + covariates | 1176.00 |
-| 4 | Google | TimesFM 3 + covariates | 1175.00 |
-| 5 | Mistral AI | Timestral + covariates | 1166.00 |
-| 10 | NX-AI | TiRex-2 + covariates | 1101.00 |
-| 18 | Datadog | Toto 2.0 (1B) | 985.00 |
+| 2 | The Forecasting Company | t0-gamma + covariates | 1185.00 |
+| 3 | Google | TimesFM 3 + covariates | 1172.00 |
+| 4 | AWS | Chronos-2 + covariates | 1170.00 |
+| 5 | Mistral AI | Timestral + covariates | 1160.00 |
+| 10 | NX-AI | TiRex-2 + covariates | 1097.00 |
+| 20 | Datadog | Toto 2.0 (1B) | 977.00 |
+
+### #1 Social Simulation Arena
+
+*Agentic AI · Social forecasting*
+
+**H2O AI Super Agent** · **#3 H2O AI Marina**
+
+<table width="560">
+<tr><td colspan="3" width="560">Entrants forecast the next public release of poll, sentiment and attention series. Forecasts are locked before the answer exists and scored against the published number.</td></tr>
+<tr>
+<td width="186" align="center" valign="top"><b><code>68.59</code></b><br><sub>PAIRWISE WIN RATE</sub></td>
+<td width="186" align="center" valign="top"><b><code>85</code></b><br><sub>QUESTIONS ANSWERED</sub></td>
+<td width="186" align="center" valign="top"><b><code>+28.55</code></b><br><sub>AHEAD OF ANTHROPIC</sub></td>
+</tr>
+<tr><td colspan="3" width="560"><a href="https://social-simulation-arena.com/#leaderboard">Leaderboard</a> · <a href="https://h2o.ai/products/h2ogpte">Enterprise h2oGPTe</a> · <a href="https://h2oai.github.io/marina/">H2O AI Marina</a></td></tr>
+</table>
+
+**Pairwise win rate** · Higher is better
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="readme/carousel-3-social-simulation-arena-dark.png">
+  <img src="readme/carousel-3-social-simulation-arena.png" alt="Social Simulation Arena pairwise win rate by model" width="560">
+</picture>
+
+| Rank | Company | Model | Pairwise win rate |
+| ---: | --- | --- | ---: |
+| **1** | **H2O.ai** | **H2O AI Super Agent** | **68.59** |
+| **3** | **H2O.ai** | **H2O AI Marina** | **61.79** |
+| 8 | Google | Gemini 3.1 Pro · web | 40.21 |
+| 11 | Anthropic | Claude Sonnet 5 · web+sfc | 40.04 |
+| 14 | OpenAI | GPT-5.6 Luna · web+sfc | 35.75 |
+| 15 | DeepSeek | DeepSeek V4 Pro · web+sfc | 34.88 |
+| 17 | Z.ai | GLM-5.2 · web | 32.73 |
 
 ### #2 fev-bench
 
@@ -107,7 +140,7 @@ Benchmark data read on November 20, 2026.
 <table width="560">
 <tr><td colspan="3" width="560">Zero-shot forecasting on real time series across many domains and frequencies, scored by probabilistic accuracy against a seasonal-naive baseline. 108.8M parameters.</td></tr>
 <tr>
-<td width="186" align="center" valign="top"><b><code>89.60%</code></b><br><sub>WIN RATE</sub></td>
+<td width="186" align="center" valign="top"><b><code>89.00%</code></b><br><sub>WIN RATE</sub></td>
 <td width="186" align="center" valign="top"><b><code>50.80%</code></b><br><sub>SKILL SCORE</sub></td>
 <td width="186" align="center" valign="top"><b><code>108.8M</code></b><br><sub>PARAMETERS</sub></td>
 </tr>
@@ -117,88 +150,53 @@ Benchmark data read on November 20, 2026.
 **Win rate** · Higher is better
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="readme/carousel-3-fev-bench-dark.png">
-  <img src="readme/carousel-3-fev-bench.png" alt="fev-bench win rate by model" width="560">
+  <source media="(prefers-color-scheme: dark)" srcset="readme/carousel-4-fev-bench-dark.png">
+  <img src="readme/carousel-4-fev-bench.png" alt="fev-bench win rate by model" width="560">
 </picture>
 
 | Rank | Company | Model | Win rate |
 | ---: | --- | --- | ---: |
-| **2** | **H2O.ai** | **TimeH2O-v1** | **89.60%** |
-| 3 | Mistral AI | Timestral-209M | 87.10% |
-| 4 | The Forecasting Company | t0-gamma | 84.70% |
-| 6 | Google | TimesFM-3 | 79.30% |
-| 8 | AWS | Chronos-2 | 72.20% |
-| 10 | Datadog | Toto-2.0-2.5B | 69.40% |
-| 18 | IBM | FlowState | 52.60% |
-| 21 | Salesforce | Moirai-2.0 | 46.20% |
+| **2** | **H2O.ai** | **TimeH2O-v1** | **89.00%** |
+| 3 | Mistral AI | Timestral-209M | 86.40% |
+| 5 | The Forecasting Company | t0-gamma | 83.60% |
+| 7 | Google | TimesFM-3 | 78.30% |
+| 9 | AWS | Chronos-2 | 70.70% |
+| 11 | Datadog | Toto-2.0-2.5B | 68.30% |
+| 19 | IBM | FlowState | 51.30% |
+| 22 | Salesforce | Moirai-2.0 | 45.00% |
 
-### #2 Social Simulation Arena
+### #3 JevBench
 
-*Agentic AI · Social forecasting*
+*Generative AI · Decision models*
 
-**H2O AI Super Agent** · **#3 H2O AI Marina**
-
-<table width="560">
-<tr><td colspan="3" width="560">Entrants forecast the next public release of poll, sentiment and attention series. Forecasts are locked before the answer exists and scored against the published number.</td></tr>
-<tr>
-<td width="186" align="center" valign="top"><b><code>67.34</code></b><br><sub>PAIRWISE WIN RATE</sub></td>
-<td width="186" align="center" valign="top"><b><code>77</code></b><br><sub>QUESTIONS ANSWERED</sub></td>
-<td width="186" align="center" valign="top"><b><code>+27.91</code></b><br><sub>AHEAD OF ANTHROPIC</sub></td>
-</tr>
-<tr><td colspan="3" width="560"><a href="https://social-simulation-arena.com/#leaderboard">Leaderboard</a> · <a href="https://h2o.ai/products/h2ogpte">Enterprise h2oGPTe</a> · <a href="https://h2oai.github.io/marina/">H2O AI Marina</a></td></tr>
-</table>
-
-**Pairwise win rate** · Higher is better
-
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="readme/carousel-4-social-simulation-arena-dark.png">
-  <img src="readme/carousel-4-social-simulation-arena.png" alt="Social Simulation Arena pairwise win rate by model" width="560">
-</picture>
-
-| Rank | Company | Model | Pairwise win rate |
-| ---: | --- | --- | ---: |
-| **2** | **H2O.ai** | **H2O AI Super Agent** | **67.34** |
-| **3** | **H2O.ai** | **H2O AI Marina** | **62.72** |
-| 9 | Google | Gemini 3.1 Pro · web | 40.36 |
-| 10 | Anthropic | Claude Sonnet 5 · web+sfc | 39.43 |
-| 14 | DeepSeek | DeepSeek V4 Pro · web+sfc | 36.98 |
-| 15 | OpenAI | GPT-5.6 Luna · web+sfc | 36.22 |
-| 17 | Z.ai | GLM-5.2 · web | 34.45 |
-
-### #3 FutureX
-
-*Agentic AI · Future prediction*
-
-**H2O AI Super Agent**
+**H2O-Lightning-31B**
 
 <table width="560">
-<tr><td colspan="4" width="560">Agents predict real-world events before they resolve, with a new board every week, scored once the answers are known. H2O AI Super Agent has earned 27 FutureX medals (9 first places) across 46 weekly boards entered.</td></tr>
+<tr><td colspan="3" width="560">Decision models get a situation and typed questions and must return calibrated answers, scored on intelligence, calibration, speed and cost. A 31B model with open weights.</td></tr>
 <tr>
-<td width="140" align="center" valign="top"><b><code>#3</code></b><br><sub>LATEST WEEKLY BOARD</sub></td>
-<td width="140" align="center" valign="top"><b><code>27</code></b><br><sub>FUTUREX MEDALS</sub></td>
-<td width="140" align="center" valign="top"><b><code>9</code></b><br><sub>FIRST PLACES</sub></td>
-<td width="140" align="center" valign="top"><b><code>20 / 46</code></b><br><sub>BOARDS WITH A MEDAL</sub></td>
+<td width="186" align="center" valign="top"><b><code>87.86</code></b><br><sub>CAPABILITY SCORE</sub></td>
+<td width="186" align="center" valign="top"><b><code>0.25s</code></b><br><sub>LATENCY INCL. NETWORK</sub></td>
+<td width="186" align="center" valign="top"><b><code>$0.021</code></b><br><sub>PER 1,000 DECISIONS</sub></td>
 </tr>
-<tr><td colspan="4" width="560"><a href="https://futurex.live/">Leaderboard</a> · <a href="https://arxiv.org/abs/2508.11987">FutureX paper</a> · <a href="https://h2o.ai/products/h2ogpte">Enterprise h2oGPTe</a></td></tr>
+<tr><td colspan="3" width="560"><a href="https://benchmarkheaven.com/jev-models">Leaderboard</a> · <a href="https://benchmarkheaven.com/jev-models/methodology">How it scores</a> · <a href="https://h2o.ai/blog/2026/h2o-lightning-jevbench">H2O blog post</a> · <a href="https://huggingface.co/h2oai/h2o-lightning-31b">Model card</a></td></tr>
 </table>
 
-**Overall score** · Higher is better
+**Capability** · Higher is better
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="readme/carousel-5-futurex-dark.png">
-  <img src="readme/carousel-5-futurex.png" alt="FutureX overall score by agent" width="560">
+  <source media="(prefers-color-scheme: dark)" srcset="readme/carousel-5-jevbench-dark.png">
+  <img src="readme/carousel-5-jevbench.png" alt="JevBench capability by model" width="560">
 </picture>
 
-| Rank | Company | Model | Overall score |
+| Rank | Company | Model | Capability |
 | ---: | --- | --- | ---: |
-| 1 | Indiv. AI Researcher | OPS-Agentic-Search\_S10.2 | 68.06 |
-| 2 | Indiv. AI Researcher | SenseFlow | 66.65 |
-| **3** | **H2O.ai** | **H2O AI Super Agent v1.82** | **65.62** |
-| 4 | Indiv. AI Researcher | Raven | 64.83 |
-| 5 | Indiv. AI Researcher | OPS-Agentic-Search\_S10.7 | 64.43 |
-| 6 | Indiv. AI Researcher | OPS-Agentic-Search\_S10.3 | 63.00 |
-| 7 | Indiv. AI Researcher | SenseFlow | 62.76 |
-| 8 | Indiv. AI Researcher | OPS-Agentic-Search\_S10.5 | 62.44 |
+| **3** | **H2O.ai** | **H2O-Lightning-31B v1.3.4** | **87.86** |
+| 12 | Perplexity | Perplexity Decider v1.1 27B | 82.70 |
+| 47 | TypeSafe AI | Jev 1.13.0 | 77.10 |
+| 53 | Cloudflare | Clef | 75.30 |
+| 102 | AWS | Strands Decider 26B-A4B | 66.70 |
+| 191 | Liquid AI | d1-3B | 49.50 |
+| 204 | Qwen | Qwen3-Reranker-4B | 44.70 |
 
 ### #3 ImageJevBench Box Track
 
@@ -234,38 +232,40 @@ Benchmark data read on November 20, 2026.
 | 11 | OpenAI | GPT-6 Luna | 70.70 |
 | 19 | Microsoft | Florence-2-large | 28.95 |
 
-### #7 JevBench
+### #5 FutureX
 
-*Generative AI · Decision models*
+*Agentic AI · Future prediction*
 
-**H2O-Lightning-31B**
+**H2O AI Super Agent**
 
 <table width="560">
-<tr><td colspan="3" width="560">Decision models get a situation and typed questions and must return calibrated answers, scored on intelligence, calibration, speed and cost. A 31B model with open weights.</td></tr>
+<tr><td colspan="4" width="560">Agents predict real-world events before they resolve, with a new board every week, scored once the answers are known. H2O AI Super Agent has earned 26 FutureX medals (9 first places) across 46 weekly boards entered.</td></tr>
 <tr>
-<td width="186" align="center" valign="top"><b><code>84.34</code></b><br><sub>CAPABILITY SCORE</sub></td>
-<td width="186" align="center" valign="top"><b><code>0.28s</code></b><br><sub>LATENCY INCL. NETWORK</sub></td>
-<td width="186" align="center" valign="top"><b><code>$0.029</code></b><br><sub>PER 1,000 DECISIONS</sub></td>
+<td width="140" align="center" valign="top"><b><code>#5</code></b><br><sub>LATEST WEEKLY BOARD</sub></td>
+<td width="140" align="center" valign="top"><b><code>26</code></b><br><sub>FUTUREX MEDALS</sub></td>
+<td width="140" align="center" valign="top"><b><code>9</code></b><br><sub>FIRST PLACES</sub></td>
+<td width="140" align="center" valign="top"><b><code>19 / 46</code></b><br><sub>BOARDS WITH A MEDAL</sub></td>
 </tr>
-<tr><td colspan="3" width="560"><a href="https://benchmarkheaven.com/jev-models">Leaderboard</a> · <a href="https://benchmarkheaven.com/jev-models/methodology">How it scores</a> · <a href="https://h2o.ai/blog/2026/h2o-lightning-jevbench">H2O blog post</a> · <a href="https://huggingface.co/h2oai/h2o-lightning-31b">Model card</a></td></tr>
+<tr><td colspan="4" width="560"><a href="https://futurex.live/">Leaderboard</a> · <a href="https://arxiv.org/abs/2508.11987">FutureX paper</a> · <a href="https://h2o.ai/products/h2ogpte">Enterprise h2oGPTe</a></td></tr>
 </table>
 
-**Capability** · Higher is better
+**Overall score** · Higher is better
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="readme/carousel-7-jevbench-dark.png">
-  <img src="readme/carousel-7-jevbench.png" alt="JevBench capability by model" width="560">
+  <source media="(prefers-color-scheme: dark)" srcset="readme/carousel-7-futurex-dark.png">
+  <img src="readme/carousel-7-futurex.png" alt="FutureX overall score by agent" width="560">
 </picture>
 
-| Rank | Company | Model | Capability |
+| Rank | Company | Model | Overall score |
 | ---: | --- | --- | ---: |
-| **7** | **H2O.ai** | **H2O-Lightning-31B** | **84.34** |
-| 9 | Perplexity | Perplexity Decider v1.1 27B | 82.70 |
-| 42 | TypeSafe AI | Jev 1.13.0 | 77.10 |
-| 48 | Cloudflare | Clef | 75.30 |
-| 97 | AWS | Strands Decider 26B-A4B | 66.70 |
-| 183 | Liquid AI | d1-3B | 49.50 |
-| 196 | Qwen | Qwen3-Reranker-4B | 44.70 |
+| 1 | Indiv. AI Researcher | OPS-Agentic-Search\_S10.2 | 61.95 |
+| 2 | Indiv. AI Researcher | SenseFlow | 61.56 |
+| 3 | Indiv. AI Researcher | OPS-Agentic-Search\_S10.7 | 59.39 |
+| 4 | Indiv. AI Researcher | OPS-Agentic-Search\_S10.3 | 59.12 |
+| **5** | **H2O.ai** | **H2O AI Super Agent v1.82** | **58.67** |
+| 6 | Indiv. AI Researcher | Raven | 58.14 |
+| 7 | Indiv. AI Researcher | OPS-Agentic-Search\_S10.5 | 57.69 |
+| 8 | Indiv. AI Researcher | SenseFlow | 57.67 |
 
 [↑ Back to top](#top)
 
@@ -282,7 +282,7 @@ Benchmark data read on November 20, 2026.
 <table width="560">
 <tr><td colspan="3" width="560">Zero-shot forecasting on real time series across many domains and frequencies, scored by probabilistic accuracy against a seasonal-naive baseline. 108.8M parameters.</td></tr>
 <tr>
-<td width="186" align="center" valign="top"><b><code>89.60%</code></b><br><sub>WIN RATE</sub></td>
+<td width="186" align="center" valign="top"><b><code>89.00%</code></b><br><sub>WIN RATE</sub></td>
 <td width="186" align="center" valign="top"><b><code>50.80%</code></b><br><sub>SKILL SCORE</sub></td>
 <td width="186" align="center" valign="top"><b><code>108.8M</code></b><br><sub>PARAMETERS</sub></td>
 </tr>
@@ -298,16 +298,16 @@ Benchmark data read on November 20, 2026.
 
 | Rank | Company | Model | Score |
 | ---: | --- | --- | ---: |
-| 1 | Continuous Intelligence | ci-proto | 90.00% |
-| **2** | **H2O.ai** | **TimeH2O-v1** | **89.60%** |
-| 3 | Mistral AI | Timestral-209M | 87.10% |
-| 4 | The Forecasting Company | t0-gamma | 84.70% |
-| 5 | Abel AI Lab | Simons-297M | 82.00% |
-| 6 | Google | TimesFM-3 | 79.30% |
-| 7 | Walmart Labs | iAmTime-base-forecast | 73.70% |
-| 8 | AWS | Chronos-2 | 72.20% |
-| 9 | The Forecasting Company | t0-beta | 69.90% |
-| 10 | Datadog | Toto-2.0-2.5B | 69.40% |
+| 1 | Continuous Intelligence | ci-proto | 89.30% |
+| **2** | **H2O.ai** | **TimeH2O-v1** | **89.00%** |
+| 3 | Mistral AI | Timestral-209M | 86.40% |
+| 4 | YHat Labs | ChakraTS-OS-10M | 83.80% |
+| 5 | The Forecasting Company | t0-gamma | 83.60% |
+| 6 | Abel AI Lab | Simons-297M | 80.90% |
+| 7 | Google | TimesFM-3 | 78.30% |
+| 8 | Walmart Labs | iAmTime-base-forecast | 72.50% |
+| 9 | AWS | Chronos-2 | 70.70% |
+| 10 | The Forecasting Company | t0-beta | 68.40% |
 
 [↑ Back to top](#top)
 
@@ -320,11 +320,11 @@ Benchmark data read on November 20, 2026.
 **TimeH2O-v1**
 
 <table width="560">
-<tr><td colspan="3" width="560">Day-ahead electricity forecasting in six European zones, scored every day against the grid operators&#x27; own figures. Ranked by Elo on the board&#x27;s default view (all zones, all four targets) over 48 live days to November 19. Data and scores: CC BY 4.0.</td></tr>
+<tr><td colspan="3" width="560">Day-ahead electricity forecasting in six European zones, scored every day against the grid operators&#x27; own figures. Ranked by Elo on the board&#x27;s default view (all zones, all four targets) over 53 live days to November 24. Data and scores: CC BY 4.0.</td></tr>
 <tr>
 <td width="186" align="center" valign="top"><b><code>1195</code></b><br><sub>ELO</sub></td>
-<td width="186" align="center" valign="top"><b><code>74.00%</code></b><br><sub>WIN RATE</sub></td>
-<td width="186" align="center" valign="top"><b><code>67.70%</code></b><br><sub>SKILL SCORE</sub></td>
+<td width="186" align="center" valign="top"><b><code>74.10%</code></b><br><sub>WIN RATE</sub></td>
+<td width="186" align="center" valign="top"><b><code>66.60%</code></b><br><sub>SKILL SCORE</sub></td>
 </tr>
 <tr><td colspan="3" width="560"><a href="https://energybench.foretec.co/">Leaderboard</a> · <a href="https://energybench.foretec.co/methodology.html">How it scores</a> · <a href="https://huggingface.co/h2oai/timeh2o-v1">Model card</a> · <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a></td></tr>
 </table>
@@ -339,15 +339,15 @@ Benchmark data read on November 20, 2026.
 | Rank | Company | Model | Score |
 | ---: | --- | --- | ---: |
 | **1** | **H2O.ai** | **TimeH2O-v1 + covariates** | **1195.00** |
-| 2 | The Forecasting Company | t0-gamma + covariates | 1187.00 |
-| 3 | AWS | Chronos-2 + covariates | 1176.00 |
-| 4 | Google | TimesFM 3 + covariates | 1175.00 |
-| 5 | Mistral AI | Timestral + covariates | 1166.00 |
-| 6 | Foretec | LightGBM (lgbm\_prod) | 1135.00 |
+| 2 | The Forecasting Company | t0-gamma + covariates | 1185.00 |
+| 3 | Google | TimesFM 3 + covariates | 1172.00 |
+| 4 | AWS | Chronos-2 + covariates | 1170.00 |
+| 5 | Mistral AI | Timestral + covariates | 1160.00 |
+| 6 | Foretec | LightGBM (lgbm\_prod) | 1142.00 |
 | 7 | The Forecasting Company | t0-beta + covariates | 1125.00 |
-| 8 | Huawei Noah's Ark Lab | Tabby + covariates | 1113.00 |
-| 9 | Huawei Noah's Ark Lab | Tabby-Pretrain + covariates | 1105.00 |
-| 10 | NX-AI | TiRex-2 + covariates | 1101.00 |
+| 8 | Huawei Noah's Ark Lab | Tabby + covariates | 1110.00 |
+| 9 | Huawei Noah's Ark Lab | Tabby-Pretrain + covariates | 1102.00 |
+| 10 | NX-AI | TiRex-2 + covariates | 1097.00 |
 
 [↑ Back to top](#top)
 
@@ -502,7 +502,7 @@ Benchmark data read on November 20, 2026.
 
 <a id="jevbench"></a>
 
-### #7 JevBench
+### #3 JevBench
 
 *Generative AI · Decision models*
 
@@ -511,9 +511,9 @@ Benchmark data read on November 20, 2026.
 <table width="560">
 <tr><td colspan="3" width="560">Decision models get a situation and typed questions and must return calibrated answers, scored on intelligence, calibration, speed and cost. A 31B model with open weights.</td></tr>
 <tr>
-<td width="186" align="center" valign="top"><b><code>84.34</code></b><br><sub>CAPABILITY SCORE</sub></td>
-<td width="186" align="center" valign="top"><b><code>0.28s</code></b><br><sub>LATENCY INCL. NETWORK</sub></td>
-<td width="186" align="center" valign="top"><b><code>$0.029</code></b><br><sub>PER 1,000 DECISIONS</sub></td>
+<td width="186" align="center" valign="top"><b><code>87.86</code></b><br><sub>CAPABILITY SCORE</sub></td>
+<td width="186" align="center" valign="top"><b><code>0.25s</code></b><br><sub>LATENCY INCL. NETWORK</sub></td>
+<td width="186" align="center" valign="top"><b><code>$0.021</code></b><br><sub>PER 1,000 DECISIONS</sub></td>
 </tr>
 <tr><td colspan="3" width="560"><a href="https://benchmarkheaven.com/jev-models">Leaderboard</a> · <a href="https://benchmarkheaven.com/jev-models/methodology">How it scores</a> · <a href="https://h2o.ai/blog/2026/h2o-lightning-jevbench">H2O blog post</a> · <a href="https://huggingface.co/h2oai/h2o-lightning-31b">Model card</a></td></tr>
 </table>
@@ -529,14 +529,14 @@ Benchmark data read on November 20, 2026.
 | ---: | --- | --- | ---: |
 | 1 | Torchcast AI | Torchcast Decision 31B v1.0 | 89.45 |
 | 2 | Rain Wong | MetaDecision-31B-Rain | 88.28 |
-| 3 | MachinePulse AI | Karpo-Decision-31B | 87.16 |
-| 4 | Base Labs | mammoth-1 | 85.23 |
-| 5 | PelaAI | KnowLine 31B-Gen1 | 85.21 |
-| 6 | Fastino | Fastino GLiDE 1.2 | 84.92 |
-| **7** | **H2O.ai** | **H2O-Lightning-31B v1.0.7** | **84.34** |
-| 8 | AgentScope | Piccolo 27B | 83.59 |
-| 9 | Perplexity | Perplexity Decider v1.1 27B | 82.71 |
-| 10 | vLLM Semantic Router | vLLM-SR d3-turbo | 82.59 |
+| **3** | **H2O.ai** | **H2O-Lightning-31B v1.3.4** | **87.86** |
+| 4 | MachinePulse AI | Karpo-Decision-31B | 87.16 |
+| 5 | Base Labs | mammoth-1 | 85.23 |
+| 6 | PelaAI | KnowLine 31B-Gen1 | 85.21 |
+| 7 | Sthanika AI | Sieve-31B-v3 | 84.93 |
+| 8 | Fastino | Fastino GLiDE 1.2 | 84.92 |
+| 9 | xsdfasfgsa | Starlord-27B-v2.0-preview | 84.48 |
+| **10** | **H2O.ai** | **H2O-Lightning-31B v1.0.7** | **84.34** |
 
 <details>
 <summary><b>Composite · top 10</b> · Higher is better</summary>
@@ -549,15 +549,15 @@ Benchmark data read on November 20, 2026.
 | Rank | Company | Model | Composite |
 | ---: | --- | --- | ---: |
 | 1 | Torchcast AI | Torchcast Decision 4B (v1.3) | 80.49 |
-| 2 | Torchcast AI | Torchcast Decision 31B v1.0 | 78.91 |
-| **3** | **H2O.ai** | **H2O-Lightning-4B v1.1** | **77.94** |
-| 4 | Arcbright | Arcbright Elf 1 12B (r2) | 77.86 |
-| 5 | ORG2 AI | Wald 26B-A4B | 77.55 |
-| 6 | Jonathan Geuter | Jeff-1.1-Qwen-4B | 77.40 |
-| 7 | MachinePulse AI | Karpo-Decision-31B | 77.40 |
-| 8 | Zils AI | z3-mini-soup-preview | 77.34 |
-| 9 | Decisio | Decisio 12B tuned commit-think | 77.07 |
-| 10 | Torchcast AI | Torchcast Decision 4B (v1.2) | 76.97 |
+| **2** | **H2O.ai** | **H2O-Lightning-31B v1.3.4** | **79.25** |
+| 3 | Torchcast AI | Torchcast Decision 31B v1.0 | 78.91 |
+| **4** | **H2O.ai** | **H2O-Lightning-4B v1.1** | **77.94** |
+| 5 | Arcbright | Arcbright Elf 1 12B (r2) | 77.86 |
+| 6 | ORG2 AI | Wald 26B-A4B | 77.55 |
+| 7 | xsdfasfgsa | Starlord-27B-v2.0-preview | 77.41 |
+| 8 | Jonathan Geuter | Jeff-1.1-Qwen-4B | 77.40 |
+| 9 | MachinePulse AI | Karpo-Decision-31B | 77.40 |
+| 10 | Zils AI | z3-mini-soup-preview | 77.34 |
 
 </details>
 
@@ -577,9 +577,9 @@ Benchmark data read on November 20, 2026.
 | 4 | Torchcast AI | Torchcast Decision 4B (v1.3) | 220 ms |
 | 5 | Jonathan Geuter | Jeff-1.1-Qwen-4B | 230 ms |
 | 6 | ORG2 AI | Wald 26B-A4B | 240 ms |
-| 7 | Decisio | Decisio 12B tuned commit-think | 250 ms |
-| 8 | Torchcast AI | Torchcast Decision 4B (v1.2) | 280 ms |
-| 9 | MachinePulse AI | Karpo-Decision-31B | 310 ms |
+| **7** | **H2O.ai** | **H2O-Lightning-31B v1.3.4** | **250 ms** |
+| 8 | MachinePulse AI | Karpo-Decision-31B | 310 ms |
+| 9 | xsdfasfgsa | Starlord-27B-v2.0-preview | 320 ms |
 | 10 | Torchcast AI | Torchcast Decision 31B v1.0 | 340 ms |
 
 </details>
@@ -597,11 +597,11 @@ Benchmark data read on November 20, 2026.
 | 1 | Zils AI | z3-mini-soup-preview | \$0.0037 |
 | 2 | Jonathan Geuter | Jeff-1.1-Qwen-4B | \$0.0044 |
 | 3 | Torchcast AI | Torchcast Decision 4B (v1.3) | \$0.0049 |
-| 4 | Torchcast AI | Torchcast Decision 4B (v1.2) | \$0.0049 |
-| **5** | **H2O.ai** | **H2O-Lightning-4B v1.1** | **\$0.0052** |
-| 6 | Arcbright | Arcbright Elf 1 12B (r2) | \$0.0088 |
-| 7 | ORG2 AI | Wald 26B-A4B | \$0.0093 |
-| 8 | Decisio | Decisio 12B tuned commit-think | \$0.0095 |
+| **4** | **H2O.ai** | **H2O-Lightning-4B v1.1** | **\$0.0052** |
+| 5 | Arcbright | Arcbright Elf 1 12B (r2) | \$0.0088 |
+| 6 | ORG2 AI | Wald 26B-A4B | \$0.0093 |
+| 7 | xsdfasfgsa | Starlord-27B-v2.0-preview | \$0.02 |
+| **8** | **H2O.ai** | **H2O-Lightning-31B v1.3.4** | **\$0.021** |
 | 9 | Torchcast AI | Torchcast Decision 31B v1.0 | \$0.023 |
 | 10 | MachinePulse AI | Karpo-Decision-31B | \$0.025 |
 
@@ -675,19 +675,19 @@ Benchmark data read on November 20, 2026.
 
 <a id="futurex"></a>
 
-### #3 FutureX
+### #5 FutureX
 
 *Agentic AI · Future prediction*
 
 **H2O AI Super Agent**
 
 <table width="560">
-<tr><td colspan="4" width="560">Agents predict real-world events before they resolve, with a new board every week, scored once the answers are known. H2O AI Super Agent has earned 27 FutureX medals (9 first places) across 46 weekly boards entered.</td></tr>
+<tr><td colspan="4" width="560">Agents predict real-world events before they resolve, with a new board every week, scored once the answers are known. H2O AI Super Agent has earned 26 FutureX medals (9 first places) across 46 weekly boards entered.</td></tr>
 <tr>
-<td width="140" align="center" valign="top"><b><code>#3</code></b><br><sub>LATEST WEEKLY BOARD</sub></td>
-<td width="140" align="center" valign="top"><b><code>27</code></b><br><sub>FUTUREX MEDALS</sub></td>
+<td width="140" align="center" valign="top"><b><code>#5</code></b><br><sub>LATEST WEEKLY BOARD</sub></td>
+<td width="140" align="center" valign="top"><b><code>26</code></b><br><sub>FUTUREX MEDALS</sub></td>
 <td width="140" align="center" valign="top"><b><code>9</code></b><br><sub>FIRST PLACES</sub></td>
-<td width="140" align="center" valign="top"><b><code>20 / 46</code></b><br><sub>BOARDS WITH A MEDAL</sub></td>
+<td width="140" align="center" valign="top"><b><code>19 / 46</code></b><br><sub>BOARDS WITH A MEDAL</sub></td>
 </tr>
 <tr><td colspan="4" width="560"><a href="https://futurex.live/">Leaderboard</a> · <a href="https://arxiv.org/abs/2508.11987">FutureX paper</a> · <a href="https://h2o.ai/products/h2ogpte">Enterprise h2oGPTe</a></td></tr>
 </table>
@@ -701,22 +701,22 @@ Benchmark data read on November 20, 2026.
 
 | Rank | Company | Framework | Base model | Score |
 | ---: | --- | --- | --- | ---: |
-| 1 | Indiv. AI Researcher | OPS-Agentic-Search\_S10.2 | Kimi K3 | 68.06 |
-| 2 | Indiv. AI Researcher | SenseFlow | DeepSeek-V4-Pro | 66.65 |
-| **3** | **H2O.ai** | **H2O AI Super Agent v1.82** | **sonnet-5.5** | **65.62** |
-| 4 | Indiv. AI Researcher | Raven | obsidian | 64.83 |
-| 5 | Indiv. AI Researcher | OPS-Agentic-Search\_S10.7 | Kimi K3 | 64.43 |
-| 6 | Indiv. AI Researcher | OPS-Agentic-Search\_S10.3 | Kimi K3 | 63.00 |
-| 7 | Indiv. AI Researcher | SenseFlow | deepseek-v4-pro-v2 | 62.76 |
-| 8 | Indiv. AI Researcher | OPS-Agentic-Search\_S10.5 | Kimi K3 | 62.44 |
-| 9 | Indiv. AI Researcher | Nevar-B harness | Garnet | 62.02 |
-| 10 | Indiv. AI Researcher | OPS-Agentic-Search\_S7 | Kimi K3 | 61.92 |
+| 1 | Indiv. AI Researcher | OPS-Agentic-Search\_S10.2 | Kimi K3 | 61.95 |
+| 2 | Indiv. AI Researcher | SenseFlow | DeepSeek-V4-Pro | 61.56 |
+| 3 | Indiv. AI Researcher | OPS-Agentic-Search\_S10.7 | Kimi K3 | 59.39 |
+| 4 | Indiv. AI Researcher | OPS-Agentic-Search\_S10.3 | Kimi K3 | 59.12 |
+| **5** | **H2O.ai** | **H2O AI Super Agent v1.82** | **sonnet-5.5** | **58.67** |
+| 6 | Indiv. AI Researcher | Raven | obsidian | 58.14 |
+| 7 | Indiv. AI Researcher | OPS-Agentic-Search\_S10.5 | Kimi K3 | 57.69 |
+| 8 | Indiv. AI Researcher | SenseFlow | deepseek-v4-pro-v2 | 57.67 |
+| 9 | Indiv. AI Researcher | OPS-Agentic-Search\_S7 | Kimi K3 | 57.17 |
+| 10 | Indiv. AI Researcher | OPS-Agentic-Search\_S1 | Kimi K3 | 56.72 |
 
 [↑ Back to top](#top)
 
 <a id="social-simulation-arena"></a>
 
-### #2 Social Simulation Arena
+### #1 Social Simulation Arena
 
 *Agentic AI · Social forecasting*
 
@@ -725,9 +725,9 @@ Benchmark data read on November 20, 2026.
 <table width="560">
 <tr><td colspan="3" width="560">Entrants forecast the next public release of poll, sentiment and attention series. Forecasts are locked before the answer exists and scored against the published number.</td></tr>
 <tr>
-<td width="186" align="center" valign="top"><b><code>67.34</code></b><br><sub>PAIRWISE WIN RATE</sub></td>
-<td width="186" align="center" valign="top"><b><code>77</code></b><br><sub>QUESTIONS ANSWERED</sub></td>
-<td width="186" align="center" valign="top"><b><code>+27.91</code></b><br><sub>AHEAD OF ANTHROPIC</sub></td>
+<td width="186" align="center" valign="top"><b><code>68.59</code></b><br><sub>PAIRWISE WIN RATE</sub></td>
+<td width="186" align="center" valign="top"><b><code>85</code></b><br><sub>QUESTIONS ANSWERED</sub></td>
+<td width="186" align="center" valign="top"><b><code>+28.55</code></b><br><sub>AHEAD OF ANTHROPIC</sub></td>
 </tr>
 <tr><td colspan="3" width="560"><a href="https://social-simulation-arena.com/#leaderboard">Leaderboard</a> · <a href="https://h2o.ai/products/h2ogpte">Enterprise h2oGPTe</a> · <a href="https://h2oai.github.io/marina/">H2O AI Marina</a></td></tr>
 </table>
@@ -741,16 +741,16 @@ Benchmark data read on November 20, 2026.
 
 | Rank | Company | Model | Score |
 | ---: | --- | --- | ---: |
-| 1 | Apodex | Apodex-FutureFlow | 68.64 |
-| **2** | **H2O.ai** | **H2O AI Super Agent** | **67.34** |
-| **3** | **H2O.ai** | **H2O AI Marina** | **62.72** |
-| 4 | Astraculum | Vac | 54.47 |
-| 5 | Astraculum | worldVac | 54.46 |
-| 6 | Social Atoms | Crowd (baseline) | 52.08 |
-| 7 | ? | Persistence | 43.17 |
-| 8 | Renmin University of China | YuLan-OneSim | 40.91 |
-| 9 | Google | Gemini 3.1 Pro · web | 40.36 |
-| 10 | Anthropic | Claude Sonnet 5 · web+sfc | 39.43 |
+| **1** | **H2O.ai** | **H2O AI Super Agent** | **68.59** |
+| 2 | Apodex | Apodex-FutureFlow | 67.52 |
+| **3** | **H2O.ai** | **H2O AI Marina** | **61.79** |
+| 4 | Astraculum | Vac | 57.14 |
+| 5 | Astraculum | worldVac | 54.37 |
+| 6 | Social Atoms | Crowd (baseline) | 51.41 |
+| 7 | ? | Persistence | 44.12 |
+| 8 | Google | Gemini 3.1 Pro · web | 40.21 |
+| 9 | Google | Gemini 3.1 Pro · web+sfc | 40.13 |
+| 10 | Renmin University of China | YuLan-OneSim | 40.09 |
 
 [↑ Back to top](#top)
 
