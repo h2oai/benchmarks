@@ -1,41 +1,41 @@
 rank,model,author,kind,elo,avg_rank,win_rate_pct,skill_score_pct,rel_mae,rel_rmse,rel_wis,n_evaluations,h2o
-1,timeh2o_cov,H2O.ai,FM,1195,10.59,74.0,67.7,0.422,0.437,0.362,447,Yes
-2,t0_gamma_cov,The Forecasting Company,FM,1187,10.53,73.5,65.9,0.379,0.405,0.347,755,No
-3,chronos2_cov,Foretec,FM,1176,9.55,72.7,64.7,0.395,0.416,0.363,892,No
-4,timesfm3_cov,Foretec,FM,1175,9.66,72.5,65.5,0.39,0.405,0.358,892,No
-5,timestral_cov,Mistral AI,FM,1166,11.43,71.1,65.2,0.382,0.407,0.35,755,No
-6,lgbm_prod,Foretec,Foretec,1135,12.81,67.5,64.3,0.399,0.404,0.374,755,No
-7,t0_beta_cov,The Forecasting Company,FM,1125,11.57,66.7,61.9,0.426,0.455,0.394,878,No
-8,tabby_cov,Foretec,FM,1113,14.39,64.7,60.1,0.416,0.428,0.384,755,No
-9,tabby_pretrain_cov,Foretec,FM,1105,14.79,63.8,59.8,0.424,0.436,0.392,755,No
-10,tirex2_cov,Foretec,FM,1101,13.02,63.5,60.9,0.434,0.447,0.397,853,No
-11,t0_alpha_cov,The Forecasting Company,FM,1094,12.78,62.8,60.2,0.439,0.447,0.404,878,No
-12,lgbm_cov,Foretec,Foretec,1077,13.5,60.7,58.6,0.484,0.495,0.47,892,No
-13,timesfm25_cov,Foretec,FM,1046,15.01,56.6,55.1,0.504,0.505,,892,No
-14,timeh2o,H2O.ai,FM,1037,17.76,54.5,48.6,0.598,0.622,0.511,471,Yes
-15,timestral,Mistral AI,FM,1015,18.32,51.9,42.6,0.59,0.604,0.522,755,No
-16,lin_cov_2y,Foretec,Foretec,1011,17.96,51.5,53.0,0.551,0.555,0.519,791,No
-17,t0_gamma,The Forecasting Company,FM,993,19.37,48.9,41.2,0.61,0.625,0.537,755,No
-18,toto2_1b,Datadog,FM,985,20.5,47.5,42.5,0.645,0.684,0.562,543,No
-19,chronos2,Foretec,FM,982,17.23,47.9,39.6,0.646,0.665,0.568,899,No
-20,tabby,Huawei Noah's Ark Lab (Paris),FM,981,19.91,47.3,39.7,0.63,0.644,0.557,755,No
-21,tabby_pretrain,Huawei Noah's Ark Lab (Paris),FM,975,20.6,46.6,39.4,0.622,0.639,0.557,755,No
-22,timesfm3,Foretec,FM,973,17.72,46.7,37.9,0.654,0.66,0.574,892,No
-23,toto2,Datadog,FM,970,21.08,45.6,41.5,0.651,0.685,0.568,543,No
-24,simons,Abel AI Lab,FM,970,19.61,45.5,48.4,0.625,0.637,0.557,73,No
-25,timesfm25,Foretec,FM,955,19.01,44.3,37.0,0.663,0.679,0.595,892,No
-26,chronos_bolt,Foretec,FM,953,18.88,44.0,36.9,0.672,0.689,0.613,892,No
-27,lin_cov,Foretec,Foretec,951,21.69,43.4,42.5,0.613,0.603,0.561,791,No
-28,tirex2,Foretec,FM,950,19.87,43.5,37.3,0.654,0.66,0.572,853,No
-29,tirex,Foretec,FM,943,19.32,42.6,36.1,0.667,0.675,0.599,892,No
-30,moirai2,Foretec,FM,939,19.41,42.1,36.0,0.677,0.69,0.614,892,No
-31,t0_beta,The Forecasting Company,FM,937,19.92,41.9,35.9,0.678,0.704,0.603,878,No
-32,t0_alpha,The Forecasting Company,FM,931,20.04,41.0,35.1,0.674,0.688,0.608,878,No
-33,sundial,Foretec,FM,924,19.79,40.2,32.8,0.693,0.68,0.638,892,No
-34,lgbm_lags,Foretec,baseline,918,20.36,39.4,28.0,0.717,0.718,0.615,899,No
-35,lin_lags,Foretec,baseline,908,23.26,37.8,30.1,0.707,0.681,0.645,791,No
-36,ttm_r2,Foretec,FM,861,22.6,32.2,25.3,0.766,0.722,,892,No
-37,toto,Foretec,FM,857,19.09,32.8,20.5,0.828,0.824,0.769,421,No
-38,naive_daily,Foretec,baseline,824,23.33,28.0,16.2,0.966,1.037,0.995,899,No
-39,naive_weekly,Foretec,baseline,791,24.66,24.4,0.0,1.0,1.0,1.0,899,No
-40,climatology,Foretec,baseline,771,26.15,22.3,-15.3,1.153,1.056,1.089,892,No
+1,timeh2o_cov,H2O.ai,FM,1195,10.61,74.1,66.6,0.42,0.441,0.382,568,Yes
+2,t0_gamma_cov,The Forecasting Company,FM,1185,10.58,73.2,65.1,0.388,0.413,0.358,876,No
+3,timesfm3_cov,Foretec,FM,1172,9.87,72.2,64.8,0.4,0.413,0.369,1013,No
+4,chronos2_cov,Foretec,FM,1170,9.76,72.0,64.0,0.403,0.422,0.372,1013,No
+5,timestral_cov,Mistral AI,FM,1160,11.67,70.4,64.2,0.393,0.416,0.362,876,No
+6,lgbm_prod,Foretec,Foretec,1142,12.76,68.3,64.5,0.397,0.406,0.373,876,No
+7,t0_beta_cov,The Forecasting Company,FM,1125,11.71,66.6,61.2,0.434,0.463,0.404,927,No
+8,tabby_cov,Foretec,FM,1110,13.99,64.4,58.8,0.429,0.438,0.395,870,No
+9,tabby_pretrain_cov,Foretec,FM,1102,14.46,63.3,58.7,0.434,0.445,0.403,876,No
+10,tirex2_cov,Foretec,FM,1097,13.38,63.0,60.1,0.446,0.458,0.41,974,No
+11,t0_alpha_cov,The Forecasting Company,FM,1097,13.01,63.1,59.6,0.446,0.455,0.413,999,No
+12,lgbm_cov,Foretec,Foretec,1080,13.66,60.9,58.0,0.49,0.502,0.477,1013,No
+13,timesfm25_cov,Foretec,FM,1049,14.6,56.9,54.5,0.509,0.511,,941,No
+14,timeh2o,H2O.ai,FM,1023,17.75,52.6,45.7,0.614,0.64,0.547,592,Yes
+15,lin_cov_2y,Foretec,Foretec,1018,17.72,52.4,53.3,0.555,0.56,0.522,912,No
+16,timestral,Mistral AI,FM,1012,18.0,51.5,41.3,0.603,0.615,0.536,876,No
+17,t0_gamma,The Forecasting Company,FM,987,19.23,48.1,39.5,0.625,0.637,0.554,876,No
+18,chronos2,Foretec,FM,982,17.09,47.8,38.6,0.655,0.674,0.58,1020,No
+19,tabby,Huawei Noah's Ark Lab (Paris),FM,982,19.52,47.4,39.0,0.638,0.651,0.568,876,No
+20,toto2_1b,Datadog,FM,977,20.82,46.6,40.5,0.649,0.689,0.579,592,No
+21,simons,Abel AI Lab,FM,975,18.8,46.1,40.9,0.675,0.676,0.648,184,No
+22,tabby_pretrain,Huawei Noah's Ark Lab (Paris),FM,974,19.97,46.3,38.3,0.633,0.649,0.569,876,No
+23,timesfm3,Foretec,FM,972,17.82,46.4,36.9,0.662,0.668,0.586,1013,No
+24,toto2,Datadog,FM,963,20.69,44.7,39.1,0.665,0.696,0.592,664,No
+25,timesfm25,Foretec,FM,957,18.67,44.5,36.3,0.664,0.68,0.6,941,No
+26,lin_cov,Foretec,Foretec,954,21.04,43.8,41.4,0.626,0.613,0.594,912,No
+27,chronos_bolt,Foretec,FM,949,19.11,43.4,35.9,0.675,0.692,0.62,941,No
+28,tirex2,Foretec,FM,944,20.07,42.5,35.7,0.669,0.676,0.591,974,No
+29,tirex,Foretec,FM,942,19.45,42.3,34.6,0.681,0.689,0.616,1013,No
+30,t0_beta,The Forecasting Company,FM,938,19.85,41.9,35.0,0.683,0.709,0.611,927,No
+31,moirai2,Foretec,FM,936,19.44,41.6,34.9,0.687,0.701,0.628,1013,No
+32,t0_alpha,The Forecasting Company,FM,935,19.84,41.4,34.4,0.683,0.696,0.619,999,No
+33,sundial,Foretec,FM,933,19.61,41.2,32.5,0.697,0.685,0.645,1013,No
+34,lgbm_lags,Foretec,baseline,922,20.38,39.7,27.4,0.721,0.723,0.63,1020,No
+35,lin_lags,Foretec,baseline,912,22.87,38.3,29.1,0.712,0.689,0.655,912,No
+36,ttm_r2,Foretec,FM,869,22.38,33.1,24.8,0.771,0.731,,1013,No
+37,toto,Foretec,FM,858,19.09,32.8,20.5,0.828,0.824,0.769,421,No
+38,naive_daily,Foretec,baseline,826,23.3,28.0,15.4,0.974,1.048,1.004,1020,No
+39,naive_weekly,Foretec,baseline,799,24.64,25.0,0.0,1.0,1.0,1.0,1020,No
+40,climatology,Foretec,baseline,779,25.96,23.0,-15.1,1.165,1.07,1.107,1013,No
